@@ -1,0 +1,217 @@
+[
+  {
+    "building_id": "TUC_building.ttl",
+    "queries": [
+      {
+        "query_id": "TUC_001",
+        "source": {
+          "name": "Semantics-Driven Controls - TUC Building",
+          "uri": "https://github.com/ucl-sbde/semantics-driven_controls/tree/main"
+        },
+        "description": "Student residence at the Technical University of Crete (TUC), Greece. The building is a three-floor complex with 20 en-suite student rooms and a shared kitchen on each floor. Each room has an independent split air conditioner and a smart thermostat with built-in temperature and occupancy.",
+        "sparql_query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX om: <http://openmetrics.eu/openmetrics#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ZoneID ?point WHERE {\n    ?TsetMax a brick:Max_Air_Temperature_Setpoint ;\n    ref:hasExternalReference/ref:hasTimeseriesId ?point .\n    ?zone a brick:Zone ; brick:hasPart ?space ;\n    ref:hasExternalReference ?zoneRef.\n    ?zoneRef a ref:IFCReference ;\n    ref:ifcName ?ZoneID .\n    ?space brick:isLocationOf/brick:hasPoint ?TsetMax.\n}",
+        "retrieved_information": "Zone's IFC reference and timeseries ID of the maximum air temperature setpoint of each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each zone, what is the timeseries ID of its maximum air temperature setpoint, and what is the zone\u2019s IFC reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the zone IDs and the timeseries IDs of the maximum air temperature setpoints that are located in spaces belonging to each zone?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each zone, what is its external IFC reference name and which timeseries ID holds its maximum air temperature setpoint?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Can you list every zone\u2019s name along with the identifier of the timeseries that records its highest temperature setpoint?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Which zones map to which data series for their peak temperature settings?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "What are the maximum temperature setpoints for each zone?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "TUC_002",
+        "source": {
+          "name": "Semantics-Driven Controls - TUC Building",
+          "uri": "https://github.com/ucl-sbde/semantics-driven_controls/tree/main"
+        },
+        "description": "Student residence at the Technical University of Crete (TUC), Greece. The building is a three-floor complex with 20 en-suite student rooms and a shared kitchen on each floor. Each room has an independent split air conditioner and a smart thermostat with built-in temperature and occupancy.",
+        "sparql_query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX om: <http://openmetrics.eu/openmetrics#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ZoneID ?point WHERE {\n    ?TsetMin a brick:Min_Air_Temperature_Setpoint ;\n    ref:hasExternalReference/ref:hasTimeseriesId ?point .\n    ?zone a brick:Zone ; brick:hasPart ?space ;\n    ref:hasExternalReference ?zoneRef.\n    ?zoneRef a ref:IFCReference ;\n    ref:ifcName ?ZoneID .\n    ?space brick:isLocationOf/brick:hasPoint ?TsetMin.\n}",
+        "retrieved_information": "Zone's IFC reference and timeseries ID of the minimum air temperature setpoint of each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each zone, what is the timeseries ID of its minimum air temperature setpoint, and what is the zone\u2019s IFC reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the IFC names of zones that have part spaces where a minimum air temperature setpoint sensor is located, and what is the timeseries ID of that sensor according to its external reference?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each building zone, what IFC reference name and timeseries identifier correspond to its minimum air temperature setpoint sensor located in one of its spaces?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Which zones have a minimum air temperature setpoint sensor in their spaces and what are those zones\u2019 IFC names along with the sensor\u2019s timeseries ID?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Can you list each zone\u2019s IFC name together with the timeseries ID for its minimum air temperature setpoint?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Where can I find the timeseries identifiers for the minimum temperature settings in each building zone and the names of those zones?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "TUC_003",
+        "source": {
+          "name": "Semantics-Driven Controls - TUC Building",
+          "uri": "https://github.com/ucl-sbde/semantics-driven_controls/tree/main"
+        },
+        "description": "Student residence at the Technical University of Crete (TUC), Greece. The building is a three-floor complex with 20 en-suite student rooms and a shared kitchen on each floor. Each room has an independent split air conditioner and a smart thermostat with built-in temperature and occupancy.",
+        "sparql_query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX om: <http://openmetrics.eu/openmetrics#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ZoneID ?point WHERE {\n    ?occ a brick:Occupancy_Sensor;\n    ref:hasExternalReference/ref:hasTimeseriesId ?point.\n    ?zone a brick:Zone ; brick:hasPart ?space ;\n    ref:hasExternalReference ?zoneRef.\n    ?zoneRef a ref:IFCReference ;\n    ref:ifcName ?ZoneID .\n    ?space brick:isLocationOf/brick:hasPoint ?occ .\n}",
+        "retrieved_information": "Zone's IFC reference and timeseries ID of the occupancy sensor of each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each zone, what is the timeseries ID of its occupancy sensor, and what is the zone\u2019s IFC reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What is the IFC name of each zone and the timeseries id from the external reference of the occupancy sensor that is located in a space which is part of that zone?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each zone identified by its IFC name, which timeseries id is linked to the occupancy sensor installed in one of its spaces via the sensor\u2019s external reference?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Which zones, by their IFC names, contain occupancy sensors in their spaces and what are the sensors\u2019 timeseries ids?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "List each zone name along with the data stream id of the occupancy sensor monitoring that zone.",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "How can I retrieve occupancy sensor time series data for every zone in the building?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "TUC_004",
+        "source": {
+          "name": "Semantics-Driven Controls - TUC Building",
+          "uri": "https://github.com/ucl-sbde/semantics-driven_controls/tree/main"
+        },
+        "description": "Student residence at the Technical University of Crete (TUC), Greece. The building is a three-floor complex with 20 en-suite student rooms and a shared kitchen on each floor. Each room has an independent split air conditioner and a smart thermostat with built-in temperature and occupancy.",
+        "sparql_query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX om: <http://openmetrics.eu/openmetrics#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ZoneID ?point WHERE {\n    ?setpoint a brick:Temperature_Setpoint ;\n    ref:hasExternalReference/ref:hasTimeseriesId ?point .\n    ?zone a brick:Zone ; brick:hasPart ?space ;\n    ref:hasExternalReference ?zoneRef.\n    ?zoneRef a ref:IFCReference ;\n    ref:ifcName ?ZoneID .\n    ?space brick:isLocationOf/brick:hasPoint ?setpoint .\n}",
+        "retrieved_information": "Zone's IFC reference and timeseries ID of the temperature setpoint of each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each zone, what is the timeseries ID of its temperature setpoint, and what is the zone\u2019s IFC reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Which zone IFC names and timeseries IDs are associated with temperature setpoints, given that each temperature setpoint has an external reference with a timeseries ID, is located in a space that is part of a zone, and the zone has an IFC reference providing its name?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each zone, what IFC identifier and external timeseries ID correspond to the temperature setpoint in its associated space?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "List the IFC names of zones alongside their temperature setpoint timeseries IDs",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "What timeseries IDs are used for the temperature setpoints of each building zone?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "How can I find the temperature setpoint data streams for all zones?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "TUC_005",
+        "source": {
+          "name": "Semantics-Driven Controls - TUC Building",
+          "uri": "https://github.com/ucl-sbde/semantics-driven_controls/tree/main"
+        },
+        "description": "Student residence at the Technical University of Crete (TUC), Greece. The building is a three-floor complex with 20 en-suite student rooms and a shared kitchen on each floor. Each room has an independent split air conditioner and a smart thermostat with built-in temperature and occupancy.",
+        "sparql_query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX om: <http://openmetrics.eu/openmetrics#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ZoneID ?point WHERE {\n    ?temp a brick:Temperature_Sensor;\n    ref:hasExternalReference/ref:hasTimeseriesId ?point.\n    ?zone a brick:Zone ; brick:hasPart ?space ;\n    ref:hasExternalReference ?zoneRef.\n    ?zoneRef a ref:IFCReference ;\n    ref:ifcName ?ZoneID .\n    ?space brick:isLocationOf/brick:hasPoint ?temp .\n}",
+        "retrieved_information": "Zone's IFC reference and timeseries ID of the temperature sensor of each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each zone, what is the timeseries ID of its temperature sensor, and what is the zone\u2019s IFC reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each zone that has a part space, what is the IFC name of the zone and the external timeseries ID of the temperature sensor point located in that space?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which IFC-named zones contain a temperature sensor in one of their spaces and what is the external timeseries identifier of that sensor?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "What are the external timeseries IDs of temperature sensors installed within zones identified by their IFC names?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "List each zone by its IFC name along with the data stream ID for the temperature sensor point",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "What temperature data streams are available for each zone?",
+            "source": "LLM_5"
+          }
+        ]
+      }
+    ]
+  }
+]

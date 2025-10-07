@@ -1,0 +1,259 @@
+[
+  {
+    "building_id": "dflexlibs_multizone.ttl",
+    "queries": [
+      {
+        "query_id": "DFLEXLIBS_001",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?zone_name ?zone_temp_point ?set_temp_min_point ?set_temp_max_point ?occ_sensor_point ?occ_cmd_point\n?zone_set_temp_heat_point ?zone_set_temp_cool_point ?unocc_zone_set_temp_heat_point ?unocc_zone_set_temp_cool_point\n?occ_zone_set_temp_heat_point ?occ_zone_set_temp_cool_point ?zone_set_temp_point ?vav_damper_set_point ?vav_discharge_temp_point\n?vav_reheat_command_point\nWHERE {\n    ?zone a brick:HVAC_Zone ; rdfs:label ?zone_name.\n    OPTIONAL { ?zone brick:hasPoint ?TZon. ?TZon a brick:Zone_Air_Temperature_Sensor ; ref:hasExternalReference/ref:hasTimeseriesId ?zone_temp_point .}\n    OPTIONAL { ?zone brick:hasPoint ?TSetMin . ?TSetMin a brick:Min_Air_Temperature_Setpoint ; ref:hasExternalReference/ref:hasTimeseriesId ?set_temp_min_point .}\n    OPTIONAL { ?zone brick:hasPoint ?TSetMax . ?TSetMax a brick:Max_Air_Temperature_Setpoint ; ref:hasExternalReference/ref:hasTimeseriesId ?set_temp_max_point .}\n    OPTIONAL { ?zone brick:hasPoint ?TSetHeaZon . ?TSetHeaZon a brick:Zone_Air_Heating_Temperature_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?zone_set_temp_heat_point .}\n    OPTIONAL { ?zone brick:hasPoint ?TSetCooZon . ?TSetCooZon a brick:Zone_Air_Cooling_Temperature_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?zone_set_temp_cool_point .}\n    OPTIONAL { ?zone brick:hasPoint ?OccSensor. ?OccSensor a brick:Occupancy_Sensor ; ref:hasExternalReference/ref:hasTimeseriesId ?occ_sensor_point .}\n    OPTIONAL { ?zone brick:hasPoint ?OccCmd . ?OccCmd a brick:Occupancy_Command ; ref:hasExternalReference/ref:hasTimeseriesId ?occ_cmd_point .}\n    OPTIONAL { ?zone brick:hasPoint ?UnOccTSetCooZon. ?UnOccTSetCooZon a brick:Unoccupied_Cooling_Temperature_Setpoint ; ref:hasExternalReference/ref:hasTimeseriesId ?unocc_zone_set_temp_cool_point . }\n    OPTIONAL { ?zone brick:hasPoint ?UnOccTSetHeaZon . ?UnOccTSetHeaZon a brick:Unoccupied_Heating_Temperature_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?unocc_zone_set_temp_heat_point .}\n    OPTIONAL { ?zone brick:hasPoint ?OccTSetCooZon . ?OccTSetCooZon a brick:Occupied_Cooling_Temperature_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?occ_zone_set_temp_cool_point .}\n    OPTIONAL { ?zone brick:hasPoint ?OccTSetHeaZon . ?OccTSetHeaZon a brick:Occupied_Heating_Temperature_Setpoint ; ref:hasExternalReference/ref:hasTimeseriesId ?occ_zone_set_temp_heat_point . }\n    OPTIONAL { ?zone brick:hasPoint ?TSetZon . ?TSetZon a brick:Zone_Air_Temperature_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?zone_set_temp_point .}\n    OPTIONAL { ?vav brick:feeds ?zone ; brick:hasPoint ?Vav_DamSet . ?Vav_DamSet a brick:Damper_Position_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?vav_damper_set_point .}\n    OPTIONAL { ?vav brick:feeds ?zone ; brick:hasPoint ?Vav_DisTemp . ?Vav_DisTemp a brick:Discharge_Air_Temperature_Sensor; ref:hasExternalReference/ref:hasTimeseriesId ?vav_discharge_temp_point .}\n    OPTIONAL { ?vav brick:feeds ?zone ; brick:hasPoint ?Vav_ReheatCmd . ?Vav_ReheatCmd a brick:Valve_Command; ref:hasExternalReference/ref:hasTimeseriesId ?vav_reheat_command_point .}\n}",
+        "retrieved_information": "Timeseries IDs for all available zone temperature sensor' points, min and max temperature setpoints, temperature setpoints (single, heating/cooling or occupied/unoccupied), occupancy sensors and commands, and any related VAV damper, discharge temperature, and reheat command points. And the name of each HVAC zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each HVAC zone in the building, what are the timeseries IDs for the available zone temperature sensor' points, min and max temperature setpoints, temperature setpoints (single, heating/cooling or occupied/unoccupied), occupancy sensors and commands, and any related VAV damper, discharge temperature, and reheat command points?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each HVAC zone, what is the zone name and the timeseries ID for each point that the zone has, including the zone air temperature sensor point, the minimum air temperature setpoint point, the maximum air temperature setpoint point, the zone air heating temperature setpoint point, the zone air cooling temperature setpoint point, the occupancy sensor point, the occupancy command point, the unoccupied cooling temperature setpoint point, the unoccupied heating temperature setpoint point, the occupied cooling temperature setpoint point, the occupied heating temperature setpoint point, the general zone air temperature setpoint point, and for the VAV feeding that zone the damper position setpoint point, the discharge air temperature sensor point, and the valve reheat command point?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each labeled HVAC zone, list its name and all associated timeseries identifiers for temperature measurements, various setpoint targets (min, max, heating, cooling, occupied and unoccupied), occupancy sensing and command, as well as the VAV unit\u2019s damper position, discharge temperature, and reheat control signals.",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "How can I obtain the zone labels along with every temperature reading, setpoint value, and occupancy signal for each zone and its supply air VAV device?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "What are all of the monitoring and control data streams temperature, setpoints, occupancy and VAV controls available for each zone in the system?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Which time series should I pull to see how each zone and its VAV are performing in terms of temperature control and occupancy?   ",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "DFLEXLIBS_002",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT ?ahu_supply_temp_point ?ahu_supply_flow_point ?ahu_supply_flow_set_point\nWHERE {\n    OPTIONAL { ?ahu brick:feeds/brick:feeds ?zone ; brick:hasPoint ?Ahu_TSup . ?Ahu_TSup a brick:Supply_Air_Temperature_Sensor; ref:hasExternalReference/ref:hasTimeseriesId ?ahu_supply_temp_point .}\n    OPTIONAL { ?ahu brick:feeds/brick:feeds ?zone ; brick:hasPoint ?Ahu_flowSup . ?Ahu_flowSup a brick:Supply_Air_Flow_Sensor; ref:hasExternalReference/ref:hasTimeseriesId ?ahu_supply_flow_point .}\n    OPTIONAL { ?ahu brick:feeds/brick:feeds ?zone ; brick:hasPoint ?Ahu_flowSupSet . ?Ahu_flowSupSet a brick:Supply_Air_Flow_Setpoint; ref:hasExternalReference/ref:hasTimeseriesId ?ahu_supply_flow_set_point .}\n}",
+        "retrieved_information": "Timeseries IDs for all available supply air temperature, supply air flow, and supply air flow setpoint's points",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each AHU that supplies a zone, what are the timeseries IDs for all available points for supply air temperature, supply air flow, and supply air flow setpoint?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For the air handling unit that feeds a zone, what are the timeseries IDs of its supply air temperature sensor, supply air flow sensor, and supply air flow setpoint?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which timeseries identifiers correspond to the supply air temperature measurement, supply air flow measurement, and flow setpoint of the AHU supplying air to a space?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "How can I retrieve the timeseries IDs for an AHU\u2019s supply air temperature, airflow rate readings, and its airflow setpoint?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Where can I find the timeseries IDs for an air handling unit\u2019s supply-side measurements?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "How do I access the supply air measurement data for an AHU?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "DFLEXLIBS_003",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nSELECT DISTINCT ?ele_pow_point ?therm_pow_point\nWHERE {\n    OPTIONAL { ?Epower a brick:Electric_Power_Sensor ; ref:hasExternalReference/ref:hasTimeseriesId ?ele_pow_point .}\n    OPTIONAL { ?Tpower a brick:Thermal_Power_Sensor ; ref:hasExternalReference/ref:hasTimeseriesId ?therm_pow_point .}\n}",
+        "retrieved_information": "Timeseries IDs for all available electric power sensors and thermal power sensors in the building.",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What are the timeseries IDs for the available electric power sensors and thermal power sensors in the building?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the external reference timeseries IDs for each electric power sensor and each thermal power sensor?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which timeseries IDs are associated with the electric power sensors and which with the thermal power sensors?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "List the data stream identifiers for electrical power and heat power measurements.",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Where can I find the recorded series for electricity consumption and heating power?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Show me all available power measurement series.",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "DFLEXLIBS_004",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX brick: <https://brickschema.org/schema/Brick#>\nSELECT ?area WHERE {\n    ?building a brick:Building ;\n    brick:area [brick:value ?area] .\n}",
+        "retrieved_information": "Area of a building.",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What is the area of a building?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What area value does each Building have through the area relationship?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "What are the reported area measurements for all buildings?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "How big are the buildings by their area measurements?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "What size does each building measure in terms of area?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "How much floor space do the buildings occupy?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "DFLEXLIBS_005",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\n\nSELECT ?power_point WHERE {\n    ?point a brick:Electric_Power_Sensor ;\n           ref:hasExternalReference ?ref .\n\n    ?ref ref:onTable \"baseline_dataset\" ;\n         ref:hasTimeseriesId ?power_point .\n}",
+        "retrieved_information": "Timeseries IDs for baseline electric power sensors.",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What are the timeseries IDs for electric power sensors that are linked to the scenario named 'baseline'?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the timeseries IDs of electric power sensors that have an external reference on the baseline table?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which sensors measuring electric power that reference an external entry in the baseline table have associated timeseries identifiers?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "What timeseries identifiers are linked to electric power sensors listed in the baseline table through an external reference?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Which power measurement time series IDs are available in the baseline dataset?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "What power measurement series can I retrieve from the baseline data?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "DFLEXLIBS_006",
+        "source": {
+          "name": "DFLEXLIBS Open Source Repo",
+          "uri": "https://github.com/LBNL-ETA/DFLEXLIBS/tree/main"
+        },
+        "description": "BOPTEST building testcase_multizone_office_simple_air (Commercial building - 8500 m2)",
+        "sparql_query": "PREFIX ref: <https://brickschema.org/schema/Brick/ref#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\n\nSELECT ?power_point WHERE {\n    ?point a brick:Electric_Power_Sensor ;\n           ref:hasExternalReference ?ref .\n\n    ?ref ref:onTable \"flexible_dataset\" ;\n         ref:hasTimeseriesId ?power_point .\n}",
+        "retrieved_information": "Timeseries IDs for flexible electric power sensors.",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What are the timeseries IDs for electric power sensors that are linked to the scenario named 'flexible'?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the timeseries identifiers for electric power sensors that have an external reference on the flexible_ table?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For each electric power sensor linked to entries in the flexible_ reference table, what timeseries ID do they use?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Which power sensor records in the flexible_ dataset include a timeseries identifier, and what are those identifiers?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "How can I find the timeseries IDs for power measurements stored under the flexible_ table?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Where can I access the power time series from the flexible_ dataset?",
+            "source": "LLM_5"
+          }
+        ]
+      }
+    ]
+  }
+]

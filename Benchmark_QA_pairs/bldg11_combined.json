@@ -1,0 +1,495 @@
+[
+  {
+    "building_id": "bldg11.ttl",
+    "queries": [
+      {
+        "query_id": "MORTAR_001",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds all nodes that are a subclass of brick:Point.",
+        "sparql_query": "SELECT ?point ?point_type WHERE { ?point rdf:type/rdfs:subClassOf* brick:Point . ?point rdf:type ?point_type . }",
+        "retrieved_information": "List of all nodes that has a type of a subclass of \"Brick:Point\"",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What are the brick points in this graph?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Can you find nodes that has information about an external reference?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "What points does this graph have?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "What data sources I have in my system?",
+            "source": "human"
+          },
+          {
+            "question_number": 5,
+            "text": "Which entities that are instances of Point (including its subclasses) have which types?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 6,
+            "text": "What point entities exist and what types are they assigned?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 7,
+            "text": "List all measurement points along with their categories.",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 8,
+            "text": "What data points are defined in the building model and how are they classified?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 9,
+            "text": "Which data points does the system include and how are they grouped?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_002",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds all equipment and its Zone Air Temperature Setpoints.",
+        "sparql_query": "SELECT ?sp ?equip WHERE { ?sp rdf:type/rdfs:subClassOf* brick:Zone_Air_Temperature_Setpoint . ?equip brick:hasPoint ?sp }",
+        "retrieved_information": "All Zone Air Temperature Setpoints with the equipment they're connected to",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Find all equipment and its points that are Zone Air Temperature Setpoints",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What equipment has setpoints for zone air temperature and what are they?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "What are the Zone Air Temperature Setpoints and the equipment they belong to?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "Which equipment regulates the air temperature in rooms",
+            "source": "human"
+          },
+          {
+            "question_number": 5,
+            "text": "For each point that is a zone air temperature setpoint, which equipment has that point?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 6,
+            "text": "Which devices include points that set the air temperature in a zone, and what are those points?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 7,
+            "text": "Which HVAC components provide setpoints for regulating zone air temperature and what are those setpoints called?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 8,
+            "text": "What are the target temperatures for each zone and which devices supply these targets?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 9,
+            "text": "Which equipment controls the temperature settings for building zones?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_003",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds all equipment and its Supply Air Temperature Sensors.",
+        "sparql_query": "SELECT ?sp ?equip WHERE { ?sp rdf:type/rdfs:subClassOf* brick:Supply_Air_Temperature_Sensor . ?equip brick:hasPoint ?sp . }",
+        "retrieved_information": "All Supply Air Temperature Sensors with the equipment they're connected to",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Find all equipment and its points that are Supply Air Temperature Sensors",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What equipment has sensors for Supply air temperature and what are they?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "What are the Supply Air Temperature Sensors and the equipment they belong to?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "List the supply air temperature sensors and the equipment that has point to them",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 5,
+            "text": "Which pieces of equipment include a sensor for measuring supply air temperature",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 6,
+            "text": "Which devices measure supply air temperature",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 7,
+            "text": "What equipment monitors the supply air temperature",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 8,
+            "text": "Where in the system is supply air temperature measured",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_004",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds all equipment and its Zone Air Temperature Sensors.",
+        "sparql_query": "SELECT ?sensor ?equip WHERE { ?sensor rdf:type/rdfs:subClassOf* brick:Zone_Air_Temperature_Sensor . ?equip brick:hasPoint ?sensor . }",
+        "retrieved_information": "All Zone Air Temperature Sensors with the equipment they're connected to",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Find all equipment and its points that are Zone Air Temperature Sensors",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What equipment has sensors for zone air temperature and what are they?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "What are the Zone Air Temperature Sensors and the equipment they belong to?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "Which zone air temperature sensor instances are connected by has point to which equipment?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 5,
+            "text": "Which pieces of equipment include a sensor that measures the air temperature in a zone?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 6,
+            "text": "What devices are fitted with zone temperature sensors and what are those sensors?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 7,
+            "text": "Where can I find the equipment that provides measurements of temperature in each zone?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 8,
+            "text": "Which devices monitor the temperature in the building zones?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_005",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds zone air temperature sensors and setpoints linked to the same equipment.",
+        "sparql_query": "SELECT ?sensor ?sp ?equip WHERE { ?sensor rdf:type/rdfs:subClassOf* brick:Zone_Air_Temperature_Sensor . ?sp rdf:type/rdfs:subClassOf* brick:Zone_Air_Temperature_Setpoint . ?equip brick:hasPoint ?sp . ?equip brick:hasPoint ?sensor . }",
+        "retrieved_information": "All related Zone Air Temperature Sensors and Setpoints together with the equipment that they're both connected to. Purpose is to compare the difference between real temperature and desired temperature",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Which zone air temperature sensors and setpoints are linked to the same equipment?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Find all connected pairs of Zone Air Temperature Sensors and Setpoints",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "Which equipment has a zone air temperature sensor and a zone air temperature setpoint, and what are the names of those sensor and setpoint points?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 4,
+            "text": "For each HVAC unit, what temperature sensor is installed and what setpoint does it have for controlling room air temperature?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 5,
+            "text": "What measurement and target temperature points are associated with each device that manages zone air temperature?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 6,
+            "text": "Which devices control the air temperature in building zones, and what sensors and desired values do they use?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 7,
+            "text": "How are room temperature measurements and their target values defined across the building\u2019s equipment?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_006",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all Mortar building graphs. Finds all sensors and setpoints connected to the same equipment.",
+        "sparql_query": "SELECT ?sensor ?sp ?equip WHERE { ?sensor rdf:type/rdfs:subClassOf* brick:Sensor . ?sp rdf:type/rdfs:subClassOf* brick:Setpoint . ?equip brick:hasPoint ?sp . ?equip brick:hasPoint ?sensor . }",
+        "retrieved_information": "All related Sensors and Setpoints together with the equipment that they're both connected to. Purpose is to compare the difference between real sensor values and desired settings",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Find all sensor and setpoints connected to the same equipment",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Find all related sensor and setpoints pairs",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "Which brick sensors and brick setpoints are connected to the same equipment?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "For each piece of equipment that has points, what sensor and what setpoint are linked to it via the has point relationship?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 5,
+            "text": "For every device, which measurement instrument and which control value does it include?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 6,
+            "text": "Which assets combine a monitoring device with an adjustable target value?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 7,
+            "text": "What equipment units offer both sensing functionality and settable thresholds?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 8,
+            "text": "Which devices in the system support both readings and configuration settings?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_007",
+        "source": {
+          "name": "Mortar (Updated only)",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all updated Mortar building graphs because originals don't have Heating_Command type, instead they use Command type. Finds all AHUs and their connected Cooling and Heating command points.",
+        "sparql_query": "SELECT ?cooling_point ?heating_point ?ahu WHERE { ?ahu rdf:type/rdfs:subClassOf* brick:Air_Handling_Unit . ?cooling_point rdf:type/rdfs:subClassOf* brick:Cooling_Command . ?heating_point rdf:type/rdfs:subClassOf* brick:Heating_Command . ?ahu brick:hasPoint ?cooling_point . ?ahu brick:hasPoint ?heating_point . }",
+        "retrieved_information": "Find all AHUs and their connected Cooling and Heating command points. Purpose is to check if they're open at the same time, which is a fault that results in wasted energy",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Which AHUs have both a Cooling Valve Command and a Heating Command point?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Find all AHUs with heating and cooling command points",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "Which air handler units have both a cooling and heating command?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "Is there any simultaneous heating and cooling fault in any of my AHUs?",
+            "source": "human"
+          },
+          {
+            "question_number": 5,
+            "text": "Which air handling unit has point a cooling command and has point a heating command, and what are those points?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 6,
+            "text": "Which air handling unit provides both a cooling command point and a heating command point, and what are those points?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 7,
+            "text": "For each air handling unit, list its cooling and heating command points.",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 8,
+            "text": "Which control points handle cooling and heating in air handling units?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 9,
+            "text": "How can I find the temperature control setpoints for the air handling equipment?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_008",
+        "source": {
+          "name": "Mortar (Updated only)",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "This will work on all updated Mortar building graphs because originals don't have Building_Electrical_Meter, instead they have Building_Electric_Meter. Finds all Building electrical meters and outside air temperature sensors.",
+        "sparql_query": "SELECT ?meter ?oat WHERE { ?meter rdf:type/rdfs:subClassOf* brick:Building_Electrical_Meter . ?oat rdf:type/rdfs:subClassOf* brick:Outside_Air_Temperature_Sensor . }",
+        "retrieved_information": "Find all Building Electrical Meters and OAT sensors in the building. Only works if both are present. The purpose is to compare outside air temperature with electricity consumption",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Find all Building electrical meters and outside air temperature sensors in my building",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "Which electric meters and OAT sensors are present in the building system?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "Which meters and weather sensors are present in the building system?",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "How can I compare the weather with electricity consumption?",
+            "source": "human"
+          },
+          {
+            "question_number": 5,
+            "text": "What are the building electrical meters and what are the outside air temperature sensors?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 6,
+            "text": "Which devices serve as building power meters and which ones measure outside air temperature?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 7,
+            "text": "Which electricity meters in the building and which outdoor temperature sensors are available?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 8,
+            "text": "List all electricity usage meters alongside the devices that record outside air temperature.",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 9,
+            "text": "What devices monitor electricity consumption and outdoor temperature?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "MORTAR_009",
+        "source": {
+          "name": "Mortar",
+          "uri": "https://dl.acm.org/doi/10.1145/3366375"
+        },
+        "description": "Finds temperature sensors connected to VAVs that serve HVAC zones.",
+        "sparql_query": "SELECT ?temp_sensor ?vav ?zone WHERE { ?vav rdf:type/rdfs:subClassOf* brick:VAV . ?vav brick:hasPoint ?temp_sensor . ?temp_sensor rdf:type/rdfs:subClassOf* brick:Temperature_Sensor . ?vav brick:feeds+ ?zone . ?zone rdf:type brick:HVAC_Zone }",
+        "retrieved_information": "Find all rooms, the VAVs that feeds them and the room (in terms of hvac_zone) that contains the VAV",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Which temperature sensors are connected to VAVs that serve HVAC zones?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "List all temperature sensors and the VAVs and zones they are part of.",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "List the rooms and their hvac equipment that contains a temperature sensor",
+            "source": "human"
+          },
+          {
+            "question_number": 4,
+            "text": "How can I learn the rooms and their temperature?",
+            "source": "human"
+          },
+          {
+            "question_number": 5,
+            "text": "Which VAV units have a point temperature sensor and feed an HVAC zone, and what are the corresponding sensor and zone for each unit?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 6,
+            "text": "Which variable air volume boxes are linked to temperature sensors, and which conditioned spaces do they serve?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 7,
+            "text": "For each air terminal equipped with a temperature sensor, which HVAC zones does it supply?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 8,
+            "text": "Which areas receive airflow from terminals that include temperature sensors?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 9,
+            "text": "How is temperature monitored across the different HVAC zones in the building?",
+            "source": "LLM_5"
+          }
+        ]
+      }
+    ]
+  }
+]

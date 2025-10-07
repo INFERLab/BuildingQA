@@ -1,0 +1,321 @@
+[
+  {
+    "building_id": "b59.ttl",
+    "queries": [
+      {
+        "query_id": "LBNL_001",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX s223: <http://data.ashrae.org/standard223#>\nPREFIX ex1: <http://data.ashrae.org/standard223/data/lbnl-example-2#>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX ref: <https://brickschema.org/schema/Brick/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX quantitykind: <http://qudt.org/vocab/quantitykind/>\n\nSELECT DISTINCT ?target ?label ?alc_endpoint ?mpc_endpoint WHERE {\n{ ?target a s223:Zone; s223:hasProperty ?prop. }\nUNION\n{ ?target a s223:Zone; s223:hasDomainSpace ?space .\n?space a ex1:RoomDomainSpace ;\ns223:connected/s223:connected/s223:contains/s223:hasProperty ?prop . }\n\n?prop a s223:Property;\nqudt:hasQuantityKind|s223:hasEnumerationKind ?quantKind;\nrdfs:label ?label;\ns223:hasExternalReference ?ref .\n\n?ref ref:endpoint ?alc_endpoint;\nref:mpc_db_name ?mpc_endpoint;\nref:writable \"False\" .\n}",
+        "retrieved_information": "Non-writable property labels and their ALC and MPC endpoints for each zone",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Identify each entity that is a zone, and either has a directly associated property or is indirectly connected to a property via a RoomDomainSpace through a chain of connections.",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each zone (target), what are the related non-writable property labels and ALC and MPC endpoint references?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "For each Zone that either has a Property directly or has a RoomDomainSpace reached by two connected steps and a contains relationship leading to a Property, what is the label of that Property and what are the external reference alc endpoint and mpc endpoint when writable is False?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 4,
+            "text": "Which properties associated with building zones (including those linked through room domain spaces and chained connections) are read-only, and what are their labels together with the alc and mpc endpoints in their external references?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 5,
+            "text": "List the labels of all non-writable properties for zones and show the corresponding alc endpoint and mpc database endpoint for each.",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 6,
+            "text": "What alc and mpc endpoints are defined for the read-only properties of each zone?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 7,
+            "text": "How can I find the alc and mpc endpoints for zone properties that aren't editable?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_002",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX s223: <http://data.ashrae.org/standard223#>\nPREFIX ex1: <http://data.ashrae.org/standard223/data/lbnl-example-2#>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX ref: <https://brickschema.org/schema/Brick/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX quantitykind: <http://qudt.org/vocab/quantitykind/>\n\nSELECT DISTINCT ?targetLabel ?label ?alc_endpoint ?mpc_endpoint WHERE {\n?target a s223:AirHandlingUnit;\nrdfs:label ?targetLabel.\n{\n?target s223:contains ?connectable.\n\n?connectable (s223:observes | s223:hasProperty) ?prop .\n}\nUNION\n{\n?target s223:hasProperty ?prop .\n}\n\n?prop a s223:Property;\nrdfs:label ?label;\ns223:hasExternalReference ?ref.\n\n?ref ref:endpoint ?alc_endpoint;\nref:mpc_db_name ?mpc_endpoint ;\nref:writable \"False\" .\n\nFILTER(CONTAINS(LCASE(?targetLabel), \"rtu\"))\n\n}",
+        "retrieved_information": "Non-writable property labels and ALC and MPC endpoints for each AHU (labeled RTU)",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Identify each entity that is an AHU, and either has a directly associated property or is indirectly connected to a property via a connectable.",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each Air Handling Unit (AHU) whose label includes 'RTU', what are the related non-writable property labels and ALC and MPC endpoint references?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "For each air handling unit whose label contains rtu, identify any connectable element it contains that observes or has property a property, or any property it has directly, and for each property give its label along with the ALC endpoint and the MPC database name from its external reference",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 4,
+            "text": "For RTU air handling units, what are the property names and their associated ALC and MPC endpoints defined in the external references",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 5,
+            "text": "Which RTU units expose properties with external endpoints, and what are the property labels along with those ALC and MPC endpoint addresses",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 6,
+            "text": "Where can I find the nonwritable external ALC and MPC endpoints for properties on each RTU air handling unit",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 7,
+            "text": "What read-only control endpoints are available for properties of RTU units",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_003",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX ref: <https://brickschema.org/schema/Brick/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX s223: <http://data.ashrae.org/standard223#>\nSELECT DISTINCT ?target ?prop ?label ?qty ?ref ?alc_endpoint ?mpc_endpoint where {\n?target a s223:WatertoWaterHeatPump .\n?target s223:contains ?prop .\n?prop rdfs:label ?label .\n?prop s223:observes ?qty .\n?qty s223:hasExternalReference ?ref .\n?ref ref:endpoint ?alc_endpoint .\n?ref ref:mpc_db_name ?mpc_endpoint .\n?ref ref:writable \"False\" .\n}",
+        "retrieved_information": "Property labels and non-writable quantities' ALC and MPC endpoints for each ARU via the Water-to-Water Heat Pump",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "Get reheat ARU data (for UFT reheat) by identifying each entity that is a Water-to-Water Heat Pump and contains a property that observes a non-writable quantity with reference endpoints.",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each Water-to-Water Heat Pump, what are the related property labels and non-writable quantities' ALC and MPC endpoint references?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "For each water-to-water heat pump, what property does it contain, what is the label of that property, which quantity does it observe, and what are the ALC endpoint and MPC database name of its non-writable external reference?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 4,
+            "text": "Which internal properties of water-to-water heat pumps observe specific quantities via non-writable external references, and what are those references\u2019 ALC endpoints and MPC database names along with the property labels?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 5,
+            "text": "What non-writable external endpoints and MPC database names are associated with measurements taken by components inside water-to-water heat pumps?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 6,
+            "text": "Which read-only ALC and MPC endpoints deliver the measurement data for water-to-water heat pumps?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 7,
+            "text": "Where can I access the read-only operational data endpoints for our water-to-water heat pumps?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_004",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX ref: <https://brickschema.org/schema/Brick/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX s223: <http://data.ashrae.org/standard223#>\nSELECT DISTINCT ?target ?prop ?label ?alc_endpoint ?mpc_endpoint where {\n?target a s223:WatertoWaterHeatPump .\n?target s223:hasProperty ?prop .\n?prop rdfs:label ?label .\n?prop s223:hasExternalReference ?ref .\n?ref ref:endpoint ?alc_endpoint .\n?ref ref:mpc_db_name ?mpc_endpoint .\n?ref ref:writable \"False\" .\n}",
+        "retrieved_information": "Non-writable property labels and ALC and MPC endpoints for each each Water-to-Water Heat Pump",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each Water-to-Water Heat Pump, what are the related non-writable property labels and ALC and MPC endpoint references?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "For each water-to-water heat pump, what property does it have, what is the property's label, and what are the ALC endpoint and MPC database endpoint of its non-writable external reference?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which external references marked as non-writable are associated with water-to-water heat pump properties, and what are their property labels along with the ALC and MPC endpoints?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "What are the non-writable ALC and MPC endpoints and their related property names for all water-to-water heat pumps?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Where can I find the read-only control and database addresses for the attributes of water-to-water heat pumps?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "How do I retrieve the non-writable interface endpoints for my water-to-water heat pumps?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_005",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX unit: <http://qudt.org/vocab/unit/>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX qudtqk: <http://qudt.org/vocab/quantitykind/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX s223: <http://data.ashrae.org/standard223#>\nPREFIX ex1: <http://data.ashrae.org/standard223/data/lbnl-example-2#>\nSELECT ?uft_label ?uft_prop_label ?uft_prop_aspect ?uft_prop_value ?uft_prop_unit where {\n?uft a ex1:UFT .\n?uft rdfs:label ?uft_label .\n\n?uft s223:hasProperty ?uft_prop .\n?uft_prop rdfs:label ?uft_prop_label .\n?uft_prop a s223:QuantifiableObservableProperty .\n{ ?uft_prop qudt:hasQuantityKind qudtqk:VolumeFlowRate . }\nUNION\n{ ?uft_prop qudt:hasQuantityKind qudtqk:HeatFlowRate . }\n?uft_prop s223:hasAspect ?uft_prop_aspect .\n?uft_prop s223:hasValue ?uft_prop_value .\n?uft_prop qudt:hasUnit ?uft_prop_unit .\n}",
+        "retrieved_information": "Labels and the volume or heat flow rate properties (including labels, aspects, values and units) of each UFT",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What volume or heat flow rate properties does each UFT have, including their labels, aspects, values, and units?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What is the label of each UFT?",
+            "source": "human"
+          },
+          {
+            "question_number": 3,
+            "text": "For each unitary fan terminal, what is its label, and for each property it has that is a volume flow rate or heat flow rate, what are the property\u2019s label, aspect, value, and unit?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 4,
+            "text": "List each unitary fan terminal along with its volume flow rate or heat flow rate measurements, including each measurement\u2019s name, aspect, recorded value, and unit.",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 5,
+            "text": "Which volume flow and heat flow measurements do unitary fan terminals record, and how are those measurements described and quantified?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 6,
+            "text": "What volume and heat flow data are available from the fan terminals?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 7,
+            "text": "What performance metrics are provided by unitary fan terminals?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_006",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX s223: <http://data.ashrae.org/standard223#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ex1: <http://data.ashrae.org/standard223/data/lbnl-example-2#>\nSELECT distinct ?uft_label ?zone_label ?rtu_label where {\n?uft a ex1:UFT .\n?uft rdfs:label ?uft_label .\n?uft s223:connectedTo ?junction .\n?junction s223:connectedTo ?ds .\n?ds a s223:DomainSpace .\n?zone s223:hasDomainSpace ?ds .\n?zone rdfs:label ?zone_label .\n\n?uft s223:connectedFrom ?plenum .\n?plenum s223:connected ?rtu .\n?rtu a s223:AirHandlingUnit .\n?rtu rdfs:label ?rtu_label .\n}",
+        "retrieved_information": "The label of each UFT, along with the label of the zone it's connected to, and the AHU that supplies it",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "For each UFT, what is its label, the label of the zone it's indirectly connected to (through a junction and domain space), and the label of the AHU that indirectly supplies it?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the labels of each underfloor terminal, the label of the zone whose domain space it is connected to, and the label of the air handling unit supplying it?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "For every underfloor terminal, which zone does it serve and which air handling unit feeds air to it?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Which underfloor distribution devices serve which thermal zones, and from which air handling units do they receive air?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "How are thermal zones linked to air handling units through underfloor terminals?",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Which zones are served by which air handling units via the underfloor air distribution system?",
+            "source": "LLM_5"
+          }
+        ]
+      },
+      {
+        "query_id": "LBNL_007",
+        "source": {
+          "name": "B59 LBNL",
+          "uri": "https://models.open223.info/examples/lbnl-bdg3-1.html"
+        },
+        "description": "This is a real-world medium-sized office building. It is approximately 67,000 square feet in size, contains 2 floors, 27 space types, and 469 rooms. Labels have been anonymized, and are not interpretable. It uses an underfloor air distribution system with fan-powered terminal reheat coils for perimeter zones. Four roof-top units with VAV are located on the roof. The lighting system primariliy uses fluorescent luminaires and zone-based lighting controllers that communicate with user interface devices and wireless gatetways over DALI networks. The gateways collect occupancy and light sensor data over an ISM-band wireless network.",
+        "sparql_query": "PREFIX unit: <http://qudt.org/vocab/unit/>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX quantitykind: <http://qudt.org/vocab/quantitykind/>\nPREFIX s223: <http://data.ashrae.org/standard223#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ex1: <http://data.ashrae.org/standard223/data/lbnl-example-2#>\nSELECT distinct ?sensor_label ?sensor_prop_label ?ds_label where {\n?sensor a s223:Sensor .\n?sensor s223:observes ?sensor_prop .\n?sensor rdfs:label ?sensor_label .\n?sensor_prop a s223:QuantifiableObservableProperty .\n?sensor_prop qudt:hasQuantityKind quantitykind:Temperature .\n?sensor_prop qudt:hasUnit unit:DEG_F .\n?sensor_prop s223:ofMedium s223:Fluid-Air .\n?sensor_prop rdfs:label ?sensor_prop_label .\n\n?sensor s223:hasObservationLocation ?ds .\n?ds a s223:DomainSpace .\n?ds s223:hasDomain s223:Domain-HVAC .\n?ds rdfs:label ?ds_label .\n?ds a ex1:CoreSpace .\n}",
+        "retrieved_information": "Labels of air temperature sensors, their quantifiable observable properties, and domain spaces",
+        "questions": [
+          {
+            "question_number": 1,
+            "text": "What are the labels of the air temperature sensors (in \u00b0F), their quantifiable observable properties, and the domain spaces they\u2019re located in, specifically for sensors placed in HVAC core spaces?",
+            "source": "human"
+          },
+          {
+            "question_number": 2,
+            "text": "What are the labels of the sensors that observe a quantifiable observable property of temperature with unit degrees Fahrenheit on fluid air, and what are the labels of those temperature properties and the domain spaces (with domain HVAC and defined as core spaces) where those sensors have their observation location?",
+            "source": "LLM_1"
+          },
+          {
+            "question_number": 3,
+            "text": "Which sensors measure air temperature in degrees Fahrenheit, what are the names of the temperature properties they observe, and in which HVAC core spaces are they located?",
+            "source": "LLM_2"
+          },
+          {
+            "question_number": 4,
+            "text": "Which Fahrenheit air temperature sensors are installed in core areas of the HVAC domain, and what are the labels of those sensors, their measurement points, and the spaces?",
+            "source": "LLM_3"
+          },
+          {
+            "question_number": 5,
+            "text": "Identify the air temperature sensing devices using Fahrenheit in HVAC core spaces and provide their sensor names, the corresponding measurement labels, and the space names.",
+            "source": "LLM_4"
+          },
+          {
+            "question_number": 6,
+            "text": "Can you list all sensors monitoring air temperature in Fahrenheit within core HVAC areas along with their measurement point names and the names of their locations?",
+            "source": "LLM_5"
+          }
+        ]
+      }
+    ]
+  }
+]
