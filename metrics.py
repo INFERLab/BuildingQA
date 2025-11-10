@@ -124,26 +124,30 @@ def _calculate_scores_for_mapping(gold_rows: List[Dict], pred_rows: List[Dict], 
     Returns:
         A dictionary containing the calculated 'column_wise' and 'row_wise' F1 scores.
     """
-    if not column_mapping:
-        return {"column_wise": {"f1": 0.0}, "row_wise": {"f1": 0.0}}
+    if not column_mapping or not gold_rows:
+        result = {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+        return {"column_wise": result, "row_wise": result}
 
-    # Column-wise F1
+    # Column-wise Metrics
     col_precisions, col_recalls = [], []
     for pred_col, gold_col in column_mapping.items():
-        gold_values = {normalize_value(r.get(gold_col, {}).get('value', '')) for r in gold_rows}
-        pred_values = {normalize_value(r.get(pred_col, {}).get('value', '')) for r in pred_rows}
+        # Corrected (safe)
+        gold_values = {str(r.get(gold_col, {}).get('value', '')) for r in gold_rows}
+        # Corrected (safe)
+        pred_values = {str(r.get(pred_col, {}).get('value', '')) for r in pred_rows}
         tp = len(gold_values.intersection(pred_values))
         col_prec = tp / len(pred_values) if pred_values else 1.0
         col_rec = tp / len(gold_values) if gold_values else 1.0
-        col_precisions.append(col_prec); col_recalls.append(col_rec)
-    
+        col_precisions.append(col_prec)
+        col_recalls.append(col_rec)
+
     avg_precision_col = np.mean(col_precisions) if col_precisions else 0.0
     avg_recall_col = np.mean(col_recalls) if col_recalls else 0.0
-    f1_col = 0.0
-    if (avg_precision_col + avg_recall_col) > 0:
-        f1_col = (2 * avg_precision_col * avg_recall_col) / (avg_precision_col + avg_recall_col)
+    f1_col = (2 * avg_precision_col * avg_recall_col / (avg_precision_col + avg_recall_col)
+              if (avg_precision_col + avg_recall_col) > 0 else 0.0)
+    column_wise_scores = {"precision": avg_precision_col, "recall": avg_recall_col, "f1": f1_col}
 
-    # Row-wise F1
+    # Row-wise Metrics
     mapped_gold_keys = set(column_mapping.values())
     normalized_pred_rows = [{column_mapping.get(k): v for k, v in r.items() if k in column_mapping} for r in pred_rows]
     matched_gold, matched_pred = set(), set()
@@ -151,15 +155,16 @@ def _calculate_scores_for_mapping(gold_rows: List[Dict], pred_rows: List[Dict], 
         for j, norm_p_row in enumerate(normalized_pred_rows):
             if j in matched_pred: continue
             if row_to_partial_tuple(g_row, mapped_gold_keys) == row_to_partial_tuple(norm_p_row, mapped_gold_keys):
-                matched_gold.add(i); matched_pred.add(j); break
-    
-    tp = len(matched_gold); fp = len(pred_rows) - len(matched_pred); fn = len(gold_rows) - len(matched_gold)
-    precision = tp / (tp + fp) if (tp + fp) > 0 else 1.0
-    recall = tp / (tp + fn) if (tp + fn) > 0 else 1.0
-    f1_row = 0.0
-    if (precision + recall) > 0:
-        f1_row = (2 * precision * recall) / (precision + recall)
-        
+                matched_gold.add(i)
+                matched_pred.add(j)
+                break
+    tp_row, fp_row, fn_row = len(matched_gold), len(pred_rows) - len(matched_pred), len(gold_rows) - len(matched_gold)
+    precision_row = tp_row / (tp_row + fp_row) if (tp_row + fp_row) > 0 else 1.0
+    recall_row = tp_row / (tp_row + fn_row) if (tp_row + fn_row) > 0 else 1.0
+    f1_row = (2 * precision_row * recall_row / (precision_row + recall_row)
+              if (precision_row + recall_row) > 0 else 0.0)
+    row_wise_scores = {"precision": precision_row, "recall": recall_row, "f1": f1_row}
+
     return {"column_wise": {"f1": f1_col}, "row_wise": {"f1": f1_row}}
 
 def _find_best_mapping_and_scores(gold_rows: List[Dict], pred_rows: List[Dict], timeout: int = 1200) -> Dict:
@@ -180,45 +185,60 @@ def _find_best_mapping_and_scores(gold_rows: List[Dict], pred_rows: List[Dict], 
     Returns:
         A dictionary of the best column-wise and row-wise F1 scores found.
     """
-    zero_scores = {"column_wise": {"f1": 0.0}, "row_wise": {"f1": 0.0}}
+    less_columns_flag = False
+    zero_scores = {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+    zero_result = {"column_wise": zero_scores, "row_wise": zero_scores}
+
     if not gold_rows or not pred_rows:
-        is_perfect = not gold_rows and not pred_rows
-        score = 1.0 if is_perfect else 0.0
-        return {"column_wise": {"f1": score}, "row_wise": {"f1": score}}
+        is_perfect_match = not gold_rows and not pred_rows
+        score = 1.0 if is_perfect_match else 0.0
+        result = {"precision": score, "recall": score, "f1": score}
+        return {"column_wise": result, "row_wise": result}
 
     gold_cols = list(gold_rows[0].keys())
     pred_cols = list(pred_rows[0].keys())
-    n_gold, n_pred = len(gold_cols), len(pred_cols)
-    
-    if n_pred < n_gold:
-        return zero_scores
+    n_gold_cols, n_pred_cols = len(gold_cols), len(pred_cols)
 
-    best_scores = zero_scores
+    if n_pred_cols < n_gold_cols:
+        less_columns_flag = True
+        return zero_result
+
+    best_scores = zero_result
     max_row_f1 = -1.0
     max_col_f1 = -1.0
     
+    all_perms = itertools.permutations(pred_cols, n_gold_cols)
     start_time = time.time()
-    # Find the best permutation of pred_cols that matches the gold_cols
-    for p_cols_perm in itertools.permutations(pred_cols, n_gold):
+
+    if n_gold_cols == n_pred_cols:
+        initial_mapping = {p_col: g_col for g_col, p_col in zip(gold_cols, pred_cols)}
+        initial_scores = _calculate_scores_for_mapping(gold_rows, pred_rows, initial_mapping)
+        if initial_scores['row_wise']['f1'] == 1.0 and initial_scores['column_wise']['f1'] == 1.0:
+            return initial_scores
+        best_scores = initial_scores
+        max_row_f1 = initial_scores['row_wise']['f1']
+        max_col_f1 = initial_scores['column_wise']['f1']
+
+    for p_cols_perm in all_perms:
         if time.time() - start_time > timeout:
-            print(f"⚠️  Alignment search timed out after {timeout} seconds. Returning best result found.")
+            print(f"  -> ⚠️  Evaluation timed out after {timeout} seconds. Returning best result found so far.")
             break
-        
-        current_mapping = {p_cols_perm[i]: gold_cols[i] for i in range(n_gold)}
-        current_scores = _calculate_scores_for_mapping(gold_rows, pred_rows, current_mapping)
-        
+        current_mapping = {p_cols_perm[i]: gold_cols[i] for i in range(n_gold_cols)}
+        if n_gold_cols == n_pred_cols and list(p_cols_perm) == pred_cols:
+            continue
+        temp_pred_rows = [{k: v for k, v in row.items() if k in p_cols_perm} for row in pred_rows]
+        current_scores = _calculate_scores_for_mapping(gold_rows, temp_pred_rows, current_mapping)
         if (current_scores['row_wise']['f1'] > max_row_f1 or
            (current_scores['row_wise']['f1'] == max_row_f1 and
             current_scores['column_wise']['f1'] > max_col_f1)):
             best_scores = current_scores
             max_row_f1 = current_scores['row_wise']['f1']
             max_col_f1 = current_scores['column_wise']['f1']
-        
-        # If a perfect score is found with any permutation, stop searching.
         if max_row_f1 == 1.0 and max_col_f1 == 1.0:
             break
             
     return best_scores
+
 
 # ==============================================================================
 #  PUBLIC METRIC FUNCTIONS
@@ -247,30 +267,32 @@ def get_arity_matching_f1(generated_output: Union[str, List[Dict]], gold_input: 
 
     return _get_f1_from_counts(gen_count, gt_count)
 
-def get_entity_set_f1(gold_rows: List[Dict], pred_rows: List[Dict]) -> float:
-    """
-    Calculates the Entity Set F1 (col_f1) after finding the best column alignment.
 
-    This metric answers: "Does the predicted result contain the correct sets of 
-    values, ignoring row structure?" It first finds the optimal column alignment, 
-    then for each aligned pair, it compares the set of unique values. It's a 
-    measure of whether the right entities were retrieved, even if they are not 
-    structured into the correct rows.
+
+def get_entity_and_row_matching_f1(gold_rows: List[Dict], pred_rows: List[Dict]) -> Dict[str, float]:
     """
+    Calculates both Entity Set F1 and Row Matching F1 after finding the best 
+    column alignment.
+
+    This function calls the underlying alignment and scoring logic only once.
+
+    Metrics Returned:
+    - **entity_set_f1 (col_f1):** Answers "Does the predicted result contain 
+      the correct sets of values, ignoring row structure?" It's a measure 
+      of whether the right entities were retrieved.
+      
+    - **row_matching_f1 (row_f1):** Answers "After finding the best column 
+      alignment, how many of the rows are exactly correct?" This is a 
+      strong indicator of overall query correctness.
+    """
+    # Note: This assumes the helper function _find_best_mapping_and_scores
+    # is defined and accessible within the same scope.
     best_scores = _find_best_mapping_and_scores(gold_rows, pred_rows)
-    return best_scores['column_wise']['f1']
-
-def get_row_matching_f1(gold_rows: List[Dict], pred_rows: List[Dict]) -> float:
-    """
-    Calculates the Row Matching F1 (row_f1) after finding the best column alignment.
-
-    This metric answers: "After finding the best column alignment, how many of the 
-    rows are exactly correct?" It first automates the column mapping and then 
-    performs a one-to-one comparison of the complete rows. This is a strong 
-    indicator of overall query correctness.
-    """
-    best_scores = _find_best_mapping_and_scores(gold_rows, pred_rows)
-    return best_scores['row_wise']['f1']
+    
+    return {
+        'entity_set_f1': best_scores['column_wise']['f1'],
+        'row_matching_f1': best_scores['row_wise']['f1']
+    }
 
 def get_exact_match_f1(gold_rows: List[Dict], pred_rows: List[Dict]) -> float:
     """
