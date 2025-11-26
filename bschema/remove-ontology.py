@@ -1,4 +1,4 @@
-from bschema import create_bschema, Graph, A, bind_prefixes, Namespace, BACNET, S223, BRICK, REF, QUDT, QK, UNIT, SKOS, OWL, TAG, SH
+from bschema import create_bschema, Graph, A, bind_prefixes, Namespace, BACNET, S223, RDFS, BRICK, REF, QUDT, QK, UNIT, SKOS, OWL, TAG, SH
 import os 
 import csv
 import matplotlib.pyplot as plt
@@ -37,8 +37,24 @@ def remove_triples_namespace(g):
         if str(OWL) in str(triple[2]):
             remove_triples_recursively(g, triple[0])
 
-def rename_223_nodes(g):
-    
+# NOTE: Ref namespace wrong in b59
+def rename_b59_nodes(g):
+    EX = Namespace('http://data.ashrae.org/standard223/data/lbnl-example-2#')
+    REF = Namespace('https://brickschema.org/schema/Brick/')
+    for s in g.subjects():
+        if (str(EX) in s):
+            label = g.value(s, RDFS.label)
+            if label == None:
+                continue
+            if (s, A, REF.APIReference) in g:
+                continue
+            new_uri = EX[f"{label.replace(' ','_')}{str(s).split('#')[-1]}"]
+            for p, o in g.predicate_objects(s):
+                g.remove((s,p,o))
+                g.add((new_uri, p, o))
+            for s2, p2 in g.subject_predicates(s):
+                g.remove((s2, p2, s))
+                g.add((s2, p2, new_uri))
 
 def undo_brick_inferencing(g):
     for triple in g:
@@ -72,7 +88,7 @@ def write_csv(filename, g_lens, cg_lens):
 def process_graphs(directory_path):
     for file_name in os.listdir(directory_path):
         if file_name.endswith(".ttl"):
-            if not (file_name in ['bldg11.ttl']): 
+            if not (file_name in ['b59.ttl']): 
                 continue
             file_path = os.path.join(directory_path, file_name)
             print(f"Processing file: {file_name}")
@@ -83,6 +99,8 @@ def process_graphs(directory_path):
             if (file_name in ['bldg_brick_anon.ttl', 'bldg11.ttl']):
                 remove_less_specific_classes(g, BRICK_GRAPH)
                 undo_brick_inferencing(g)
+            if file_name in ['b59.ttl']:
+                rename_b59_nodes(g)
             g.serialize(f"without-ontology/{file_name}", format="turtle")
 
 if __name__ == "__main__":
