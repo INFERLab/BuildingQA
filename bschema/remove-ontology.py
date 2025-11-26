@@ -1,11 +1,20 @@
-from bschema import create_bschema, Graph, A, bind_prefixes
+from bschema import create_bschema, Graph, A, bind_prefixes, BACNET, S223, BRICK
 import os 
 import csv
 import matplotlib.pyplot as plt
 
+
+REMOVE_NAMESPACES = [BACNET, S223, BRICK]
+
 def remove_triples(g, g2):
     for triple in g2:
         g.remove(triple)
+
+def remove_triples_namespace(g):
+    for triple in g:
+        for namespace in REMOVE_NAMESPACES:
+            if str(namespace) in str(triple[0]):
+                g.remove(triple)
 
 def write_csv(filename, g_lens, cg_lens):
     with open(filename, 'w', newline='') as csvfile:
@@ -27,8 +36,9 @@ def process_graphs(directory_path):
             g = Graph(store = "Oxigraph")
             g.parse(file_path, format = 'ttl')
             print("Removing ontology triples")
-            remove_triples(g, brick)
-            remove_triples(g, s223)
+            # remove_triples(g, brick)
+            # remove_triples(g, s223)
+            remove_triples_namespace(g)
             g.serialize(f"without-ontology/{file_name}", format="turtle")
 
 if __name__ == "__main__":
