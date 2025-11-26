@@ -8,7 +8,7 @@ BSH = Namespace('https://brickschema.org/schema/BrickShape')
 VOAG = Namespace('http://voag.linkedmodel.org/schema/voag')
 PROV = Namespace('http://www.w3.org/ns/prov')
 
-REMOVE_NAMESPACES = [BACNET, S223, BRICK, REC, REF, QUDT, QK, UNIT, BSH, VOAG, SKOS, OWL, TAG, SH, PROV]
+REMOVE_NAMESPACES = [BACNET, S223, BRICK, REC, REF, QUDT, QK, UNIT, BSH, VOAG, SKOS, OWL, TAG, SH, PROV, OWL]
 REMOVE_OBJECTS = [SH.PropertyShape]
 
 
@@ -34,6 +34,11 @@ def remove_triples_namespace(g):
         for namespace in REMOVE_NAMESPACES:
             if str(namespace) in str(triple[0]):
                 remove_triples_recursively(g, triple[0])
+        if str(OWL) in str(triple[2]):
+            remove_triples_recursively(g, triple[0])
+
+def rename_223_nodes(g):
+    
 
 def undo_brick_inferencing(g):
     for triple in g:
