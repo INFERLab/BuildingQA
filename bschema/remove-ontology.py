@@ -48,7 +48,9 @@ def rename_b59_nodes(g):
                 continue
             if (s, A, REF.APIReference) in g:
                 continue
-            new_uri = EX[f"{label.replace(' ','_')}{str(s).split('#')[-1]}"]
+            if (s, A, S223.Connection) in g:
+                continue
+            new_uri = EX[f"{label.replace(' ','_').replace('(','').replace(')','')}{str(s).split('#')[-1]}"]
             for p, o in g.predicate_objects(s):
                 g.remove((s,p,o))
                 g.add((new_uri, p, o))
@@ -61,21 +63,23 @@ def undo_brick_inferencing(g):
         if triple[1] in [BRICK.Relationship, BRICK.hasTag, REC.isPointOf, REC.hasPoint]:
             g.remove(triple)
 
+# note: removing extra classes in place not working for s223
 def remove_less_specific_classes(g, ontology):
     query = """
-        PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         CONSTRUCT {
-            ?s rdf:type ?parent .
+            ?s a ?parent .
         }
         WHERE {
-            ?s rdf:type ?child .
+            ?s a ?child .
             ?child rdfs:subClassOf+ ?parent .
-            ?s rdf:type ?parent .
+            ?s a ?parent .
         }
     """
     delete_graph = (g + ontology).query(query).graph
+    delete_graph.print()
     g = g - delete_graph
+    return g 
 
 
 def write_csv(filename, g_lens, cg_lens):
@@ -97,9 +101,10 @@ def process_graphs(directory_path):
             print("Removing ontology triples")
             remove_triples_namespace(g)
             if (file_name in ['bldg_brick_anon.ttl', 'bldg11.ttl']):
-                remove_less_specific_classes(g, BRICK_GRAPH)
+                g = remove_less_specific_classes(g, BRICK_GRAPH)
                 undo_brick_inferencing(g)
             if file_name in ['b59.ttl']:
+                g = remove_less_specific_classes(g, S223_GRAPH)
                 rename_b59_nodes(g)
             g.serialize(f"without-ontology/{file_name}", format="turtle")
 
