@@ -1,0 +1,4431 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix bs: <urn:bschema#> .
+@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bs:AHU011 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM11,
+        bs:VAVRM14,
+        bs:VAVRM16,
+        bs:VAVRM17031,
+        bs:VAVRM2117-1,
+        bs:VAVRM25,
+        bs:VAVRM2603B1,
+        bs:VAVRM3117-11,
+        bs:VAVRM3117-21,
+        bs:VAVRM35,
+        bs:VAVRM3617A1,
+        bs:VAVRM4117-11,
+        bs:VAVRM4117-21,
+        bs:VAVRM45011,
+        bs:VAVRM461,
+        bs:VAVRM5117-11,
+        bs:VAVRM5117-21,
+        bs:VAVRM55011,
+        bs:VAVRM5605A1,
+        bs:VAVRM561,
+        bs:VAVRM562,
+        bs:VAVRM6117-11,
+        bs:VAVRM6117-21,
+        bs:VAVRM64,
+        bs:VAVRM65011,
+        bs:VAVRM66,
+        bs:VAVRM6605A1,
+        bs:VAVRM661,
+        bs:VAVRM662 ;
+    brick:hasPoint bs:bldg11.AHU.AHU01.C1,
+        bs:bldg11.AHU.AHU01.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU01.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU01.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU01.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU01.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU021 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM12,
+        bs:VAVRM2402A1,
+        bs:VAVRM2404A1,
+        bs:VAVRM26,
+        bs:VAVRM27,
+        bs:VAVRM31,
+        bs:VAVRM31111,
+        bs:VAVRM32251,
+        bs:VAVRM41111,
+        bs:VAVRM42251,
+        bs:VAVRM46101,
+        bs:VAVRM53,
+        bs:VAVRM5330A1,
+        bs:VAVRM54,
+        bs:VAVRM54021,
+        bs:VAVRM5404A1,
+        bs:VAVRM54081,
+        bs:VAVRM61,
+        bs:VAVRM62251,
+        bs:VAVRM64021,
+        bs:VAVRM64041,
+        bs:VAVRM6404A1,
+        bs:VAVRM65 ;
+    brick:hasPoint bs:bldg11.AHU.AHU02.C1,
+        bs:bldg11.AHU.AHU02.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU02.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU02.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU02.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU031 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM11051,
+        bs:VAVRM12141,
+        bs:VAVRM12201,
+        bs:VAVRM12221,
+        bs:VAVRM12261,
+        bs:VAVRM15,
+        bs:VAVRM2-12261,
+        bs:VAVRM22,
+        bs:VAVRM24,
+        bs:VAVRM321,
+        bs:VAVRM34,
+        bs:VAVRM41,
+        bs:VAVRM41051,
+        bs:VAVRM4211,
+        bs:VAVRM42171,
+        bs:VAVRM51,
+        bs:VAVRM52101,
+        bs:VAVRM5211,
+        bs:VAVRM5212A1,
+        bs:VAVRM53011,
+        bs:VAVRM6211,
+        bs:VAVRM6212,
+        bs:VAVRM6212A1,
+        bs:VAVRM6212C1,
+        bs:VAVRM63,
+        bs:VAVRM6301B1 ;
+    brick:hasPoint bs:bldg11.AHU.AHU03.C1,
+        bs:bldg11.AHU.AHU03.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU03.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU03.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU03.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU03.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU03.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU041 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM101,
+        bs:VAVRM23,
+        bs:VAVRM33,
+        bs:VAVRM3409A1,
+        bs:VAVRM42,
+        bs:VAVRM441,
+        bs:VAVRM54091,
+        bs:VAVRM541,
+        bs:VAVRM5415A1,
+        bs:VAVRM54171,
+        bs:VAVRM5530A1,
+        bs:VAVRM64071,
+        bs:VAVRM641,
+        bs:VAVRM6413A1,
+        bs:VAVRM6413B1,
+        bs:VAVRM65301 ;
+    brick:hasPoint bs:bldg11.AHU.AHU04.C1,
+        bs:bldg11.AHU.AHU04.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU04.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU04.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU04.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU04.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU051 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM251,
+        bs:VAVRM351,
+        bs:VAVRM45021,
+        bs:VAVRM4502_MIX1,
+        bs:VAVRM451,
+        bs:VAVRM551,
+        bs:VAVRM65021,
+        bs:VAVRM6502_MIX1,
+        bs:VAVRM651,
+        bs:VAVRM65211,
+        bs:VAVRM6521_MIX1 ;
+    brick:hasPoint bs:bldg11.AHU.AHU05.C1,
+        bs:bldg11.AHU.AHU05.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU05.Mixed_Air_Temp1,
+        bs:bldg11.AHU.AHU05.Mode1,
+        bs:bldg11.AHU.AHU05.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU05.Return_Air_Temp1,
+        bs:bldg11.AHU.AHU05.SUPFLOW1,
+        bs:bldg11.AHU.AHU05.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU05.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU05.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU05.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU061 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM13,
+        bs:VAVRM231,
+        bs:VAVRM23171,
+        bs:VAVRM2317_MIX1,
+        bs:VAVRM331,
+        bs:VAVRM33131,
+        bs:VAVRM3313_MIX1,
+        bs:VAVRM431,
+        bs:VAVRM43301,
+        bs:VAVRM4330_MIX1,
+        bs:VAVRM53021,
+        bs:VAVRM5302_MIX1,
+        bs:VAVRM531,
+        bs:VAVRM631 ;
+    brick:hasPoint bs:bldg11.AHU.AHU06.Cooling_Valve_Output1,
+        bs:bldg11.AHU.AHU06.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU06.Mixed_Air_Temp1,
+        bs:bldg11.AHU.AHU06.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU06.Return_Air_Temp1,
+        bs:bldg11.AHU.AHU06.SUPFLOW1,
+        bs:bldg11.AHU.AHU06.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU06.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU06.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU06.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU071 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM11031,
+        bs:VAVRM12021,
+        bs:VAVRM1202A1,
+        bs:VAVRM1202_MIX1,
+        bs:VAVRM21,
+        bs:VAVRM32,
+        bs:VAVRM43,
+        bs:VAVRM52,
+        bs:VAVRM62 ;
+    brick:hasPoint bs:bldg11.AHU.AHU07.C1,
+        bs:bldg11.AHU.AHU07.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU07.Mixed_Air_Temp1,
+        bs:bldg11.AHU.AHU07.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU07.Return_Air_Temp1,
+        bs:bldg11.AHU.AHU07.SUPFLOW1,
+        bs:bldg11.AHU.AHU07.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU07.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU07.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU07.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU081 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM1001 ;
+    brick:hasPoint bs:bldg11.AHU.AHU08.C1,
+        bs:bldg11.AHU.AHU08.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU08.Mixed_Air_Temp1,
+        bs:bldg11.AHU.AHU08.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU08.Return_Air_Temp1,
+        bs:bldg11.AHU.AHU08.SUPFLOW1,
+        bs:bldg11.AHU.AHU08.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU08.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU08.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU08.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU091 a brick:Air_Handling_Unit ;
+    brick:feeds bs:VAVRM01,
+        bs:VAVRM02,
+        bs:VAVRM06201,
+        bs:VAVRM1-061,
+        bs:VAVRM1-062,
+        bs:VAVRM2-061,
+        bs:VAVRM44 ;
+    brick:hasPoint bs:bldg11.AHU.AHU09.C1,
+        bs:bldg11.AHU.AHU09.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU09.Supply_Air_Pressure1,
+        bs:bldg11.AHU.AHU09.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU09.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU09.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU101 a brick:Air_Handling_Unit ;
+    brick:hasPoint bs:bldg11.AHU.AHU10.Cooling_Valve_Output1,
+        bs:bldg11.AHU.AHU10.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:AHU111 a brick:Air_Handling_Unit ;
+    brick:hasPoint bs:bldg11.AHU.AHU11.C1,
+        bs:bldg11.AHU.AHU11.Heating_Valve_Output1,
+        bs:bldg11.AHU.AHU11.Outside_Air_Temp1,
+        bs:bldg11.AHU.AHU11.Supply_Air_Temp1,
+        bs:bldg11.AHU.AHU11.Supply_Air_Temp_Setpoint1,
+        bs:bldg11.AHU.AHU11.Zone_Air_Temp1 ;
+    brick:isFedBy bs:chiller1 .
+
+bs:bldg111 a brick:Building ;
+    brick:area bs:bnode261 .
+
+bs:bldg11_ChilledWater_Demand_kBtu1 a brick:Electric_Meter ;
+    rdfs:label rdfs:Resource ;
+    brick:isPointOf bs:chiller1 ;
+    ns1:hasExternalReference bs:bnode276 .
+
+bs:bldg11_Electricity_Demand_kBtu1 a brick:Building_Electrical_Meter ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode140 .
+
+bs:damperVAVRM1001 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM1001 .
+
+bs:damperVAVRM11 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM13 .
+
+bs:damperVAVRM11031 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM11031 .
+
+bs:damperVAVRM12021 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1202.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM12021 .
+
+bs:damperVAVRM21 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM21 .
+
+bs:damperVAVRM231 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM231 .
+
+bs:damperVAVRM23171 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM23171 .
+
+bs:damperVAVRM251 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM251 .
+
+bs:damperVAVRM31 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM32 .
+
+bs:damperVAVRM331 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM331 .
+
+bs:damperVAVRM33131 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM33131 .
+
+bs:damperVAVRM351 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM351 .
+
+bs:damperVAVRM41 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM43 .
+
+bs:damperVAVRM431 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM431 .
+
+bs:damperVAVRM43301 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM43301 .
+
+bs:damperVAVRM45021 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM4502.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM45021 .
+
+bs:damperVAVRM451 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM451 .
+
+bs:damperVAVRM51 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM52 .
+
+bs:damperVAVRM53021 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM53021 .
+
+bs:damperVAVRM531 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM531 .
+
+bs:damperVAVRM551 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM551 .
+
+bs:damperVAVRM61 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM62 .
+
+bs:damperVAVRM631 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM631 .
+
+bs:damperVAVRM65021 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM65021 .
+
+bs:damperVAVRM651 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM651 .
+
+bs:damperVAVRM65211 a brick:Damper ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6521.Zone_Air_Damper_Command1 ;
+    brick:isPartOf bs:VAVRM65211 .
+
+bs:floor01 a brick:Floor ;
+    brick:hasPart bs:RM0620_room1,
+        bs:RM0_room1,
+        bs:RM0_room2 .
+
+bs:floor11 a brick:Floor ;
+    brick:hasPart bs:RM1-06_room1,
+        bs:RM1-06_room2,
+        bs:RM100_room1,
+        bs:RM10_room1,
+        bs:RM1103_room1,
+        bs:RM1105_room1,
+        bs:RM1202A_room1,
+        bs:RM1202_MIX_room1,
+        bs:RM1202_room1,
+        bs:RM1214_room1,
+        bs:RM1220_room1,
+        bs:RM1222_room1,
+        bs:RM1226_room1,
+        bs:RM1703_room1,
+        bs:RM1_room1,
+        bs:RM1_room2,
+        bs:RM1_room3,
+        bs:RM1_room4,
+        bs:RM1_room5,
+        bs:RM1_room6 .
+
+bs:floor21 a brick:Floor ;
+    brick:hasPart bs:RM2-06_room1,
+        bs:RM2-1226_room1,
+        bs:RM2117-_room1,
+        bs:RM2317_MIX_room1,
+        bs:RM2317_room1,
+        bs:RM23_room1,
+        bs:RM2402A_room1,
+        bs:RM2404A_room1,
+        bs:RM25_room1,
+        bs:RM2603B_room1,
+        bs:RM2_room1,
+        bs:RM2_room2,
+        bs:RM2_room3,
+        bs:RM2_room4,
+        bs:RM2_room5,
+        bs:RM2_room6,
+        bs:RM2_room7 .
+
+bs:floor31 a brick:Floor ;
+    brick:hasPart bs:RM3111_room1,
+        bs:RM3117-1_room1,
+        bs:RM3117-2_room1,
+        bs:RM3225_room1,
+        bs:RM32_room1,
+        bs:RM3313_MIX_room1,
+        bs:RM3313_room1,
+        bs:RM33_room1,
+        bs:RM3409A_room1,
+        bs:RM35_room1,
+        bs:RM3617A_room1,
+        bs:RM3_room1,
+        bs:RM3_room2,
+        bs:RM3_room3,
+        bs:RM3_room4,
+        bs:RM3_room5 .
+
+bs:floor41 a brick:Floor ;
+    brick:hasPart bs:RM4105_room1,
+        bs:RM4111_room1,
+        bs:RM4117-1_room1,
+        bs:RM4117-2_room1,
+        bs:RM4217_room1,
+        bs:RM421_room1,
+        bs:RM4225_room1,
+        bs:RM4330_MIX_room1,
+        bs:RM4330_room1,
+        bs:RM43_room1,
+        bs:RM44_room1,
+        bs:RM4501_room1,
+        bs:RM4502_MIX_room1,
+        bs:RM4502_room1,
+        bs:RM45_room1,
+        bs:RM4610_room1,
+        bs:RM46_room1,
+        bs:RM4_room1,
+        bs:RM4_room2,
+        bs:RM4_room3,
+        bs:RM4_room4 .
+
+bs:floor51 a brick:Floor ;
+    brick:hasPart bs:RM5117-1_room1,
+        bs:RM5117-2_room1,
+        bs:RM5210_room1,
+        bs:RM5212A_room1,
+        bs:RM521_room1,
+        bs:RM5301_room1,
+        bs:RM5302_MIX_room1,
+        bs:RM5302_room1,
+        bs:RM5330A_room1,
+        bs:RM53_room1,
+        bs:RM5402_room1,
+        bs:RM5404A_room1,
+        bs:RM5408_room1,
+        bs:RM5409_room1,
+        bs:RM5415A_room1,
+        bs:RM5417_room1,
+        bs:RM54_room1,
+        bs:RM5501_room1,
+        bs:RM5530A_room1,
+        bs:RM55_room1,
+        bs:RM5605A_room1,
+        bs:RM56_room1,
+        bs:RM56_room2,
+        bs:RM5_room1,
+        bs:RM5_room2,
+        bs:RM5_room3,
+        bs:RM5_room4 .
+
+bs:floor61 a brick:Floor ;
+    brick:hasPart bs:RM6117-1_room1,
+        bs:RM6117-2_room1,
+        bs:RM6212A_room1,
+        bs:RM6212C_room1,
+        bs:RM621_room1,
+        bs:RM621_room2,
+        bs:RM6225_room1,
+        bs:RM6301B_room1,
+        bs:RM63_room1,
+        bs:RM6402_room1,
+        bs:RM6404A_room1,
+        bs:RM6404_room1,
+        bs:RM6407_room1,
+        bs:RM6413A_room1,
+        bs:RM6413B_room1,
+        bs:RM64_room1,
+        bs:RM6501_room1,
+        bs:RM6502_MIX_room1,
+        bs:RM6502_room1,
+        bs:RM6521_MIX_room1,
+        bs:RM6521_room1,
+        bs:RM6530_room1,
+        bs:RM65_room1,
+        bs:RM6605A_room1,
+        bs:RM66_room1,
+        bs:RM66_room2,
+        bs:RM6_room1,
+        bs:RM6_room2,
+        bs:RM6_room3,
+        bs:RM6_room4,
+        bs:RM6_room5,
+        bs:RM6_room6 .
+
+<urn:bschema#https://w3id.org/rec1> rdfs:label rdfs:Resource ;
+    owl:imports rdfs:Resource ;
+    owl:versionInfo rdfs:Resource .
+
+bs:RM01 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM0_room2 .
+
+bs:RM02 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM0_room1 .
+
+bs:RM06201 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM0620_room1 .
+
+bs:RM1-061 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1-06_room2 .
+
+bs:RM1-062 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1-06_room1 .
+
+bs:RM1001 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM100_room1 .
+
+bs:RM101 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM10_room1 .
+
+bs:RM11 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room1 .
+
+bs:RM11031 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1103_room1 .
+
+bs:RM11051 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1105_room1 .
+
+bs:RM12 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room5 .
+
+bs:RM12021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1202_room1 .
+
+bs:RM1202A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1202A_room1 .
+
+bs:RM1202_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1202_MIX_room1 .
+
+bs:RM12141 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1214_room1 .
+
+bs:RM12201 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1220_room1 .
+
+bs:RM12221 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1222_room1 .
+
+bs:RM12261 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1226_room1 .
+
+bs:RM13 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room3 .
+
+bs:RM14 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room4 .
+
+bs:RM15 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room6 .
+
+bs:RM16 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1_room2 .
+
+bs:RM17031 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM1703_room1 .
+
+bs:RM2-061 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2-06_room1 .
+
+bs:RM2-12261 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2-1226_room1 .
+
+bs:RM21 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room6 .
+
+bs:RM2117-1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2117-_room1 .
+
+bs:RM22 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room1 .
+
+bs:RM23 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room2 .
+
+bs:RM231 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM23_room1 .
+
+bs:RM23171 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2317_room1 .
+
+bs:RM2317_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2317_MIX_room1 .
+
+bs:RM24 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room7 .
+
+bs:RM2402A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2402A_room1 .
+
+bs:RM2404A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2404A_room1 .
+
+bs:RM25 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room4 .
+
+bs:RM251 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM25_room1 .
+
+bs:RM26 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room5 .
+
+bs:RM2603B1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2603B_room1 .
+
+bs:RM27 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM2_room3 .
+
+bs:RM31 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3_room1 .
+
+bs:RM31111 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3111_room1 .
+
+bs:RM3117-11 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3117-1_room1 .
+
+bs:RM3117-21 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3117-2_room1 .
+
+bs:RM32 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3_room2 .
+
+bs:RM321 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM32_room1 .
+
+bs:RM32251 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3225_room1 .
+
+bs:RM33 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3_room3 .
+
+bs:RM331 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM33_room1 .
+
+bs:RM33131 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3313_room1 .
+
+bs:RM3313_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3313_MIX_room1 .
+
+bs:RM34 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3_room4 .
+
+bs:RM3409A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3409A_room1 .
+
+bs:RM35 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3_room5 .
+
+bs:RM351 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM35_room1 .
+
+bs:RM3617A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM3617A_room1 .
+
+bs:RM41 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4_room1 .
+
+bs:RM41051 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4105_room1 .
+
+bs:RM41111 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4111_room1 .
+
+bs:RM4117-11 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4117-1_room1 .
+
+bs:RM4117-21 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4117-2_room1 .
+
+bs:RM42 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4_room3 .
+
+bs:RM4211 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM421_room1 .
+
+bs:RM42171 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4217_room1 .
+
+bs:RM42251 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4225_room1 .
+
+bs:RM43 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4_room4 .
+
+bs:RM431 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM43_room1 .
+
+bs:RM43301 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4330_room1 .
+
+bs:RM4330_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4330_MIX_room1 .
+
+bs:RM44 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4_room2 .
+
+bs:RM441 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM44_room1 .
+
+bs:RM45011 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4501_room1 .
+
+bs:RM45021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4502_room1 .
+
+bs:RM4502_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4502_MIX_room1 .
+
+bs:RM451 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM45_room1 .
+
+bs:RM461 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM46_room1 .
+
+bs:RM46101 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM4610_room1 .
+
+bs:RM51 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5_room1 .
+
+bs:RM5117-11 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5117-1_room1 .
+
+bs:RM5117-21 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5117-2_room1 .
+
+bs:RM52 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5_room2 .
+
+bs:RM52101 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5210_room1 .
+
+bs:RM5211 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM521_room1 .
+
+bs:RM5212A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5212A_room1 .
+
+bs:RM53 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5_room4 .
+
+bs:RM53011 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5301_room1 .
+
+bs:RM53021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5302_room1 .
+
+bs:RM5302_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5302_MIX_room1 .
+
+bs:RM531 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM53_room1 .
+
+bs:RM5330A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5330A_room1 .
+
+bs:RM54 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5_room3 .
+
+bs:RM54021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5402_room1 .
+
+bs:RM5404A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5404A_room1 .
+
+bs:RM54081 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5408_room1 .
+
+bs:RM54091 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5409_room1 .
+
+bs:RM541 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM54_room1 .
+
+bs:RM5415A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5415A_room1 .
+
+bs:RM54171 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5417_room1 .
+
+bs:RM55011 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5501_room1 .
+
+bs:RM551 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM55_room1 .
+
+bs:RM5530A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5530A_room1 .
+
+bs:RM5605A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM5605A_room1 .
+
+bs:RM561 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM56_room1 .
+
+bs:RM562 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM56_room2 .
+
+bs:RM61 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room5 .
+
+bs:RM6117-11 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6117-1_room1 .
+
+bs:RM6117-21 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6117-2_room1 .
+
+bs:RM62 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room3 .
+
+bs:RM6211 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM621_room1 .
+
+bs:RM6212 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM621_room2 .
+
+bs:RM6212A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6212A_room1 .
+
+bs:RM6212C1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6212C_room1 .
+
+bs:RM62251 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6225_room1 .
+
+bs:RM63 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room6 .
+
+bs:RM6301B1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6301B_room1 .
+
+bs:RM631 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM63_room1 .
+
+bs:RM64 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room2 .
+
+bs:RM64021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6402_room1 .
+
+bs:RM64041 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6404_room1 .
+
+bs:RM6404A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6404A_room1 .
+
+bs:RM64071 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6407_room1 .
+
+bs:RM641 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM64_room1 .
+
+bs:RM6413A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6413A_room1 .
+
+bs:RM6413B1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6413B_room1 .
+
+bs:RM65 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room1 .
+
+bs:RM65011 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6501_room1 .
+
+bs:RM65021 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6502_room1 .
+
+bs:RM6502_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6502_MIX_room1 .
+
+bs:RM651 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM65_room1 .
+
+bs:RM65211 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6521_room1 .
+
+bs:RM6521_MIX1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6521_MIX_room1 .
+
+bs:RM65301 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6530_room1 .
+
+bs:RM66 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6_room4 .
+
+bs:RM6605A1 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM6605A_room1 .
+
+bs:RM661 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM66_room1 .
+
+bs:RM662 a brick:HVAC_Zone ;
+    brick:hasPart bs:RM66_room2 .
+
+bs:VAVRM01 a brick:VAV ;
+    brick:feeds bs:RM01 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM0.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM02 a brick:VAV ;
+    brick:feeds bs:RM02 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp1 .
+
+bs:VAVRM06201 a brick:VAV ;
+    brick:feeds bs:RM06201 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM0620.Zone_Air_Temp1 .
+
+bs:VAVRM1-061 a brick:VAV ;
+    brick:feeds bs:RM1-061 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM1-06.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM1-062 a brick:VAV ;
+    brick:feeds bs:RM1-062 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp2 .
+
+bs:VAVRM101 a brick:VAV ;
+    brick:feeds bs:RM101 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM10.Zone_Air_Temp1 .
+
+bs:VAVRM11 a brick:VAV ;
+    brick:feeds bs:RM15 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM1.VLV_2_COMD2,
+        bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM11051 a brick:VAV ;
+    brick:feeds bs:RM11051 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1105.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM1105.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM1105.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM12 a brick:VAV ;
+    brick:feeds bs:RM11 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM1.Zone_Air_Temp1 .
+
+bs:VAVRM1202A1 a brick:VAV ;
+    brick:feeds bs:RM1202A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1202A.VLV_COMD1,
+        bs:bldg11.ZONE.AHU07.RM1202A.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM1202A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM1202_MIX1 a brick:VAV ;
+    brick:feeds bs:RM1202_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1202_MIX.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM1202_MIX.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM12141 a brick:VAV ;
+    brick:feeds bs:RM12141 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1214.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM1214.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM12201 a brick:VAV ;
+    brick:feeds bs:RM12201 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1220.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM1220.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM1220.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM12221 a brick:VAV ;
+    brick:feeds bs:RM12221 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1222.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM1222.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM12261 a brick:VAV ;
+    brick:feeds bs:RM12261 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1226.VS__REHEAT1 .
+
+bs:VAVRM14 a brick:VAV ;
+    brick:feeds bs:RM14 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM1.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp3,
+        bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM15 a brick:VAV ;
+    brick:feeds bs:RM13 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM1.Zone_Air_Temp1 .
+
+bs:VAVRM16 a brick:VAV ;
+    brick:feeds bs:RM12 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp2 .
+
+bs:VAVRM17031 a brick:VAV ;
+    brick:feeds bs:RM17031 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM1703.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM2-061 a brick:VAV ;
+    brick:feeds bs:RM2-061 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM2-06.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU09.RM2-06.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU09.RM2-06.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM2-12261 a brick:VAV ;
+    brick:feeds bs:RM2-12261 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM2-1226.Zone_Air_Temp1 .
+
+bs:VAVRM2117-1 a brick:VAV ;
+    brick:feeds bs:RM2117-1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM2117-.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM2117-.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM2117-.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM22 a brick:VAV ;
+    brick:feeds bs:RM22 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp2 .
+
+bs:VAVRM23 a brick:VAV ;
+    brick:feeds bs:RM27 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM2.Zone_Air_Temp1 .
+
+bs:VAVRM2317_MIX1 a brick:VAV ;
+    brick:feeds bs:RM2317_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM2317_MIX.Zone_Air_Temp1 .
+
+bs:VAVRM24 a brick:VAV ;
+    brick:feeds bs:RM24 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM2402A1 a brick:VAV ;
+    brick:feeds bs:RM2402A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM2402A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU02.RM2402A.Zone_Air_Temp1 .
+
+bs:VAVRM2404A1 a brick:VAV ;
+    brick:feeds bs:RM2404A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM2404A.VS_3_REHEAT1 .
+
+bs:VAVRM25 a brick:VAV ;
+    brick:feeds bs:RM26 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM2.Zone_Air_Temp1 .
+
+bs:VAVRM26 a brick:VAV ;
+    brick:feeds bs:RM25 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM2603B1 a brick:VAV ;
+    brick:feeds bs:RM2603B1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM2603B.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU01.RM2603B.Zone_Air_Temp1 .
+
+bs:VAVRM27 a brick:VAV ;
+    brick:feeds bs:RM23 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp1 .
+
+bs:VAVRM31 a brick:VAV ;
+    brick:feeds bs:RM31 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM3.Zone_Air_Temp1 .
+
+bs:VAVRM31111 a brick:VAV ;
+    brick:feeds bs:RM31111 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM3111.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM3111.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM3111.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM3117-11 a brick:VAV ;
+    brick:feeds bs:RM3117-11 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM3117-1.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM3117-1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM3117-1.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM3117-21 a brick:VAV ;
+    brick:feeds bs:RM3117-21 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM3117-2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM3117-2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM3117-2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM321 a brick:VAV ;
+    brick:feeds bs:RM321 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM32.Zone_Air_Temp1 .
+
+bs:VAVRM32251 a brick:VAV ;
+    brick:feeds bs:RM32251 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM3225.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM3225.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM3225.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM33 a brick:VAV ;
+    brick:feeds bs:RM33 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM3.Zone_Air_Temp1 .
+
+bs:VAVRM3313_MIX1 a brick:VAV ;
+    brick:feeds bs:RM3313_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM3313_MIX.Zone_Air_Temp1 .
+
+bs:VAVRM34 a brick:VAV ;
+    brick:feeds bs:RM35 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM3.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM3.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM3.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM3409A1 a brick:VAV ;
+    brick:feeds bs:RM3409A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM3409A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU04.RM3409A.VS__Zone_Air_Temp1 .
+
+bs:VAVRM35 a brick:VAV ;
+    brick:feeds bs:RM32 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM3.Zone_Air_Temp1 .
+
+bs:VAVRM3617A1 a brick:VAV ;
+    brick:feeds bs:RM3617A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM3617A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU01.RM3617A.VS__Zone_Air_Temp1 .
+
+bs:VAVRM41 a brick:VAV ;
+    brick:feeds bs:RM43 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM4.Zone_Air_Temp1 .
+
+bs:VAVRM41051 a brick:VAV ;
+    brick:feeds bs:RM41051 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM4105.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM4105.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM4105.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM41111 a brick:VAV ;
+    brick:feeds bs:RM41111 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM4111.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM4111.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM4111.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM4117-11 a brick:VAV ;
+    brick:feeds bs:RM4117-11 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM4117-1.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM4117-1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM4117-1.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM4117-21 a brick:VAV ;
+    brick:feeds bs:RM4117-21 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM4117-2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM4117-2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM4117-2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM42 a brick:VAV ;
+    brick:feeds bs:RM41 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM4.Zone_Air_Temp1 .
+
+bs:VAVRM4211 a brick:VAV ;
+    brick:feeds bs:RM4211 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM421.Zone_Air_Temp1 .
+
+bs:VAVRM42171 a brick:VAV ;
+    brick:feeds bs:RM42171 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM4217.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM4217.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM4217.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM42251 a brick:VAV ;
+    brick:feeds bs:RM42251 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM4225.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM4225.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM4225.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM4330_MIX1 a brick:VAV ;
+    brick:feeds bs:RM4330_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM4330_MIX.Zone_Air_Temp1 .
+
+bs:VAVRM44 a brick:VAV ;
+    brick:feeds bs:RM44 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU09.RM4.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU09.RM4.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU09.RM4.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM441 a brick:VAV ;
+    brick:feeds bs:RM441 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM44.Zone_Air_Temp1 .
+
+bs:VAVRM45011 a brick:VAV ;
+    brick:feeds bs:RM45011 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM4501.Zone_Air_Temp1 .
+
+bs:VAVRM4502_MIX1 a brick:VAV ;
+    brick:feeds bs:RM4502_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM4502_MIX.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM461 a brick:VAV ;
+    brick:feeds bs:RM461 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM46.Zone_Air_Temp1 .
+
+bs:VAVRM46101 a brick:VAV ;
+    brick:feeds bs:RM46101 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM4610.Zone_Air_Temp1 .
+
+bs:VAVRM51 a brick:VAV ;
+    brick:feeds bs:RM53 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM5.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM5.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM5.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5117-11 a brick:VAV ;
+    brick:feeds bs:RM5117-11 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM5117-1.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM5117-1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM5117-1.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5117-21 a brick:VAV ;
+    brick:feeds bs:RM5117-21 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM5117-2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM5117-2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM5117-2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM52101 a brick:VAV ;
+    brick:feeds bs:RM52101 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM5210.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM5210.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5211 a brick:VAV ;
+    brick:feeds bs:RM5211 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM521.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM521.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5212A1 a brick:VAV ;
+    brick:feeds bs:RM5212A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM5212A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU03.RM5212A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM53 a brick:VAV ;
+    brick:feeds bs:RM52 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM53011 a brick:VAV ;
+    brick:feeds bs:RM53011 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM5301.Zone_Air_Temp1 .
+
+bs:VAVRM5302_MIX1 a brick:VAV ;
+    brick:feeds bs:RM5302_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM5302_MIX.Zone_Air_Temp1 .
+
+bs:VAVRM5330A1 a brick:VAV ;
+    brick:feeds bs:RM5330A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5330A.Zone_Air_Temp1 .
+
+bs:VAVRM54 a brick:VAV ;
+    brick:feeds bs:RM51 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM54021 a brick:VAV ;
+    brick:feeds bs:RM54021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5402.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM5402.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5404A1 a brick:VAV ;
+    brick:feeds bs:RM5404A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5404A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU02.RM5404A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM54081 a brick:VAV ;
+    brick:feeds bs:RM54081 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM5408.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM54091 a brick:VAV ;
+    brick:feeds bs:RM54091 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM5409.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU04.RM5409.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM541 a brick:VAV ;
+    brick:feeds bs:RM541 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM54.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU04.RM54.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM5415A1 a brick:VAV ;
+    brick:feeds bs:RM5415A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM5415A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU04.RM5415A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM54171 a brick:VAV ;
+    brick:feeds bs:RM54171 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM5417.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU04.RM5417.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM55011 a brick:VAV ;
+    brick:feeds bs:RM55011 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM5501.Zone_Air_Temp1 .
+
+bs:VAVRM5530A1 a brick:VAV ;
+    brick:feeds bs:RM5530A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM5530A.Zone_Air_Temp1 .
+
+bs:VAVRM5605A1 a brick:VAV ;
+    brick:feeds bs:RM5605A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM5605A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU01.RM5605A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM561 a brick:VAV ;
+    brick:feeds bs:RM561 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM562 a brick:VAV ;
+    brick:feeds bs:RM562 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM61 a brick:VAV ;
+    brick:feeds bs:RM65 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6117-11 a brick:VAV ;
+    brick:feeds bs:RM6117-11 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6117-1.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM6117-1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM6117-1.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6117-21 a brick:VAV ;
+    brick:feeds bs:RM6117-21 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6117-2.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU01.RM6117-2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM6117-2.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6211 a brick:VAV ;
+    brick:feeds bs:RM6211 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM6212 a brick:VAV ;
+    brick:feeds bs:RM6212 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6212A1 a brick:VAV ;
+    brick:feeds bs:RM6212A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM6212A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU03.RM6212A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6212C1 a brick:VAV ;
+    brick:feeds bs:RM6212C1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM6212C.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM62251 a brick:VAV ;
+    brick:feeds bs:RM62251 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6225.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM6225.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM6225.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM63 a brick:VAV ;
+    brick:feeds bs:RM64 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM6.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU03.RM6.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU03.RM6.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6301B1 a brick:VAV ;
+    brick:feeds bs:RM6301B1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU03.RM6301B.Zone_Air_Temp1 .
+
+bs:VAVRM64 a brick:VAV ;
+    brick:feeds bs:RM62 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM64021 a brick:VAV ;
+    brick:feeds bs:RM64021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6402.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU02.RM6402.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM64041 a brick:VAV ;
+    brick:feeds bs:RM64041 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6404.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6404A1 a brick:VAV ;
+    brick:feeds bs:RM6404A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6404A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU02.RM6404A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM64071 a brick:VAV ;
+    brick:feeds bs:RM64071 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM6407.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU04.RM6407.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM641 a brick:VAV ;
+    brick:feeds bs:RM641 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM64.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU04.RM64.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6413A1 a brick:VAV ;
+    brick:feeds bs:RM6413A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM6413A.VS__REHEAT1,
+        bs:bldg11.ZONE.AHU04.RM6413A.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6413B1 a brick:VAV ;
+    brick:feeds bs:RM6413B1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM6413B.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM65 a brick:VAV ;
+    brick:feeds bs:RM61 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU02.RM6.VLV_2_COMD1,
+        bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp_Setpoint2 .
+
+bs:VAVRM65011 a brick:VAV ;
+    brick:feeds bs:RM65011 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6501.Zone_Air_Temp1 .
+
+bs:VAVRM6502_MIX1 a brick:VAV ;
+    brick:feeds bs:RM6502_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6502_MIX.Zone_Air_Temp1 .
+
+bs:VAVRM6521_MIX1 a brick:VAV ;
+    brick:feeds bs:RM6521_MIX1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6521_MIX.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM65301 a brick:VAV ;
+    brick:feeds bs:RM65301 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU04.RM6530.Zone_Air_Temp1 .
+
+bs:VAVRM66 a brick:VAV ;
+    brick:feeds bs:RM66 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM6605A1 a brick:VAV ;
+    brick:feeds bs:RM6605A1 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM6605A.VS__REHEAT1 .
+
+bs:VAVRM661 a brick:VAV ;
+    brick:feeds bs:RM661 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp2,
+        bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp_Setpoint1 .
+
+bs:VAVRM662 a brick:VAV ;
+    brick:feeds bs:RM662 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp1 .
+
+bs:bldg11.AHU.AHU01.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode77 .
+
+bs:bldg11.AHU.AHU01.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode215 .
+
+bs:bldg11.AHU.AHU01.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode48 .
+
+bs:bldg11.AHU.AHU01.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode168 .
+
+bs:bldg11.AHU.AHU01.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode256 .
+
+bs:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode282 .
+
+bs:bldg11.AHU.AHU01.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode232 .
+
+bs:bldg11.AHU.AHU02.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode189 .
+
+bs:bldg11.AHU.AHU02.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode213 .
+
+bs:bldg11.AHU.AHU02.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode74 .
+
+bs:bldg11.AHU.AHU02.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode231 .
+
+bs:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode329 .
+
+bs:bldg11.AHU.AHU02.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU03.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode100 .
+
+bs:bldg11.AHU.AHU03.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode170 .
+
+bs:bldg11.AHU.AHU03.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode122 .
+
+bs:bldg11.AHU.AHU03.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode305 .
+
+bs:bldg11.AHU.AHU03.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode234 .
+
+bs:bldg11.AHU.AHU03.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode150 .
+
+bs:bldg11.AHU.AHU03.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU04.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode294 .
+
+bs:bldg11.AHU.AHU04.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode322 .
+
+bs:bldg11.AHU.AHU04.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode183 .
+
+bs:bldg11.AHU.AHU04.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode301 .
+
+bs:bldg11.AHU.AHU04.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode200 .
+
+bs:bldg11.AHU.AHU04.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode228 .
+
+bs:bldg11.AHU.AHU05.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode62 .
+
+bs:bldg11.AHU.AHU05.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode240 .
+
+bs:bldg11.AHU.AHU05.Mixed_Air_Temp1 a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU05.Mode1 a brick:Mode ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode242 .
+
+bs:bldg11.AHU.AHU05.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode211 .
+
+bs:bldg11.AHU.AHU05.Return_Air_Temp1 a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode193 .
+
+bs:bldg11.AHU.AHU05.SUPFLOW1 a brick:Supply_Air_flow ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode287 .
+
+bs:bldg11.AHU.AHU05.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode147 .
+
+bs:bldg11.AHU.AHU05.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode306 .
+
+bs:bldg11.AHU.AHU05.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode70 .
+
+bs:bldg11.AHU.AHU05.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode12 .
+
+bs:bldg11.AHU.AHU06.Cooling_Valve_Output1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode266 .
+
+bs:bldg11.AHU.AHU06.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode190 .
+
+bs:bldg11.AHU.AHU06.Mixed_Air_Temp1 a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU06.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode39 .
+
+bs:bldg11.AHU.AHU06.Return_Air_Temp1 a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode202 .
+
+bs:bldg11.AHU.AHU06.SUPFLOW1 a brick:Supply_Air_flow ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode223 .
+
+bs:bldg11.AHU.AHU06.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode160 .
+
+bs:bldg11.AHU.AHU06.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode130 .
+
+bs:bldg11.AHU.AHU06.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode290 .
+
+bs:bldg11.AHU.AHU06.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode299 .
+
+bs:bldg11.AHU.AHU07.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode61 .
+
+bs:bldg11.AHU.AHU07.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode176 .
+
+bs:bldg11.AHU.AHU07.Mixed_Air_Temp1 a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU07.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode76 .
+
+bs:bldg11.AHU.AHU07.Return_Air_Temp1 a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode219 .
+
+bs:bldg11.AHU.AHU07.SUPFLOW1 a brick:Supply_Air_flow ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode289 .
+
+bs:bldg11.AHU.AHU07.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode304 .
+
+bs:bldg11.AHU.AHU07.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode313 .
+
+bs:bldg11.AHU.AHU07.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode233 .
+
+bs:bldg11.AHU.AHU07.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode103 .
+
+bs:bldg11.AHU.AHU08.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode203 .
+
+bs:bldg11.AHU.AHU08.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode24 .
+
+bs:bldg11.AHU.AHU08.Mixed_Air_Temp1 a brick:Mixed_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU08.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode275 .
+
+bs:bldg11.AHU.AHU08.Return_Air_Temp1 a brick:Return_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode265 .
+
+bs:bldg11.AHU.AHU08.SUPFLOW1 a brick:Supply_Air_flow ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode22 .
+
+bs:bldg11.AHU.AHU08.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode311 .
+
+bs:bldg11.AHU.AHU08.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode175 .
+
+bs:bldg11.AHU.AHU08.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode258 .
+
+bs:bldg11.AHU.AHU08.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode201 .
+
+bs:bldg11.AHU.AHU09.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode172 .
+
+bs:bldg11.AHU.AHU09.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode119 .
+
+bs:bldg11.AHU.AHU09.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode230 .
+
+bs:bldg11.AHU.AHU09.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode236 .
+
+bs:bldg11.AHU.AHU09.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode260 .
+
+bs:bldg11.AHU.AHU09.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode326 .
+
+bs:bldg11.AHU.AHU10.Cooling_Valve_Output1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode293 .
+
+bs:bldg11.AHU.AHU10.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.AHU.AHU11.C1 a brick:Cooling_Command,
+        brick:Valve_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode239 .
+
+bs:bldg11.AHU.AHU11.Heating_Valve_Output1 a brick:Command,
+        brick:Heating_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode296 .
+
+bs:bldg11.AHU.AHU11.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode310 .
+
+bs:bldg11.AHU.AHU11.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode248 .
+
+bs:bldg11.AHU.AHU11.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode288 .
+
+bs:bldg11.AHU.AHU11.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode327 .
+
+bs:bldg11.CHW.1 a brick:Chilled_Water_Supply_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode90 .
+
+bs:bldg11.CHW.Building_Chilled_Water_Delta_Temp1 a brick:Chilled_Water_Differential_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode272 .
+
+bs:bldg11.CHW.ECONOMIZER1 a brick:Damper_Position_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode280 .
+
+bs:bldg11.CHW.Enable1 a brick:Enable_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode281 .
+
+bs:bldg11.CHW.Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode237 .
+
+bs:bldg11.CHW.Pump_SPEED1 a brick:Speed_Status ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode210 .
+
+<urn:bschema#bldg11.CHW.Pump_Start/Stop1> a brick:Start_Stop_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode129 .
+
+bs:bldg11.CHW._Chilled_Water_Flow1 a brick:Chilled_Water_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode152 .
+
+bs:bldg11.CHW._Chilled_Water_Return_Temp1 a brick:Chilled_Water_Return_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode217 .
+
+bs:bldg11.CHW._Chilled_Water_Return_Temp_Setpoint1 a brick:Chilled_Water_Return_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode157 .
+
+bs:bldg11.CHW._Chilled_Water_Supply_Temp1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode123 .
+
+bs:bldg11.ZONE.AHU01.RM1.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM1.VLV_2_COMD2 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode109 .
+
+bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode149 .
+
+bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp3 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode98 .
+
+bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode143 .
+
+bs:bldg11.ZONE.AHU01.RM1.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM1703.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode9 .
+
+bs:bldg11.ZONE.AHU01.RM2117-.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM2117-.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode139 .
+
+bs:bldg11.ZONE.AHU01.RM2117-.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode107 .
+
+bs:bldg11.ZONE.AHU01.RM2603B.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM2603B.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode95 .
+
+bs:bldg11.ZONE.AHU01.RM3117-1.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3117-1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3117-1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode308 .
+
+bs:bldg11.ZONE.AHU01.RM3117-2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3117-2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode194 .
+
+bs:bldg11.ZONE.AHU01.RM3117-2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3617A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM3617A.VS__Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM4117-1.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM4117-1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode225 .
+
+bs:bldg11.ZONE.AHU01.RM4117-1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode186 .
+
+bs:bldg11.ZONE.AHU01.RM4117-2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM4117-2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode316 .
+
+bs:bldg11.ZONE.AHU01.RM4117-2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM4501.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode257 .
+
+bs:bldg11.ZONE.AHU01.RM46.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5117-1.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5117-1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode292 .
+
+bs:bldg11.ZONE.AHU01.RM5117-1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode178 .
+
+bs:bldg11.ZONE.AHU01.RM5117-2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5117-2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5117-2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode291 .
+
+bs:bldg11.ZONE.AHU01.RM5501.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode118 .
+
+bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode320 .
+
+bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM56.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5605A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM5605A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode85 .
+
+bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6117-1.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6117-1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6117-1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6117-2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6117-2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode165 .
+
+bs:bldg11.ZONE.AHU01.RM6117-2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode142 .
+
+bs:bldg11.ZONE.AHU01.RM6501.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode92 .
+
+bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM66.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU01.RM6605A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode87 .
+
+bs:bldg11.ZONE.AHU02.RM2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode161 .
+
+bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode253 .
+
+bs:bldg11.ZONE.AHU02.RM2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode209 .
+
+bs:bldg11.ZONE.AHU02.RM2402A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM2402A.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode284 .
+
+bs:bldg11.ZONE.AHU02.RM2404A.VS_3_REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM3.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode41 .
+
+bs:bldg11.ZONE.AHU02.RM3111.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM3111.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode226 .
+
+bs:bldg11.ZONE.AHU02.RM3111.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM3225.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM3225.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM3225.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode208 .
+
+bs:bldg11.ZONE.AHU02.RM4111.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM4111.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode286 .
+
+bs:bldg11.ZONE.AHU02.RM4111.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode222 .
+
+bs:bldg11.ZONE.AHU02.RM4225.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM4225.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode218 .
+
+bs:bldg11.ZONE.AHU02.RM4225.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM4610.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode221 .
+
+bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode250 .
+
+bs:bldg11.ZONE.AHU02.RM5330A.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode314 .
+
+bs:bldg11.ZONE.AHU02.RM5402.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode283 .
+
+bs:bldg11.ZONE.AHU02.RM5402.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5404A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5404A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM5408.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode188 .
+
+bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode18 .
+
+bs:bldg11.ZONE.AHU02.RM6225.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6225.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode246 .
+
+bs:bldg11.ZONE.AHU02.RM6225.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6402.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode319 .
+
+bs:bldg11.ZONE.AHU02.RM6402.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6404.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6404A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU02.RM6404A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode3 .
+
+bs:bldg11.ZONE.AHU03.RM1105.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM1105.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM1105.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode197 .
+
+bs:bldg11.ZONE.AHU03.RM1214.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode117 .
+
+bs:bldg11.ZONE.AHU03.RM1214.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM1220.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM1220.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode268 .
+
+bs:bldg11.ZONE.AHU03.RM1220.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode72 .
+
+bs:bldg11.ZONE.AHU03.RM1222.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode317 .
+
+bs:bldg11.ZONE.AHU03.RM1222.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode63 .
+
+bs:bldg11.ZONE.AHU03.RM1226.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM2-1226.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM2.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode108 .
+
+bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode115 .
+
+bs:bldg11.ZONE.AHU03.RM2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode88 .
+
+bs:bldg11.ZONE.AHU03.RM3.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM3.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode71 .
+
+bs:bldg11.ZONE.AHU03.RM3.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode148 .
+
+bs:bldg11.ZONE.AHU03.RM32.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode45 .
+
+bs:bldg11.ZONE.AHU03.RM4.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode179 .
+
+bs:bldg11.ZONE.AHU03.RM4105.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM4105.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode195 .
+
+bs:bldg11.ZONE.AHU03.RM4105.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode162 .
+
+bs:bldg11.ZONE.AHU03.RM421.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM4217.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM4217.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode271 .
+
+bs:bldg11.ZONE.AHU03.RM4217.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode173 .
+
+bs:bldg11.ZONE.AHU03.RM5.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM521.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM521.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5210.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode309 .
+
+bs:bldg11.ZONE.AHU03.RM5210.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5212A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5212A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM5301.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode285 .
+
+bs:bldg11.ZONE.AHU03.RM6.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM6.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode23 .
+
+bs:bldg11.ZONE.AHU03.RM6.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode181 .
+
+bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode255 .
+
+bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM621.Zone_Air_Temp_Setpoint2 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM6212A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM6212A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM6212C.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU03.RM6301B.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode325 .
+
+bs:bldg11.ZONE.AHU04.RM10.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode184 .
+
+bs:bldg11.ZONE.AHU04.RM2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode7 .
+
+bs:bldg11.ZONE.AHU04.RM3.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode124 .
+
+bs:bldg11.ZONE.AHU04.RM3409A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM3409A.VS__Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM4.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode298 .
+
+bs:bldg11.ZONE.AHU04.RM44.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM54.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM54.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM5409.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode324 .
+
+bs:bldg11.ZONE.AHU04.RM5409.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode252 .
+
+bs:bldg11.ZONE.AHU04.RM5415A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM5415A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM5417.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode273 .
+
+bs:bldg11.ZONE.AHU04.RM5417.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM5530A.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode113 .
+
+bs:bldg11.ZONE.AHU04.RM64.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM64.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM6407.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode254 .
+
+bs:bldg11.ZONE.AHU04.RM6407.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM6413A.VS__REHEAT1 a brick:Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM6413A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM6413B.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU04.RM6530.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode154 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode57 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode16 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode135 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode125 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode64 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode144 .
+
+bs:bldg11.ZONE.AHU05.RM25.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode199 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode80 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode53 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode156 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode30 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode31 .
+
+bs:bldg11.ZONE.AHU05.RM35.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode131 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode32 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode35 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode55 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode25 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode20 .
+
+bs:bldg11.ZONE.AHU05.RM45.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode229 .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode321 .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode185 .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode75 .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode37 .
+
+bs:bldg11.ZONE.AHU05.RM4502.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM4502_MIX.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode187 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode159 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode42 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode141 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode27 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode33 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode191 .
+
+bs:bldg11.ZONE.AHU05.RM55.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode40 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode19 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode212 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode164 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode104 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode47 .
+
+bs:bldg11.ZONE.AHU05.RM65.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode216 .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode106 .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode251 .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode244 .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode4 .
+
+bs:bldg11.ZONE.AHU05.RM6502.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM6502_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode207 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode259 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode235 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode26 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode312 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode323 .
+
+bs:bldg11.ZONE.AHU05.RM6521.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU05.RM6521_MIX.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode145 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode13 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode11 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode36 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode58 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode29 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode21 .
+
+bs:bldg11.ZONE.AHU06.RM1.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode5 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode93 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode84 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode105 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode38 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode133 .
+
+bs:bldg11.ZONE.AHU06.RM23.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode318 .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode169 .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode307 .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode158 .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode241 .
+
+bs:bldg11.ZONE.AHU06.RM2317.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM2317_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode269 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode94 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode44 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode136 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode126 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode247 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode91 .
+
+bs:bldg11.ZONE.AHU06.RM33.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode303 .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode277 .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode65 .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode238 .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode315 .
+
+bs:bldg11.ZONE.AHU06.RM3313.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM3313_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode243 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode10 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode138 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode89 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode68 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode132 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode34 .
+
+bs:bldg11.ZONE.AHU06.RM43.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode155 .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode153 .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode206 .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode302 .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode1 .
+
+bs:bldg11.ZONE.AHU06.RM4330.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM4330_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode263 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode83 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode66 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode99 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode127 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode134 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode15 .
+
+bs:bldg11.ZONE.AHU06.RM53.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode278 .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode262 .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode116 .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode274 .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode67 .
+
+bs:bldg11.ZONE.AHU06.RM5302.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU06.RM5302_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode171 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode163 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode6 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode14 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode79 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode2 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode111 .
+
+bs:bldg11.ZONE.AHU06.RM63.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode81 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode267 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode214 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode128 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode151 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode297 .
+
+bs:bldg11.ZONE.AHU07.RM1103.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202.VLV_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode227 .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode295 .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode102 .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode328 .
+
+bs:bldg11.ZONE.AHU07.RM1202.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202A.VLV_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202A.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202A.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM1202_MIX.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode52 .
+
+bs:bldg11.ZONE.AHU07.RM1202_MIX.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode220 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode270 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode180 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode69 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode192 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode205 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode28 .
+
+bs:bldg11.ZONE.AHU07.RM2.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode182 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode97 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode245 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode46 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode60 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode56 .
+
+bs:bldg11.ZONE.AHU07.RM3.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode279 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode177 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode166 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode73 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode51 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode121 .
+
+bs:bldg11.ZONE.AHU07.RM4.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode112 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode174 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode249 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode17 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode82 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode264 .
+
+bs:bldg11.ZONE.AHU07.RM5.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode101 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode196 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode167 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode146 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode114 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode110 .
+
+bs:bldg11.ZONE.AHU07.RM6.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode300 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode50 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode54 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode137 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Reheat_Valve_Command1 a brick:Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode120 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode204 .
+
+bs:bldg11.ZONE.AHU08.RM100.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM0.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode86 .
+
+bs:bldg11.ZONE.AHU09.RM0.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode49 .
+
+bs:bldg11.ZONE.AHU09.RM0620.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode224 .
+
+bs:bldg11.ZONE.AHU09.RM1-06.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode78 .
+
+bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp2 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM1-06.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode59 .
+
+bs:bldg11.ZONE.AHU09.RM2-06.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM2-06.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode96 .
+
+bs:bldg11.ZONE.AHU09.RM2-06.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode8 .
+
+bs:bldg11.ZONE.AHU09.RM4.VLV_2_COMD1 a brick:Valve_Command ;
+    rdfs:label rdfs:Resource .
+
+bs:bldg11.ZONE.AHU09.RM4.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode43 .
+
+bs:bldg11.ZONE.AHU09.RM4.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode198 .
+
+bs:bnode1 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode10 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode100 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode101 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode102 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode103 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode104 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode105 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode106 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode107 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode108 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode109 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode11 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode110 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode111 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode112 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode113 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode114 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode115 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode116 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode117 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode118 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode119 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode12 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode120 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode121 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode122 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode123 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode124 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode125 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode126 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode127 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode128 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode129 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode13 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode130 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode131 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode132 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode133 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode134 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode135 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode136 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode137 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode138 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode139 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode14 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode140 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode141 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode142 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode143 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode144 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode145 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode146 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode147 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode148 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode149 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode15 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode150 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode151 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode152 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode153 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode154 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode155 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode156 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode157 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode158 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode159 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode16 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode160 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode161 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode162 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode163 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode164 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode165 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode166 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode167 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode168 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode169 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode17 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode170 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode171 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode172 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode173 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode174 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode175 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode176 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode177 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode178 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode179 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode18 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode180 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode181 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode182 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode183 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode184 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode185 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode186 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode187 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode188 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode189 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode19 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode190 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode191 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode192 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode193 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode194 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode195 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode196 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode197 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode198 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode199 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode2 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode20 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode200 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode201 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode202 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode203 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode204 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode205 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode206 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode207 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode208 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode209 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode21 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode210 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode211 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode212 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode213 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode214 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode215 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode216 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode217 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode218 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode219 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode22 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode220 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode221 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode222 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode223 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode224 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode225 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode226 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode227 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode228 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode229 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode23 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode230 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode231 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode232 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode233 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode234 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode235 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode236 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode237 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode238 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode239 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode24 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode240 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode241 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode242 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode243 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode244 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode245 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode246 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode247 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode248 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode249 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode25 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode250 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode251 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode252 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode253 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode254 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode255 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode256 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode257 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode258 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode259 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode26 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode260 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode261 brick:hasUnits rdfs:Resource ;
+    brick:value rdfs:Resource .
+
+bs:bnode262 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode263 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode264 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode265 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode266 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode267 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode268 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode269 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode27 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode270 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode271 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode272 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode273 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode274 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode275 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode276 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode277 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode278 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode279 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode28 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode280 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode281 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode282 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode283 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode284 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode285 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode286 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode287 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode288 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode289 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode29 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode290 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode291 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode292 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode293 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode294 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode295 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode296 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode297 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode298 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode299 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode3 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode30 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode300 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode301 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode302 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode303 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode304 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode305 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode306 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode307 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode308 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode309 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode31 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode310 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode311 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode312 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode313 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode314 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode315 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode316 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode317 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode318 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode319 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode32 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode320 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode321 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode322 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode323 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode324 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode325 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode326 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode327 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode328 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode329 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode33 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode34 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode35 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode36 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode37 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode38 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode39 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode4 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode40 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode41 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode42 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode43 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode44 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode45 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode46 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode47 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode48 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode49 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode5 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode50 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode51 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode52 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode53 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode54 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode55 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode56 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode57 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode58 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode59 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode6 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode60 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode61 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode62 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode63 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode64 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode65 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode66 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode67 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode68 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode69 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode7 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode70 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode71 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode72 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode73 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode74 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode75 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode76 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode77 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode78 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode79 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode8 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode80 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode81 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode82 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode83 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode84 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode85 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode86 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode87 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode88 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode89 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode9 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode90 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode91 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode92 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode93 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode94 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode95 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode96 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode97 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode98 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:bnode99 ns1:hasTimeseriesId rdfs:Resource .
+
+bs:RM0620_room1 a brick:Room .
+
+bs:RM0_room1 a brick:Room .
+
+bs:RM0_room2 a brick:Room .
+
+bs:RM1-06_room1 a brick:Room .
+
+bs:RM1-06_room2 a brick:Room .
+
+bs:RM100_room1 a brick:Room .
+
+bs:RM10_room1 a brick:Room .
+
+bs:RM1103_room1 a brick:Room .
+
+bs:RM1105_room1 a brick:Room .
+
+bs:RM1202A_room1 a brick:Room .
+
+bs:RM1202_MIX_room1 a brick:Room .
+
+bs:RM1202_room1 a brick:Room .
+
+bs:RM1214_room1 a brick:Room .
+
+bs:RM1220_room1 a brick:Room .
+
+bs:RM1222_room1 a brick:Room .
+
+bs:RM1226_room1 a brick:Room .
+
+bs:RM1703_room1 a brick:Room .
+
+bs:RM1_room1 a brick:Room .
+
+bs:RM1_room2 a brick:Room .
+
+bs:RM1_room3 a brick:Room .
+
+bs:RM1_room4 a brick:Room .
+
+bs:RM1_room5 a brick:Room .
+
+bs:RM1_room6 a brick:Room .
+
+bs:RM2-06_room1 a brick:Room .
+
+bs:RM2-1226_room1 a brick:Room .
+
+bs:RM2117-_room1 a brick:Room .
+
+bs:RM2317_MIX_room1 a brick:Room .
+
+bs:RM2317_room1 a brick:Room .
+
+bs:RM23_room1 a brick:Room .
+
+bs:RM2402A_room1 a brick:Room .
+
+bs:RM2404A_room1 a brick:Room .
+
+bs:RM25_room1 a brick:Room .
+
+bs:RM2603B_room1 a brick:Room .
+
+bs:RM2_room1 a brick:Room .
+
+bs:RM2_room2 a brick:Room .
+
+bs:RM2_room3 a brick:Room .
+
+bs:RM2_room4 a brick:Room .
+
+bs:RM2_room5 a brick:Room .
+
+bs:RM2_room6 a brick:Room .
+
+bs:RM2_room7 a brick:Room .
+
+bs:RM3111_room1 a brick:Room .
+
+bs:RM3117-1_room1 a brick:Room .
+
+bs:RM3117-2_room1 a brick:Room .
+
+bs:RM3225_room1 a brick:Room .
+
+bs:RM32_room1 a brick:Room .
+
+bs:RM3313_MIX_room1 a brick:Room .
+
+bs:RM3313_room1 a brick:Room .
+
+bs:RM33_room1 a brick:Room .
+
+bs:RM3409A_room1 a brick:Room .
+
+bs:RM35_room1 a brick:Room .
+
+bs:RM3617A_room1 a brick:Room .
+
+bs:RM3_room1 a brick:Room .
+
+bs:RM3_room2 a brick:Room .
+
+bs:RM3_room3 a brick:Room .
+
+bs:RM3_room4 a brick:Room .
+
+bs:RM3_room5 a brick:Room .
+
+bs:RM4105_room1 a brick:Room .
+
+bs:RM4111_room1 a brick:Room .
+
+bs:RM4117-1_room1 a brick:Room .
+
+bs:RM4117-2_room1 a brick:Room .
+
+bs:RM4217_room1 a brick:Room .
+
+bs:RM421_room1 a brick:Room .
+
+bs:RM4225_room1 a brick:Room .
+
+bs:RM4330_MIX_room1 a brick:Room .
+
+bs:RM4330_room1 a brick:Room .
+
+bs:RM43_room1 a brick:Room .
+
+bs:RM44_room1 a brick:Room .
+
+bs:RM4501_room1 a brick:Room .
+
+bs:RM4502_MIX_room1 a brick:Room .
+
+bs:RM4502_room1 a brick:Room .
+
+bs:RM45_room1 a brick:Room .
+
+bs:RM4610_room1 a brick:Room .
+
+bs:RM46_room1 a brick:Room .
+
+bs:RM4_room1 a brick:Room .
+
+bs:RM4_room2 a brick:Room .
+
+bs:RM4_room3 a brick:Room .
+
+bs:RM4_room4 a brick:Room .
+
+bs:RM5117-1_room1 a brick:Room .
+
+bs:RM5117-2_room1 a brick:Room .
+
+bs:RM5210_room1 a brick:Room .
+
+bs:RM5212A_room1 a brick:Room .
+
+bs:RM521_room1 a brick:Room .
+
+bs:RM5301_room1 a brick:Room .
+
+bs:RM5302_MIX_room1 a brick:Room .
+
+bs:RM5302_room1 a brick:Room .
+
+bs:RM5330A_room1 a brick:Room .
+
+bs:RM53_room1 a brick:Room .
+
+bs:RM5402_room1 a brick:Room .
+
+bs:RM5404A_room1 a brick:Room .
+
+bs:RM5408_room1 a brick:Room .
+
+bs:RM5409_room1 a brick:Room .
+
+bs:RM5415A_room1 a brick:Room .
+
+bs:RM5417_room1 a brick:Room .
+
+bs:RM54_room1 a brick:Room .
+
+bs:RM5501_room1 a brick:Room .
+
+bs:RM5530A_room1 a brick:Room .
+
+bs:RM55_room1 a brick:Room .
+
+bs:RM5605A_room1 a brick:Room .
+
+bs:RM56_room1 a brick:Room .
+
+bs:RM56_room2 a brick:Room .
+
+bs:RM5_room1 a brick:Room .
+
+bs:RM5_room2 a brick:Room .
+
+bs:RM5_room3 a brick:Room .
+
+bs:RM5_room4 a brick:Room .
+
+bs:RM6117-1_room1 a brick:Room .
+
+bs:RM6117-2_room1 a brick:Room .
+
+bs:RM6212A_room1 a brick:Room .
+
+bs:RM6212C_room1 a brick:Room .
+
+bs:RM621_room1 a brick:Room .
+
+bs:RM621_room2 a brick:Room .
+
+bs:RM6225_room1 a brick:Room .
+
+bs:RM6301B_room1 a brick:Room .
+
+bs:RM63_room1 a brick:Room .
+
+bs:RM6402_room1 a brick:Room .
+
+bs:RM6404A_room1 a brick:Room .
+
+bs:RM6404_room1 a brick:Room .
+
+bs:RM6407_room1 a brick:Room .
+
+bs:RM6413A_room1 a brick:Room .
+
+bs:RM6413B_room1 a brick:Room .
+
+bs:RM64_room1 a brick:Room .
+
+bs:RM6501_room1 a brick:Room .
+
+bs:RM6502_MIX_room1 a brick:Room .
+
+bs:RM6502_room1 a brick:Room .
+
+bs:RM6521_MIX_room1 a brick:Room .
+
+bs:RM6521_room1 a brick:Room .
+
+bs:RM6530_room1 a brick:Room .
+
+bs:RM65_room1 a brick:Room .
+
+bs:RM6605A_room1 a brick:Room .
+
+bs:RM66_room1 a brick:Room .
+
+bs:RM66_room2 a brick:Room .
+
+bs:RM6_room1 a brick:Room .
+
+bs:RM6_room2 a brick:Room .
+
+bs:RM6_room3 a brick:Room .
+
+bs:RM6_room4 a brick:Room .
+
+bs:RM6_room5 a brick:Room .
+
+bs:RM6_room6 a brick:Room .
+
+bs:VAVRM1001 a brick:VAV ;
+    brick:feeds bs:RM1001 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU08.RM100.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU08.RM100.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU08.RM100.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU08.RM100.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU08.RM100.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM11031 a brick:VAV ;
+    brick:feeds bs:RM11031 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM1103.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM1103.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM1103.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM1103.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM1103.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM12021 a brick:VAV ;
+    brick:feeds bs:RM12021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM1202.VLV_COMD1,
+        bs:bldg11.ZONE.AHU07.RM1202.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM1202.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM1202.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM1202.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM1202.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM13 a brick:VAV ;
+    brick:feeds bs:RM16 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM1.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM1.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM1.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM1.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM1.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM21 a brick:VAV ;
+    brick:feeds bs:RM21 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM2.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM2.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM2.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM2.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM2.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM231 a brick:VAV ;
+    brick:feeds bs:RM231 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM23.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM23.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM23.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM23.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM23.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM23171 a brick:VAV ;
+    brick:feeds bs:RM23171 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM2317.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM2317.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM2317.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM2317.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM2317.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM251 a brick:VAV ;
+    brick:feeds bs:RM251 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM25.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM25.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM25.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM25.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM25.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM32 a brick:VAV ;
+    brick:feeds bs:RM34 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM3.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM3.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM3.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM3.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM3.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM331 a brick:VAV ;
+    brick:feeds bs:RM331 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM33.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM33.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM33.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM33.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM33.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM33131 a brick:VAV ;
+    brick:feeds bs:RM33131 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM3313.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM3313.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM3313.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM3313.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM3313.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM351 a brick:VAV ;
+    brick:feeds bs:RM351 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM35.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM35.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM35.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM35.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM35.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM43 a brick:VAV ;
+    brick:feeds bs:RM42 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM4.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM4.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM4.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM4.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM4.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM431 a brick:VAV ;
+    brick:feeds bs:RM431 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM43.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM43.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM43.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM43.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM43.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM43301 a brick:VAV ;
+    brick:feeds bs:RM43301 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM4330.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM4330.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM4330.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM4330.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM4330.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM45021 a brick:VAV ;
+    brick:feeds bs:RM45021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM4502.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM4502.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM4502.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM4502.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM4502.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM451 a brick:VAV ;
+    brick:feeds bs:RM451 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM45.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM45.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM45.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM45.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM45.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM52 a brick:VAV ;
+    brick:feeds bs:RM54 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM5.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM5.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM5.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM5.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM5.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM53021 a brick:VAV ;
+    brick:feeds bs:RM53021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM5302.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM5302.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM5302.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM5302.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM5302.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM531 a brick:VAV ;
+    brick:feeds bs:RM531 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM53.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM53.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM53.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM53.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM53.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM551 a brick:VAV ;
+    brick:feeds bs:RM551 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM55.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM55.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM55.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM55.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM55.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM62 a brick:VAV ;
+    brick:feeds bs:RM63 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU07.RM6.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU07.RM6.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM6.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU07.RM6.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU07.RM6.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM631 a brick:VAV ;
+    brick:feeds bs:RM631 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU06.RM63.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU06.RM63.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM63.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU06.RM63.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU06.RM63.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM65021 a brick:VAV ;
+    brick:feeds bs:RM65021 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM6502.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM6502.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM6502.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM6502.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM6502.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM651 a brick:VAV ;
+    brick:feeds bs:RM651 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM65.Zone_Air_Temp_Setpoint1,
+        bs:bldg11.ZONE.AHU05.RM65.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM65.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM65.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM65.Zone_Supply_Air_Temp1 .
+
+bs:VAVRM65211 a brick:VAV ;
+    brick:feeds bs:RM65211 ;
+    brick:hasPoint bs:bldg11.ZONE.AHU05.RM6521.Zone_Air_Temp1,
+        bs:bldg11.ZONE.AHU05.RM6521.Zone_Percent_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM6521.Zone_Reheat_Valve_Command1,
+        bs:bldg11.ZONE.AHU05.RM6521.Zone_Supply_Air_Flow1,
+        bs:bldg11.ZONE.AHU05.RM6521.Zone_Supply_Air_Temp1 .
+
+bs:chiller1 a brick:Chiller ;
+    brick:hasPoint bs:bldg11.CHW.1,
+        bs:bldg11.CHW.Building_Chilled_Water_Delta_Temp1,
+        bs:bldg11.CHW.ECONOMIZER1,
+        bs:bldg11.CHW.Enable1,
+        bs:bldg11.CHW.Outside_Air_Temp1,
+        bs:bldg11.CHW.Pump_SPEED1,
+        <urn:bschema#bldg11.CHW.Pump_Start/Stop1>,
+        bs:bldg11.CHW._Chilled_Water_Flow1,
+        bs:bldg11.CHW._Chilled_Water_Return_Temp1,
+        bs:bldg11.CHW._Chilled_Water_Return_Temp_Setpoint1,
+        bs:bldg11.CHW._Chilled_Water_Supply_Temp1 .
+

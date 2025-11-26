@@ -1,20 +1,61 @@
-from bschema import create_bschema, Graph, A, bind_prefixes, BACNET, S223, BRICK
+from bschema import create_bschema, Graph, A, bind_prefixes, Namespace, BACNET, S223, BRICK, REF, QUDT, QK, UNIT, SKOS, OWL, TAG, SH
 import os 
 import csv
 import matplotlib.pyplot as plt
 
+REC = Namespace("https://w3id.org/rec#")
+BSH = Namespace('https://brickschema.org/schema/BrickShape')
+VOAG = Namespace('http://voag.linkedmodel.org/schema/voag')
+PROV = Namespace('http://www.w3.org/ns/prov')
 
-REMOVE_NAMESPACES = [BACNET, S223, BRICK]
+REMOVE_NAMESPACES = [BACNET, S223, BRICK, REC, REF, QUDT, QK, UNIT, BSH, VOAG, SKOS, OWL, TAG, SH, PROV]
+REMOVE_OBJECTS = [SH.PropertyShape]
+
+
+print("Loading ontologies...")
+BRICK_GRAPH = Graph(store = "Oxigraph")
+BRICK_GRAPH.parse("ontologies/Brick.ttl", format = 'ttl')
+S223_GRAPH = Graph(store = "Oxigraph")
+S223_GRAPH.parse("ontologies/223p.ttl", format = 'ttl')
 
 def remove_triples(g, g2):
     for triple in g2:
         g.remove(triple)
 
+def remove_triples_recursively(g, s):
+    if not ((s, None, None) in g):
+        return
+    for p, o in g.predicate_objects(s):
+        g.remove((s, p, o))
+        remove_triples_recursively(g, o)
+
 def remove_triples_namespace(g):
     for triple in g:
         for namespace in REMOVE_NAMESPACES:
             if str(namespace) in str(triple[0]):
-                g.remove(triple)
+                remove_triples_recursively(g, triple[0])
+
+def undo_brick_inferencing(g):
+    for triple in g:
+        if triple[1] in [BRICK.Relationship, BRICK.hasTag, REC.isPointOf, REC.hasPoint]:
+            g.remove(triple)
+
+def remove_less_specific_classes(g, ontology):
+    query = """
+        PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        CONSTRUCT {
+            ?s rdf:type ?parent .
+        }
+        WHERE {
+            ?s rdf:type ?child .
+            ?child rdfs:subClassOf+ ?parent .
+            ?s rdf:type ?parent .
+        }
+    """
+    delete_graph = (g + ontology).query(query).graph
+    g = g - delete_graph
+
 
 def write_csv(filename, g_lens, cg_lens):
     with open(filename, 'w', newline='') as csvfile:
@@ -24,21 +65,19 @@ def write_csv(filename, g_lens, cg_lens):
             writer.writerow([item1, item2])
 
 def process_graphs(directory_path):
-    print("Loading ontologies...")
-    brick = Graph(store = "Oxigraph")
-    brick.parse("ontologies/Brick.ttl", format = 'ttl')
-    s223 = Graph(store = "Oxigraph")
-    s223.parse("ontologies/223p.ttl", format = 'ttl')
     for file_name in os.listdir(directory_path):
         if file_name.endswith(".ttl"):
+            if not (file_name in ['bldg11.ttl']): 
+                continue
             file_path = os.path.join(directory_path, file_name)
             print(f"Processing file: {file_name}")
             g = Graph(store = "Oxigraph")
             g.parse(file_path, format = 'ttl')
             print("Removing ontology triples")
-            # remove_triples(g, brick)
-            # remove_triples(g, s223)
             remove_triples_namespace(g)
+            if (file_name in ['bldg_brick_anon.ttl', 'bldg11.ttl']):
+                remove_less_specific_classes(g, BRICK_GRAPH)
+                undo_brick_inferencing(g)
             g.serialize(f"without-ontology/{file_name}", format="turtle")
 
 if __name__ == "__main__":

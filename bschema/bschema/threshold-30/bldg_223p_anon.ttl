@@ -1,0 +1,2701 @@
+@prefix bs: <urn:bschema#> .
+@prefix ns1: <http://data.ashrae.org/bacnet/2020#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+
+bs:1 a s223:Sensor ;
+    s223:hasObservationLocation bs:3 ;
+    s223:observes bs:bldg.1,
+        bs:discharge-air-1 .
+
+bs:21 a s223:Actuator ;
+    s223:actuatedByProperty bs:17,
+        bs:bldg.S1 ;
+    s223:actuates bs:29 .
+
+bs:22 a s223:ElectricMeter ;
+    s223:hasProperty bs:bldg.2,
+        bs:bldg.6,
+        bs:bldg.SW.MS.MAIN.PWR_REAL_3_P1,
+        bs:bldg2 .
+
+bs:24 a s223:Actuator ;
+    s223:actuatedByProperty bs:16 ;
+    s223:actuates bs:30,
+        bs:AH_Damper1 .
+
+bs:38 s223:hasProperty bs:28,
+        bs:bldg.1,
+        bs:bldg.4,
+        bs:bldg.DEM.C1 .
+
+bs:45 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out1,
+        bs:S_VAV_air-out2 ;
+    s223:observes bs:bldg.1,
+        bs:discharge-air-3 .
+
+bs:49 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.6 .
+
+bs:61 a s223:Junction ;
+    s223:cnx bs:72,
+        bs:73,
+        bs:rs-junction-out-cp-1,
+        bs:rs-junction-out-cp-ea_c9662bc31 .
+
+bs:64 a s223:Equipment ;
+    s223:hasProperty bs:bldg.12 .
+
+bs:68 a s223:Fan ;
+    s223:contains bs:_Damper1 ;
+    s223:hasProperty bs:bldg.16 .
+
+bs:7 a s223:HeatExchanger ;
+    s223:cnx <urn:bschema#-out2>,
+        bs:Process_HX_steam-in1,
+        bs:in2 ;
+    s223:contains bs:_Valve1 ;
+    s223:hasProperty bs:35 ;
+    s223:hasRole rdfs:Resource .
+
+bs:A1 a s223:ElectricBreaker ;
+    s223:hasProperty bs:bldg.1,
+        bs:bldg.4,
+        bs:bldg2 .
+
+bs:AH2_Return_Fan-in-duct1 a s223:Duct .
+
+bs:AUDITORIUM1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg2 .
+
+bs:CAC-_Heating_Coil1 a s223:HeatingCoil ;
+    s223:contains bs:CAC-_Hot_Water_Valve1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CHM-1 a s223:Chiller ;
+    s223:cnx <urn:bschema#-out2>,
+        bs:CH-water-in1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CT1 a s223:CoolingTower ;
+    s223:contains bs:CT_Fan1 ;
+    s223:hasProperty bs:28 ;
+    s223:hasRole rdfs:Resource .
+
+bs:Cleanroom_01 a s223:PhysicalSpace .
+
+bs:Device_57018_Thermal_Meter1 a s223:Sensor ;
+    s223:hasProperty bs:37,
+        bs:48,
+        bs:Energy_Total_Multiplier_Units_Device_570181,
+        bs:Mode__Volume_Total_Device_570181,
+        bs:_Device_570181 .
+
+bs:FCU11 s223:hasProperty bs:43,
+        bs:bldg.22,
+        bs:bldg.CP.RESET.FCU1.IM1 .
+
+bs:MDF_Condenser_Water_Loop1 a s223:Equipment ;
+    s223:cnx bs:MDF_Condenser_Water_Loop-water-in1,
+        bs:MDF_Condenser_Water_Loop-water-out1 ;
+    s223:contains bs:80 ;
+    s223:hasProperty bs:bldg.CHW2_CWT1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:Main_Chilled_Water_Thermal_Meter_21 a s223:Sensor ;
+    s223:hasProperty bs:35,
+        bs:57,
+        bs:62,
+        bs:Mode_2_Energy_Total1,
+        bs:Mode__Volume_Total1 .
+
+bs:Mode_2_Energy_Total_Sensor1 a s223:Sensor ;
+    s223:observes bs:Mode_2_Energy_Total1 .
+
+bs:OFFICE_717_1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.7 .
+
+bs:RAH0_Supply_Plenum1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.RAH0_DPS1 .
+
+bs:RAH12_Supply_Plenum1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.RAH12_DPS1 .
+
+bs:RAH161 s223:hasProperty bs:bldg.15,
+        bs:bldg.5 .
+
+bs:RAH_Supply_Plenum1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg2 .
+
+bs:Sump_Pump_1 a s223:Pump ;
+    s223:hasProperty bs:bldg.14 .
+
+bs:_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:6 ;
+    s223:actuates bs:2,
+        bs:36,
+        bs:_Damper1 .
+
+bs:_Actuator2 a s223:Actuator ;
+    s223:actuatedByProperty bs:74 ;
+    s223:actuates bs:2 .
+
+bs:_Sensor1 a s223:Sensor ;
+    s223:observes bs:28 .
+
+bs:_Sensor2 a s223:Sensor ;
+    s223:observes bs:48 .
+
+bs:_Sensor3 a s223:Sensor ;
+    s223:observes bs:35 .
+
+bs:_Sensor4 a s223:Sensor ;
+    s223:observes bs:37 .
+
+bs:_Sensor5 a s223:Sensor ;
+    s223:observes bs:42 .
+
+bs:_Sensor6 a s223:Sensor ;
+    s223:observes bs:57 .
+
+bs:_Water_Loop1 a s223:Equipment ;
+    s223:cnx <urn:bschema#-water-in1>,
+        bs:SCHW_and_AH1_Water_Loop-water-out1,
+        bs:_Water_Loop-water-out1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:bldg.AH1B_OAD_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:16 ;
+    s223:actuates bs:AH1_B_Outside_Damper1 .
+
+bs:bldg.AH1_RHC-2__Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH1_RHC-2_1 .
+
+bs:bldg.AH1_RHC-9_CTL_STPT_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.AH1_RHC-9_CTL_STPT1 ;
+    s223:actuates bs:RHC-9_AHU1 .
+
+bs:bldg.AH1_RHC-9__Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH1_RHC-9_1 .
+
+bs:bldg.AH1_RHC-_CTL_STPT_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.AH1_RHC-_CTL_STPT1 ;
+    s223:actuates bs:RHC-_AHU1 .
+
+bs:bldg.AH1_RHC-_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH1_RHC-1 .
+
+bs:bldg.AH2A_OAD_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:16 ;
+    s223:actuates bs:AH2A_Outside_Air_Damper1 .
+
+bs:bldg.AH2B_MIN.OAD.OPEN_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH2B_MIN.OAD.OPEN1 .
+
+bs:bldg.AH2_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.AH22 ;
+    s223:actuates bs:AH21 .
+
+bs:bldg.AH2_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH21 .
+
+bs:bldg.AH2_VAV_CONTROL.NODE11_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.AH2_VAV_CONTROL.NODE111 .
+
+bs:bldg.AH3_RM.TEMP.STP_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.AH3_RM.TEMP.STP1 ;
+    s223:actuates bs:AH1 .
+
+bs:bldg.CHW1.CWP_SS_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.CHW1.CWP_SS1 ;
+    s223:actuates bs:CWP1 .
+
+bs:bldg.CHW2.CW_BYP.VLV_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.CHW2.CW_BYP.VLV1 .
+
+bs:bldg.CHW2_CWT_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.CHW2_CWT1 .
+
+bs:bldg.CHW_ALM_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.CHW_ALM1 .
+
+bs:bldg.CP.RESET.RAH16.REQ_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.5 .
+
+bs:bldg.CW.BYP_VLV2_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.CW.BYP_VLV21 ;
+    s223:actuates bs:80 .
+
+bs:bldg.DEM.C_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.DEM.C1 .
+
+bs:bldg.EX1_PRF_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.EX1_PRF1 .
+
+bs:bldg.EX5_875.TEMP.STP_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.EX5_875.TEMP.STP1 ;
+    s223:actuates bs:Room_8751 .
+
+bs:bldg.MDC.CAC07_LOSS_OF_FLOW_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.MDC.CAC07_LOSS_OF_FLOW1 .
+
+bs:bldg.MDC.CAC07_VSD_STPT_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.17 ;
+    s223:actuates bs:18 .
+
+bs:bldg.MDC.CAC07_WLS_FAIL_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.MDC.CAC07_WLS_FAIL1 .
+
+bs:bldg.MDC.CAC0_HVLV_PCT_OPN_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg1 ;
+    s223:actuates bs:CAC-_Hot_Water_Valve1 .
+
+bs:bldg.RAH.TEMP.STP_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.RAH.TEMP.STP1 ;
+    s223:actuates bs:Room_1 .
+
+bs:bldg.RAH05_ENABLE_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:6 ;
+    s223:actuates bs:15 .
+
+bs:bldg.RAH0_DPS_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.RAH0_DPS1 .
+
+bs:bldg.RAH12_DPS_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.RAH12_DPS1 .
+
+bs:bldg.S2-13_RM_STPT_DIAL_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.S2-13_RM_STPT_DIAL1 ;
+    s223:actuates bs:266_RECEIVING1 .
+
+bs:bldg.S2-13_ROOM_TEMP_Sensor1 a s223:Sensor ;
+    s223:hasObservationLocation bs:266_RECEIVING1 ;
+    s223:observes bs:bldg.S2-13_ROOM_TEMP1 .
+
+bs:bldg.S5-02_AI_3_Sensor1 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out2 ;
+    s223:observes bs:bldg.1 .
+
+bs:bldg.S6-12_AI_3_Sensor1 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out1 ;
+    s223:observes bs:bldg.1 .
+
+bs:bldg.SW.MS.MAIN.PWR_REAL_3_P_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.SW.MS.MAIN.PWR_REAL_3_P1 .
+
+bs:bldg.SWG.EJECT_ALARM_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.SWG.EJECT_ALARM1 .
+
+bs:bldg.S_HTG_LOOPOUT_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:17 ;
+    s223:actuates bs:9 .
+
+bs:bldg.S_Sensor1 a s223:Sensor ;
+    s223:hasObservationLocation bs:36 ;
+    s223:observes bs:bldg.5,
+        bs:bldg.7,
+        bs:bldg.S_ROOM_TEMP1 .
+
+bs:bldg.S_Sensor2 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out1,
+        bs:S_VAV_air-out2 ;
+    s223:observes bs:bldg.S1 .
+
+bs:bldg.S_Sensor3 a s223:Sensor ;
+    s223:observes bs:bldg.S2 .
+
+bs:bldg._Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.3,
+        bs:bldg.S1 ;
+    s223:actuates bs:18,
+        bs:S_VAV1 .
+
+bs:bldg._Actuator2 a s223:Actuator ;
+    s223:actuatedByProperty bs:74,
+        bs:bldg.3 ;
+    s223:actuates bs:15,
+        bs:RHC-2_AHU1 .
+
+bs:bldg._Actuator3 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.8 ;
+    s223:actuates bs:5,
+        bs:_VFD1 .
+
+bs:bldg._Actuator4 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.10,
+        bs:bldg.EF4_CFM.STP1 ;
+    s223:actuates bs:34 .
+
+bs:bldg._Actuator5 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.17 ;
+    s223:actuates bs:15 .
+
+bs:bldg._Actuator6 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.10 ;
+    s223:actuates bs:CH1,
+        bs:FCU-11,
+        bs:HWP_VFD1 .
+
+bs:bldg._Actuator7 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg1 ;
+    s223:actuates bs:56 .
+
+bs:bldg._Actuator8 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.19 ;
+    s223:actuates bs:C1 .
+
+bs:bldg._Actuator9 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg.24,
+        bs:bldg.AH1_DP.1 ;
+    s223:actuates bs:AH11 .
+
+bs:bldg._Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg.2 .
+
+bs:bldg._Sensor10 a s223:Sensor ;
+    s223:observes bs:bldg.6 .
+
+bs:bldg._Sensor11 a s223:Sensor ;
+    s223:observes bs:bldg.18 .
+
+bs:bldg._Sensor12 a s223:Sensor ;
+    s223:observes bs:bldg.22 .
+
+bs:bldg._Sensor13 a s223:Sensor ;
+    s223:observes bs:bldg.26 .
+
+bs:bldg._Sensor2 a s223:Sensor ;
+    s223:observes bs:bldg.1 .
+
+bs:bldg._Sensor3 a s223:Sensor ;
+    s223:observes bs:bldg.23 .
+
+bs:bldg._Sensor4 a s223:Sensor ;
+    s223:observes bs:bldg.4 .
+
+bs:bldg._Sensor5 a s223:Sensor ;
+    s223:observes bs:bldg.13 .
+
+bs:bldg._Sensor6 a s223:Sensor ;
+    s223:observes bs:43 .
+
+bs:bldg._Sensor7 a s223:Sensor ;
+    s223:observes bs:bldg.12 .
+
+bs:bldg._Sensor8 a s223:Sensor ;
+    s223:observes bs:bldg.16 .
+
+bs:bldg._Sensor9 a s223:Sensor ;
+    s223:observes bs:bldg.7 .
+
+bs:bldg.r1 a s223:Sensor ;
+    s223:hasProperty bs:bldg.14 ;
+    s223:hasRole rdfs:Resource ;
+    s223:observes bs:bldg.14 .
+
+bs:bldg_Actuator1 a s223:Actuator ;
+    s223:actuatedByProperty bs:bldg1 ;
+    s223:actuates bs:18,
+        bs:39,
+        bs:71,
+        bs:_Valve1 .
+
+bs:bldg_Sensor1 a s223:Sensor ;
+    s223:observes bs:bldg2 .
+
+bs:damper-actuator_de6249b81 a s223:Actuator ;
+    s223:actuatedByProperty bs:damper-command_bdfa4c8c1 ;
+    s223:actuates bs:damper_c1e608c81 .
+
+bs:discharge-air-2 a s223:Sensor ;
+    s223:hasObservationLocation bs:S1-22_VAV_air-in1,
+        bs:S_VAV_air-out2 ;
+    s223:observes bs:discharge-air-3 .
+
+bs:discharge-air-temp-sensor_1 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out1,
+        bs:S_VAV_air-out2 ;
+    s223:observes bs:discharge-air-1 .
+
+bs:discharge-air-temp-sensor_abbe4b4e1 a s223:Sensor ;
+    s223:hasObservationLocation bs:S_VAV_air-out1 ;
+    s223:observes bs:discharge-air-3 .
+
+bs:r1 a s223:Sensor ;
+    s223:hasProperty bs:12,
+        bs:42,
+        bs:bldg.C1 ;
+    s223:hasRole rdfs:Resource ;
+    s223:observes bs:12,
+        bs:bldg.C1 .
+
+bs:reheat-coil-1 a s223:Sensor ;
+    s223:hasObservationLocation <urn:bschema#-water-out2>,
+        bs:20,
+        bs:50 ;
+    s223:observes bs:reheat-coil-3 .
+
+bs:reheat-coil-4 a s223:Sensor ;
+    s223:hasObservationLocation bs:20,
+        bs:S_VAV_reheat-coil-water-in1 ;
+    s223:observes bs:reheat-coil-2,
+        bs:reheat-coil-3 .
+
+bs:reheat-coil-supply-water-temp-sensor_0d295dc01 a s223:Sensor ;
+    s223:hasObservationLocation bs:S3-01_VAV_reheat-coil-water-in1 ;
+    s223:observes bs:reheat-coil-3 .
+
+bs:reheat-coil-supply-water-temp-sensor_1 a s223:Sensor ;
+    s223:hasObservationLocation bs:50,
+        bs:81,
+        bs:S_VAV_reheat-coil-water-in2 ;
+    s223:observes bs:reheat-coil-3 .
+
+bs:reheat-coil-supply-water-temp-sensor_9500b39b1 a s223:Sensor ;
+    s223:hasObservationLocation bs:S2-01_VAV_reheat-coil-water-in1 ;
+    s223:observes bs:reheat-coil-3 .
+
+bs:ss-junction_1237567d1 a s223:Junction ;
+    s223:cnx bs:73,
+        bs:ss-junction-out-cp_0e11b50f1 .
+
+<urn:bschema#-out-pipe1> a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-in2> a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe1> ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-out1> a s223:OutletConnectionPoint ;
+    s223:cnx bs:C-water-out-pipe1,
+        bs:Chilled_Water_System-water-out-pipe1,
+        bs:_Water_Loop-water-out-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-out3> a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-pipe1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:19 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-out-duct1>,
+        bs:31,
+        bs:59,
+        bs:RAH2_ISO_DMPR_Isolation_Damper-out-duct1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo <urn:bschema#-sa-out1> .
+
+bs:40 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13,
+        bs:S_VAV_hot-water-out-connection1,
+        bs:S_VAV_hot-water-out-connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:26,
+        bs:32,
+        bs:66 .
+
+bs:46 a s223:PhysicalSpace ;
+    s223:contains bs:46 ;
+    s223:hasProperty bs:bldg.2 .
+
+bs:51 a s223:InletConnectionPoint ;
+    s223:cnx bs:59 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:5wSA7AlJ24181 a ns1:BACnetDevice ;
+    ns1:device-instance rdfs:Resource ;
+    ns1:hasPort bs:bnode42 .
+
+bs:62 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode18 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:65 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:69 a s223:Connection ;
+    s223:cnx bs:r-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:70 a s223:Connection ;
+    s223:cnx bs:r-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:71 s223:hasProperty bs:bldg.22,
+        bs:bldg.26,
+        bs:bldg1 .
+
+bs:72 a s223:OutletConnectionPoint ;
+    s223:cnx bs:AH2A_Return_Air_Damper-in-duct1,
+        bs:AH2B_Pre_Filter-in-duct1 .
+
+bs:AH-sa-in-connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH-sa-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:AH-sa-in-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH-sa-out-connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH1 a s223:AirHandlingUnit ;
+    s223:cnx bs:AH-sa-in1,
+        bs:AH-sa-out1 ;
+    s223:contains bs:5,
+        bs:AH_Filter1,
+        bs:_Cooling_Coil1 ;
+    s223:hasProperty bs:12,
+        bs:57,
+        bs:bldg.21,
+        bs:bldg.AH3_RM.TEMP.STP1,
+        bs:bldg.AH3_RM.TEMPG1,
+        bs:bldg.CP.RESET.AH4.IM1 .
+
+bs:AH11 a s223:AirHandlingUnit ;
+    s223:contains bs:15 ;
+    s223:hasProperty bs:bldg.11,
+        bs:bldg.14,
+        bs:bldg.24,
+        bs:bldg.AH1_DP.1 .
+
+bs:AH21 a s223:AirHandlingUnit ;
+    s223:contains bs:15 ;
+    s223:hasProperty bs:bldg.12,
+        bs:bldg.AH21,
+        bs:bldg.AH22,
+        bs:bldg.AH2_SDSG1,
+        bs:bldg.AH2_VAV_CONTROL.NODE111 .
+
+bs:AH2A_Isolation_Damper_Return-out1 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-out-duct1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2A_Isolation_Damper_Return1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:AH2A_Isolation_Damper_Return-out1,
+        bs:AH2_Isolation_Damper_Return-in1 .
+
+bs:AH2A_Outside_Air_Damper-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:31 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2A_Pre_Filter-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:AH2A_Pre_Filter-in-duct1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2B_Isolation_Damper_Return-out1 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-out-duct1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2B_Isolation_Damper_Return1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:AH2B_Isolation_Damper_Return-out1,
+        bs:AH2_Isolation_Damper_Return-in1 .
+
+bs:AH2_Exhaust_Damper-out-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH2_Exhaust_Damper-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:AH2_Exhaust_Damper-out-duct1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH3_Pre_Filter-in-duct1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH4_Pre_Filter-in-duct1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH4_Pre_Filter-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:AH4_Pre_Filter-in-duct1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH_Fan-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:58 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:C-water-out-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:C1 a s223:Equipment ;
+    s223:cnx bs:CH1_Condenser_Water_Loop-water-in1,
+        bs:CH1_Condenser_Water_Loop-water-out1 ;
+    s223:contains bs:39,
+        bs:_Cooling_Coil1 ;
+    s223:hasProperty bs:4,
+        bs:bldg.13,
+        bs:bldg.19,
+        bs:bldg.9 ;
+    s223:hasRole rdfs:Resource .
+
+bs:C2 a s223:Valve ;
+    s223:hasProperty bs:bldg.1,
+        bs:bldg.15,
+        bs:bldg.4 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CAC-1 a s223:Connection ;
+    s223:cnx bs:r-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CAC-4_Cooling_Coil_Valve1 a s223:Valve ;
+    s223:hasRole rdfs:Resource .
+
+bs:CAC-5_Cooling_Coil-air-out-duct1 a s223:Connection ;
+    s223:cnx bs:CAC-5_Cooling_Coil-air-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH1 a s223:Chiller ;
+    s223:cnx bs:CH-water-in1,
+        bs:CH1-water-out1,
+        bs:CH2-water-out1 ;
+    s223:contains bs:CH2_Compressor1 ;
+    s223:hasProperty bs:28,
+        bs:bldg.10,
+        bs:bldg.15,
+        bs:bldg.CHW1_CG1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CH1-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:CH-water-out-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH1_Condenser_Water_Loop-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:C-water-in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH1_Condenser_Water_Loop-water-out-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH1_Condenser_Water_Loop-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:CH1_Condenser_Water_Loop-water-out-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH2-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:CH-water-out-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CH2_Compressor1 a s223:Compressor ;
+    s223:hasProperty bs:37 .
+
+bs:CT_Fan1 a s223:Fan ;
+    s223:contains bs:_VFD1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CWP1 a s223:Valve ;
+    s223:hasProperty bs:bldg.2,
+        bs:bldg.7,
+        bs:bldg.CHW1.CWP_SS1,
+        bs:bldg2 .
+
+bs:EF1_Outside_Damper1 a s223:Damper .
+
+bs:Energy_Total_Multiplier_Units_Device_570181 a s223:QuantifiableProperty ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:FCU-11 a s223:FanCoilUnit ;
+    s223:contains bs:34,
+        bs:FCU-1_Chilled_Water_Coil1 ;
+    s223:hasProperty bs:35,
+        bs:bldg.10 .
+
+bs:HWP1 a s223:Pump ;
+    s223:contains bs:HWP_VFD1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:HX--in-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:HX-_water-out-pipe1 s223:cnx bs:Hot_Water_Heat_Exchanger-junction-in-cp-1 .
+
+bs:MDF_Condenser_Water_Loop-water-in-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:MDF_Condenser_Water_Loop-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:MDF_Condenser_Water_Loop-water-in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:MDF_Condenser_Water_Loop-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:_Water_Loop-water-out-pipe2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:Mode__Volume_Total1 a s223:Property ;
+    s223:hasExternalReference bs:bnode29 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:Mode__Volume_Total_Device_570181 a s223:Property ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:Process_HX_steam-in-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:Process_HX_steam-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:Process_HX_steam-in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RAH2_ISO_DMPR_Isolation_Damper-out-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RAH_ISO_DMPR_Isolation_Damper-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC--air-in-duct1 a s223:Connection ;
+    s223:cnx bs:RHC--air-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC--air-out-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:cnx <urn:bschema#-air-out1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC-2_AHU1 a s223:AirHandlingUnit ;
+    s223:cnx bs:RHC-_AHU-sa-in2,
+        bs:out1 ;
+    s223:contains bs:60 ;
+    s223:hasProperty bs:bldg.3,
+        bs:bldg.AH1_RHC-2_1 .
+
+bs:RHC-4_AHU-sa-in-connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC-9_AHU1 a s223:AirHandlingUnit ;
+    s223:cnx bs:RHC-_AHU-sa-in1,
+        bs:out1 ;
+    s223:contains bs:60 ;
+    s223:hasProperty bs:bldg.AH1_RHC-9_1,
+        bs:bldg.AH1_RHC-9_CTL_STPT1 .
+
+bs:RHC-_AHU-sa-in-connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC-_AHU-sa-in-connection2 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC-_AHU1 a s223:AirHandlingUnit ;
+    s223:cnx bs:RHC-_AHU-sa-in1,
+        bs:RHC-_AHU-sa-in2,
+        bs:in3,
+        bs:out1 ;
+    s223:contains bs:60 ;
+    s223:hasProperty bs:bldg.AH1_RHC-1,
+        bs:bldg.AH1_RHC-_CTL_STPT1 .
+
+bs:Room_1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.RAH.TEMP.STP1 .
+
+bs:Room_8751 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.EX5_875.TEMP.STP1 .
+
+bs:S2-02_Heating_Coil_Valve_reheat-coil-valve-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:44 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S2-10_Heating_Coil_Valve_reheat-coil-valve-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S2-10_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S2-10_VAV_hot-water-out1 .
+
+bs:S4-18_Heating_Coil_Valve_reheat-coil-valve-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S4-18_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S4-18_VAV_hot-water-out1 .
+
+bs:S6-11_Heating_Coil_Valve_reheat-coil-valve-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:66 .
+
+bs:SCHW_and_AH1_Water_Loop-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:SCHW_and_AH1_Water_Loop-water-out-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_Heating_Coil_Valve_reheat-coil-valve-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13,
+        bs:S6-05_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:26,
+        bs:66,
+        bs:S6-05_VAV_hot-water-out1 .
+
+bs:S_Heating_Coil_Valve_reheat-coil-valve-out2 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-out-connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S_VAV_hot-water-out1 .
+
+bs:S_Heating_Coil_Valve_reheat-coil-valve-out3 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:26,
+        bs:66 .
+
+bs:S_VAV1 a s223:SingleDuctTerminal,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#VAVWithReheat> ;
+    s223:cnx bs:26,
+        bs:27,
+        bs:3,
+        bs:32,
+        bs:47,
+        bs:53,
+        bs:66,
+        bs:75,
+        bs:8,
+        bs:S1-22_VAV_air-in1,
+        bs:S2-10_VAV_hot-water-out1,
+        bs:S3-01_VAV_hot-water-in1,
+        bs:S4-18_VAV_hot-water-out1,
+        bs:S6-05_VAV_hot-water-out1,
+        bs:S_VAV_air-out1,
+        bs:S_VAV_air-out2,
+        bs:S_VAV_hot-water-in1,
+        bs:S_VAV_hot-water-out1,
+        bs:hot-water-out_531ef4501 ;
+    s223:contains bs:29,
+        bs:30,
+        bs:9,
+        bs:_Damper1,
+        bs:damper_c1e608c81 ;
+    s223:hasProperty bs:4,
+        bs:bldg.1,
+        bs:bldg.3,
+        bs:bldg.4,
+        bs:bldg.9,
+        bs:bldg.S1,
+        bs:bldg.S2 ;
+    s223:hasRole rdfs:Resource .
+
+bs:_Bypass_Valve-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Cooling_Coil-water-out-pipe1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:_Cooling_Coil-water-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Cooling_Coil-water-out-pipe2 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:_Cooling_Coil-water-out1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Damper-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct1>,
+        <urn:bschema#-duct2>,
+        bs:AH2A_Return_Air_Damper-in-duct1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Device_570181 a s223:QuantifiableProperty ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:_Fan-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-out-duct1>,
+        bs:14 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Water_Loop-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:Office_Space_Water_Loop-water-out-pipe1,
+        bs:_Water_Loop-water-out-pipe1,
+        bs:_Water_Loop-water-out-pipe2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_hvac_domain_out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:_connection1,
+        bs:connection5 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:bldg.21 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode7 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH2_SDSG1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode17 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH3_RM.TEMPG1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode22 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CHW1_CG1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode25 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CP.RESET.AH4.IM1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode30 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CP.RESET.FCU1.IM1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode6 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg_Sewage1 a s223:PhysicalSpace ;
+    s223:hasProperty bs:bldg.SWG.EJECT_ALARM1 .
+
+bs:bnode11 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode12 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode15 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode16 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:5wSA7AlJ24181 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode18 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:77 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode19 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode23 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode25 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode28 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode30 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode32 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode33 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode34 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode35 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode36 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode37 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode39 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode40 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode41 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode42 a ns1:Port ;
+    ns1:storedAt rdfs:Resource .
+
+bs:bnode43 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode44 a ns1:Port ;
+    ns1:storedAt rdfs:Resource .
+
+bs:bnode8 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:connection2 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:damper-in_9e2d49541 a s223:InletConnectionPoint ;
+    s223:cnx bs:air-in-connection_c804b1591 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S1-22_VAV_air-in1 .
+
+bs:damper-in_e143022c1 a s223:InletConnectionPoint ;
+    s223:cnx bs:14 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:3 .
+
+bs:damper-out_6e8419bb1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:31 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:damper-position_1 a s223:QuantifiableObservableProperty ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:damper-position_d86e95f71 a s223:QuantifiableObservableProperty ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:reheat-coil-valve-out_45adaf241 a s223:OutletConnectionPoint ;
+    s223:cnx bs:hot-water-out-connection_d69026931 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:hot-water-out_531ef4501 .
+
+bs:rs-junction-out-cp-1 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct3> .
+
+bs:rs-junction-out-cp-ea_c9662bc31 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct1> .
+
+bs:ss-junction-out-cp_0e11b50f1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:AH2A_Pre_Filter-in-duct1 .
+
+<urn:bschema#-out1> a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct1>,
+        <urn:bschema#-duct2>,
+        <urn:bschema#-duct3> ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:AH-sa-out1 .
+
+<urn:bschema#-pipe1> a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-sa-out1> a s223:OutletConnectionPoint ;
+    s223:cnx bs:connection1,
+        bs:connection4 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasRole rdfs:Resource .
+
+<urn:bschema#-water-in-pipe1> a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-in-pipe2> a s223:Connection ;
+    s223:cnx bs:Chilled_Water_1 ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-in1> a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe2>,
+        <urn:bschema#-water-in-pipe3>,
+        bs:C-water-in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:2 a s223:Equipment ;
+    s223:cnx <urn:bschema#-water-in1>,
+        <urn:bschema#-water-out1> ;
+    s223:contains bs:39,
+        bs:56,
+        bs:80,
+        bs:C2,
+        bs:CAC-4_Cooling_Coil_Valve1,
+        bs:HWP1,
+        bs:_Cooling_Coil1,
+        bs:_Valve1 ;
+    s223:hasProperty bs:12,
+        bs:4,
+        bs:42,
+        bs:6,
+        bs:74,
+        bs:bldg.11,
+        bs:bldg.9 ;
+    s223:hasRole rdfs:Resource .
+
+bs:23 a s223:QuantifiableObservableProperty ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:266_RECEIVING1 a s223:OutdoorPhysicalSpace,
+        s223:PhysicalSpace ;
+    s223:encloses bs:_hvac_domain1 ;
+    s223:hasProperty bs:bldg.S2-13_RM_STPT_DIAL1,
+        bs:bldg.S2-13_ROOM_TEMP1 .
+
+bs:34 a s223:Fan ;
+    s223:contains bs:EF1_Outside_Damper1,
+        bs:_Damper1,
+        bs:_VFD1 ;
+    s223:hasProperty bs:28,
+        bs:35,
+        bs:4,
+        bs:bldg.10,
+        bs:bldg.EF4_CFM.STP1,
+        bs:bldg.EX1_PRF1 .
+
+bs:36 a s223:PhysicalSpace ;
+    s223:contains bs:bldg_Sewage1 ;
+    s223:encloses bs:_hvac_domain1 ;
+    s223:hasProperty bs:6,
+        bs:bldg.2,
+        bs:bldg.5,
+        bs:bldg.7,
+        bs:bldg.SW.MS.MAIN.PWR_REAL_3_P1,
+        bs:bldg.S_ROOM_TEMP1,
+        bs:bldg2 .
+
+bs:41 a s223:Connection ;
+    s223:cnx bs:Office_Space_Water_Loop-junction-out-cp-41,
+        bs:r-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:44 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx <urn:bschema#-water-out2> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:53 a s223:InletConnectionPoint ;
+    s223:cnx bs:11,
+        bs:25 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:50 .
+
+bs:56 a s223:Pump ;
+    s223:contains bs:_VFD1 ;
+    s223:hasProperty bs:28,
+        bs:bldg.14,
+        bs:bldg1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:59 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:73 a s223:InletConnectionPoint ;
+    s223:cnx bs:58 .
+
+bs:75 a s223:InletConnectionPoint ;
+    s223:cnx bs:78 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:81 .
+
+bs:9 a s223:HeatingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> ;
+    s223:cnx <urn:bschema#-water-out2>,
+        bs:10,
+        bs:20,
+        bs:50,
+        bs:51,
+        bs:55,
+        bs:81,
+        bs:S2-01_VAV_reheat-coil-water-in1,
+        bs:S3-01_VAV_reheat-coil-water-in1,
+        bs:S_VAV_reheat-coil-water-in1,
+        bs:S_VAV_reheat-coil-water-in2,
+        bs:r-in2 ;
+    s223:contains bs:29 ;
+    s223:hasProperty bs:17,
+        bs:reheat-coil-2,
+        bs:reheat-coil-3 ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH-sa-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:AH-sa-out-connection1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH1B_Heating_Coil-air-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct1>,
+        bs:60 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH1_B_Outside_Damper1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:55,
+        bs:67 ;
+    s223:hasProperty bs:16 ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH22 s223:hasProperty rdfs:Resource ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH2A_Outside_Air_Damper1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:67,
+        bs:AH2A_Outside_Air_Damper-in1 ;
+    s223:hasProperty bs:16 ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH2A_Pre_Filter-in-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2A_Return_Air_Damper-in-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2B_Pre_Filter-in-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:AH2_Isolation_Damper_Return-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:31 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:AH22 .
+
+bs:AH_Damper1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:55,
+        bs:67 ;
+    s223:hasProperty bs:16,
+        bs:bldg.AH2B_MIN.OAD.OPEN1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:AH_Filter1 a s223:Filter,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Filter> ;
+    s223:cnx <urn:bschema#-out1>,
+        bs:AH2A_Pre_Filter-in1,
+        bs:AH4_Pre_Filter-in1,
+        bs:r-in2 ;
+    s223:hasProperty bs:35 .
+
+bs:C-water-in-pipe1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CAC-4_Cooling_Coil-water-in-pipe1 a s223:Connection ;
+    s223:cnx bs:CAC-4_Cooling_Coil-water-in1,
+        bs:MDF_Chilled_Water_Loop-junction-out-cp-21 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CAC-4_Cooling_Coil-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:CAC-4_Cooling_Coil-water-in-pipe1,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CAC-5_Cooling_Coil-air-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:CAC-5_Cooling_Coil-air-out-duct1,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:CAC-_Hot_Water_Valve1 a s223:Valve ;
+    s223:hasProperty bs:bldg1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:CH-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-pipe1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:Chilled_Water_Plant-junction-in-cp-1 a s223:InletConnectionPoint ;
+    s223:cnx bs:CH-water-out-pipe1,
+        bs:Chilled_Water_Plant-junction1 .
+
+bs:Chilled_Water_Plant-junction1 a s223:Junction ;
+    s223:cnx bs:Chilled_Water_1,
+        bs:Chilled_Water_Plant-junction-in-cp-1 .
+
+bs:Chilled_Water_System-junction-in-cp1 a s223:InletConnectionPoint ;
+    s223:cnx bs:Chilled_Water_System-junction1,
+        bs:Chilled_Water_System-water-out-pipe1 .
+
+bs:Chilled_Water_System-junction-out-cp-41 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe3>,
+        bs:Chilled_Water_System-junction1 .
+
+bs:Chilled_Water_System-water-out-pipe1 a s223:Connection ;
+    s223:cnx bs:Chilled_Water_System-junction-in-cp1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:FCU-1_Chilled_Water_Coil-r-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:76,
+        bs:FCU-1_Chilled_Water_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:HWP_VFD1 a s223:VariableFrequencyDrive ;
+    s223:hasProperty bs:12,
+        bs:bldg.10,
+        bs:bldg.20 .
+
+bs:Hot_Water_Heat_Exchanger-junction-in-cp-1 a s223:InletConnectionPoint ;
+    s223:cnx bs:HX-_water-out-pipe1,
+        bs:Hot_Water_Heat_Exchanger-junction1 .
+
+bs:Hot_Water_Heat_Exchanger-junction1 a s223:Junction ;
+    s223:cnx bs:33,
+        bs:Hot_Water_Heat_Exchanger-junction-in-cp-1 .
+
+bs:MDF_Chilled_Water_Loop-junction-out-cp-21 a s223:OutletConnectionPoint ;
+    s223:cnx bs:CAC-4_Cooling_Coil-water-in-pipe1,
+        bs:_Water_Loop-junction2 .
+
+bs:Mode_2_Energy_Total1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode38 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:Office_Space_Water_Loop-junction-out-cp-21 a s223:OutletConnectionPoint ;
+    s223:cnx bs:_Cooling_Coil-water-in-pipe1,
+        bs:_Water_Loop-junction1 .
+
+bs:Office_Space_Water_Loop-junction-out-cp-31 a s223:OutletConnectionPoint ;
+    s223:cnx bs:_Cooling_Coil-water-in-pipe1,
+        bs:_Water_Loop-junction1 .
+
+bs:Office_Space_Water_Loop-junction-out-cp-41 a s223:OutletConnectionPoint ;
+    s223:cnx bs:41,
+        bs:_Water_Loop-junction1 .
+
+bs:Office_Space_Water_Loop-water-out-pipe1 a s223:Connection ;
+    s223:cnx bs:_Water_Loop-junction-in-cp1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:R-duct1 a s223:Connection,
+        s223:Duct ;
+    s223:cnx <urn:bschema#-air-out1>,
+        bs:r-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC--air-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:60,
+        bs:RHC--air-in-duct1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:RHC-_AHU-sa-in1,
+        bs:RHC-_AHU-sa-in2,
+        bs:in3 .
+
+bs:RHC--water-in-pipe1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:RHC--water-in1,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-141 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RHC--water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:60,
+        bs:RHC--water-in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S2-10_VAV_hot-water-out-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S2-10_VAV_hot-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S2-10_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20 .
+
+bs:S3-01_VAV_hot-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:S3-01_VAV_hot-water-in-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S3-01_VAV_reheat-coil-water-in1 .
+
+bs:S4-18_VAV_hot-water-out-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S4-18_VAV_hot-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S4-18_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20 .
+
+bs:S6-05_VAV_hot-water-out-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S6-05_VAV_hot-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S6-05_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20 .
+
+bs:SCHW_and_AH1_Water_Loop-water-out-pipe1 a s223:Connection ;
+    s223:cnx bs:_Water_Loop-junction-in-cp2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_hot-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-in-connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S_VAV_reheat-coil-water-in2 .
+
+bs:S_VAV_hot-water-out-connection2 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_hot-water-out-connection3 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_hot-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-out-connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20 .
+
+bs:Secondary_Chilled_Water_Loop-junction1 a s223:Junction ;
+    s223:cnx bs:54,
+        bs:_Water_Loop-junction-in-cp1 .
+
+bs:_Cooling_Coil-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:_Cooling_Coil-water-in-pipe1,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Water_Loop-water-out-pipe2 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_hvac_domain1 a s223:DomainSpace ;
+    s223:cnx bs:_hvac_domain_out1,
+        bs:in1,
+        bs:in2,
+        bs:in3,
+        bs:out1 ;
+    s223:hasDomain rdfs:Resource .
+
+bs:air-in-connection_c804b1591 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:bldg.11 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode21 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.13 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode3 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.16 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode13 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.18 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode32 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.19 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode1 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.20 a s223:Property ;
+    s223:hasExternalReference bs:bnode8 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.23 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode22 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.24 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode27 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.26 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode10 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_DP.1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode14 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_RHC-1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode3 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_RHC-2_1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode35 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_RHC-9_1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode23 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_RHC-9_CTL_STPT1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode15 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH1_RHC-_CTL_STPT1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode9 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH21 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode19 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH22 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode17 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH2B_MIN.OAD.OPEN1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode39 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH2_VAV_CONTROL.NODE111 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode40 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.AH3_RM.TEMP.STP1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode22 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.C1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode31 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CHW1.CWP_SS1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode36 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CHW2.CW_BYP.VLV1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode13 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CHW2_CWT1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode41 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CHW_ALM1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode34 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.CW.BYP_VLV21 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode37 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.DEM.C1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode27 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.EF4_CFM.STP1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode31 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.EX1_PRF1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode20 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.EX5_875.TEMP.STP1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode43 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.MDC.CAC07_LOSS_OF_FLOW1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode9 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.MDC.CAC07_WLS_FAIL1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode33 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.RAH.TEMP.STP1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode10 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.RAH0_DPS1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode6 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.RAH12_DPS1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode17 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.S2 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode7 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.S2-13_RM_STPT_DIAL1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode13 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.S2-13_ROOM_TEMP1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode20 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.SWG.EJECT_ALARM1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode27 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.S_ROOM_TEMP1 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode7 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg_Hot_Water_Loop-junction-in-cp1 a s223:InletConnectionPoint ;
+    s223:cnx bs:_Water_Loop-water-out-pipe1,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:25,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-141 a s223:OutletConnectionPoint ;
+    s223:cnx bs:RHC--water-in-pipe1,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-3 a s223:OutletConnectionPoint ;
+    s223:cnx bs:78,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-4 a s223:OutletConnectionPoint ;
+    s223:cnx bs:79,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-411 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S2-21_VAV_hot-water-in-connection1,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-421 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S3-01_VAV_hot-water-in-connection1,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-5 a s223:OutletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-in-connection2,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bnode21 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode24 a ns1:Port ;
+    ns1:storedAt rdfs:Resource .
+
+bs:bnode26 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:77 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode31 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode38 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:77 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode9 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:connection1 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:connection3 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:connection4 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:connection5 a s223:Connection ;
+    s223:hasMedium rdfs:Resource .
+
+bs:damper-command_bdfa4c8c1 a s223:QuantifiableActuatableProperty ;
+    s223:hasAspect s223:EnumerationKind-Position ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:damper_c1e608c81 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:damper-in_e143022c1,
+        bs:damper-out_6e8419bb1 ;
+    s223:hasProperty bs:damper-command_bdfa4c8c1,
+        bs:damper-position_d86e95f71 .
+
+bs:hot-water-out-connection_d69026931 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:hot-water-out_531ef4501 a s223:OutletConnectionPoint ;
+    s223:cnx bs:hot-water-out-connection_d69026931 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:in2 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe3>,
+        bs:65,
+        bs:HX--in-pipe1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:r-in2 a s223:InletConnectionPoint ;
+    s223:cnx bs:58,
+        bs:AH2B_Pre_Filter-in-duct1,
+        bs:AH3_Pre_Filter-in-duct1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:reheat-coil-2 a s223:QuantifiableObservableProperty ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+<urn:bschema#-duct3> a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-out2> a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-out-pipe1> ;
+    s223:hasMedium rdfs:Resource .
+
+bs:18 s223:hasProperty bs:43,
+        bs:bldg.15,
+        bs:bldg.17,
+        bs:bldg.18,
+        bs:bldg.2,
+        bs:bldg.23,
+        bs:bldg.3,
+        bs:bldg.9,
+        bs:bldg.MDC.CAC07_LOSS_OF_FLOW1,
+        bs:bldg.MDC.CAC07_WLS_FAIL1,
+        bs:bldg1 .
+
+bs:27 a s223:InletConnectionPoint ;
+    s223:cnx bs:11,
+        bs:25,
+        bs:79,
+        bs:S2-21_VAV_hot-water-in-connection1,
+        bs:S_VAV_hot-water-in-connection1,
+        bs:S_VAV_hot-water-in-connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:50,
+        bs:S_VAV_reheat-coil-water-in1 .
+
+bs:29 a s223:Valve,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;
+    s223:cnx bs:26,
+        bs:40,
+        bs:8,
+        bs:S2-02_Heating_Coil_Valve_reheat-coil-valve-in1,
+        bs:S2-10_Heating_Coil_Valve_reheat-coil-valve-out1,
+        bs:S4-18_Heating_Coil_Valve_reheat-coil-valve-out1,
+        bs:S6-11_Heating_Coil_Valve_reheat-coil-valve-out1,
+        bs:S_Heating_Coil_Valve_reheat-coil-valve-out1,
+        bs:S_Heating_Coil_Valve_reheat-coil-valve-out2,
+        bs:S_Heating_Coil_Valve_reheat-coil-valve-out3,
+        bs:reheat-coil-valve-out_45adaf241 ;
+    s223:hasProperty bs:17,
+        bs:23,
+        bs:bldg.2,
+        bs:bldg.7,
+        bs:bldg.S1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:30 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:19,
+        bs:3,
+        bs:55,
+        bs:67,
+        bs:AH2_Exhaust_Damper-out1,
+        bs:RAH_ISO_DMPR_Isolation_Damper-in1,
+        bs:_Damper-in1,
+        bs:damper-in_9e2d49541 ;
+    s223:hasProperty bs:16,
+        bs:23,
+        bs:28,
+        bs:43,
+        bs:damper-position_1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:32 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13,
+        bs:S_VAV_hot-water-out-connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20 .
+
+bs:37 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode14 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:42 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode16 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:48 a s223:QuantifiableObservableProperty ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:54 a s223:OutletConnectionPoint ;
+    s223:cnx bs:Secondary_Chilled_Water_Loop-junction1,
+        bs:_Cooling_Coil-water-in-pipe1,
+        bs:_Water_Loop-junction2 .
+
+bs:57 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode26 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:63 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe3>,
+        bs:Chilled_Water_System-junction1,
+        bs:_Water_Loop-junction1 .
+
+bs:76 a s223:Connection ;
+    s223:cnx bs:33,
+        bs:FCU-1_Chilled_Water_Coil-r-in1,
+        bs:r-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:78 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-3 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:79 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-4 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:8 a s223:InletConnectionPoint ;
+    s223:cnx bs:11 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S2-01_VAV_reheat-coil-water-in1 .
+
+bs:80 a s223:Valve ;
+    s223:cnx <urn:bschema#-water-in2>,
+        <urn:bschema#-water-out3> ;
+    s223:hasProperty bs:bldg.CHW2.CW_BYP.VLV1,
+        bs:bldg.CW.BYP_VLV21 ;
+    s223:hasRole rdfs:Resource .
+
+bs:81 a s223:InletConnectionPoint ;
+    s223:cnx bs:78 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:75 .
+
+bs:CH-water-out-pipe1 a s223:Connection ;
+    s223:cnx bs:Chilled_Water_Plant-junction-in-cp-1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:Chilled_Water_1 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe2>,
+        bs:Chilled_Water_Plant-junction1,
+        bs:Chilled_Water_System-junction1 .
+
+bs:FCU-1_Chilled_Water_Coil1 a s223:CoolingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;
+    s223:cnx bs:FCU-1_Chilled_Water_Coil-r-in1,
+        bs:r-out1 ;
+    s223:contains bs:39 ;
+    s223:hasRole rdfs:Resource .
+
+bs:RHC-_AHU-sa-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:RHC-4_AHU-sa-in-connection1,
+        bs:RHC-_AHU-sa-in-connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty rdfs:Resource .
+
+bs:RHC-_AHU-sa-in2 a s223:InletConnectionPoint ;
+    s223:cnx bs:RHC-_AHU-sa-in-connection1,
+        bs:connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty rdfs:Resource .
+
+bs:S1-22_VAV_air-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:air-in-connection_c804b1591 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S2-01_VAV_reheat-coil-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:11 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:8 .
+
+bs:S2-21_VAV_hot-water-in-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-411 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S3-01_VAV_hot-water-in-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-421 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S3-01_VAV_reheat-coil-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:S3-01_VAV_hot-water-in-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S3-01_VAV_hot-water-in1 .
+
+bs:S_VAV_hot-water-in-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_hot-water-in-connection2 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-5 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_hot-water-out-connection1 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:S_VAV_reheat-coil-water-in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:11,
+        bs:25,
+        bs:S_VAV_hot-water-in-connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:27 .
+
+bs:S_VAV_reheat-coil-water-in2 a s223:InletConnectionPoint ;
+    s223:cnx bs:S_VAV_hot-water-in-connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S_VAV_hot-water-in1 .
+
+bs:_Cooling_Coil-water-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:_Cooling_Coil-water-out-pipe1,
+        bs:_Cooling_Coil-water-out-pipe2,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Valve1 a s223:Valve ;
+    s223:cnx <urn:bschema#-out2>,
+        bs:_Bypass_Valve-water-in1 ;
+    s223:hasProperty bs:bldg1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:_Water_Loop-junction-in-cp2 a s223:InletConnectionPoint ;
+    s223:cnx bs:SCHW_and_AH1_Water_Loop-water-out-pipe1,
+        bs:_Water_Loop-junction2,
+        bs:_Water_Loop-water-out-pipe1 .
+
+bs:bldg.12 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode11 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.22 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode10 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.25 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode14 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.6 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode20 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.8 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode29,
+        bs:bnode4 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bnode10 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode17 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode20 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode22 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:77 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode27 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode29 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:77 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode5 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode7 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:in3 a s223:InletConnectionPoint ;
+    s223:cnx bs:_connection1,
+        bs:connection4 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty rdfs:Resource .
+
+<urn:bschema#-air-out1> a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct2>,
+        bs:60,
+        bs:R-duct1,
+        bs:RHC--air-out-duct1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:out1 .
+
+<urn:bschema#-out-duct1> a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:17 a s223:QuantifiableActuatableProperty ;
+    s223:hasAspect s223:EnumerationKind-Position ;
+    s223:hasExternalReference bs:bnode4 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:33 a s223:OutletConnectionPoint ;
+    s223:cnx <urn:bschema#-water-in-pipe3>,
+        bs:76,
+        bs:Hot_Water_Heat_Exchanger-junction1,
+        bs:_Water_Loop-junction2 .
+
+bs:43 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode5 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:5 a s223:Fan,
+        s223:VariableFrequencyDrive,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:cnx <urn:bschema#-out1>,
+        bs:AH_Fan-out1,
+        bs:_Fan-in1 ;
+    s223:contains bs:5,
+        bs:_VFD1 ;
+    s223:hasProperty bs:bldg.14,
+        bs:bldg.25,
+        bs:bldg.8 ;
+    s223:hasRole rdfs:Resource .
+
+bs:55 a s223:InletConnectionPoint ;
+    s223:cnx bs:31 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:in1 .
+
+bs:58 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:67 a s223:OutletConnectionPoint ;
+    s223:cnx bs:58 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:74 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode14 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:Chilled_Water_System-junction1 a s223:Junction ;
+    s223:cnx bs:63,
+        bs:Chilled_Water_1,
+        bs:Chilled_Water_System-junction-in-cp1,
+        bs:Chilled_Water_System-junction-out-cp-41 .
+
+bs:S_VAV_hot-water-in-connection3 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Cooling_Coil-water-in-pipe1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:54,
+        bs:Office_Space_Water_Loop-junction-out-cp-21,
+        bs:Office_Space_Water_Loop-junction-out-cp-31,
+        bs:_Cooling_Coil-water-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:_Damper1 a s223:Damper ;
+    s223:hasProperty bs:12,
+        bs:6 .
+
+bs:_Water_Loop-junction-in-cp1 a s223:InletConnectionPoint ;
+    s223:cnx bs:Office_Space_Water_Loop-water-out-pipe1,
+        bs:Secondary_Chilled_Water_Loop-junction1,
+        bs:_Water_Loop-junction1,
+        bs:_Water_Loop-water-out-pipe1 .
+
+bs:_Water_Loop-junction2 a s223:Junction ;
+    s223:cnx bs:33,
+        bs:54,
+        bs:MDF_Chilled_Water_Loop-junction-out-cp-21,
+        bs:_Water_Loop-junction-in-cp2 .
+
+bs:bldg.17 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode21 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.5 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode13 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.9 a s223:Property ;
+    s223:hasExternalReference bs:bnode4 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.SW.MS.MAIN.PWR_REAL_3_P1 a s223:Property,
+        s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode28 ;
+    s223:hasProperty bs:bldg.SW.MS.MAIN.PWR_REAL_3_P1 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg_Hot_Water_Loop-junction-out-cp-2 a s223:OutletConnectionPoint ;
+    s223:cnx bs:11,
+        bs:S_VAV_hot-water-in-connection1,
+        bs:S_VAV_hot-water-in-connection3,
+        bs:bldg_Hot_Water_Loop-junction1 .
+
+bs:bnode13 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode6 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:discharge-air-1 a s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:Role-Discharge ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:in1 a s223:InletConnectionPoint ;
+    s223:cnx bs:connection3,
+        bs:connection5 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasRole rdfs:Resource .
+
+<urn:bschema#-duct1> a s223:Connection,
+        s223:Duct ;
+    s223:cnx bs:AH1B_Heating_Coil-air-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-duct2> a s223:Connection,
+        s223:Duct ;
+    s223:cnx <urn:bschema#-air-out1>,
+        bs:47,
+        bs:r-in1 ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-in-pipe3> a s223:Connection ;
+    s223:cnx bs:33,
+        bs:63,
+        bs:Chilled_Water_System-junction-out-cp-41 ;
+    s223:hasMedium rdfs:Resource .
+
+<urn:bschema#-water-out2> a s223:OutletConnectionPoint ;
+    s223:cnx bs:44,
+        bs:60 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:10 a s223:OutletConnectionPoint ;
+    s223:cnx bs:14,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:S_VAV_air-out1,
+        bs:S_VAV_air-out2 .
+
+bs:15 a s223:AirHandlingUnit,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#MultipleZoneVAVAirHandlingUnit> ;
+    s223:cnx <urn:bschema#-sa-out1>,
+        bs:AH22,
+        bs:in1 ;
+    s223:contains bs:30,
+        bs:5,
+        bs:60,
+        bs:AH1_B_Outside_Damper1,
+        bs:AH2A_Isolation_Damper_Return1,
+        bs:AH2A_Outside_Air_Damper1,
+        bs:AH2B_Isolation_Damper_Return1,
+        bs:AH_Damper1,
+        bs:AH_Filter1,
+        bs:_Cooling_Coil1 ;
+    s223:hasProperty bs:12,
+        bs:4,
+        bs:6,
+        bs:74,
+        bs:bldg.17,
+        bs:bldg.25,
+        bs:bldg.3 .
+
+bs:3 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct3>,
+        bs:14 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:3 .
+
+bs:31 a s223:Connection,
+        s223:Duct ;
+    s223:hasMedium rdfs:Resource .
+
+bs:4 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode1 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:47 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct2>,
+        bs:25,
+        bs:60 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:50 a s223:InletConnectionPoint ;
+    s223:cnx bs:11,
+        bs:25,
+        bs:79,
+        bs:S2-21_VAV_hot-water-in-connection1,
+        bs:S_VAV_hot-water-in-connection1,
+        bs:S_VAV_hot-water-in-connection3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:27,
+        bs:47,
+        bs:53 .
+
+bs:77 a ns1:BACnetDevice ;
+    ns1:device-instance rdfs:Resource ;
+    ns1:hasPort bs:bnode44 .
+
+bs:_VFD1 a s223:VariableFrequencyDrive,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:hasProperty bs:12,
+        bs:48,
+        bs:bldg.20,
+        bs:bldg.25,
+        bs:bldg.8 .
+
+bs:_Water_Loop-junction1 a s223:Junction ;
+    s223:cnx bs:63,
+        bs:Office_Space_Water_Loop-junction-out-cp-21,
+        bs:Office_Space_Water_Loop-junction-out-cp-31,
+        bs:Office_Space_Water_Loop-junction-out-cp-41,
+        bs:_Water_Loop-junction-in-cp1 .
+
+bs:_Water_Loop-water-out-pipe1 a s223:Connection ;
+    s223:cnx bs:_Water_Loop-junction-in-cp1,
+        bs:_Water_Loop-junction-in-cp2,
+        bs:bldg_Hot_Water_Loop-junction-in-cp1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:bldg.15 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:bnode6 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bnode14 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode2 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode3 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:bnode4 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52,
+        bs:HcHJslD981 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:discharge-air-3 a s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:Role-Discharge ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:connection1,
+        bs:connection2 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty rdfs:Resource .
+
+bs:r-in1 a s223:InletConnectionPoint ;
+    s223:cnx <urn:bschema#-duct2>,
+        bs:41,
+        bs:76,
+        bs:R-duct1,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:in1 .
+
+bs:r-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:69,
+        bs:70,
+        bs:CAC-1,
+        bs:FCU-1_Chilled_Water_Coil1,
+        bs:_Cooling_Coil1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:13 a s223:Connection,
+        s223:Pipe ;
+    s223:hasMedium rdfs:Resource .
+
+bs:14 a s223:Connection,
+        s223:Duct ;
+    s223:cnx bs:10 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:25 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:47,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:26 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo bs:20,
+        bs:26,
+        bs:32,
+        bs:66 .
+
+bs:35 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode14,
+        bs:bnode38 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:39 a s223:Valve ;
+    s223:hasProperty bs:bldg.1,
+        bs:bldg.15,
+        bs:bldg.4,
+        bs:bldg.CHW_ALM1,
+        bs:bldg1 ;
+    s223:hasRole rdfs:Resource .
+
+bs:6 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode1,
+        bs:bnode2 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:66 a s223:OutletConnectionPoint ;
+    s223:cnx bs:13,
+        bs:S_VAV_hot-water-out-connection1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:mapsTo <urn:bschema#-water-out2>,
+        bs:20 .
+
+bs:bldg.10 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode3 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.14 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode26,
+        bs:bnode3 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.4 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode2,
+        bs:bnode5 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.7 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode1 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:reheat-coil-3 a s223:QuantifiableObservableProperty ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:16 a s223:QuantifiableActuatableProperty ;
+    s223:hasAspect s223:EnumerationKind-Position ;
+    s223:hasExternalReference bs:bnode12 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:28 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode2,
+        bs:bnode5 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:HcHJslD981 a ns1:BACnetDevice ;
+    ns1:device-instance rdfs:Resource ;
+    ns1:hasPort bs:bnode24 .
+
+bs:S_VAV_air-out1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:14 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:bldg.1,
+        bs:bldg.3,
+        bs:bldg.S1,
+        bs:discharge-air-1,
+        bs:discharge-air-3 ;
+    s223:mapsTo bs:10 .
+
+bs:S_VAV_air-out2 a s223:OutletConnectionPoint ;
+    s223:cnx bs:14 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:bldg.1,
+        bs:bldg.3,
+        bs:bldg.S1,
+        bs:discharge-air-1,
+        bs:discharge-air-3 ;
+    s223:mapsTo bs:10 .
+
+bs:bldg.2 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode1,
+        bs:bnode2 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.S1 a s223:QuantifiableActuatableProperty,
+        s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:EnumerationKind-Position,
+        s223:Role-Discharge ;
+    s223:hasExternalReference bs:bnode6 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg2 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode4 ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bnode1 a s223:BACnetExternalReference ;
+    ns1:description rdfs:Resource ;
+    ns1:device-identifier bs:52 ;
+    ns1:object-identifier rdfs:Resource ;
+    ns1:object-name rdfs:Resource ;
+    ns1:object-type rdfs:Resource .
+
+bs:11 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-out-cp-2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:12 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:bnode3 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg.3 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode1 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg1 a s223:QuantifiableActuatableProperty ;
+    s223:hasExternalReference bs:bnode29,
+        bs:bnode4 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:bldg_Hot_Water_Loop-junction1 a s223:Junction ;
+    s223:cnx bs:bldg_Hot_Water_Loop-junction-in-cp1,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-1,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-141,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-2,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-3,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-4,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-411,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-421,
+        bs:bldg_Hot_Water_Loop-junction-out-cp-5 .
+
+bs:20 a s223:OutletConnectionPoint ;
+    s223:cnx bs:11 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:60 a s223:HeatingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> ;
+    s223:cnx <urn:bschema#-air-out1>,
+        <urn:bschema#-water-out2>,
+        bs:47,
+        bs:AH1B_Heating_Coil-air-in1,
+        bs:RHC--air-in1,
+        bs:RHC--water-in1 ;
+    s223:contains bs:39 ;
+    s223:hasRole rdfs:Resource .
+
+bs:_Cooling_Coil1 a s223:CoolingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;
+    s223:cnx bs:10,
+        bs:CAC-4_Cooling_Coil-water-in1,
+        bs:CAC-5_Cooling_Coil-air-out1,
+        bs:_Cooling_Coil-water-in1,
+        bs:_Cooling_Coil-water-out1,
+        bs:r-in1,
+        bs:r-out1 ;
+    s223:contains bs:39 ;
+    s223:hasRole rdfs:Resource .
+
+bs:bldg.1 a s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:Role-Discharge ;
+    s223:hasExternalReference bs:bnode1,
+        bs:bnode2 ;
+    s223:hasRole rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:52 a ns1:BACnetDevice ;
+    ns1:device-instance rdfs:Resource ;
+    ns1:hasPort bs:bnode24 .
+

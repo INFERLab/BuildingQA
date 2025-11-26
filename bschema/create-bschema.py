@@ -18,14 +18,12 @@ def write_csv(filename, g_lens, cg_lens):
 
 def get_graphs(directory_path):
     for file_name in os.listdir(directory_path):
-        # if file_name != 'TUC_building.ttl':
-        #     continue
         if file_name.endswith(".ttl"):
             file_path = os.path.join(directory_path, file_name)
             print(f"Processing file: {file_name}")
             g = Graph(store = "Oxigraph")
             g.parse(file_path, format = 'ttl')
-        yield file_name, g
+            yield file_name, g
 
 
 if __name__ == "__main__":
@@ -37,7 +35,7 @@ if __name__ == "__main__":
     file_names = []
     # NOTE: code is not optimized at all, run time could easily be 20 times faster... 
     runtimes = []
-    iterations = []
+    iteration_lst = []
     threshold = None
     for threshold in [0, 0.3, 0.5, 0.7, None]:
         for file_name, g in get_graphs(directory_path):
@@ -48,14 +46,15 @@ if __name__ == "__main__":
             if threshold != None:
                 threshold_path = f'threshold-{int(threshold*100)}/'
             else:
-                threshold_path = 'full'
+                threshold_path = 'full/'
             bschema_file_name = 'bschema/'+ threshold_path + file_name
+            os.makedirs(os.path.dirname(bschema_file_name), exist_ok=True) 
             bind_prefixes(cg)
             cg.serialize(bschema_file_name, format="turtle")
             print("compressed to ", len(cg)/len(g)*100, "% of its original size")
             cg_lens.append(len(cg))
-            iterations.append[i]
-            runtimes.append[end_time - start_time]
+            iteration_lst.append(i)
+            runtimes.append(end_time - start_time)
         
         csv_name = 'bschema/'+ threshold_path + 'stats.csv'
         with open(csv_name, 'w', newline='') as csvfile:
@@ -64,7 +63,7 @@ if __name__ == "__main__":
 
             # Optionally, write a header row
             writer.writerow(["graph_length", "bschema_length", "iterations", "runtime"])
-            for i1, i2, i3, i4 in zip(g_lens, cg_lens, iterations, runtimes):
+            for i1, i2, i3, i4 in zip(g_lens, cg_lens, iteration_lst, runtimes):
                 writer.writerow([i1, i2, i3, i4])
             write_csv('bschema/'+ threshold_path + 'stats.csv', g_lens, cg_lens)
         
