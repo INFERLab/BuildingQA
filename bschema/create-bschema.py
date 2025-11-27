@@ -36,12 +36,13 @@ if __name__ == "__main__":
     # NOTE: code is not optimized at all, run time could easily be 20 times faster... 
     runtimes = []
     iteration_lst = []
-    threshold = None
-    for threshold in [0, 0.3, 0.5, 0.7, None]:
+    thresholds = [0, 0.3, 0.5, 0.7, None]
+    for k, threshold in enumerate(thresholds):
         for file_name, g in get_graphs(directory_path):
             g_lens.append(len(g))
             start_time = time() 
             cg, mg, i = create_bschema(g, iterations=20, similarity_threshold=threshold)
+            print('Confirming iterations: ', i)
             end_time = time()
             if threshold != None:
                 threshold_path = f'threshold-{int(threshold*100)}/'
@@ -55,6 +56,7 @@ if __name__ == "__main__":
             cg_lens.append(len(cg))
             iteration_lst.append(i)
             runtimes.append(end_time - start_time)
+            file_names.append(file_name)
         
         csv_name = 'bschema/'+ threshold_path + 'stats.csv'
         with open(csv_name, 'w', newline='') as csvfile:
@@ -62,19 +64,13 @@ if __name__ == "__main__":
             writer = csv.writer(csvfile)
 
             # Optionally, write a header row
-            writer.writerow(["graph_length", "bschema_length", "iterations", "runtime"])
-            for i1, i2, i3, i4 in zip(g_lens, cg_lens, iteration_lst, runtimes):
-                writer.writerow([i1, i2, i3, i4])
+            writer.writerow(["file_name","threshold","graph_length", "bschema_length", "iterations", "runtime"])
+            for i0, i1, i2, i3, i4 in zip(file_names, g_lens, cg_lens, iteration_lst, runtimes):
+                writer.writerow([i0, threshold, i1, i2, i3, i4])
             write_csv('bschema/'+ threshold_path + 'stats.csv', g_lens, cg_lens)
-        
-        plt.plot(g_lens, cg_lens, 'o')
+        # just plotting the ones added in last iteration
+        plt.plot(g_lens[-6:], cg_lens[-6:], 'o')
         plt.xlabel("Original Graph Size")
         plt.ylabel("Compressed Graph Size")
         plt.title(f"Building Compression By Graph Size (Threshold: {threshold})")
-        plt.savefig("graph_sizes.png")
-        plt.clf()
-        plt.plot(g_lens, [(cg_len/g_len) for cg_len, g_len in zip(cg_lens, g_lens)], 'o')
-        plt.xlabel("Original Graph Size")
-        plt.ylabel("Compression Ratio")
-        plt.title(f"Building Compression Ratio By Graph Size (Threshold: {threshold})")
-        plt.savefig('bschema/' + threshold_path + "compression_ratios.png")
+        plt.savefig('bschema/' + threshold_path + "graph_sizes.png")

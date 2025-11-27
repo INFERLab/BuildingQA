@@ -40,107 +40,107 @@ bs:bldg.MDC.CAC07_SUP_TMP_LIMT1 a brick:Max_Discharge_Air_Temperature_Setpoint_L
     brick:isPointOf rdfs:Resource ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:21 a brick:Leaving_Chilled_Water_Flow_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:23 a brick:Thermal_Power_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:24 a ns3:ukWxk1OT528 ;
+bs:19 a ns3:ukWxk1OT528 ;
     ns3:device-instance rdfs:Resource ;
     ns3:hasPort bs:bnode2 .
+
+bs:25 a brick:Thermal_Power_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:9 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:27 a brick:Leaving_Chilled_Water_Flow_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:9 ;
+    ns2:hasExternalReference bs:bnode1 .
 
 bs:DP1 a brick:Chilled_Water_Differential_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:Mode_1 a brick:Energy_Usage_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34 ;
+    brick:isPointOf bs:9 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:Return_Temperature1 a brick:Entering_Water_Temperature_Sensor,
         brick:Return_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34 ;
+    brick:isPointOf bs:9 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:Sump_Pump_1 a brick:Pump ;
-    brick:hasPoint bs:bldg.32 .
+    brick:hasPoint bs:bldg.43 .
 
 bs:Supply_Temperature1 a brick:Leaving_Water_Temperature_Sensor,
         brick:Supply_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34 ;
+    brick:isPointOf bs:9 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:TEST.ACTCHWFLWSP1 a brick:Min_Water_Flow_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.55 a brick:Leaving_Chilled_Water_Temperature_Setpoint ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.59 a brick:Setpoint ;
+bs:bldg.54 a brick:Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14 ;
+        bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.62 a brick:Dewpoint_Sensor ;
+bs:bldg.59 a brick:Dewpoint_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:2 ;
+        bs:5 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.62 a brick:Leaving_Chilled_Water_Temperature_Setpoint ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH.SF_HIGH.STATIC1 a brick:High_Static_Pressure_Cutout_Setpoint_Limit ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:20 ;
+    brick:isPointOf bs:8 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH1A_OFF.MODE1 a brick:Off_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH1_CFMIG1 a brick:Discharge_Air_Integral_Gain_Parameter,
         brick:Supply_Air_Integral_Gain_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH1_DWP.STP1 a brick:Dewpoint_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH1_LOW.FLOW1 a brick:Low_Discharge_Air_Flow_Alarm,
         brick:Low_Supply_Air_Flow_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH1_SYS_GEN1 a brick:Standby_Unit_On_Off_Status ;
@@ -152,71 +152,71 @@ bs:bldg.AH1_SYS_GEN1 a brick:Standby_Unit_On_Off_Status ;
 bs:bldg.AH1_VP.STP1 a brick:Velocity_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2A-B.MIN_DUCT_STATIC_A-B1 a brick:Min_Discharge_Air_Static_Pressure_Setpoint_Limit,
         brick:Min_Supply_Air_Static_Pressure_Setpoint_Limit ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2B.SF_VFD_TORQUE1 a brick:Torque_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2F_ALM1 a brick:Air_Flow_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:20 ;
+    brick:isPointOf bs:8 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2_MAT1 a brick:Mixed_Air_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2_RAH1 a brick:Return_Air_Humidity_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2_RDSP1 a brick:Static_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2_SDSP.STP1 a brick:Discharge_Air_Static_Pressure_Setpoint,
         brick:Supply_Air_Static_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2_SDSP1 a brick:Discharge_Air_Static_Pressure_Sensor,
         brick:Supply_Air_Static_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AHVP1 a brick:Discharge_Air_Velocity_Pressure_Sensor,
         brick:Supply_Air_Velocity_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH_PFLT.ALM1 a brick:Change_Filter_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AUDITORIUM_CO21 a brick:CO2_Sensor ;
@@ -228,7 +228,7 @@ bs:bldg.AUDITORIUM_CO21 a brick:CO2_Sensor ;
 bs:bldg.C.MIN1 a brick:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CH2.COMP.REF.TEMP1 a brick:Water_Temperature_Setpoint ;
@@ -246,43 +246,43 @@ bs:bldg.CH2.CURRENT.LIMIT1 a brick:Current_Limit ;
 bs:bldg.CHW.FAILURE_RESET1 a brick:Fault_Reset_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW1.CH_1 a brick:Cooling_Demand_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW2.MULTISTACK_CRNTLEADCOMP1 a brick:Stages_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW2_CHLR.LEADCMPSPCMD1 a brick:Mode_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW2_CHLR.LOWERSPCMD1 a brick:Min_Load_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW2_CHLR.SPCMD1 a brick:Max_Load_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW2_TD11 a brick:Duration_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.COND_COND1 a brick:Conductivity_Sensor ;
@@ -294,7 +294,7 @@ bs:bldg.COND_COND1 a brick:Conductivity_Sensor ;
 bs:bldg.CP.CHW.RESET.DP.MAX1 a brick:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14 ;
+    brick:isPointOf bs:10 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CVFD_FREQ_OUTPUT1 a brick:Output_Frequency_Sensor ;
@@ -319,7 +319,7 @@ bs:bldg.CW.CT_VIBRATION.SW1 a brick:Sensor ;
 bs:bldg.CW_DP_LOOPOUT1 a brick:Pump_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:30 ;
+    brick:isPointOf bs:33 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.D1 a brick:VFD_Enable_Command ;
@@ -332,13 +332,13 @@ bs:bldg.D1 a brick:VFD_Enable_Command ;
 bs:bldg.EF1.EF2_DSP.STP1 a brick:Exhaust_Air_Static_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.EF1.EF2_DSP1 a brick:Exhaust_Air_Static_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.EF2_VFD_MWH1 a brick:Energy_Sensor ;
@@ -350,19 +350,19 @@ bs:bldg.EF2_VFD_MWH1 a brick:Energy_Sensor ;
 bs:bldg.EF3.EF4_DSP1 a brick:Air_Static_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.EF_CFM.STP1 a brick:Exhaust_Air_Flow_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.EF_CFM1 a brick:Exhaust_Air_Flow_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.HW_DP.STP1 a brick:Hot_Water_Differential_Pressure_Setpoint ;
@@ -401,82 +401,82 @@ bs:bldg.KWH.TOTAL1 a brick:Electrical_Energy_Usage_Sensor ;
     brick:isPointOf bs:bldg4 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC01 a brick:High_Temperature_Alarm_Parameter ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:CAC-1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.MDC.CAC010 a brick:Dehumidification_Start_Stop_Status ;
+bs:bldg.MDC.CAC01 a brick:Heating_Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC02 a brick:Filter_Status ;
+bs:bldg.MDC.CAC010 a brick:Low_Air_Flow_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC03 a brick:Zone_Air_Humidity_Setpoint ;
+bs:bldg.MDC.CAC02 a brick:High_Temperature_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC04 a brick:Low_Air_Flow_Alarm ;
+bs:bldg.MDC.CAC03 a brick:Low_Temperature_Alarm_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC05 a brick:Heating_Mode_Status ;
+bs:bldg.MDC.CAC04 a brick:Dehumidification_Start_Stop_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC06 a brick:Relative_Humidity_Sensor ;
+bs:bldg.MDC.CAC05 a brick:Relative_Humidity_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC07 a brick:Low_Temperature_Alarm_Parameter ;
+bs:bldg.MDC.CAC06 a brick:Humidification_Start_Stop_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC08 a brick:High_Temperature_Alarm ;
+bs:bldg.MDC.CAC07 a brick:High_Temperature_Alarm_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC09 a brick:Humidification_Start_Stop_Status ;
+bs:bldg.MDC.CAC08 a brick:Filter_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC0D1 a brick:High_Humidity_Alarm_Parameter ;
+bs:bldg.MDC.CAC09 a brick:Zone_Air_Humidity_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.MDC.CAC0D2 a brick:Low_Humidity_Alarm_Parameter ;
+bs:bldg.MDC.CAC0D1 a brick:Low_Humidity_Alarm_Parameter ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:CAC-1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.MDC.CAC0D2 a brick:High_Humidity_Alarm_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -549,38 +549,38 @@ bs:bldg.MDC.CAC0_MANUAL_OVRD1 a brick:Override_Command ;
 bs:bldg.RAH.SF_ALM1 a brick:Unit_Failure_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:20 ;
+    brick:isPointOf bs:8 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.RAH_ENABLE1 a brick:System_Enable_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.RAH_RESET1 a brick:Reset_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.RAH_SAT.ALM1 a brick:Discharge_Air_Temperature_Alarm,
         brick:Supply_Air_Temperature_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.REF.FAN_SPD1 a brick:Speed_Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.REF.RFG_ALM1 a brick:Leak_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19 ;
+    brick:isPointOf bs:31 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.S1 a brick:Overridden_On_Status ;
@@ -592,13 +592,13 @@ bs:bldg.S1 a brick:Overridden_On_Status ;
 bs:bldg.SCHWP_L1 a brick:Lead_Lag_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:27 ;
+    brick:isPointOf bs:7 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.SCHWP_PRF1 a brick:Pump_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:27 ;
+    brick:isPointOf bs:7 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.STEAMFLOW1 a brick:Steam_Usage_Sensor ;
@@ -693,7 +693,7 @@ bs:bldg._CFM.STP1 a brick:Discharge_Air_Flow_Setpoint,
         brick:Supply_Air_Flow_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2 ;
+    brick:isPointOf bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg._VFD_TORQUE1 a brick:Motor_Torque_Sensor ;
@@ -711,46 +711,32 @@ bs:bldg_OAT1 a brick:Outside_Air_Temperature_Sensor ;
 bs:bnode2 a ns3:Port ;
     ns2:storedAt rdfs:Resource .
 
-bs:13 a brick:Chilled_Water_Flow_Sensor ;
+bs:13 a brick:Chilled_Water_Differential_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:bldg.CHW_Flow_Meter1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:26 a brick:Chilled_Water_Differential_Pressure_Setpoint ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:CH11 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:33 a brick:Water_Flow_Sensor ;
+bs:22 a brick:Water_Flow_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:34,
-        bs:8 ;
+    brick:isPointOf bs:17,
+        bs:9 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:34 a brick:Chilled_Water_Flow_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:bldg.CHW_Flow_Meter1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:MS_Electrical_Meter1 a brick:Electrical_Meter ;
-    brick:hasPoint bs:bldg.20 ;
+    brick:hasPoint bs:bldg.42 ;
     brick:isSubMeterOf bs:bldg4 .
 
-bs:bldg.17 a brick:Max_Limit ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:S_VAV1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.21 a brick:Electric_Energy_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:MS1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.22 a brick:Power_Factor_Sensor ;
+bs:bldg.13 a brick:Peak_Demand_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -758,28 +744,45 @@ bs:bldg.22 a brick:Power_Factor_Sensor ;
         bs:MS1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.24 a brick:Fan_Speed_Command ;
+bs:bldg.15 a brick:Min_Limit ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:20,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.25 a brick:Min_Limit ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.30 a brick:Heating_Command ;
+bs:bldg.17 a brick:Run_Request_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:9,
-        bs:_Valve1 ;
+    brick:isPointOf rdfs:Resource,
+        bs:5,
+        bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.33 a brick:Damper_Command ;
+bs:bldg.2 a brick:Voltage_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:A1,
+        bs:MS1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.25 a brick:Fan_Speed_Command ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:8,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.28 a brick:Reactive_Power_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:A1,
+        bs:MS1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.30 a brick:Damper_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -787,7 +790,37 @@ bs:bldg.33 a brick:Damper_Command ;
         bs:_Outside_Damper1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.37 a brick:Active_Power_Sensor,
+bs:bldg.35 a brick:Heating_Command ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:4,
+        bs:_Valve1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.38 a brick:Power_Factor_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:A1,
+        bs:MS1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.40 a brick:Max_Limit ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:S_VAV1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.44 a brick:Return_Air_Temperature_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:5,
+        bs:CAC-1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.45 a brick:Active_Power_Sensor,
         brick:Electrical_Meter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
@@ -797,23 +830,7 @@ bs:bldg.37 a brick:Active_Power_Sensor,
     brick:isSubMeterOf rdfs:Resource ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.39 a brick:Overridden_Status ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:A1,
-        bs:WIN_1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.4 a brick:Voltage_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:A1,
-        bs:MS1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.44 a brick:Speed_Sensor ;
+bs:bldg.47 a brick:Speed_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -821,51 +838,42 @@ bs:bldg.44 a brick:Speed_Sensor ;
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.47 a brick:Air_Differential_Pressure_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19,
-        bs:2 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.49 a brick:Cooling_Mode_Status ;
+bs:bldg.48 a brick:Overridden_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:CAC-1 ;
+        bs:A1,
+        bs:WIN_1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.5 a brick:Run_Request_Status ;
+bs:bldg.51 a brick:Air_Differential_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:CAC-1 ;
+    brick:isPointOf bs:31,
+        bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.53 a brick:Communication_Loss_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
+        bs:10,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.56 a brick:Return_Air_Temperature_Sensor ;
+bs:bldg.55 a brick:Cooling_Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:2,
+        bs:10,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.6 a brick:Reactive_Power_Sensor ;
+bs:bldg.6 a brick:Electric_Energy_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:A1,
-        bs:MS1 ;
+    brick:isPointOf bs:MS1,
+        bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.60 a brick:Temperature_Setpoint ;
@@ -874,14 +882,6 @@ bs:bldg.60 a brick:Temperature_Setpoint ;
     brick:isPointOf rdfs:Resource,
         bs:CH11,
         bs:CH21 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.7 a brick:Peak_Demand_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:A1,
-        bs:MS1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH.DP1 a brick:Filter_Differential_Pressure_Sensor ;
@@ -894,14 +894,14 @@ bs:bldg.AH.DP1 a brick:Filter_Differential_Pressure_Sensor ;
 bs:bldg.AH1 a brick:Run_Enable_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2,
+    brick:isPointOf bs:5,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.AH2A.AH2B.RF_CFM1 a brick:Return_Air_Flow_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2,
+    brick:isPointOf bs:5,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
@@ -915,14 +915,14 @@ bs:bldg.CH.COND.REF.TEMP1 a brick:Entering_Condenser_Water_Temperature_Setpoint 
 bs:bldg.CH1 a brick:Cooling_Demand_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CHW_CT1 a brick:Motor_Current_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:27,
+    brick:isPointOf bs:7,
         bs:CWP1 ;
     ns2:hasExternalReference bs:bnode1 .
 
@@ -943,29 +943,29 @@ bs:bldg.CHW_Flow_Meter1 a brick:Chilled_Water_Differential_Pressure_Deadband_Set
         <urn:bldg#bldg.CHW1.FL.METER.4_Flow_Meter>,
         <urn:bldg#bldg.CHW1.FL.METER.5_Flow_Meter>,
         <urn:bldg#bldg.CHW1.FL.METER.6_Flow_Meter> ;
-    brick:hasPoint bs:13 ;
+    brick:hasPoint bs:34 ;
     brick:hasSubstance rdfs:Resource ;
-    brick:meters bs:14 .
+    brick:meters bs:10 .
 
 bs:bldg.C_CWST.STP1 a brick:Leaving_Condenser_Water_Temperature_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:30 ;
+    brick:isPointOf bs:10,
+        bs:33 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.GAIN1 a brick:Derivative_Gain_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:30,
+    brick:isPointOf bs:33,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.P_LOOPOUT1 a brick:Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:2 ;
+    brick:isPointOf bs:10,
+        bs:5 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.S_CLG_FLOW_MAX1 a brick:Max_Cooling_Discharge_Air_Flow_Setpoint_Limit,
@@ -1008,55 +1008,55 @@ bs:bldg.S_DMPR_POS1 a brick:Damper_Position_Sensor ;
 bs:bldg._VFD.SPREQ1 a brick:Speed_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19,
+    brick:isPointOf bs:31,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg_Sewage1 a brick:Service_Room,
         ns1:UtilitiesRoom ;
-    brick:hasPoint bs:bldg.32 ;
+    brick:hasPoint bs:bldg.43 ;
     brick:isPartOf bs:_Building1 .
 
-bs:16 a brick:Differential_Pressure_Sensor ;
+bs:20 a brick:Differential_Pressure_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:30,
+    brick:isPointOf bs:10,
+        bs:33,
         bs:RAH_Supply_Plenum1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:29 a brick:Water_Differential_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:30,
+    brick:isPointOf bs:10,
+        bs:33,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:36 a brick:Private_Office,
         ns1:Office ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1 ;
+    brick:hasPoint bs:bldg.21 ;
     ns1:locatedIn bs:Floor_1 .
 
 bs:AH1_Final_Filter1 a brick:Final_Filter ;
     brick:hasPoint bs:bldg.AH.DP1 ;
-    brick:isPartOf bs:2 .
+    brick:isPartOf bs:5 .
 
 bs:AH2_Outside_Air_Damper1 a brick:Economizer_Damper ;
-    brick:hasPoint bs:bldg.16 ;
-    brick:isPartOf bs:2 .
+    brick:hasPoint bs:bldg.27 ;
+    brick:isPartOf bs:5 .
 
 bs:AH2_Return_Air_Damper1 a brick:Return_Damper ;
-    brick:hasPoint bs:bldg.16 ;
-    brick:isPartOf bs:2 .
+    brick:hasPoint bs:bldg.27 ;
+    brick:isPartOf bs:5 .
 
 bs:AH_Pre_Filter1 a brick:Pre_Filter ;
     brick:hasPoint bs:bldg.AH.DP1 ;
-    brick:isPartOf bs:2 .
+    brick:isPartOf bs:5 .
 
 bs:CH2_Compressor1 a brick:Compressor ;
-    brick:hasPoint bs:bldg.2 ;
+    brick:hasPoint bs:bldg.4 ;
     brick:isPartOf bs:CH21 .
 
 bs:CT_Fan1 a brick:Cooling_Tower_Fan ;
@@ -1064,21 +1064,55 @@ bs:CT_Fan1 a brick:Cooling_Tower_Fan ;
     brick:isPartOf bs:CT1 ;
     ns1:includes bs:_VFD1 .
 
+bs:Gas_Vault1 a brick:Storage_Room,
+        ns1:Storage ;
+    brick:isFedBy bs:4 ;
+    brick:isPartOf bs:Floor_1 ;
+    ns1:isFedBy bs:4 .
+
 bs:MDF_Condenser_Water_Loop_Bypass_Valve1 a brick:Condenser_Water_Bypass_Valve ;
-    brick:hasPoint bs:bldg.8 ;
-    brick:isPartOf bs:30 .
+    brick:hasPoint bs:bldg.22 ;
+    brick:isPartOf bs:33 .
 
 bs:MDF_Valve1 a brick:Isolation_Valve ;
     brick:hasPoint bs:bldg2 ;
-    brick:isPartOf bs:14 .
+    brick:isPartOf bs:10 .
 
-<urn:bschema#M_Fab_Chemical/Gas_Vault1> a brick:Storage_Room,
-        ns1:Storage ;
-    brick:isFedBy bs:9 ;
-    brick:isPartOf bs:Floor_1 ;
-    ns1:isFedBy bs:9 .
+bs:bldg.18 a brick:Time_Parameter ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:CWP1,
+        bs:S_VAV1 ;
+    ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.10 a brick:Frequency_Sensor,
+bs:bldg.22 a brick:Valve_Position_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:MDF_Condenser_Water_Loop_Bypass_Valve1,
+        bs:_Valve1,
+        bs:_Valve2 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.29 a brick:Open_Close_Status ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:12,
+        bs:_Damper1,
+        bs:_Outside_Damper1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.31 a brick:Fan_Status ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:31,
+        bs:8,
+        bs:FCU-1_Fan1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.36 a brick:Frequency_Sensor,
         brick:Output_Frequency_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
@@ -1087,60 +1121,42 @@ bs:bldg.10 a brick:Frequency_Sensor,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.23 a brick:Open_Close_Status ;
+bs:bldg.39 a brick:Power_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:17,
-        bs:_Damper1,
-        bs:_Outside_Damper1 ;
+        bs:5,
+        bs:HWP_VFD1,
+        bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.26 a brick:Discharge_Air_Flow_Sensor,
-        brick:Supply_Air_Flow_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2,
-        bs:S_VAV1,
-        bs:S_VAV2 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.3 a brick:Time_Parameter ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:CWP1,
-        bs:S_VAV1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.36 a brick:Smoke_Detection_Alarm ;
+bs:bldg.41 a brick:Smoke_Detection_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:17,
-        bs:2,
+        bs:12,
+        bs:5,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.40 a brick:Low_Temperature_Alarm ;
+bs:bldg.49 a brick:Differential_Pressure_Setpoint_Limit ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:5 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.52 a brick:Low_Temperature_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:2,
+        bs:10,
+        bs:5,
         bs:CAC-1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.41 a brick:Fan_Status ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:19,
-        bs:20,
-        bs:FCU-1_Fan1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.46 a brick:Start_Stop_Status ;
+bs:bldg.56 a brick:Start_Stop_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -1149,43 +1165,27 @@ bs:bldg.46 a brick:Start_Stop_Status ;
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.51 a brick:Power_Sensor ;
+bs:bldg.61 a brick:Run_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:HWP_VFD1,
+    brick:isPointOf bs:10,
+        bs:5,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.57 a brick:Run_Status ;
+bs:bldg.9 a brick:Discharge_Air_Flow_Sensor,
+        brick:Supply_Air_Flow_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:2,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.58 a brick:Differential_Pressure_Setpoint_Limit ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.8 a brick:Valve_Position_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:MDF_Condenser_Water_Loop_Bypass_Valve1,
-        bs:_Valve1,
-        bs:_Valve2 ;
+    brick:isPointOf bs:5,
+        bs:S_VAV1,
+        bs:S_VAV2 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.C1 a brick:Leaving_Condenser_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:30,
+    brick:isPointOf bs:33,
         bs:CH11,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
@@ -1193,15 +1193,15 @@ bs:bldg.C1 a brick:Leaving_Condenser_Water_Temperature_Sensor ;
 bs:bldg.CHW1 a brick:Lead_Lag_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:27,
+    brick:isPointOf bs:10,
+        bs:7,
         bs:CWP1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg.CT1 a brick:Entering_Condenser_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:30,
+    brick:isPointOf bs:33,
         bs:CH11,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
@@ -1210,7 +1210,7 @@ bs:bldg.VFD_INPUT_REF_11 a brick:Speed_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:27,
+        bs:7,
         bs:HWP_VFD1,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
@@ -1218,15 +1218,15 @@ bs:bldg.VFD_INPUT_REF_11 a brick:Speed_Setpoint ;
 bs:bldg._DP.STP1 a brick:Air_Differential_Pressure_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19,
-        bs:2,
+    brick:isPointOf bs:31,
+        bs:5,
         bs:_Building1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg1 a brick:Cooling_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:S_VAV1,
         bs:_Valve2 ;
     ns2:hasExternalReference bs:bnode1 .
@@ -1234,12 +1234,12 @@ bs:bldg1 a brick:Cooling_Command ;
 bs:bldg3 a brick:Chilled_Water_Temperature_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:CH11,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:8 a brick:Max_Water_Temperature_Setpoint,
+bs:17 a brick:Max_Water_Temperature_Setpoint,
         brick:Min_Water_Temperature_Setpoint,
         brick:Water_Differential_Pressure_Setpoint,
         brick:Water_Differential_Temperature_Sensor,
@@ -1260,101 +1260,101 @@ bs:8 a brick:Max_Water_Temperature_Setpoint,
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
     s223:hasExternalReference bs:bnode1 ;
-    brick:hasPoint bs:33 ;
+    brick:hasPoint bs:22 ;
     brick:hasSubstance rdfs:Resource ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:30,
-        bs:34 ;
-    brick:meters bs:30 ;
+    brick:isPointOf bs:33,
+        bs:9 ;
+    brick:meters bs:33 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:FCU-1_Fan1 a brick:Fan ;
-    brick:hasPoint bs:bldg.41,
-        bs:bldg.45 ;
+    brick:hasPoint bs:bldg.31,
+        bs:bldg.58 ;
     brick:isPartOf bs:FCU-11 .
 
 bs:WIN_1 a brick:HVAC_Equipment ;
-    brick:hasLocation bs:12 ;
-    brick:hasPoint bs:bldg.12,
-        bs:bldg.39 ;
-    ns1:locatedIn bs:12 .
+    brick:hasLocation bs:15 ;
+    brick:hasPoint bs:bldg.48,
+        bs:bldg.7 ;
+    ns1:locatedIn bs:15 .
 
-bs:bldg.12 a brick:Switch_Status ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:19,
-        bs:20,
-        bs:S_VAV1,
-        bs:WIN_1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.15 a brick:Discharge_Air_Temperature_Sensor,
+bs:bldg.12 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:9,
+        bs:4,
+        bs:5,
         bs:CAC-1,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.27 a brick:Demand_Sensor,
+bs:bldg.16 a brick:Fault_Status ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:5,
+        bs:8,
+        bs:HWP_VFD1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.20 a brick:Demand_Sensor,
         brick:Power_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
+        bs:10,
         bs:A1,
         bs:S_VAV1,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.29 a brick:Delay_Parameter ;
+bs:bldg.24 a brick:Delay_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2,
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:5,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.38 a brick:Fault_Status ;
+bs:bldg.26 a brick:Pump_On_Off_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:20,
-        bs:HWP_VFD1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.43 a brick:Pump_On_Off_Status ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:27,
+    brick:isPointOf bs:7,
         bs:CWP1,
         bs:HWP_VFD1,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.45 a brick:Fan_Command ;
+bs:bldg.46 a brick:Enable_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19,
-        bs:2,
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:5,
+        bs:CAC-1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.58 a brick:Fan_Command ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:31,
+        bs:5,
         bs:CAC-1,
         bs:FCU-1_Fan1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.50 a brick:Enable_Command ;
+bs:bldg.7 a brick:Switch_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2,
-        bs:CAC-1 ;
+    brick:isPointOf rdfs:Resource,
+        bs:31,
+        bs:8,
+        bs:S_VAV1,
+        bs:WIN_1 ;
     ns2:hasExternalReference bs:bnode1 .
 
 bs:bldg2 a brick:Valve_Position_Command ;
@@ -1368,40 +1368,40 @@ bs:bldg2 a brick:Valve_Position_Command ;
 
 bs:bldg4 a brick:Building_Electrical_Meter ;
     s223:hasExternalReference bs:bnode1 ;
-    brick:hasPoint bs:bldg.20,
+    brick:hasPoint bs:bldg.42,
         bs:bldg.KWH.TOTAL1 ;
     brick:hasSubMeter bs:MS_Electrical_Meter1 ;
     brick:hasUnit rdfs:Resource ;
     brick:meters bs:_Building1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:3 a brick:Parameter ;
+bs:2 a brick:Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:2,
-        bs:34,
+        bs:10,
+        bs:5,
+        bs:9,
         bs:CAC-1,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:31 a brick:Entering_Chilled_Water_Temperature_Sensor ;
+bs:23 a brick:Leaving_Chilled_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:34,
-        bs:CAC-1,
+    brick:isPointOf bs:10,
+        bs:30,
+        bs:9,
         bs:CH11,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:35 a brick:Leaving_Chilled_Water_Temperature_Sensor ;
+bs:35 a brick:Entering_Chilled_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:34,
-        bs:37,
+    brick:isPointOf bs:10,
+        bs:9,
+        bs:CAC-1,
         bs:CH11,
         bs:CH21 ;
     ns2:hasExternalReference bs:bnode1 .
@@ -1414,12 +1414,55 @@ bs:HWP1 a brick:Hot_Water_Pump ;
     ns1:includes bs:HWP_VFD1 .
 
 bs:_Valve1 a brick:Hot_Water_Valve ;
-    brick:hasPoint bs:bldg.30,
-        bs:bldg.8,
+    brick:hasPoint bs:bldg.22,
+        bs:bldg.35,
         bs:bldg2 ;
-    brick:isPartOf bs:9 .
+    brick:isPartOf bs:4 .
 
-bs:bldg.2 a brick:Current_Sensor ;
+bs:bldg.23 a brick:Temperature_Sensor ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:5,
+        bs:CH11,
+        bs:HWP_VFD1,
+        bs:S_VAV1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.33 a brick:Point ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:10,
+        bs:CAC-1,
+        bs:HWP_VFD1,
+        bs:S_VAV1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.34 a brick:Fan_On_Off_Status ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:31,
+        bs:4,
+        bs:8,
+        bs:CAC-1,
+        bs:FCU-11 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.37 a brick:On_Off_Command ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:5,
+        bs:CAC-1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.4 a brick:Current_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -1430,7 +1473,7 @@ bs:bldg.2 a brick:Current_Sensor ;
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.20 a brick:Electric_Power_Sensor ;
+bs:bldg.42 a brick:Electric_Power_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
@@ -1441,128 +1484,97 @@ bs:bldg.20 a brick:Electric_Power_Sensor ;
         bs:bldg4 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.31 a brick:Fan_On_Off_Status ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:19,
-        bs:20,
-        bs:9,
-        bs:CAC-1,
-        bs:FCU-11 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.34 a brick:Point ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:CAC-1,
-        bs:HWP_VFD1,
-        bs:S_VAV1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.35 a brick:Temperature_Sensor ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:CH11,
-        bs:HWP_VFD1,
-        bs:S_VAV1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.48 a brick:On_Off_Command ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2,
-        bs:CAC-1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.54 a brick:On_Off_Status ;
+bs:bldg.50 a brick:On_Off_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf bs:11,
-        bs:15,
-        bs:19,
+        bs:31,
         bs:310A_AV_EQUIPMNT1,
+        bs:37,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.61 a brick:System_Status ;
+bs:bldg.57 a brick:System_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
+    brick:isPointOf bs:10,
         bs:A1,
         bs:CH11,
         bs:CH21,
         bs:CWP1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:37 a brick:HX,
-        brick:Heat_Exchanger ;
-    brick:feeds bs:bldg_Hot_Water_Loop1 ;
-    brick:hasPart bs:_Valve2 ;
-    brick:hasPoint bs:35 ;
-    brick:isFedBy bs:14 ;
-    ns1:feeds bs:bldg_Hot_Water_Loop1 ;
-    ns1:includes bs:_Valve2 ;
-    ns1:isFedBy bs:14 .
-
-bs:CT1 a brick:Cooling_Tower ;
-    brick:feeds bs:30 ;
-    brick:hasPart bs:CT_Fan1 ;
-    brick:hasPoint bs:bldg.9,
-        bs:bldg.CW.CT.LVL1,
-        bs:bldg.CW.CT_VIBRATION.SW1 ;
-    ns1:feeds bs:30 ;
-    ns1:includes bs:CT_Fan1 .
-
-bs:_Generator1 a brick:Electrical_Equipment ;
-    brick:feeds bs:2,
-        bs:_Building1 ;
-    brick:hasPoint bs:bldg.32,
-        bs:bldg.AH1_SYS_GEN1 ;
-    ns1:feeds bs:2,
-        bs:_Building1 .
-
-bs:bldg.14 a brick:Start_Stop_Command ;
+bs:24 a brick:Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:19,
-        bs:20,
-        bs:27,
-        bs:CAC-1,
-        bs:CWP1,
-        bs:_VFD1 ;
+        bs:10,
+        bs:31,
+        bs:7,
+        bs:9,
+        bs:A1,
+        bs:CWP1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.19 a brick:Discharge_Air_Temperature_Setpoint,
+bs:30 a brick:HX,
+        brick:Heat_Exchanger ;
+    brick:feeds bs:bldg_Hot_Water_Loop1 ;
+    brick:hasPart bs:_Valve2 ;
+    brick:hasPoint bs:23 ;
+    brick:isFedBy bs:10 ;
+    ns1:feeds bs:bldg_Hot_Water_Loop1 ;
+    ns1:includes bs:_Valve2 ;
+    ns1:isFedBy bs:10 .
+
+bs:CT1 a brick:Cooling_Tower ;
+    brick:feeds bs:33 ;
+    brick:hasPart bs:CT_Fan1 ;
+    brick:hasPoint bs:bldg.8,
+        bs:bldg.CW.CT.LVL1,
+        bs:bldg.CW.CT_VIBRATION.SW1 ;
+    ns1:feeds bs:33 ;
+    ns1:includes bs:CT_Fan1 .
+
+bs:_Generator1 a brick:Electrical_Equipment ;
+    brick:feeds bs:5,
+        bs:_Building1 ;
+    brick:hasPoint bs:bldg.43,
+        bs:bldg.AH1_SYS_GEN1 ;
+    ns1:feeds bs:5,
+        bs:_Building1 .
+
+bs:bldg.1 a brick:Discharge_Air_Temperature_Setpoint,
         brick:Supply_Air_Temperature_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:9,
+        bs:4,
+        bs:5,
         bs:CAC-1,
         bs:FCU-11,
         bs:S_VAV1,
         bs:S_VAV2 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.52 a brick:On_Timer_Sensor,
+bs:bldg.14 a brick:Start_Stop_Command ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf rdfs:Resource,
+        bs:31,
+        bs:7,
+        bs:8,
+        bs:CAC-1,
+        bs:CWP1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.32 a brick:On_Timer_Sensor,
         brick:Run_Time_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:2,
-        bs:27,
+    brick:isPointOf bs:10,
+        bs:5,
+        bs:7,
         bs:CH11,
         bs:CH21,
         bs:CWP1 ;
@@ -1570,16 +1582,16 @@ bs:bldg.52 a brick:On_Timer_Sensor,
 
 bs:38 a brick:Bypass_Valve ;
     brick:hasPoint bs:bldg2 ;
-    brick:isPartOf bs:14,
-        bs:30,
+    brick:isPartOf bs:10,
+        bs:33,
         bs:bldg_Hot_Water_Loop1 .
 
 bs:6 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:34,
+        bs:10,
+        bs:4,
         bs:9,
         bs:CAC-1,
         bs:FCU-11,
@@ -1590,7 +1602,7 @@ bs:6 a brick:Operating_Mode_Status ;
 bs:71_IDF_CLOSET1 a brick:IDF,
         ns1:CableRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1 ;
+    brick:hasPoint bs:bldg.21 ;
     brick:isFedBy bs:S_VAV2 ;
     brick:isLocationOf bs:S_VAV2 ;
     ns1:isFedBy bs:S_VAV2 ;
@@ -1600,7 +1612,7 @@ bs:71_IDF_CLOSET1 a brick:IDF,
 bs:71_RISER_CLOSET1 a brick:Riser,
         ns1:Room ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1 ;
+    brick:hasPoint bs:bldg.21 ;
     brick:isFedBy bs:S_VAV2 ;
     brick:isLocationOf bs:S_VAV2 ;
     ns1:isFedBy bs:S_VAV2 ;
@@ -1609,37 +1621,49 @@ bs:71_RISER_CLOSET1 a brick:Riser,
 
 bs:RAH_Supply_Plenum1 a brick:Discharge_Air_Plenum,
         brick:Supply_Air_Plenum ;
-    brick:feeds bs:7 ;
-    brick:hasLocation bs:7 ;
-    brick:hasPoint bs:16 ;
-    brick:isFedBy bs:2 ;
-    ns1:feeds bs:7 ;
-    ns1:isFedBy bs:2 ;
-    ns1:locatedIn bs:7 .
+    brick:feeds bs:16 ;
+    brick:hasLocation bs:16 ;
+    brick:hasPoint bs:20 ;
+    brick:isFedBy bs:5 ;
+    ns1:feeds bs:16 ;
+    ns1:isFedBy bs:5 ;
+    ns1:locatedIn bs:16 .
 
 bs:_Outside_Damper1 a brick:Outside_Damper ;
-    brick:hasPoint bs:bldg.16,
-        bs:bldg.23,
-        bs:bldg.33 ;
-    brick:isPartOf bs:19,
-        bs:2 .
+    brick:hasPoint bs:bldg.27,
+        bs:bldg.29,
+        bs:bldg.30 ;
+    brick:isPartOf bs:31,
+        bs:5 .
 
-bs:bldg.13 a brick:Integral_Gain_Parameter ;
+bs:bldg.10 a brick:Proportional_Gain_Parameter ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2,
-        bs:20,
-        bs:30,
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:33,
+        bs:5,
+        bs:CH11,
+        bs:S_VAV1,
+        bs:_VFD1 ;
+    ns2:hasExternalReference bs:bnode1 .
+
+bs:bldg.11 a brick:Integral_Gain_Parameter ;
+    s223:hasExternalReference bs:bnode1 ;
+    brick:hasUnit rdfs:Resource ;
+    brick:isPointOf bs:10,
+        bs:31,
+        bs:33,
+        bs:5,
+        bs:8,
         bs:CH11,
         bs:S_VAV1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.16 a brick:Damper_Position_Command ;
+bs:bldg.27 a brick:Damper_Position_Command ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:19,
+    brick:isPointOf bs:31,
         bs:AH2_Outside_Air_Damper1,
         bs:AH2_Return_Air_Damper1,
         bs:S_VAV1,
@@ -1648,25 +1672,13 @@ bs:bldg.16 a brick:Damper_Position_Command ;
         bs:_Outside_Damper1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.18 a brick:Proportional_Gain_Parameter ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:14,
-        bs:19,
-        bs:2,
-        bs:30,
-        bs:CH11,
-        bs:S_VAV1,
-        bs:_VFD1 ;
-    ns2:hasExternalReference bs:bnode1 .
-
-bs:bldg.42 a brick:Enable_Status ;
+bs:bldg.5 a brick:Enable_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:19,
-        bs:30,
+        bs:10,
+        bs:31,
+        bs:33,
         bs:CAC-1,
         bs:CH11,
         bs:CH21,
@@ -1676,8 +1688,19 @@ bs:bldg.42 a brick:Enable_Status ;
 bs:131_Tele-Health1 a brick:Medical_Room,
         ns1:HealthcareRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
+    brick:isFedBy bs:S_VAV1 ;
+    brick:isLocationOf bs:S_VAV1 ;
+    ns1:isFedBy bs:S_VAV1 ;
+    ns1:isLocationOf bs:S_VAV1 ;
+    ns1:locatedIn bs:Floor_1 .
+
+bs:14 a brick:Open_Office,
+        ns1:OfficeLandscape ;
+    brick:hasLocation bs:Floor_1 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1687,42 +1710,30 @@ bs:131_Tele-Health1 a brick:Medical_Room,
 bs:168_PLUMBING1 a brick:Plumbing_Room,
         ns1:UtilitiesRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
     ns1:isLocationOf bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:18 a brick:Classroom,
-        brick:Room,
-        ns1:Room ;
+bs:18 a brick:Hallway,
+        ns1:Hallway ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
     ns1:isLocationOf bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:22 a brick:Open_Office,
-        ns1:OfficeLandscape ;
-    brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
-    brick:isFedBy bs:S_VAV1 ;
-    brick:isLocationOf bs:S_VAV1 ;
-    ns1:isFedBy bs:S_VAV1 ;
-    ns1:isLocationOf bs:S_VAV1 ;
-    ns1:locatedIn bs:Floor_1 .
-
-bs:25 a brick:Team_Room,
+bs:26 a brick:Team_Room,
         ns1:TeamRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1732,19 +1743,20 @@ bs:25 a brick:Team_Room,
 bs:266_RECEIVING1 a brick:Loading_Dock,
         ns1:LoadingReceivingRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
     ns1:isLocationOf bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:28 a brick:Hallway,
-        ns1:Hallway ;
+bs:28 a brick:Break_Room,
+        brick:Breakroom,
+        ns1:StaffRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1754,20 +1766,20 @@ bs:28 a brick:Hallway,
 bs:310A_AV_EQUIPMNT1 a brick:Media_Room,
         ns1:RecordingRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.54 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.50 ;
     brick:isFedBy bs:CAC-1 ;
     brick:isLocationOf bs:CAC-1 ;
     ns1:isFedBy bs:CAC-1 ;
     ns1:isLocationOf bs:CAC-1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:5 a brick:Break_Room,
-        brick:Breakroom,
-        ns1:StaffRoom ;
+bs:32 a brick:Classroom,
+        brick:Room,
+        ns1:Room ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1777,8 +1789,8 @@ bs:5 a brick:Break_Room,
 bs:630A_LOUNGE1 a brick:Lounge,
         ns1:Lounge ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1788,8 +1800,8 @@ bs:630A_LOUNGE1 a brick:Lounge,
 bs:630B_PANTRY1 a brick:Food_Service_Room,
         ns1:FoodHandlingRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1799,8 +1811,8 @@ bs:630B_PANTRY1 a brick:Food_Service_Room,
 bs:65_CUBICLES1 a brick:Cubicle,
         ns1:Workspace ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1808,20 +1820,20 @@ bs:65_CUBICLES1 a brick:Cubicle,
     ns1:locatedIn bs:Floor_1 .
 
 bs:CHM-1 a brick:Water_Cooled_Chiller ;
-    brick:feeds bs:14,
-        bs:30 ;
-    brick:isFedBy bs:27,
+    brick:feeds bs:10,
+        bs:33 ;
+    brick:isFedBy bs:7,
         bs:CWP1 ;
-    ns1:feeds bs:14,
-        bs:30 ;
-    ns1:isFedBy bs:27,
+    ns1:feeds bs:10,
+        bs:33 ;
+    ns1:isFedBy bs:7,
         bs:CWP1 .
 
 bs:CYBERCAFE_2101 a brick:Retail_Room,
         ns1:RetailRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1830,22 +1842,22 @@ bs:CYBERCAFE_2101 a brick:Retail_Room,
 
 bs:FCU-11 a brick:FCU,
         brick:Fan_Coil_Unit ;
-    brick:feeds bs:4 ;
+    brick:feeds bs:11 ;
     brick:hasPart bs:FCU-1_Fan1,
         bs:_Coil1 ;
     brick:hasPoint bs:6,
+        bs:bldg.1,
         bs:bldg.19,
-        bs:bldg.28,
-        bs:bldg.31 ;
-    ns1:feeds bs:4 ;
+        bs:bldg.34 ;
+    ns1:feeds bs:11 ;
     ns1:includes bs:FCU-1_Fan1,
         bs:_Coil1 .
 
 bs:KITCHEN_2141 a brick:Office_Kitchen,
         ns1:Kitchenette ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1855,8 +1867,8 @@ bs:KITCHEN_2141 a brick:Office_Kitchen,
 bs:_CONFERENCE1 a brick:Conference_Room,
         ns1:ConferenceRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1866,8 +1878,8 @@ bs:_CONFERENCE1 a brick:Conference_Room,
 bs:_LOBBY1 a brick:Lobby,
         ns1:Lobby ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
@@ -1879,20 +1891,20 @@ bs:_WOMENS_BATH1 a brick:Rest_Room,
         ns1:Bathroom,
         ns1:RestingRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     ns1:isFedBy bs:S_VAV1 ;
     ns1:isLocationOf bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:bldg.28 a brick:Occupied_Mode_Status,
+bs:bldg.19 a brick:Occupied_Mode_Status,
         brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:2,
-        bs:9,
+    brick:isPointOf bs:4,
+        bs:5,
         bs:CAC-1,
         bs:FCU-11,
         bs:HWP_VFD1,
@@ -1901,12 +1913,12 @@ bs:bldg.28 a brick:Occupied_Mode_Status,
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:10 a brick:Status ;
+bs:3 a brick:Status ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:34,
+        bs:10,
+        bs:4,
         bs:9,
         bs:CH11,
         bs:CH21,
@@ -1919,8 +1931,8 @@ bs:10 a brick:Status ;
 bs:AUDITORIUM1 a brick:Auditorium,
         ns1:Auditorium ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11,
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3,
         bs:bldg.AUDITORIUM_CO21 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
@@ -1929,39 +1941,39 @@ bs:AUDITORIUM1 a brick:Auditorium,
     ns1:locatedIn bs:Floor_1 .
 
 bs:MS1 a brick:Meter ;
-    brick:hasPoint bs:bldg.10,
+    brick:hasPoint bs:bldg.13,
         bs:bldg.2,
-        bs:bldg.20,
-        bs:bldg.21,
-        bs:bldg.22,
-        bs:bldg.37,
+        bs:bldg.28,
+        bs:bldg.36,
+        bs:bldg.38,
         bs:bldg.4,
-        bs:bldg.6,
-        bs:bldg.7 .
+        bs:bldg.42,
+        bs:bldg.45,
+        bs:bldg.6 .
 
 bs:_Coil1 a brick:Chilled_Water_Coil ;
     brick:hasPart bs:_Valve2 ;
-    brick:isFedBy bs:14 ;
-    brick:isPartOf bs:2,
+    brick:isFedBy bs:10 ;
+    brick:isPartOf bs:5,
         bs:CAC-1,
         bs:FCU-11 ;
     ns1:includes bs:_Valve2 ;
-    ns1:isFedBy bs:14 .
+    ns1:isFedBy bs:10 .
 
 bs:_Valve2 a brick:Chilled_Water_Valve ;
-    brick:hasPoint bs:bldg.8,
+    brick:hasPoint bs:bldg.22,
         bs:bldg1,
         bs:bldg2 ;
-    brick:isPartOf bs:37,
+    brick:isPartOf bs:30,
         bs:CAC-1,
         bs:_Coil1 .
 
-bs:12 a brick:Office,
+bs:15 a brick:Office,
         brick:Private_Office,
         ns1:Office ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1,
         bs:WIN_1 ;
@@ -1970,34 +1982,34 @@ bs:12 a brick:Office,
         bs:WIN_1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:7 a brick:Environment_Box,
+bs:16 a brick:Environment_Box,
         ns1:Laboratory ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
     brick:isFedBy bs:RAH_Supply_Plenum1 ;
-    brick:isLocationOf bs:2,
+    brick:isLocationOf bs:5,
         bs:RAH_Supply_Plenum1 ;
     ns1:isFedBy bs:RAH_Supply_Plenum1 ;
-    ns1:isLocationOf bs:2,
+    ns1:isLocationOf bs:5,
         bs:RAH_Supply_Plenum1 ;
     ns1:locatedIn bs:Floor_1 .
 
 bs:_Damper1 a brick:Isolation_Damper ;
-    brick:hasPoint bs:bldg.16,
-        bs:bldg.23,
-        bs:bldg.33,
-        bs:bldg.9 ;
-    brick:isPartOf bs:19,
-        bs:2,
-        bs:20 .
+    brick:hasPoint bs:bldg.27,
+        bs:bldg.29,
+        bs:bldg.30,
+        bs:bldg.8 ;
+    brick:isPartOf bs:31,
+        bs:5,
+        bs:8 .
 
-bs:bldg.32 a brick:Alarm ;
+bs:bldg.43 a brick:Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:2,
-        bs:27,
+        bs:5,
+        bs:7,
         bs:CAC-1,
         bs:CH11,
         bs:CH21,
@@ -2008,14 +2020,14 @@ bs:bldg.32 a brick:Alarm ;
         bs:bldg_Sewage1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:bldg.9 a brick:Failure_Alarm ;
+bs:bldg.8 a brick:Failure_Alarm ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:19,
-        bs:2,
-        bs:30,
+        bs:10,
+        bs:31,
+        bs:33,
+        bs:5,
         bs:CAC-1,
         bs:CH11,
         bs:CH21,
@@ -2024,72 +2036,57 @@ bs:bldg.9 a brick:Failure_Alarm ;
         bs:_VFD1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:32 a brick:Laboratory,
+bs:21 a brick:Laboratory,
         brick:Room,
         ns1:Laboratory,
         ns1:Room ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
-    brick:isFedBy bs:9,
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3 ;
+    brick:isFedBy bs:4,
         bs:S_VAV1 ;
     brick:isLocationOf bs:S_VAV1 ;
     brick:isPartOf bs:Floor_1 ;
-    ns1:isFedBy bs:9,
+    ns1:isFedBy bs:4,
         bs:S_VAV1 ;
     ns1:isLocationOf bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:4 a brick:Electrical_Room,
-        ns1:ElectricityRoom ;
-    brick:hasLocated bs:Floor_1 ;
-    brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11 ;
-    brick:isFedBy bs:FCU-11,
-        bs:S_VAV2 ;
-    brick:isLocationOf bs:S_VAV2 ;
-    brick:isPartOf bs:Floor_1 ;
-    ns1:isFedBy bs:FCU-11,
-        bs:S_VAV2 ;
-    ns1:isLocationOf bs:S_VAV2 ;
-    ns1:locatedIn bs:Floor_1 .
-
 bs:A1 a brick:Breaker_Panel ;
-    brick:hasPoint bs:11,
+    brick:hasPoint bs:24,
+        bs:bldg.13,
         bs:bldg.2,
         bs:bldg.20,
-        bs:bldg.22,
-        bs:bldg.27,
-        bs:bldg.37,
-        bs:bldg.39,
+        bs:bldg.28,
+        bs:bldg.38,
         bs:bldg.4,
-        bs:bldg.6,
-        bs:bldg.61,
-        bs:bldg.7 .
+        bs:bldg.42,
+        bs:bldg.45,
+        bs:bldg.48,
+        bs:bldg.57 .
 
 bs:_Building1 a brick:Building,
         ns1:Building ;
     brick:hasPart bs:Floor_1,
         bs:bldg_Sewage1 ;
-    brick:hasPoint bs:bldg.20,
-        bs:bldg.32,
+    brick:hasPoint bs:bldg.42,
+        bs:bldg.43,
         bs:bldg._DP.STP1,
         bs:bldg_OAT1 ;
-    brick:isFedBy bs:14,
+    brick:isFedBy bs:10,
         bs:_Generator1 ;
     brick:isMeteredBy bs:bldg4 ;
-    ns1:isFedBy bs:14,
+    ns1:isFedBy bs:10,
         bs:_Generator1 .
 
-bs:15 a brick:Room,
+bs:37 a brick:Room,
         brick:Server_Room,
         ns1:DataServerRoom,
         ns1:Room ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11,
-        bs:bldg.54 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3,
+        bs:bldg.50 ;
     brick:isFedBy bs:CAC-1,
         bs:S_VAV1 ;
     brick:isLocationOf bs:CAC-1,
@@ -2101,26 +2098,26 @@ bs:15 a brick:Room,
     ns1:locatedIn bs:Floor_1 .
 
 bs:HWP_VFD1 a brick:Pump_VFD ;
-    brick:hasPoint bs:10,
-        bs:bldg.10,
-        bs:bldg.2,
-        bs:bldg.28,
-        bs:bldg.34,
-        bs:bldg.35,
-        bs:bldg.38,
-        bs:bldg.43,
-        bs:bldg.44,
-        bs:bldg.51,
+    brick:hasPoint bs:3,
+        bs:bldg.16,
+        bs:bldg.19,
+        bs:bldg.23,
+        bs:bldg.26,
+        bs:bldg.33,
+        bs:bldg.36,
+        bs:bldg.39,
+        bs:bldg.4,
+        bs:bldg.47,
         bs:bldg.VFD_INPUT_REF_11 ;
     brick:isPartOf bs:HWP1 .
 
-bs:17 a brick:Mechanical_Room,
+bs:12 a brick:Mechanical_Room,
         ns1:UtilitiesRoom ;
     brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.11,
-        bs:bldg.23,
-        bs:bldg.36 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.29,
+        bs:bldg.3,
+        bs:bldg.41 ;
     brick:isFedBy bs:S_VAV1 ;
     brick:isLocationOf bs:CH11,
         bs:CH21,
@@ -2131,46 +2128,68 @@ bs:17 a brick:Mechanical_Room,
         bs:S_VAV1 ;
     ns1:locatedIn bs:Floor_1 .
 
-bs:20 a brick:Discharge_Fan,
+bs:8 a brick:Discharge_Fan,
         brick:Return_Fan,
         brick:Supply_Fan ;
     brick:hasPart bs:_Damper1,
         bs:_VFD1 ;
-    brick:hasPoint bs:bldg.12,
-        bs:bldg.13,
+    brick:hasPoint bs:bldg.11,
         bs:bldg.14,
-        bs:bldg.24,
+        bs:bldg.16,
+        bs:bldg.25,
         bs:bldg.31,
-        bs:bldg.38,
-        bs:bldg.41,
+        bs:bldg.34,
+        bs:bldg.7,
         bs:bldg.AH.SF_HIGH.STATIC1,
         bs:bldg.AH2F_ALM1,
         bs:bldg.RAH.SF_ALM1 ;
-    brick:isPartOf bs:2 ;
+    brick:isPartOf bs:5 ;
     ns1:includes bs:_Damper1,
         bs:_VFD1 .
 
-bs:34 a brick:Thermal_Power_Meter ;
-    brick:hasPoint bs:10,
-        bs:11,
-        bs:21,
+bs:9 a brick:Thermal_Power_Meter ;
+    brick:hasPoint bs:17,
+        bs:2,
+        bs:22,
         bs:23,
+        bs:24,
+        bs:25,
+        bs:27,
         bs:3,
-        bs:31,
-        bs:33,
         bs:35,
         bs:6,
-        bs:8,
         bs:Mode_1,
         bs:Return_Temperature1,
         bs:Supply_Temperature1 ;
-    brick:meters bs:14 .
+    brick:meters bs:10 .
+
+bs:11 a brick:Electrical_Room,
+        brick:Server_Room,
+        ns1:DataServerRoom,
+        ns1:ElectricityRoom ;
+    brick:hasLocated bs:Floor_1 ;
+    brick:hasLocation bs:Floor_1 ;
+    brick:hasPoint bs:bldg.21,
+        bs:bldg.3,
+        bs:bldg.50 ;
+    brick:isFedBy bs:CAC-1,
+        bs:FCU-11,
+        bs:S_VAV2 ;
+    brick:isLocationOf bs:CAC-1,
+        bs:S_VAV2 ;
+    brick:isPartOf bs:Floor_1 ;
+    ns1:isFedBy bs:CAC-1,
+        bs:FCU-11,
+        bs:S_VAV2 ;
+    ns1:isLocationOf bs:CAC-1,
+        bs:S_VAV2 ;
+    ns1:locatedIn bs:Floor_1 .
 
 bs:bldg_Hot_Water_Loop1 a brick:Hot_Water_Loop ;
-    brick:feeds bs:9 ;
+    brick:feeds bs:4 ;
     brick:hasPart bs:38,
         bs:HWP1 ;
-    brick:hasPoint bs:10,
+    brick:hasPoint bs:3,
         bs:bldg.COND_COND1,
         bs:bldg.HW_DP.STP1,
         bs:bldg.HW_DP1,
@@ -2179,152 +2198,153 @@ bs:bldg_Hot_Water_Loop1 a brick:Hot_Water_Loop ;
         bs:bldg.HW_HWST1,
         bs:bldg.STEAMFLOW1 ;
     brick:isFedBy rdfs:Resource,
-        bs:37,
+        bs:30,
         bs:HWP1 ;
-    ns1:feeds bs:9 ;
+    ns1:feeds bs:4 ;
     ns1:includes bs:38,
         bs:HWP1 ;
     ns1:isFedBy rdfs:Resource,
-        bs:37,
+        bs:30,
         bs:HWP1 .
 
 bs:CWP1 a brick:Condenser_Water_Pump ;
     brick:feeds bs:CH21,
         bs:CHM-1 ;
-    brick:hasPoint bs:11,
+    brick:hasPoint bs:24,
         bs:bldg.14,
-        bs:bldg.3,
+        bs:bldg.18,
+        bs:bldg.26,
         bs:bldg.32,
         bs:bldg.43,
-        bs:bldg.52,
-        bs:bldg.61,
+        bs:bldg.57,
         bs:bldg.CHW1,
         bs:bldg.CHW_CT1 ;
-    brick:isPartOf bs:14,
-        bs:30 ;
+    brick:isPartOf bs:10,
+        bs:33 ;
     ns1:feeds bs:CH21,
         bs:CHM-1 .
 
-bs:11 a brick:Mode_Status,
-        brick:Server_Room,
-        ns1:DataServerRoom ;
-    s223:hasExternalReference bs:bnode1 ;
-    brick:hasLocation bs:Floor_1 ;
-    brick:hasPoint bs:bldg.1,
-        bs:bldg.54 ;
-    brick:hasUnit rdfs:Resource ;
-    brick:isFedBy bs:CAC-1,
-        bs:S_VAV2 ;
-    brick:isLocationOf bs:CAC-1,
-        bs:S_VAV2 ;
-    brick:isPointOf rdfs:Resource,
-        bs:14,
-        bs:19,
-        bs:27,
-        bs:34,
-        bs:A1,
-        bs:CWP1 ;
-    ns2:hasExternalReference bs:bnode1 ;
-    ns1:isFedBy bs:CAC-1,
-        bs:S_VAV2 ;
-    ns1:isLocationOf bs:CAC-1,
-        bs:S_VAV2 ;
-    ns1:locatedIn bs:Floor_1 .
-
-bs:9 a brick:Hot_Water_Coil ;
-    brick:feeds bs:32,
-        <urn:bschema#M_Fab_Chemical/Gas_Vault1> ;
+bs:4 a brick:Hot_Water_Coil ;
+    brick:feeds bs:21,
+        bs:Gas_Vault1 ;
     brick:hasPart bs:_Valve1 ;
-    brick:hasPoint bs:10,
+    brick:hasPoint bs:3,
         bs:6,
-        bs:bldg.15,
+        bs:bldg.1,
+        bs:bldg.12,
         bs:bldg.19,
-        bs:bldg.28,
-        bs:bldg.30,
-        bs:bldg.31 ;
+        bs:bldg.34,
+        bs:bldg.35 ;
     brick:isFedBy bs:bldg_Hot_Water_Loop1 ;
-    brick:isPartOf bs:2,
+    brick:isPartOf bs:5,
         bs:S_VAV1 ;
-    ns1:feeds bs:32,
-        <urn:bschema#M_Fab_Chemical/Gas_Vault1> ;
+    ns1:feeds bs:21,
+        bs:Gas_Vault1 ;
     ns1:includes bs:_Valve1 ;
     ns1:isFedBy bs:bldg_Hot_Water_Loop1 .
 
-bs:27 a brick:Chilled_Water_Pump ;
-    brick:feeds bs:14,
+bs:7 a brick:Chilled_Water_Pump ;
+    brick:feeds bs:10,
         bs:CH11,
         bs:CH21,
         bs:CHM-1 ;
     brick:hasPart bs:_VFD1 ;
-    brick:hasPoint bs:11,
+    brick:hasPoint bs:24,
         bs:bldg.14,
+        bs:bldg.26,
         bs:bldg.32,
         bs:bldg.43,
-        bs:bldg.52,
         bs:bldg.CHW1,
         bs:bldg.CHW_CT1,
         bs:bldg.SCHWP_L1,
         bs:bldg.SCHWP_PRF1,
         bs:bldg.VFD_INPUT_REF_11 ;
-    brick:isPartOf bs:14 ;
-    ns1:feeds bs:14,
+    brick:isPartOf bs:10 ;
+    ns1:feeds bs:10,
         bs:CH11,
         bs:CH21,
         bs:CHM-1 ;
     ns1:includes bs:_VFD1 .
 
+bs:S_VAV2 a brick:VAV,
+        brick:Variable_Air_Volume_Box ;
+    brick:feeds bs:11,
+        bs:71_IDF_CLOSET1,
+        bs:71_RISER_CLOSET1 ;
+    brick:hasLocation bs:11,
+        bs:71_IDF_CLOSET1,
+        bs:71_RISER_CLOSET1 ;
+    brick:hasPoint bs:bldg.1,
+        bs:bldg.19,
+        bs:bldg.27,
+        bs:bldg.3,
+        bs:bldg.9,
+        bs:bldg.S_CLG_FLOW_MAX1,
+        bs:bldg.S_CLG_FLOW_MIN1,
+        bs:bldg.S_CTL_FLOW_MAX1,
+        bs:bldg.S_CTL_FLOW_MIN1,
+        bs:bldg.S_DMPR_POS1 ;
+    brick:isFedBy bs:5 ;
+    ns1:feeds bs:11,
+        bs:71_IDF_CLOSET1,
+        bs:71_RISER_CLOSET1 ;
+    ns1:isFedBy bs:5 ;
+    ns1:locatedIn bs:11,
+        bs:71_IDF_CLOSET1,
+        bs:71_RISER_CLOSET1 .
+
 bs:CH11 a brick:Absorption_Chiller,
         brick:Water_Cooled_Chiller ;
-    brick:feeds bs:14,
-        bs:30 ;
+    brick:feeds bs:10,
+        bs:33 ;
     brick:hasLocation rdfs:Resource,
-        bs:17 ;
-    brick:hasPoint bs:10,
-        bs:26,
-        bs:31,
+        bs:12 ;
+    brick:hasPoint bs:13,
+        bs:23,
+        bs:3,
         bs:35,
-        bs:bldg.13,
-        bs:bldg.18,
+        bs:bldg.10,
+        bs:bldg.11,
+        bs:bldg.23,
         bs:bldg.32,
-        bs:bldg.35,
-        bs:bldg.42,
-        bs:bldg.46,
-        bs:bldg.52,
+        bs:bldg.43,
+        bs:bldg.5,
+        bs:bldg.56,
+        bs:bldg.57,
         bs:bldg.60,
-        bs:bldg.61,
-        bs:bldg.9,
+        bs:bldg.8,
         bs:bldg.C1,
         bs:bldg.CH.COND.REF.TEMP1,
         bs:bldg.CT1,
         bs:bldg3 ;
-    brick:isFedBy bs:27 ;
-    ns1:feeds bs:14,
-        bs:30 ;
-    ns1:isFedBy bs:27 ;
+    brick:isFedBy bs:7 ;
+    ns1:feeds bs:10,
+        bs:33 ;
+    ns1:isFedBy bs:7 ;
     ns1:locatedIn rdfs:Resource,
-        bs:17 .
+        bs:12 .
 
-bs:bldg.11 a brick:Target_Zone_Air_Temperature_Setpoint ;
+bs:bldg.3 a brick:Target_Zone_Air_Temperature_Setpoint ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
-    brick:isPointOf bs:12,
+    brick:isPointOf bs:11,
+        bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
+        bs:16,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:2,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:32,
-        bs:4,
+        bs:37,
         bs:5,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
-        bs:7,
         bs:AUDITORIUM1,
         bs:CYBERCAFE_2101,
         bs:KITCHEN_2141,
@@ -2335,129 +2355,62 @@ bs:bldg.11 a brick:Target_Zone_Air_Temperature_Setpoint ;
         bs:_WOMENS_BATH1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:30 a brick:Water_Loop ;
-    brick:feeds bs:30 ;
+bs:33 a brick:Water_Loop ;
+    brick:feeds bs:33 ;
     brick:hasPart bs:38,
         bs:CWP1,
         bs:MDF_Condenser_Water_Loop_Bypass_Valve1 ;
-    brick:hasPoint bs:16,
+    brick:hasPoint bs:17,
+        bs:20,
         bs:29,
-        bs:8,
-        bs:bldg.13,
-        bs:bldg.18,
-        bs:bldg.42,
-        bs:bldg.9,
+        bs:bldg.10,
+        bs:bldg.11,
+        bs:bldg.5,
+        bs:bldg.8,
         bs:bldg.C1,
         bs:bldg.CT1,
         bs:bldg.CW_DP_LOOPOUT1,
         bs:bldg.C_CWST.STP1,
         bs:bldg.GAIN1 ;
-    brick:isFedBy bs:30,
+    brick:isFedBy bs:33,
         bs:CH11,
         bs:CH21,
         bs:CHM-1,
         bs:CT1 ;
-    brick:isMeteredBy bs:8 ;
-    ns1:feeds bs:30 ;
+    brick:isMeteredBy bs:17 ;
+    ns1:feeds bs:33 ;
     ns1:includes bs:38,
         bs:CWP1,
         bs:MDF_Condenser_Water_Loop_Bypass_Valve1 ;
-    ns1:isFedBy bs:30,
+    ns1:isFedBy bs:33,
         bs:CH11,
         bs:CH21,
         bs:CHM-1,
         bs:CT1 .
 
-bs:S_VAV2 a brick:VAV,
-        brick:Variable_Air_Volume_Box ;
-    brick:feeds bs:11,
-        bs:4,
-        bs:71_IDF_CLOSET1,
-        bs:71_RISER_CLOSET1 ;
-    brick:hasLocation bs:11,
-        bs:4,
-        bs:71_IDF_CLOSET1,
-        bs:71_RISER_CLOSET1 ;
-    brick:hasPoint bs:bldg.11,
-        bs:bldg.16,
-        bs:bldg.19,
-        bs:bldg.26,
-        bs:bldg.28,
-        bs:bldg.S_CLG_FLOW_MAX1,
-        bs:bldg.S_CLG_FLOW_MIN1,
-        bs:bldg.S_CTL_FLOW_MAX1,
-        bs:bldg.S_CTL_FLOW_MIN1,
-        bs:bldg.S_DMPR_POS1 ;
-    brick:isFedBy bs:2 ;
-    ns1:feeds bs:11,
-        bs:4,
-        bs:71_IDF_CLOSET1,
-        bs:71_RISER_CLOSET1 ;
-    ns1:isFedBy bs:2 ;
-    ns1:locatedIn bs:11,
-        bs:4,
-        bs:71_IDF_CLOSET1,
-        bs:71_RISER_CLOSET1 .
-
-bs:CH21 a brick:Centrifugal_Chiller,
-        brick:Water_Cooled_Chiller ;
-    brick:feeds bs:14,
-        bs:30 ;
-    brick:hasLocation rdfs:Resource,
-        bs:17 ;
-    brick:hasPart bs:CH2_Compressor1 ;
-    brick:hasPoint bs:10,
-        bs:29,
-        bs:31,
-        bs:35,
-        bs:bldg.32,
-        bs:bldg.42,
-        bs:bldg.46,
-        bs:bldg.52,
-        bs:bldg.60,
-        bs:bldg.61,
-        bs:bldg.9,
-        bs:bldg.C1,
-        bs:bldg.CH.COND.REF.TEMP1,
-        bs:bldg.CH1,
-        bs:bldg.CH2.COMP.REF.TEMP1,
-        bs:bldg.CH2.CURRENT.LIMIT1,
-        bs:bldg.CT1,
-        bs:bldg3 ;
-    brick:isFedBy bs:27,
-        bs:CWP1 ;
-    ns1:feeds bs:14,
-        bs:30 ;
-    ns1:includes bs:CH2_Compressor1 ;
-    ns1:isFedBy bs:27,
-        bs:CWP1 ;
-    ns1:locatedIn rdfs:Resource,
-        bs:17 .
-
-bs:bldg.1 a brick:Zone_Air_Temperature_Sensor ;
+bs:bldg.21 a brick:Zone_Air_Temperature_Sensor ;
     s223:hasExternalReference bs:bnode1 ;
     brick:hasUnit rdfs:Resource ;
     brick:isPointOf bs:11,
         bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
+        bs:16,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:2,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:310A_AV_EQUIPMNT1,
         bs:32,
         bs:36,
-        bs:4,
+        bs:37,
         bs:5,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
-        bs:7,
         bs:71_IDF_CLOSET1,
         bs:71_RISER_CLOSET1,
         bs:AUDITORIUM1,
@@ -2468,27 +2421,62 @@ bs:bldg.1 a brick:Zone_Air_Temperature_Sensor ;
         bs:_WOMENS_BATH1 ;
     ns2:hasExternalReference bs:bnode1 .
 
-bs:19 a brick:Exhaust_Fan ;
+bs:CH21 a brick:Centrifugal_Chiller,
+        brick:Water_Cooled_Chiller ;
+    brick:feeds bs:10,
+        bs:33 ;
+    brick:hasLocation rdfs:Resource,
+        bs:12 ;
+    brick:hasPart bs:CH2_Compressor1 ;
+    brick:hasPoint bs:23,
+        bs:29,
+        bs:3,
+        bs:35,
+        bs:bldg.32,
+        bs:bldg.43,
+        bs:bldg.5,
+        bs:bldg.56,
+        bs:bldg.57,
+        bs:bldg.60,
+        bs:bldg.8,
+        bs:bldg.C1,
+        bs:bldg.CH.COND.REF.TEMP1,
+        bs:bldg.CH1,
+        bs:bldg.CH2.COMP.REF.TEMP1,
+        bs:bldg.CH2.CURRENT.LIMIT1,
+        bs:bldg.CT1,
+        bs:bldg3 ;
+    brick:isFedBy bs:7,
+        bs:CWP1 ;
+    ns1:feeds bs:10,
+        bs:33 ;
+    ns1:includes bs:CH2_Compressor1 ;
+    ns1:isFedBy bs:7,
+        bs:CWP1 ;
+    ns1:locatedIn rdfs:Resource,
+        bs:12 .
+
+bs:31 a brick:Exhaust_Fan ;
     brick:hasPart bs:_Damper1,
         bs:_Outside_Damper1,
         bs:_VFD1 ;
-    brick:hasPoint bs:11,
-        bs:bldg.12,
-        bs:bldg.13,
+    brick:hasPoint bs:24,
+        bs:bldg.10,
+        bs:bldg.11,
         bs:bldg.14,
-        bs:bldg.16,
-        bs:bldg.18,
-        bs:bldg.29,
+        bs:bldg.24,
+        bs:bldg.27,
         bs:bldg.31,
-        bs:bldg.41,
-        bs:bldg.42,
-        bs:bldg.45,
-        bs:bldg.47,
-        bs:bldg.48,
+        bs:bldg.34,
+        bs:bldg.37,
+        bs:bldg.46,
+        bs:bldg.49,
+        bs:bldg.5,
         bs:bldg.50,
-        bs:bldg.54,
+        bs:bldg.51,
         bs:bldg.58,
-        bs:bldg.9,
+        bs:bldg.7,
+        bs:bldg.8,
         bs:bldg.EF1.EF2_DSP.STP1,
         bs:bldg.EF1.EF2_DSP1,
         bs:bldg.EF3.EF4_DSP1,
@@ -2498,7 +2486,7 @@ bs:19 a brick:Exhaust_Fan ;
         bs:bldg.REF.RFG_ALM1,
         bs:bldg._DP.STP1,
         bs:bldg._VFD.SPREQ1 ;
-    brick:isPartOf bs:2 ;
+    brick:isPartOf bs:5 ;
     ns1:includes bs:_Damper1,
         bs:_Outside_Damper1,
         bs:_VFD1 .
@@ -2506,28 +2494,28 @@ bs:19 a brick:Exhaust_Fan ;
 bs:_VFD1 a brick:Fan_VFD,
         brick:Pump_VFD,
         brick:Return_Fan ;
-    brick:hasPoint bs:10,
+    brick:hasPoint bs:3,
         bs:6,
         bs:bldg.10,
         bs:bldg.14,
-        bs:bldg.18,
-        bs:bldg.2,
-        bs:bldg.21,
-        bs:bldg.24,
-        bs:bldg.27,
-        bs:bldg.28,
-        bs:bldg.34,
-        bs:bldg.35,
-        bs:bldg.38,
-        bs:bldg.42,
-        bs:bldg.43,
-        bs:bldg.44,
-        bs:bldg.46,
-        bs:bldg.48,
-        bs:bldg.51,
-        bs:bldg.54,
-        bs:bldg.57,
-        bs:bldg.9,
+        bs:bldg.16,
+        bs:bldg.19,
+        bs:bldg.20,
+        bs:bldg.23,
+        bs:bldg.25,
+        bs:bldg.26,
+        bs:bldg.33,
+        bs:bldg.36,
+        bs:bldg.37,
+        bs:bldg.39,
+        bs:bldg.4,
+        bs:bldg.47,
+        bs:bldg.5,
+        bs:bldg.50,
+        bs:bldg.56,
+        bs:bldg.6,
+        bs:bldg.61,
+        bs:bldg.8,
         bs:bldg.AH1,
         bs:bldg.AH2A.AH2B.RF_CFM1,
         bs:bldg.CVFD_FREQ_OUTPUT1,
@@ -2537,43 +2525,43 @@ bs:_VFD1 a brick:Fan_VFD,
         bs:bldg.VFD_SPEED1,
         bs:bldg._VFD.SPREQ1,
         bs:bldg._VFD_TORQUE1 ;
-    brick:isPartOf bs:19,
-        bs:2,
-        bs:20,
-        bs:27,
+    brick:isPartOf bs:31,
+        bs:5,
+        bs:7,
+        bs:8,
         bs:CT_Fan1 .
 
 bs:CAC-1 a brick:CRAC,
         brick:Computer_Room_Air_Conditioning ;
     brick:feeds bs:11,
-        bs:15,
-        bs:310A_AV_EQUIPMNT1 ;
+        bs:310A_AV_EQUIPMNT1,
+        bs:37 ;
     brick:hasLocation bs:11,
-        bs:15,
-        bs:310A_AV_EQUIPMNT1 ;
+        bs:310A_AV_EQUIPMNT1,
+        bs:37 ;
     brick:hasPart bs:_Coil1,
         bs:_Valve2 ;
-    brick:hasPoint bs:3,
-        bs:31,
+    brick:hasPoint bs:2,
+        bs:35,
         bs:6,
+        bs:bldg.1,
+        bs:bldg.12,
         bs:bldg.14,
-        bs:bldg.15,
+        bs:bldg.17,
         bs:bldg.19,
-        bs:bldg.28,
-        bs:bldg.31,
-        bs:bldg.32,
+        bs:bldg.33,
         bs:bldg.34,
-        bs:bldg.36,
-        bs:bldg.40,
-        bs:bldg.42,
-        bs:bldg.45,
-        bs:bldg.48,
-        bs:bldg.49,
+        bs:bldg.37,
+        bs:bldg.41,
+        bs:bldg.43,
+        bs:bldg.44,
+        bs:bldg.46,
         bs:bldg.5,
-        bs:bldg.50,
+        bs:bldg.52,
         bs:bldg.53,
-        bs:bldg.56,
-        bs:bldg.9,
+        bs:bldg.55,
+        bs:bldg.58,
+        bs:bldg.8,
         bs:bldg.MDC.CAC01,
         bs:bldg.MDC.CAC010,
         bs:bldg.MDC.CAC02,
@@ -2597,40 +2585,39 @@ bs:CAC-1 a brick:CRAC,
         bs:bldg.MDC.CAC0_INH_HUMD_CMD1,
         bs:bldg.MDC.CAC0_MANUAL_OVRD1 ;
     ns1:feeds bs:11,
-        bs:15,
-        bs:310A_AV_EQUIPMNT1 ;
+        bs:310A_AV_EQUIPMNT1,
+        bs:37 ;
     ns1:includes bs:_Coil1,
         bs:_Valve2 ;
     ns1:locatedIn bs:11,
-        bs:15,
-        bs:310A_AV_EQUIPMNT1 .
+        bs:310A_AV_EQUIPMNT1,
+        bs:37 .
 
 bs:Floor_1 a brick:Floor,
         brick:Storey,
         ns1:Level ;
-    brick:hasPart bs:32,
-        bs:4,
-        <urn:bschema#M_Fab_Chemical/Gas_Vault1> ;
+    brick:hasPart bs:11,
+        bs:21,
+        bs:Gas_Vault1 ;
     brick:isLocationOf bs:11,
         bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
+        bs:16,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:310A_AV_EQUIPMNT1,
         bs:32,
         bs:36,
-        bs:4,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
-        bs:7,
         bs:71_IDF_CLOSET1,
         bs:71_RISER_CLOSET1,
         bs:AUDITORIUM1,
@@ -2643,23 +2630,22 @@ bs:Floor_1 a brick:Floor,
     ns1:isLocationOf bs:11,
         bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
+        bs:16,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:310A_AV_EQUIPMNT1,
         bs:32,
         bs:36,
-        bs:4,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
-        bs:7,
         bs:71_IDF_CLOSET1,
         bs:71_RISER_CLOSET1,
         bs:AUDITORIUM1,
@@ -2669,48 +2655,48 @@ bs:Floor_1 a brick:Floor,
         bs:_LOBBY1,
         bs:_WOMENS_BATH1 .
 
-bs:14 a brick:Chilled_Water_Loop ;
-    brick:feeds bs:14,
-        bs:37,
+bs:10 a brick:Chilled_Water_Loop ;
+    brick:feeds bs:10,
+        bs:30,
         bs:_Building1,
         bs:_Coil1 ;
-    brick:hasPart bs:27,
-        bs:38,
+    brick:hasPart bs:38,
+        bs:7,
         bs:CWP1,
         bs:MDF_Valve1 ;
-    brick:hasPoint bs:10,
-        bs:11,
-        bs:13,
-        bs:16,
-        bs:26,
+    brick:hasPoint bs:13,
+        bs:2,
+        bs:20,
+        bs:23,
+        bs:24,
         bs:29,
         bs:3,
-        bs:31,
+        bs:34,
         bs:35,
         bs:6,
         bs:DP1,
         bs:TEST.ACTCHWFLWSP1,
-        bs:bldg.13,
-        bs:bldg.17,
+        bs:bldg.10,
+        bs:bldg.11,
+        bs:bldg.15,
         bs:bldg.18,
-        bs:bldg.25,
-        bs:bldg.27,
-        bs:bldg.29,
-        bs:bldg.3,
-        bs:bldg.34,
+        bs:bldg.20,
+        bs:bldg.24,
+        bs:bldg.32,
+        bs:bldg.33,
+        bs:bldg.37,
         bs:bldg.40,
-        bs:bldg.42,
-        bs:bldg.48,
+        bs:bldg.46,
         bs:bldg.49,
-        bs:bldg.50,
+        bs:bldg.5,
         bs:bldg.52,
         bs:bldg.53,
+        bs:bldg.54,
         bs:bldg.55,
         bs:bldg.57,
-        bs:bldg.58,
-        bs:bldg.59,
         bs:bldg.61,
-        bs:bldg.9,
+        bs:bldg.62,
+        bs:bldg.8,
         bs:bldg.C.MIN1,
         bs:bldg.CH1,
         bs:bldg.CHW.FAILURE_RESET1,
@@ -2726,39 +2712,39 @@ bs:14 a brick:Chilled_Water_Loop ;
         bs:bldg.P_LOOPOUT1,
         bs:bldg1,
         bs:bldg3 ;
-    brick:isFedBy bs:14,
-        bs:27,
+    brick:isFedBy bs:10,
+        bs:7,
         bs:CH11,
         bs:CH21,
         bs:CHM-1 ;
-    brick:isMeteredBy bs:34,
+    brick:isMeteredBy bs:9,
         bs:bldg.CHW_Flow_Meter1 ;
-    ns1:feeds bs:14,
-        bs:37,
+    ns1:feeds bs:10,
+        bs:30,
         bs:_Building1,
         bs:_Coil1 ;
-    ns1:includes bs:27,
-        bs:38,
+    ns1:includes bs:38,
+        bs:7,
         bs:CWP1,
         bs:MDF_Valve1 ;
-    ns1:isFedBy bs:14,
-        bs:27,
+    ns1:isFedBy bs:10,
+        bs:7,
         bs:CH11,
         bs:CH21,
         bs:CHM-1 .
 
-bs:2 a brick:AHU,
+bs:5 a brick:AHU,
         brick:Air_Handler_Unit,
         brick:Air_Handling_Unit ;
-    brick:feeds bs:2,
+    brick:feeds bs:5,
         bs:RAH_Supply_Plenum1,
         bs:S_VAV1,
         bs:S_VAV2 ;
-    brick:hasLocation bs:7 ;
-    brick:hasPart bs:19,
-        bs:2,
-        bs:20,
-        bs:9,
+    brick:hasLocation bs:16 ;
+    brick:hasPart bs:31,
+        bs:4,
+        bs:5,
+        bs:8,
         bs:AH1_Final_Filter1,
         bs:AH2_Outside_Air_Damper1,
         bs:AH2_Return_Air_Damper1,
@@ -2767,32 +2753,32 @@ bs:2 a brick:AHU,
         bs:_Damper1,
         bs:_Outside_Damper1,
         bs:_VFD1 ;
-    brick:hasPoint bs:3,
+    brick:hasPoint bs:2,
         bs:bldg.1,
+        bs:bldg.10,
         bs:bldg.11,
-        bs:bldg.13,
-        bs:bldg.15,
-        bs:bldg.18,
+        bs:bldg.12,
+        bs:bldg.16,
+        bs:bldg.17,
         bs:bldg.19,
-        bs:bldg.26,
-        bs:bldg.28,
-        bs:bldg.29,
+        bs:bldg.21,
+        bs:bldg.23,
+        bs:bldg.24,
+        bs:bldg.3,
         bs:bldg.32,
-        bs:bldg.35,
-        bs:bldg.36,
-        bs:bldg.38,
-        bs:bldg.40,
-        bs:bldg.45,
-        bs:bldg.47,
-        bs:bldg.48,
-        bs:bldg.5,
-        bs:bldg.50,
+        bs:bldg.37,
+        bs:bldg.39,
+        bs:bldg.41,
+        bs:bldg.43,
+        bs:bldg.44,
+        bs:bldg.46,
+        bs:bldg.49,
         bs:bldg.51,
         bs:bldg.52,
-        bs:bldg.56,
-        bs:bldg.57,
         bs:bldg.58,
-        bs:bldg.62,
+        bs:bldg.59,
+        bs:bldg.61,
+        bs:bldg.8,
         bs:bldg.9,
         bs:bldg.AH1,
         bs:bldg.AH1A_OFF.MODE1,
@@ -2816,17 +2802,17 @@ bs:2 a brick:AHU,
         bs:bldg.RAH_SAT.ALM1,
         bs:bldg._CFM.STP1,
         bs:bldg._DP.STP1 ;
-    brick:isFedBy bs:2,
+    brick:isFedBy bs:5,
         bs:_Generator1 ;
-    brick:isPartOf bs:2 ;
-    ns1:feeds bs:2,
+    brick:isPartOf bs:5 ;
+    ns1:feeds bs:5,
         bs:RAH_Supply_Plenum1,
         bs:S_VAV1,
         bs:S_VAV2 ;
-    ns1:includes bs:19,
-        bs:2,
-        bs:20,
-        bs:9,
+    ns1:includes bs:31,
+        bs:4,
+        bs:5,
+        bs:8,
         bs:AH1_Final_Filter1,
         bs:AH2_Outside_Air_Damper1,
         bs:AH2_Return_Air_Damper1,
@@ -2835,24 +2821,24 @@ bs:2 a brick:AHU,
         bs:_Damper1,
         bs:_Outside_Damper1,
         bs:_VFD1 ;
-    ns1:isFedBy bs:2,
+    ns1:isFedBy bs:5,
         bs:_Generator1 ;
-    ns1:locatedIn bs:7 .
+    ns1:locatedIn bs:16 .
 
 bs:S_VAV1 a brick:RVAV,
         brick:Variable_Air_Volume_Box_With_Reheat ;
     brick:feeds bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:32,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
@@ -2864,16 +2850,16 @@ bs:S_VAV1 a brick:RVAV,
         bs:_WOMENS_BATH1 ;
     brick:hasLocation bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:32,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
@@ -2883,26 +2869,26 @@ bs:S_VAV1 a brick:RVAV,
         bs:_CONFERENCE1,
         bs:_LOBBY1,
         bs:_WOMENS_BATH1 ;
-    brick:hasPart bs:9 ;
-    brick:hasPoint bs:10,
+    brick:hasPart bs:4 ;
+    brick:hasPoint bs:2,
         bs:3,
         bs:6,
+        bs:bldg.1,
+        bs:bldg.10,
         bs:bldg.11,
         bs:bldg.12,
-        bs:bldg.13,
         bs:bldg.15,
-        bs:bldg.16,
-        bs:bldg.17,
         bs:bldg.18,
         bs:bldg.19,
-        bs:bldg.25,
-        bs:bldg.26,
+        bs:bldg.20,
+        bs:bldg.23,
+        bs:bldg.24,
         bs:bldg.27,
-        bs:bldg.28,
-        bs:bldg.29,
         bs:bldg.3,
-        bs:bldg.34,
-        bs:bldg.35,
+        bs:bldg.33,
+        bs:bldg.40,
+        bs:bldg.7,
+        bs:bldg.9,
         bs:bldg.GAIN1,
         bs:bldg.S1,
         bs:bldg.S_CLG_FLOW_MAX1,
@@ -2923,19 +2909,19 @@ bs:S_VAV1 a brick:RVAV,
         bs:bldg.S_SWITCH_DBAND1,
         bs:bldg.S_SWITCH_LIMIT1,
         bs:bldg1 ;
-    brick:isFedBy bs:2 ;
+    brick:isFedBy bs:5 ;
     ns1:feeds bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:32,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
@@ -2945,20 +2931,20 @@ bs:S_VAV1 a brick:RVAV,
         bs:_CONFERENCE1,
         bs:_LOBBY1,
         bs:_WOMENS_BATH1 ;
-    ns1:includes bs:9 ;
-    ns1:isFedBy bs:2 ;
+    ns1:includes bs:4 ;
+    ns1:isFedBy bs:5 ;
     ns1:locatedIn bs:12,
         bs:131_Tele-Health1,
+        bs:14,
         bs:15,
         bs:168_PLUMBING1,
-        bs:17,
         bs:18,
-        bs:22,
-        bs:25,
+        bs:21,
+        bs:26,
         bs:266_RECEIVING1,
         bs:28,
         bs:32,
-        bs:5,
+        bs:37,
         bs:630A_LOUNGE1,
         bs:630B_PANTRY1,
         bs:65_CUBICLES1,
@@ -2975,5 +2961,5 @@ bs:bnode1 a ns2:BACnetReference ;
     ns3:object-identifier rdfs:Resource ;
     ns3:object-name rdfs:Resource ;
     ns3:object-type rdfs:Resource ;
-    ns3:objectOf bs:24 .
+    ns3:objectOf bs:19 .
 

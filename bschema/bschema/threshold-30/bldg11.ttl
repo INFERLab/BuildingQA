@@ -1,7 +1,6 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
 @prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 bs:AHU1 a brick:Air_Handling_Unit ;
@@ -25,16 +24,16 @@ bs:AHU101 a brick:Air_Handling_Unit ;
     brick:isFedBy bs:chiller1 .
 
 bs:bldg111 a brick:Building ;
-    brick:area bs:bnode27 .
+    brick:area bs:bnode18 .
 
 bs:bldg11_ChilledWater_Demand_kBtu1 a brick:Electric_Meter ;
     rdfs:label rdfs:Resource ;
     brick:isPointOf bs:chiller1 ;
-    ns1:hasExternalReference bs:bnode9 .
+    ns1:hasExternalReference bs:bnode23 .
 
 bs:bldg11_Electricity_Demand_kBtu1 a brick:Building_Electrical_Meter ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode12 .
+    ns1:hasExternalReference bs:bnode7 .
 
 bs:damperVAVRM1 a brick:Damper ;
     brick:hasPoint bs:bldg11.ZONE.AHU0.Zone_Air_Damper_Command1 ;
@@ -43,95 +42,91 @@ bs:damperVAVRM1 a brick:Damper ;
 bs:floor1 a brick:Floor ;
     brick:hasPart bs:RM_room1 .
 
-<urn:bschema#https://w3id.org/rec1> rdfs:label rdfs:Resource ;
-    owl:imports rdfs:Resource ;
-    owl:versionInfo rdfs:Resource .
-
 bs:RM1 a brick:HVAC_Zone ;
     brick:hasPart bs:RM_room1 .
+
+bs:Stop1 a brick:Start_Stop_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode22 .
 
 bs:bldg11.AHU.AHU.Heating_Valve_Output1 a brick:Command,
         brick:Heating_Command ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode16 .
+    ns1:hasExternalReference bs:bnode19 .
 
 bs:bldg11.AHU.AHU.Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode13 .
+    ns1:hasExternalReference bs:bnode14 .
 
 bs:bldg11.AHU.AHU.Supply_Air_Temp_Setpoint1 a brick:Supply_Air_Temperature_Setpoint ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode5 .
+    ns1:hasExternalReference bs:bnode10 .
 
 bs:bldg11.AHU.AHU0.Mixed_Air_Temp1 a brick:Mixed_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource .
 
 bs:bldg11.AHU.AHU0.Return_Air_Temp1 a brick:Return_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode18 .
+    ns1:hasExternalReference bs:bnode9 .
 
 bs:bldg11.AHU.AHU0.SUPFLOW1 a brick:Supply_Air_flow ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode22 .
+    ns1:hasExternalReference bs:bnode17 .
 
 bs:bldg11.AHU.AHU0.Supply_Air_Pressure1 a brick:Supply_Air_Static_Pressure_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode15 .
+    ns1:hasExternalReference bs:bnode11 .
 
 bs:bldg11.AHU.AHU05.Mode1 a brick:Mode ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode28 .
+    ns1:hasExternalReference bs:bnode21 .
 
 bs:bldg11.AHU.AHU10.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource .
 
 bs:bldg11.CHW.1 a brick:Chilled_Water_Supply_Temperature_Setpoint ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode11 .
+    ns1:hasExternalReference bs:bnode25 .
 
 bs:bldg11.CHW.Building_Chilled_Water_Delta_Temp1 a brick:Chilled_Water_Differential_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode25 .
+    ns1:hasExternalReference bs:bnode26 .
 
 bs:bldg11.CHW.ECONOMIZER1 a brick:Damper_Position_Command ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode26 .
+    ns1:hasExternalReference bs:bnode24 .
 
 bs:bldg11.CHW.Enable1 a brick:Enable_Command ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode21 .
+    ns1:hasExternalReference bs:bnode27 .
 
 bs:bldg11.CHW.Pump_SPEED1 a brick:Speed_Status ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode19 .
-
-<urn:bschema#bldg11.CHW.Pump_Start/Stop1> a brick:Start_Stop_Command ;
-    rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode23 .
+    ns1:hasExternalReference bs:bnode16 .
 
 bs:bldg11.CHW._Chilled_Water_Flow1 a brick:Chilled_Water_Flow_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode20 .
+    ns1:hasExternalReference bs:bnode13 .
 
 bs:bldg11.CHW._Chilled_Water_Return_Temp1 a brick:Chilled_Water_Return_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode10 .
+    ns1:hasExternalReference bs:bnode20 .
 
 bs:bldg11.CHW._Chilled_Water_Return_Temp_Setpoint1 a brick:Chilled_Water_Return_Temperature_Setpoint ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode24 .
+    ns1:hasExternalReference bs:bnode8 .
 
 bs:bldg11.CHW._Chilled_Water_Supply_Temp1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode14 .
+    ns1:hasExternalReference bs:bnode28 .
 
 bs:bldg11.ZONE.AHU0.Zone_Air_Damper_Command1 a brick:Damper_Position_Setpoint ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode7 .
+    ns1:hasExternalReference bs:bnode3 .
 
 bs:bldg11.ZONE.AHU0.Zone_Air_Temp_Setpoint1 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode2 .
+    ns1:hasExternalReference bs:bnode4 .
 
 bs:bldg11.ZONE.AHU0.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
     rdfs:label rdfs:Resource ;
@@ -139,14 +134,14 @@ bs:bldg11.ZONE.AHU0.Zone_Percent_Air_Flow1 a brick:Air_Flow_Sensor ;
 
 bs:bldg11.ZONE.AHU0.Zone_Supply_Air_Flow1 a brick:Supply_Air_Flow_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode4 .
+    ns1:hasExternalReference bs:bnode5 .
 
 bs:bldg11.ZONE.AHU0.Zone_Supply_Air_Temp1 a brick:Supply_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource .
 
 bs:bldg11.ZONE.AHU01 a brick:Command ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode3 .
+    ns1:hasExternalReference bs:bnode1 .
 
 bs:bldg11.ZONE.AHU0_COMD1 a brick:Valve_Command ;
     rdfs:label rdfs:Resource .
@@ -169,7 +164,8 @@ bs:bnode16 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode17 ns1:hasTimeseriesId rdfs:Resource .
 
-bs:bnode18 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode18 brick:hasUnits rdfs:Resource ;
+    brick:value rdfs:Resource .
 
 bs:bnode19 ns1:hasTimeseriesId rdfs:Resource .
 
@@ -189,8 +185,7 @@ bs:bnode25 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode26 ns1:hasTimeseriesId rdfs:Resource .
 
-bs:bnode27 brick:hasUnits rdfs:Resource ;
-    brick:value rdfs:Resource .
+bs:bnode27 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode28 ns1:hasTimeseriesId rdfs:Resource .
 
@@ -222,25 +217,25 @@ bs:VAVRM1 a brick:VAV ;
 
 bs:bldg11..Outside_Air_Temp1 a brick:Outside_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode17 .
+    ns1:hasExternalReference bs:bnode12 .
 
 bs:bldg11.AHU.AHU1 a brick:Cooling_Command,
         brick:Valve_Command ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode8 .
+    ns1:hasExternalReference bs:bnode15 .
 
 bs:bldg11.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode1 .
+    ns1:hasExternalReference bs:bnode2 .
 
 bs:chiller1 a brick:Chiller ;
-    brick:hasPoint bs:bldg11..Outside_Air_Temp1,
+    brick:hasPoint bs:Stop1,
+        bs:bldg11..Outside_Air_Temp1,
         bs:bldg11.CHW.1,
         bs:bldg11.CHW.Building_Chilled_Water_Delta_Temp1,
         bs:bldg11.CHW.ECONOMIZER1,
         bs:bldg11.CHW.Enable1,
         bs:bldg11.CHW.Pump_SPEED1,
-        <urn:bschema#bldg11.CHW.Pump_Start/Stop1>,
         bs:bldg11.CHW._Chilled_Water_Flow1,
         bs:bldg11.CHW._Chilled_Water_Return_Temp1,
         bs:bldg11.CHW._Chilled_Water_Return_Temp_Setpoint1,

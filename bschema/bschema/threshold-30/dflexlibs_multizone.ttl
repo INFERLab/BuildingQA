@@ -3,25 +3,35 @@
 @prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<urn:bschema#Building1> a brick:Building ;
-    brick:area bs:bnode11 ;
-    brick:hasPart <urn:bschema#hvac__zone1> .
+bs:Building1 a brick:Building ;
+    brick:area bs:bnode17 ;
+    brick:hasPart bs:hvac__zone1 .
 
-<urn:bschema#hvac_ahu1> a brick:AHU ;
-    brick:feeds <urn:bschema#vav_1> ;
-    brick:hasPart <urn:bschema#cooling_coil1>,
-        <urn:bschema#heating_coil1>,
-        <urn:bschema#hvac_fanSup1> ;
-    brick:hasPoint <urn:bschema#hvac_oveAhu_TSupSet_u1>,
-        <urn:bschema#hvac_reaAhu_TMix_y1>,
-        <urn:bschema#hvac_reaAhu_TRet_y1>,
-        <urn:bschema#hvac_reaAhu_TSup_y1>,
-        <urn:bschema#hvac_reaAhu_V_flow_ret_y1>,
-        <urn:bschema#hvac_reaAhu_V_flow_sup_y1> .
+bs:hvac_ahu1 a brick:AHU ;
+    brick:feeds bs:vav_1 ;
+    brick:hasPart bs:cooling_coil1,
+        bs:heating_coil1,
+        bs:hvac_fanSup1 ;
+    brick:hasPoint bs:hvac_oveAhu_TSupSet_u1,
+        bs:hvac_reaAhu_TMix_y1,
+        bs:hvac_reaAhu_TRet_y1,
+        bs:hvac_reaAhu_TSup_y1,
+        bs:hvac_reaAhu_V_flow_ret_y1,
+        bs:hvac_reaAhu_V_flow_sup_y1 .
+
+bs:LowerSetp_1 a brick:Min_Air_Temperature_Setpoint ;
+    ns1:hasExternalReference bs:bnode12,
+        bs:bnode2 .
+
+bs:UpperSetp_1 a brick:Max_Air_Temperature_Setpoint ;
+    ns1:hasExternalReference bs:bnode2,
+        bs:bnode9 .
+
+bs:bnode1 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode10 ns1:hasTimeseriesId rdfs:Resource .
 
-bs:bnode11 brick:value rdfs:Resource .
+bs:bnode11 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode12 ns1:hasTimeseriesId rdfs:Resource .
 
@@ -33,13 +43,11 @@ bs:bnode15 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode16 ns1:hasTimeseriesId rdfs:Resource .
 
-bs:bnode17 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode17 brick:value rdfs:Resource .
 
 bs:bnode18 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode19 ns1:hasTimeseriesId rdfs:Resource .
-
-bs:bnode2 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode20 ns1:hasTimeseriesId rdfs:Resource .
 
@@ -55,145 +63,137 @@ bs:bnode25 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode26 ns1:hasTimeseriesId rdfs:Resource .
 
+bs:bnode4 ns1:hasTimeseriesId rdfs:Resource .
+
 bs:bnode5 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode6 ns1:hasTimeseriesId rdfs:Resource .
 
 bs:bnode7 ns1:hasTimeseriesId rdfs:Resource .
 
-bs:bnode8 ns1:hasTimeseriesId rdfs:Resource .
-
 bs:bnode9 ns1:hasTimeseriesId rdfs:Resource .
 
-<urn:bschema#LowerSetp_1> a brick:Min_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:bnode4,
-        bs:bnode9 .
-
-<urn:bschema#UpperSetp_1> a brick:Max_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:bnode16,
-        bs:bnode4 .
-
-<urn:bschema#chi_reaTRet_y1> a brick:Chilled_Water_Return_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode24 .
-
-<urn:bschema#chi_reaTSup_y1> a brick:Chilled_Water_Supply_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode13 .
-
-<urn:bschema#chiller1> a brick:Chiller ;
-    brick:feeds <urn:bschema#_pump1> ;
-    brick:hasPoint <urn:bschema#_y1>,
-        <urn:bschema#chi_reaTRet_y1>,
-        <urn:bschema#chi_reaTSup_y1> .
-
-<urn:bschema#cooling_coil1> a brick:Cooling_Coil ;
-    brick:hasPoint <urn:bschema#_y1> ;
-    brick:isFedBy <urn:bschema#chiller1> .
-
-<urn:bschema#heating_coil1> a brick:Heating_Coil ;
-    brick:hasPoint rdfs:Resource,
-        <urn:bschema#h_y1> ;
-    brick:isFedBy <urn:bschema#_pump1> .
-
-<urn:bschema#hvac_fanSup1> a brick:Supply_Fan ;
-    brick:hasPoint <urn:bschema#_y1>,
-        <urn:bschema#hvac_reaAhu_dp_sup_y1> .
-
-<urn:bschema#hvac_oveAhu_TSupSet_u1> a brick:Supply_Air_Temperature_Setpoint ;
+bs:chi_reaTRet_y1 a brick:Chilled_Water_Return_Temperature_Sensor ;
     ns1:hasExternalReference bs:bnode23 .
 
-<urn:bschema#hvac_oveZonAct_yDam_u1> a brick:Damper_Position_Setpoint ;
-    ns1:hasExternalReference bs:bnode8 .
-
-<urn:bschema#hvac_oveZonAct_yReaHea_u1> a brick:Valve_Command ;
-    ns1:hasExternalReference bs:bnode15 .
-
-<urn:bschema#hvac_oveZonSup_TZonCooSet_u1> a brick:Zone_Air_Cooling_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:bnode18,
-        bs:bnode3 .
-
-<urn:bschema#hvac_oveZonSup_TZonHeaSet_u1> a brick:Zone_Air_Heating_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:bnode1,
-        bs:bnode10 .
-
-<urn:bschema#hvac_reaAhu_TMix_y1> a brick:Mixed_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode21 .
-
-<urn:bschema#hvac_reaAhu_TRet_y1> a brick:Return_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode17 .
-
-<urn:bschema#hvac_reaAhu_TSup_y1> a brick:Supply_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode5 .
-
-<urn:bschema#hvac_reaAhu_V_flow_ret_y1> a brick:Return_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:bnode20 .
-
-<urn:bschema#hvac_reaAhu_V_flow_sup_y1> a brick:Supply_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:bnode26 .
-
-<urn:bschema#hvac_reaAhu_dp_sup_y1> a brick:Discharge_Air_Static_Pressure_Sensor ;
-    ns1:hasExternalReference bs:bnode25 .
-
-<urn:bschema#hvac_reaZon_CO2Zon_y1> a brick:CO2_Sensor ;
-    ns1:hasExternalReference bs:bnode2 .
-
-<urn:bschema#hvac_reaZon_TSup_y1> a brick:Discharge_Air_Temperature_Sensor ;
+bs:chi_reaTSup_y1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
     ns1:hasExternalReference bs:bnode19 .
 
-<urn:bschema#hvac_reaZon_TZon_y1> a brick:Zone_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:bnode1,
-        bs:bnode12 .
+bs:chiller1 a brick:Chiller ;
+    brick:feeds bs:_pump1 ;
+    brick:hasPoint bs:_y1,
+        bs:chi_reaTRet_y1,
+        bs:chi_reaTSup_y1 .
 
-<urn:bschema#hvac_reaZon_V_flow_y1> a brick:Discharge_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:bnode22 .
+bs:cooling_coil1 a brick:Cooling_Coil ;
+    brick:hasPoint bs:h_y1 ;
+    brick:isFedBy bs:chiller1 .
 
-<urn:bschema#hwd_pump1> a brick:Hot_Water_Pump ;
-    brick:hasPoint <urn:bschema#h_y1> .
+bs:heating_coil1 a brick:Heating_Coil ;
+    brick:hasPoint rdfs:Resource,
+        bs:_y1 ;
+    brick:isFedBy bs:_pump1 .
 
-<urn:bschema#occ_1> a brick:Occupancy_Sensor ;
-    ns1:hasExternalReference bs:bnode4,
+bs:hvac_fanSup1 a brick:Supply_Fan ;
+    brick:hasPoint bs:_y1,
+        bs:hvac_reaAhu_dp_sup_y1 .
+
+bs:hvac_oveAhu_TSupSet_u1 a brick:Supply_Air_Temperature_Setpoint ;
+    ns1:hasExternalReference bs:bnode20 .
+
+bs:hvac_oveZonAct_yDam_u1 a brick:Damper_Position_Setpoint ;
+    ns1:hasExternalReference bs:bnode4 .
+
+bs:hvac_oveZonAct_yReaHea_u1 a brick:Valve_Command ;
+    ns1:hasExternalReference bs:bnode21 .
+
+bs:hvac_oveZonSup_TZonCooSet_u1 a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ns1:hasExternalReference bs:bnode14,
+        bs:bnode3 .
+
+bs:hvac_oveZonSup_TZonHeaSet_u1 a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ns1:hasExternalReference bs:bnode3,
         bs:bnode6 .
 
-<urn:bschema#vav_1> a brick:Variable_Air_Volume_Box_With_Reheat ;
-    brick:feeds <urn:bschema#hvac__zone1> ;
-    brick:hasPoint <urn:bschema#hvac_oveZonAct_yDam_u1>,
-        <urn:bschema#hvac_oveZonAct_yReaHea_u1>,
-        <urn:bschema#hvac_reaZon_TSup_y1> .
+bs:hvac_reaAhu_TMix_y1 a brick:Mixed_Air_Temperature_Sensor ;
+    ns1:hasExternalReference bs:bnode22 .
+
+bs:hvac_reaAhu_TRet_y1 a brick:Return_Air_Temperature_Sensor ;
+    ns1:hasExternalReference bs:bnode16 .
+
+bs:hvac_reaAhu_TSup_y1 a brick:Supply_Air_Temperature_Sensor ;
+    ns1:hasExternalReference bs:bnode25 .
+
+bs:hvac_reaAhu_V_flow_ret_y1 a brick:Return_Air_Flow_Sensor ;
+    ns1:hasExternalReference bs:bnode24 .
+
+bs:hvac_reaAhu_V_flow_sup_y1 a brick:Supply_Air_Flow_Sensor ;
+    ns1:hasExternalReference bs:bnode26 .
+
+bs:hvac_reaAhu_dp_sup_y1 a brick:Discharge_Air_Static_Pressure_Sensor ;
+    ns1:hasExternalReference bs:bnode13 .
+
+bs:hvac_reaZon_CO2Zon_y1 a brick:CO2_Sensor ;
+    ns1:hasExternalReference bs:bnode10 .
+
+bs:hvac_reaZon_TSup_y1 a brick:Discharge_Air_Temperature_Sensor ;
+    ns1:hasExternalReference bs:bnode1 .
+
+bs:hvac_reaZon_TZon_y1 a brick:Zone_Air_Temperature_Sensor ;
+    ns1:hasExternalReference bs:bnode11,
+        bs:bnode8 .
+
+bs:hvac_reaZon_V_flow_y1 a brick:Discharge_Air_Flow_Sensor ;
+    ns1:hasExternalReference bs:bnode15 .
+
+bs:hwd_pump1 a brick:Hot_Water_Pump ;
+    brick:hasPoint bs:h_y1 .
+
+bs:occ_1 a brick:Occupancy_Sensor ;
+    ns1:hasExternalReference bs:bnode2,
+        bs:bnode5 .
+
+bs:vav_1 a brick:Variable_Air_Volume_Box_With_Reheat ;
+    brick:feeds bs:hvac__zone1 ;
+    brick:hasPoint bs:hvac_oveZonAct_yDam_u1,
+        bs:hvac_oveZonAct_yReaHea_u1,
+        bs:hvac_reaZon_TSup_y1 .
+
+bs:_pump1 a brick:Pump ;
+    brick:feeds bs:hwd_pump1 ;
+    brick:hasPoint bs:_y1 .
+
+bs:bnode8 a ns1:TimeseriesReference ;
+    ns1:hasTimeseriesId rdfs:Resource ;
+    ns1:onTable rdfs:Resource ;
+    ns1:storedAt rdfs:Resource .
+
+bs:h_y1 a brick:Electric_Power_Sensor ;
+    ns1:hasExternalReference bs:bnode18,
+        bs:bnode8 .
+
+bs:hvac__zone1 a brick:HVAC_Zone ;
+    rdfs:label rdfs:Resource ;
+    brick:hasPoint bs:LowerSetp_1,
+        bs:UpperSetp_1,
+        bs:hvac_oveZonSup_TZonCooSet_u1,
+        bs:hvac_oveZonSup_TZonHeaSet_u1,
+        bs:hvac_reaZon_CO2Zon_y1,
+        bs:hvac_reaZon_TZon_y1,
+        bs:hvac_reaZon_V_flow_y1,
+        bs:occ_1 .
+
+bs:bnode2 a ns1:TimeseriesReference ;
+    ns1:hasTimeseriesId rdfs:Resource ;
+    ns1:onTable rdfs:Resource ;
+    ns1:storedAt rdfs:Resource .
 
 bs:bnode3 a ns1:TimeseriesReference ;
     ns1:hasTimeseriesId rdfs:Resource ;
     ns1:onTable rdfs:Resource ;
     ns1:storedAt rdfs:Resource .
 
-<urn:bschema#_pump1> a brick:Pump ;
-    brick:feeds <urn:bschema#hwd_pump1> ;
-    brick:hasPoint <urn:bschema#_y1> .
-
-<urn:bschema#h_y1> a brick:Electric_Power_Sensor ;
+bs:_y1 a brick:Electric_Power_Sensor ;
     ns1:hasExternalReference bs:bnode3,
         bs:bnode7 .
-
-<urn:bschema#hvac__zone1> a brick:HVAC_Zone ;
-    rdfs:label rdfs:Resource ;
-    brick:hasPoint <urn:bschema#LowerSetp_1>,
-        <urn:bschema#UpperSetp_1>,
-        <urn:bschema#hvac_oveZonSup_TZonCooSet_u1>,
-        <urn:bschema#hvac_oveZonSup_TZonHeaSet_u1>,
-        <urn:bschema#hvac_reaZon_CO2Zon_y1>,
-        <urn:bschema#hvac_reaZon_TZon_y1>,
-        <urn:bschema#hvac_reaZon_V_flow_y1>,
-        <urn:bschema#occ_1> .
-
-bs:bnode1 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Resource ;
-    ns1:onTable rdfs:Resource ;
-    ns1:storedAt rdfs:Resource .
-
-bs:bnode4 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Resource ;
-    ns1:onTable rdfs:Resource ;
-    ns1:storedAt rdfs:Resource .
-
-<urn:bschema#_y1> a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:bnode1,
-        bs:bnode14 .
 

@@ -1,356 +1,250 @@
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <https://brickschema.org/schema/Brick/> .
-@prefix ns2: <http://data.ashrae.org/standard223/data/lbnl-example-2#> .
-@prefix ns3: <http://data.ashrae.org/standard223/si-builder#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://data.ashrae.org/standard223/data/lbnl-example-2#> .
+@prefix ns2: <http://data.ashrae.org/standard223/si-builder#> .
+@prefix ns3: <https://brickschema.org/schema/Brick/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix s223: <http://data.ashrae.org/standard223#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
 
-bs:0031 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor,
-        s223:TemperatureSensor ;
+bs:041 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:0044 ;
-    s223:observes bs:0022 ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:writable rdfs:Resource .
+
+bs:cwc.r_in_temp001 a s223:TemperatureSensor ;
+    rdfs:label rdfs:Resource ;
+    s223:hasObservationLocation bs:cwc.refrigerantInlet001,
+        bs:cwc.refrigerantOutlet001 ;
+    s223:observes bs:cwc.r_in_temp.Temperature001 ;
     rdfs:comment rdfs:Resource .
 
-bs:03 a s223:Zone,
-        ns3:HVACZone ;
+bs:zone_01 a s223:Zone,
+        ns2:HVACZone ;
     rdfs:label rdfs:Resource ;
     s223:hasDomain rdfs:Resource ;
-    s223:hasDomainSpace bs:031 ;
-    s223:hasProperty bs:010,
-        bs:015,
-        bs:036,
-        bs:040,
-        bs:046 ;
-    ns3:airInlet bs:032 ;
-    ns3:airOutlet bs:034 ;
-    ns3:hasZoneConnectionPoint bs:032,
-        bs:034 .
+    s223:hasDomainSpace bs:domain_space_for_room_1 ;
+    s223:hasProperty bs:1,
+        bs:13,
+        bs:27,
+        bs:zone_co201,
+        bs:zone_fan_speed01 ;
+    ns2:airInlet bs:zone_02 ;
+    ns2:airOutlet bs:zone_03 ;
+    ns2:hasZoneConnectionPoint bs:zone_02,
+        bs:zone_03 .
 
-bs:0451 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor,
-        s223:TemperatureSensor,
-        ns3:AirTemperatureSensor ;
+bs:0001 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:0018 ;
-    s223:hasPhysicalLocation bs:00051 ;
-    s223:observes bs:041 .
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
 
-bs:0002 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:003101 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
 
-bs:00021 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor,
-        s223:TemperatureSensor,
-        ns3:WaterTemperatureSensor ;
+bs:016 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:00011,
-        bs:00022 ;
-    s223:observes bs:0003 ;
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
+
+bs:10 a s223:Sensor ;
+    rdfs:label rdfs:Resource ;
+    s223:hasObservationLocation bs:007,
+        bs:21,
+        bs:Floor_4 ;
+    s223:observes bs:9 ;
     rdfs:comment rdfs:Resource .
 
-bs:000321 a s223:Connectable,
-        s223:Equipment,
+bs:17 a s223:DifferentialSensor,
         s223:Sensor ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:00022 ;
-    s223:observes bs:0037 ;
+    s223:hasObservationLocation bs:26 ;
+    s223:observes bs:9 ;
+    ns1:hasReferenceLocation bs:22 ;
     rdfs:comment rdfs:Resource .
 
-bs:000341 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor,
-        ns2:HeatFlowSensor ;
+bs:19 a s223:TemperatureSensor,
+        ns2:AirTemperatureSensor ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:00022 ;
-    s223:observes bs:000351 ;
+    s223:hasObservationLocation bs:002,
+        bs:007,
+        bs:21,
+        bs:Floor_2,
+        bs:RTU_4 ;
+    s223:hasPhysicalLocation bs:16 ;
+    s223:observes bs:11 ;
     rdfs:comment rdfs:Resource .
 
-bs:000361 a s223:EnumerableProperty,
-        s223:EnumeratedObservableProperty,
-        s223:ObservableProperty,
-        s223:Property ;
-    rdfs:label rdfs:Resource ;
-    s223:hasEnumerationKind s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference bs:003 ;
-    rdfs:comment rdfs:Resource .
-
-bs:0010 a s223:Connectable,
-        s223:DifferentialSensor,
-        s223:Equipment,
-        s223:Sensor ;
-    rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:0016,
-        bs:0033,
-        bs:0043,
-        bs:0056,
-        bs:009 ;
-    s223:observes bs:0011 ;
-    ns2:hasReferenceLocation bs:0033,
-        bs:0056 ;
-    rdfs:comment rdfs:Resource .
-
-bs:0012 a s223:ExternalReference,
-        ns1:APIReference ;
-    rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:0019 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Temperature ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:0012 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0023 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor,
-        s223:TemperatureSensor,
-        ns3:AirTemperatureSensor ;
-    rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:0016,
-        bs:0036,
-        bs:0043 ;
-    s223:observes bs:015 ;
-    rdfs:comment rdfs:Resource .
-
-bs:0024 a s223:PhysicalSpace ;
-    rdfs:label rdfs:Resource ;
-    s223:encloses bs:031 .
-
-bs:0030 a s223:ExternalReference,
-        ns1:APIReference ;
-    rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:0038 a s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty,
-        ns2:FlowSetpoint ;
-    rdfs:label rdfs:Resource ;
-    s223:hasAspect s223:Aspect-Setpoint ;
-    s223:hasExternalReference bs:0030 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0045 a s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty ;
-    rdfs:label rdfs:Resource ;
-    s223:hasAspect s223:Aspect-Setpoint ;
-    s223:hasExternalReference bs:01 ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0051 a s223:ExternalReference,
-        ns1:APIReference ;
-    rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:007 a s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty,
-        s223:Sensor ;
-    rdfs:label rdfs:Resource ;
-    s223:hasAspect s223:Aspect-Setpoint ;
-    s223:hasExternalReference bs:049 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:027 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty ;
-    rdfs:label rdfs:Resource ;
-    s223:hasAspect s223:Aspect-Minimum ;
-    s223:hasValue rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:035 a s223:EnumerableProperty,
-        s223:EnumeratedObservableProperty,
-        s223:ObservableProperty,
-        s223:Property ;
+bs:4 a s223:EnumeratedObservableProperty ;
     rdfs:label rdfs:Resource ;
     s223:hasEnumerationKind s223:Aspect-CatalogNumber,
         s223:Aspect-Manufacturer,
         s223:EnumerationKind-Binary ;
     s223:hasValue rdfs:Resource .
 
-bs:036 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:RPM ;
+bs:6 a s223:QuantifiableObservableProperty ;
     rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:011 ;
+    s223:hasAspect s223:Aspect-Minimum ;
+    s223:hasValue rdfs:Resource ;
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource .
 
-bs:04 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns2:Pressure ;
+bs:aru_1 a s223:TemperatureSensor,
+        ns2:WaterTemperatureSensor ;
     rdfs:label rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:046 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns2:CO2Concentration ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:049 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:050 a s223:ExternalReference,
-        ns1:APIReference ;
-    rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:000351 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns2:HeatFlowRate ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:050 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:00051 a s223:PhysicalSpace ;
-    rdfs:label rdfs:Resource ;
-    s223:contains bs:0024 .
-
-bs:0017 a s223:ExternalReference,
-        ns1:APIReference ;
-    rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:002 a s223:ActuatableProperty,
-        s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:003 ;
-    qudt:hasUnit rdfs:Resource ;
+    s223:hasObservationLocation bs:B59_HeatPump.chilledWaterIn000181,
+        bs:B59_HeatPump.chilledWaterOut000191,
+        bs:B59_HeatPump.hotWaterIn000201,
+        bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:observes bs:13 ;
     rdfs:comment rdfs:Resource .
 
-bs:0021 a s223:Connectable,
-        s223:Equipment,
-        s223:Sensor ;
+bs:aru_power_mbutph000341 a s223:Sensor,
+        ns1:HeatFlowSensor ;
     rdfs:label rdfs:Resource ;
-    s223:hasObservationLocation bs:00011,
-        bs:001 ;
-    s223:observes bs:0040 ;
+    s223:hasObservationLocation bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:observes bs:aru_power_mbutph.HeatFlowRate000351 ;
     rdfs:comment rdfs:Resource .
 
-bs:0022 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Temperature ;
+bs:economizer_setpoint001 a s223:QuantifiableActuatableProperty,
+        ns1:FlowSetpoint ;
     rdfs:label rdfs:Resource ;
-    s223:ofMedium rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:0028 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:003 ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0041 a s223:ConnectionPoint,
-        s223:ElectricalConnectionPoint,
-        s223:InletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0027 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0027 .
-
-bs:0046 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:ElectricPower,
-        ns3:ElectricPowerkW ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:0017 ;
+    s223:hasAspect s223:Aspect-Setpoint ;
+    s223:hasExternalReference bs:016 ;
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource ;
     rdfs:comment rdfs:Resource .
 
-bs:010 a s223:ActuatableProperty,
-        s223:EnumerableProperty,
-        s223:EnumeratedActuatableProperty,
-        s223:Property ;
+bs:hp-1status_2000361 a s223:EnumeratedObservableProperty ;
     rdfs:label rdfs:Resource ;
     s223:hasEnumerationKind s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference bs:01 ;
+    s223:hasExternalReference bs:013 ;
     rdfs:comment rdfs:Resource .
 
-bs:011 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:hw1 a s223:QuantifiableObservableProperty,
+        ns2:Temperature ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
+    s223:hasExternalReference bs:0001 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
 
-bs:021 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:oa_flow_station001 a s223:Sensor ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
+    s223:hasObservationLocation bs:23 ;
+    s223:observes bs:5 ;
+    rdfs:comment rdfs:Resource .
 
-bs:029 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Flow ;
+bs:rtu_zones_thermostat_offset_energy004141 a s223:QuantifiableObservableProperty,
+        ns2:Temperature ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:003101 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:staticPressure01 a s223:QuantifiableObservableProperty,
+        ns1:Pressure ;
+    rdfs:label rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:static_pressure_setpoint001 a s223:QuantifiableActuatableProperty,
+        s223:Sensor ;
+    rdfs:label rdfs:Resource ;
+    s223:hasAspect s223:Aspect-Setpoint ;
+    s223:hasExternalReference bs:017 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:zone_co201 a s223:QuantifiableObservableProperty,
+        ns1:CO2Concentration ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:013 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:zone_fan_speed01 a s223:QuantifiableObservableProperty,
+        ns2:RPM ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:05 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:09 a s223:ExternalReference,
+        ns3:APIReference ;
+    rdfs:label rdfs:Resource ;
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
+
+bs:1 a s223:QuantifiableActuatableProperty,
+        ns2:TemperatureSetpoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasAspect s223:Aspect-Setpoint,
+        s223:Role-Cooling,
+        s223:Role-Heating,
+        s223:Role-Supply ;
+    s223:hasExternalReference bs:05 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:16 a s223:PhysicalSpace ;
+    rdfs:label rdfs:Resource ;
+    s223:contains bs:16 ;
+    s223:encloses bs:domain_space_for_room_1 .
+
+bs:20 a s223:ElectricalConnectionPoint,
+        s223:InletConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:14 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:14 .
+
+bs:24 a s223:QuantifiableActuatableProperty ;
+    rdfs:label rdfs:Resource ;
+    s223:hasAspect s223:Aspect-Setpoint ;
+    s223:hasExternalReference bs:013 ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:25 a s223:QuantifiableObservableProperty,
+        ns2:ElectricPower,
+        ns2:ElectricPowerkW ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:017 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:27 a s223:EnumeratedActuatableProperty ;
+    rdfs:label rdfs:Resource ;
+    s223:hasEnumerationKind s223:EnumerationKind-OnOff ;
+    s223:hasExternalReference bs:05 ;
+    rdfs:comment rdfs:Resource .
+
+bs:28 a s223:QuantifiableObservableProperty ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:05 ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:3 a s223:QuantifiableObservableProperty,
+        ns2:Flow ;
     rdfs:label rdfs:Resource ;
     s223:hasAspect s223:Aspect-Minimum,
         s223:Aspect-Nominal ;
@@ -358,1259 +252,1177 @@ bs:029 a s223:ObservableProperty,
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource .
 
-bs:032 a ns3:InletZoneConnectionPoint,
-        ns3:ZoneConnectionPoint ;
+bs:30 a s223:Sensor ;
     rdfs:label rdfs:Resource ;
-    s223:hasMedium rdfs:Resource .
-
-bs:034 a ns3:OutletZoneConnectionPoint,
-        ns3:ZoneConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:hasMedium rdfs:Resource .
-
-bs:040 a s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty,
-        ns3:TemperatureSetpoint ;
-    rdfs:label rdfs:Resource ;
-    s223:hasAspect s223:Aspect-Setpoint,
-        s223:Role-Cooling,
-        s223:Role-Heating,
-        s223:Role-Supply ;
-    s223:hasExternalReference bs:011 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
+    s223:hasObservationLocation bs:23,
+        bs:B59_HeatPump.chilledWaterIn000181,
+        bs:B59_HeatPump.hotWaterIn000201 ;
+    s223:observes bs:5 ;
     rdfs:comment rdfs:Resource .
 
-bs:042 a s223:Connectable,
-        s223:ConnectionPoint,
-        s223:ElectricalConnectionPoint,
-        s223:Equipment,
-        s223:InletConnectionPoint,
-        s223:Sensor,
-        s223:TemperatureSensor,
-        ns3:AirTemperatureSensor ;
+bs:aru_power_mbutph.HeatFlowRate000351 a s223:QuantifiableObservableProperty,
+        ns1:HeatFlowRate ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:09 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasObservationLocation bs:0018 ;
-    s223:hasPhysicalLocation bs:00051 ;
-    s223:isConnectionPointOf bs:09 ;
-    s223:observes bs:041 .
+    s223:hasExternalReference bs:017 ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
 
-bs:045 a s223:ConnectionPoint,
-        s223:ElectricalConnectionPoint,
+bs:fan.electricalInlet01 a s223:ElectricalConnectionPoint,
         s223:InletConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:014 ;
+    s223:cnx bs:fan01 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:014 .
+    s223:isConnectionPointOf bs:fan01 .
 
-bs:049 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:supply_fan.electricalInlet01 a s223:ElectricalConnectionPoint,
+        s223:InletConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
+    s223:cnx bs:supply_fan01 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:supply_fan01 .
 
-bs:0026 a s223:Connection ;
+bs:zone_02 a ns2:InletZoneConnectionPoint,
+        ns2:ZoneConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0014 ;
-    s223:connectsAt bs:0014 ;
-    s223:connectsFrom bs:0018 ;
-    s223:connectsTo bs:0018 ;
     s223:hasMedium rdfs:Resource .
 
-bs:003 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:zone_03 a ns2:OutletZoneConnectionPoint,
+        ns2:ZoneConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
-
-bs:0037 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Flow ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:0051 ;
-    s223:ofMedium rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0048 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0015 ;
-    s223:connectsAt bs:0015 ;
-    s223:connectsFrom bs:005 ;
-    s223:connectsTo bs:005 ;
     s223:hasMedium rdfs:Resource .
 
-bs:0054 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:007791 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0027 ;
-    s223:mapsTo bs:0029 .
-
-bs:0055 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0035 ;
-    s223:mapsTo bs:0047 .
-
-bs:0057 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:004 ;
-    s223:mapsTo bs:0053 .
+    s223:cnx bs:009 ;
+    s223:connectsAt bs:009 ;
+    s223:connectsFrom bs:Floor_4 ;
+    s223:connectsTo bs:Floor_4 ;
+    s223:hasMedium rdfs:Resource .
 
 bs:0081 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0015 ;
-    s223:connectsAt bs:0015 ;
-    s223:connectsFrom bs:005 ;
-    s223:connectsTo bs:005 ;
+    s223:cnx bs:009 ;
+    s223:connectsAt bs:009 ;
+    s223:connectsFrom bs:Floor_4 ;
+    s223:connectsTo bs:Floor_4 ;
     s223:hasMedium rdfs:Resource .
 
-bs:01 a s223:ExternalReference,
-        ns1:APIReference ;
+bs:017 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    ns1:endpoint rdfs:Resource ;
-    ns1:mpc_db_name rdfs:Resource ;
-    ns1:source rdfs:Resource ;
-    ns1:writable rdfs:Resource .
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
 
-bs:026 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Percent ;
+bs:2 a s223:QuantifiableObservableProperty,
+        ns2:Percent ;
     rdfs:label rdfs:Resource ;
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource .
 
-bs:0003 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Temperature ;
+bs:cwc.r_in_temp.Temperature001 a s223:QuantifiableObservableProperty,
+        ns2:Temperature ;
     rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:0002 ;
-    s223:ofMedium rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0040 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Flow ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:021 ;
-    s223:ofMedium rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource ;
-    rdfs:comment rdfs:Resource .
-
-bs:0042 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0014 ;
-    s223:connectsAt bs:0014 ;
-    s223:connectsFrom bs:0018,
-        bs:009 ;
-    s223:connectsTo bs:0018,
-        bs:009 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:0053 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:006 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:006 .
-
-bs:009651 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:009,
-        bs:048 ;
-    s223:connectsThrough bs:048 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:009 .
-
-bs:013 a s223:ActuatableProperty,
-        s223:Property,
-        s223:QuantifiableActuatableProperty,
-        s223:QuantifiableProperty,
-        ns3:PercentCommand ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:021 ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:017 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:02,
-        bs:08 ;
-    s223:connectsThrough bs:02 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:08 .
-
-bs:037 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:005,
-        bs:02 ;
-    s223:connectsThrough bs:02 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:005 .
-
-bs:05 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:014 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:014 .
-
-bs:0036 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:006 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:015 ;
-    s223:isConnectionPointOf bs:006 .
-
-bs:0044 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns2:RefrigerantConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:008 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0022 ;
-    s223:isConnectionPointOf bs:008 .
-
-bs:0050 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0035,
-        bs:0049 ;
-    s223:connectsThrough bs:0049 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0035 .
-
-bs:014 a s223:Connectable,
-        s223:Equipment,
-        s223:Fan ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:045,
-        bs:05 ;
-    s223:hasConnectionPoint bs:045,
-        bs:05 ;
-    ns3:airInlet bs:05 ;
-    ns3:airOutlet bs:05 ;
-    rdfs:comment rdfs:Resource .
-
-bs:015 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Temperature ;
-    rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:01 ;
     s223:ofMedium rdfs:Resource ;
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource .
 
-bs:0001 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:fan.airInlet01 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0035,
-        bs:0049 ;
-    s223:connectsThrough bs:0049 ;
+    s223:cnx bs:fan01 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0035 ;
-    s223:mapsTo bs:0047 .
+    s223:isConnectionPointOf bs:fan01 .
 
-bs:00011 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:ChilledWaterConnectionPoint ;
+bs:fan.airOutlet01 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:000171 ;
+    s223:cnx bs:fan01 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0003,
-        bs:0040 ;
-    s223:isConnectionPointOf bs:000171 .
+    s223:isConnectionPointOf bs:fan01 .
 
-bs:0011 a s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:DifferentialStaticPressure ;
+bs:hw_coil.airOutlet01 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:hasExternalReference bs:0017 ;
-    s223:ofMedium rdfs:Resource ;
-    qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
-
-bs:0015 a s223:BidirectionalConnectionPoint,
-        s223:ConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0048,
-        bs:005,
-        bs:0081 ;
-    s223:connectsThrough bs:0048,
-        bs:0081 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:005 .
+    s223:hasProperty bs:3 ;
+    s223:isConnectionPointOf bs:hw_coil01 ;
+    s223:mapsTo bs:G-3 .
 
-bs:0020 a s223:Connection ;
+bs:hw_coil.hotWaterInlet01 a s223:InletConnectionPoint,
+        ns2:HotWaterConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0029,
-        bs:047 ;
-    s223:connectsAt bs:0029,
-        bs:047 ;
-    s223:connectsFrom bs:005 ;
-    s223:connectsTo bs:006 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:hw_coil01 ;
+    s223:mapsTo bs:G-1 .
+
+bs:hw_valve.waterOutlet01 a s223:OutletConnectionPoint,
+        ns2:WaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:hw_valve01 ;
+    s223:mapsTo bs:G-5 .
+
+bs:return_fan.airInlet005001 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:14 ;
+    s223:mapsTo bs:RTU_2 .
+
+bs:return_fan.airInlet006591 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:14 ;
+    s223:mapsTo bs:RTU_2 .
+
+bs:supply_fan.airInlet01 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:supply_fan01 ;
+    s223:mapsTo bs:G-4 .
+
+bs:001 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:004 ;
+    s223:connectsAt bs:004 ;
+    s223:connectsFrom bs:Floor_1,
+        bs:Floor_2 ;
+    s223:connectsTo bs:Floor_1,
+        bs:Floor_2 ;
     s223:hasMedium rdfs:Resource .
 
-bs:0032 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0013,
-        bs:0018,
-        bs:030 ;
-    s223:connectsThrough bs:0013,
-        bs:030 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0018 .
-
-bs:0039 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0047,
-        bs:023 ;
-    s223:connectsAt bs:0047,
-        bs:023 ;
-    s223:connectsFrom bs:006 ;
-    s223:connectsTo bs:009 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:0052 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0025,
-        bs:0056 ;
-    s223:connectsAt bs:0025,
-        bs:0056 ;
-    s223:connectsFrom bs:004 ;
-    s223:connectsTo bs:0027 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:012 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:020,
-        bs:07 ;
-    s223:connectsThrough bs:020 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:029 ;
-    s223:isConnectionPointOf bs:07 ;
-    s223:mapsTo bs:038 .
-
-bs:016 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:HotWaterConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:041,
-        bs:07 ;
-    s223:connectsThrough bs:041 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:07 ;
-    s223:mapsTo bs:025,
-        bs:044 .
-
-bs:019 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:WaterConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:022,
-        bs:041 ;
-    s223:connectsThrough bs:041 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:022 ;
-    s223:mapsTo bs:025,
-        bs:044 .
-
-bs:020 a s223:Connection ;
+bs:0012 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
     s223:cnx bs:012,
-        bs:033 ;
-    s223:connectsAt bs:012,
-        bs:033 ;
-    s223:connectsFrom bs:09 ;
-    s223:connectsTo bs:07 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:022 a s223:Connectable,
-        s223:Equipment,
-        s223:TwoWayValve,
-        s223:Valve,
-        ns2:UFT_HWC_Valve ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:019 ;
-    s223:connected bs:07 ;
-    s223:connectedFrom bs:07 ;
-    s223:connectedThrough bs:041 ;
-    s223:hasConnectionPoint bs:019 ;
-    s223:hasProperty bs:013,
-        bs:026 ;
-    ns3:waterInlet bs:019 ;
-    ns3:waterOutlet bs:019 ;
-    rdfs:comment rdfs:Resource .
-
-bs:024 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0004,
-        bs:00041,
-        bs:018 ;
-    s223:connectsThrough bs:0004,
-        bs:018 ;
+        bs:Floor_2 ;
+    s223:connectsThrough bs:012 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:00041 .
+    s223:isConnectionPointOf bs:Floor_2 .
 
-bs:032951 a s223:Connection ;
+bs:003 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:038,
-        bs:043 ;
-    s223:connectsAt bs:038,
-        bs:043 ;
-    s223:connectsFrom bs:028 ;
-    s223:connectsTo bs:08 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:033 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:020,
-        bs:09 ;
-    s223:connectsThrough bs:020 ;
+    s223:cnx bs:04,
+        bs:Floor_2 ;
+    s223:connectsThrough bs:04 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:09 ;
-    s223:mapsTo bs:038 .
+    s223:isConnectionPointOf bs:Floor_2 .
 
-bs:039 a s223:ConnectionPoint,
-        s223:InletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0004,
-        bs:00041,
-        bs:018 ;
-    s223:connectsThrough bs:0004,
-        bs:018 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:00041 .
-
-bs:042901 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:038,
-        bs:051 ;
-    s223:connectsAt bs:038,
-        bs:051 ;
-    s223:connectsFrom bs:028 ;
-    s223:connectsTo bs:08 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:043 a s223:ConnectionPoint,
-        s223:InletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:032951,
-        bs:048,
-        bs:08 ;
-    s223:connectsThrough bs:032951,
-        bs:048 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:08 .
-
-bs:051 a s223:ConnectionPoint,
-        s223:InletConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:042901,
-        bs:048,
-        bs:08 ;
-    s223:connectsThrough bs:042901,
-        bs:048 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:08 .
-
-bs:06 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:01 a s223:InletConnectionPoint ;
     rdfs:label rdfs:Resource ;
     s223:cnx bs:02,
-        bs:031 ;
+        bs:supply_junction_G-1 ;
     s223:connectsThrough bs:02 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:031 .
+    s223:isConnectionPointOf bs:supply_junction_G-1 .
 
-bs:001 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:010 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:004,
-        bs:0043 ;
-    s223:connectsThrough bs:0043 ;
+    s223:cnx bs:012,
+        bs:Floor_4 ;
+    s223:connectsThrough bs:012 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0040 ;
-    s223:isConnectionPointOf bs:004 ;
-    s223:mapsTo bs:0016,
-        bs:0036 .
+    s223:isConnectionPointOf bs:Floor_4 .
 
-bs:0029 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:06 a s223:OutletConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0020,
-        bs:006 ;
-    s223:connectsThrough bs:0020 ;
+    s223:cnx bs:04,
+        bs:supply_junction_G-1 ;
+    s223:connectsThrough bs:04 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:006 .
+    s223:isConnectionPointOf bs:supply_junction_G-1 .
 
-bs:0047 a s223:ConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:15 a s223:QuantifiableActuatableProperty,
+        ns2:PercentCommand ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0039,
-        bs:006 ;
-    s223:connectsThrough bs:0039 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:006 .
-
-bs:0004 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:00022,
-        bs:024,
-        bs:039 ;
-    s223:connectsAt bs:00022,
-        bs:024,
-        bs:039 ;
-    s223:connectsFrom bs:000171,
-        bs:00041 ;
-    s223:connectsTo bs:000171,
-        bs:00041 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:0014 a s223:BidirectionalConnectionPoint,
-        s223:ConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0018,
-        bs:0026,
-        bs:0042,
-        bs:009 ;
-    s223:connectsThrough bs:0026,
-        bs:0042 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0018,
-        bs:009 .
-
-bs:0025 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0027,
-        bs:0043,
-        bs:0052 ;
-    s223:connectsThrough bs:0043,
-        bs:0052 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0027 ;
-    s223:mapsTo bs:0029 .
-
-bs:0033 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:004,
-        bs:0043 ;
-    s223:connectsThrough bs:0043 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0011 ;
-    s223:isConnectionPointOf bs:004 .
-
-bs:0049 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0001,
-        bs:0016,
-        bs:0050 ;
-    s223:connectsAt bs:0001,
-        bs:0016,
-        bs:0050 ;
-    s223:connectsFrom bs:0027 ;
-    s223:connectsTo bs:0035 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:025 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:WaterConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:018,
-        bs:028 ;
-    s223:connectsThrough bs:018 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:028 .
-
-bs:044 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:WaterConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:018,
-        bs:028 ;
-    s223:connectsThrough bs:018 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:028 .
-
-bs:09 a s223:Connectable,
-        s223:Equipment,
-        s223:Fan,
-        ns2:UFT_Fan ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:033,
-        bs:042 ;
-    s223:connected bs:07 ;
-    s223:connectedThrough bs:020 ;
-    s223:connectedTo bs:07 ;
-    s223:hasConnectionPoint bs:033,
-        bs:042 ;
-    s223:hasProperty bs:013,
-        bs:026 ;
-    s223:hasRole rdfs:Resource ;
-    ns2:speedCommand bs:013 ;
-    ns2:speedFeedback bs:026 ;
-    ns3:airInlet bs:033 ;
-    ns3:airOutlet bs:033 ;
-    rdfs:comment rdfs:Resource .
-
-bs:000171 a s223:Connectable,
-        s223:Equipment,
-        s223:WatertoWaterHeatPump ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:00011,
-        bs:00022 ;
-    s223:connected bs:00041 ;
-    s223:connectedFrom bs:00041 ;
-    s223:connectedThrough bs:0004 ;
-    s223:connectedTo bs:00041 ;
-    s223:contains bs:00021,
-        bs:000321,
-        bs:000341,
-        bs:0021 ;
-    s223:hasConnectionPoint bs:00011,
-        bs:00022 ;
-    s223:hasProperty bs:0003,
-        bs:000361,
-        bs:0028,
-        bs:0046 ;
-    ns2:chilledWaterIn bs:00011 ;
-    ns2:chilledWaterOut bs:00011 ;
-    ns2:hotWaterIn bs:00022 ;
-    ns2:hotWaterOut bs:00022 .
-
-bs:00022 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:HotWaterConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:000171,
-        bs:0004 ;
-    s223:connectsThrough bs:0004 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0003,
-        bs:000351,
-        bs:0037 ;
-    s223:isConnectionPointOf bs:000171 .
-
-bs:0013 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0032,
-        bs:023,
-        bs:047 ;
-    s223:connectsAt bs:0032,
-        bs:023,
-        bs:047 ;
-    s223:connectsFrom bs:0018,
-        bs:009 ;
-    s223:connectsTo bs:0018,
-        bs:005 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:0034 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0027,
-        bs:0043,
-        bs:008 ;
-    s223:connectsThrough bs:0043 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:0027,
-        bs:008 .
-
-bs:0035 a s223:Connectable,
-        s223:Damper,
-        s223:Equipment ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0001,
-        bs:0050,
-        bs:0055 ;
-    s223:connected bs:0027 ;
-    s223:connectedFrom bs:0027 ;
-    s223:connectedThrough bs:0049 ;
-    s223:hasConnectionPoint bs:0001,
-        bs:0050,
-        bs:0055 ;
-    ns3:airInlet bs:0001,
-        bs:0050 ;
-    ns3:airOutlet bs:0001,
-        bs:0055 ;
-    rdfs:comment rdfs:Resource .
-
-bs:030 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:0032,
-        bs:023,
-        bs:038 ;
-    s223:connectsAt bs:0032,
-        bs:023,
-        bs:038 ;
-    s223:connectsFrom bs:009 ;
-    s223:connectsTo bs:0018,
-        bs:028 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:041 a s223:Connection,
-        s223:ObservableProperty,
-        s223:Property,
-        s223:QuantifiableObservableProperty,
-        s223:QuantifiableProperty,
-        ns3:Temperature ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:016,
-        bs:019 ;
-    s223:connectsAt bs:016,
-        bs:019 ;
-    s223:connectsFrom bs:07 ;
-    s223:connectsTo bs:022 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:ofMedium rdfs:Resource ;
+    s223:hasExternalReference bs:09 ;
     qudt:hasQuantityKind rdfs:Resource ;
     qudt:hasUnit rdfs:Resource .
 
-bs:047 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:B59_HeatPump.chilledWaterOut000191 a s223:OutletConnectionPoint,
+        ns2:ChilledWaterConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0013,
-        bs:0020,
-        bs:005,
-        bs:02 ;
-    s223:connectsThrough bs:0013,
-        bs:0020,
-        bs:02 ;
+    s223:cnx bs:B59_HeatPump000171 ;
     s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:005 .
+    s223:hasProperty bs:13 ;
+    s223:isConnectionPointOf bs:B59_HeatPump000171 .
 
-bs:0056 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:cwc.refrigerantInlet001 a s223:InletConnectionPoint,
+        ns1:RefrigerantConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:004,
-        bs:0043,
-        bs:0052 ;
-    s223:connectsThrough bs:0043,
-        bs:0052 ;
+    s223:cnx bs:cwc001 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0011 ;
-    s223:isConnectionPointOf bs:004 .
+    s223:hasProperty bs:cwc.r_in_temp.Temperature001 ;
+    s223:isConnectionPointOf bs:cwc001 .
 
-bs:008 a s223:Coil,
-        s223:Connectable,
-        s223:CoolingCoil,
-        s223:Equipment,
-        ns2:DXCoil ;
+bs:cwc.refrigerantOutlet001 a s223:OutletConnectionPoint,
+        ns1:RefrigerantConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0034,
-        bs:0044 ;
-    s223:connected bs:004 ;
-    s223:connectedFrom bs:004 ;
-    s223:connectedThrough bs:0043 ;
-    s223:connectedTo bs:004 ;
-    s223:hasConnectionPoint bs:0034,
-        bs:0044 ;
-    s223:hasRole rdfs:Resource ;
-    ns2:refrigerantInlet bs:0044 ;
-    ns2:refrigerantOutlet bs:0044 ;
-    ns3:airInlet bs:0034 ;
-    ns3:airOutlet bs:0034 ;
-    rdfs:comment rdfs:Resource .
+    s223:cnx bs:cwc001 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:cwc.r_in_temp.Temperature001 ;
+    s223:isConnectionPointOf bs:cwc001 .
 
-bs:018 a s223:Connection ;
+bs:013 a s223:ExternalReference,
+        ns3:APIReference ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:024,
-        bs:025,
-        bs:039,
-        bs:044 ;
-    s223:connectsAt bs:024,
-        bs:025,
-        bs:039,
-        bs:044 ;
-    s223:connectsFrom bs:00041,
-        bs:028 ;
-    s223:connectsTo bs:00041,
-        bs:028 ;
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
+
+bs:05 a s223:ExternalReference,
+        ns3:APIReference ;
+    rdfs:label rdfs:Resource ;
+    ns3:endpoint rdfs:Resource ;
+    ns3:mpc_db_name rdfs:Resource ;
+    ns3:source rdfs:Resource ;
+    ns3:writable rdfs:Resource .
+
+bs:29 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0010,
+        bs:14 ;
+    s223:connectsThrough bs:0010 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:14 ;
+    s223:mapsTo bs:RTU_2 .
+
+bs:B59_HeatPump.chilledWaterIn000181 a s223:InletConnectionPoint,
+        ns2:ChilledWaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:B59_HeatPump000171 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:13,
+        bs:5 ;
+    s223:isConnectionPointOf bs:B59_HeatPump000171 .
+
+bs:Floor_3 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:005,
+        bs:Floor_4 ;
+    s223:connectsThrough bs:005 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:Floor_4 .
+
+bs:Floor_5 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:006,
+        bs:Floor_1 ;
+    s223:connectsThrough bs:006 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:Floor_1 .
+
+bs:RTU_4 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:RTU_1 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:11 ;
+    s223:isConnectionPointOf bs:RTU_1 .
+
+bs:cwc.airInlet001 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:008,
+        bs:cwc001 ;
+    s223:connectsThrough bs:008 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:cwc001 .
+
+bs:hw_coil.airInlet01 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:014,
+        bs:hw_coil01 ;
+    s223:connectsThrough bs:014 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:hw_coil01 .
+
+bs:hw_coil.hotWaterOutlet01 a s223:OutletConnectionPoint,
+        ns2:HotWaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:08,
+        bs:hw_coil01 ;
+    s223:connectsThrough bs:08 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:hw_coil01 .
+
+bs:hw_valve.waterInlet01 a s223:InletConnectionPoint,
+        ns2:WaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:08,
+        bs:hw_valve01 ;
+    s223:connectsThrough bs:08 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:hw_valve01 .
+
+bs:iso_damper.airInlet001 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0011,
+        bs:iso_damper001 ;
+    s223:connectsThrough bs:0011 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:iso_damper001 .
+
+bs:supply_fan.airOutlet01 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:014,
+        bs:supply_fan01 ;
+    s223:connectsThrough bs:014 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:supply_fan01 .
+
+bs:000481 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:03,
+        bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:connectsAt bs:03,
+        bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:connectsFrom bs:B59_HeatPump000171 ;
+    s223:connectsTo bs:B59_HeatPump_water_1 ;
     s223:hasMedium rdfs:Resource .
 
-bs:031 a s223:Connectable,
-        s223:DomainSpace,
-        ns2:RoomDomainSpace ;
+bs:000501 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:06 ;
-    s223:connected bs:005,
-        bs:08 ;
-    s223:connectedFrom bs:08 ;
-    s223:connectedThrough bs:02 ;
-    s223:connectedTo bs:005 ;
-    s223:hasConnectionPoint bs:06 ;
-    s223:hasDomain rdfs:Resource ;
-    ns2:returnOutlet bs:06 ;
-    ns2:supplyInlet bs:06 .
+    s223:cnx bs:011,
+        bs:B59_HeatPump.hotWaterIn000201 ;
+    s223:connectsAt bs:011,
+        bs:B59_HeatPump.hotWaterIn000201 ;
+    s223:connectsFrom bs:B59_HeatPump_water_1 ;
+    s223:connectsTo bs:B59_HeatPump000171 ;
+    s223:hasMedium rdfs:Resource .
 
-bs:0016 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:0010 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0027,
-        bs:0049,
-        bs:006 ;
-    s223:connectsThrough bs:0049 ;
+    s223:cnx bs:26,
+        bs:29 ;
+    s223:connectsAt bs:26,
+        bs:29 ;
+    s223:connectsFrom bs:12 ;
+    s223:connectsTo bs:14 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:0011 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:21,
+        bs:iso_damper.airInlet001 ;
+    s223:connectsAt bs:21,
+        bs:iso_damper.airInlet001 ;
+    s223:connectsFrom bs:14 ;
+    s223:connectsTo bs:iso_damper001 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:004 a s223:BidirectionalConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:001,
+        bs:Floor_1,
+        bs:Floor_2 ;
+    s223:connectsThrough bs:001 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0011,
-        bs:015 ;
-    s223:isConnectionPointOf bs:0027,
-        bs:006 .
+    s223:isConnectionPointOf bs:Floor_1,
+        bs:Floor_2 .
+
+bs:005 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:Floor_3,
+        bs:RTU_3 ;
+    s223:connectsAt bs:Floor_3,
+        bs:RTU_3 ;
+    s223:connectsFrom bs:RTU_1 ;
+    s223:connectsTo bs:Floor_4 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:006 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:Floor_5,
+        bs:RTU_2 ;
+    s223:connectsAt bs:Floor_5,
+        bs:RTU_2 ;
+    s223:connectsFrom bs:Floor_1 ;
+    s223:connectsTo bs:RTU_1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:009 a s223:BidirectionalConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:007791,
+        bs:0081,
+        bs:Floor_4 ;
+    s223:connectsThrough bs:007791,
+        bs:0081 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:Floor_4 .
+
+bs:011 a s223:OutletConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:000501,
+        bs:07,
+        bs:B59_HeatPump_water_1 ;
+    s223:connectsThrough bs:000501,
+        bs:07 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:B59_HeatPump_water_1 .
+
+bs:014 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:hw_coil.airInlet01,
+        bs:supply_fan.airOutlet01 ;
+    s223:connectsAt bs:hw_coil.airInlet01,
+        bs:supply_fan.airOutlet01 ;
+    s223:connectsFrom bs:supply_fan01 ;
+    s223:connectsTo bs:hw_coil01 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:015 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:03,
+        bs:G-5 ;
+    s223:connectsAt bs:03,
+        bs:G-5 ;
+    s223:connectsFrom bs:G-2 ;
+    s223:connectsTo bs:B59_HeatPump_water_1 ;
+    s223:hasMedium rdfs:Resource .
 
 bs:02 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:017,
-        bs:037,
-        bs:047,
-        bs:06 ;
-    s223:connectsAt bs:017,
-        bs:037,
-        bs:047,
-        bs:06 ;
-    s223:connectsFrom bs:031,
-        bs:08 ;
-    s223:connectsTo bs:005,
-        bs:031 ;
+    s223:cnx bs:01,
+        bs:G-3 ;
+    s223:connectsAt bs:01,
+        bs:G-3 ;
+    s223:connectsFrom bs:G-2 ;
+    s223:connectsTo bs:supply_junction_G-1 ;
     s223:hasMedium rdfs:Resource .
 
-bs:023 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
+bs:020921 a s223:Connection ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0013,
-        bs:0039,
-        bs:009,
-        bs:030,
-        bs:048 ;
-    s223:connectsThrough bs:0013,
-        bs:0039,
-        bs:030,
-        bs:048 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:009 .
+    s223:cnx bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:connectsAt bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:connectsFrom bs:domain_space_for_room_1 ;
+    s223:connectsTo bs:Floor_1 ;
+    s223:hasMedium rdfs:Resource .
 
-bs:07 a s223:Coil,
-        s223:Connectable,
-        s223:Equipment,
-        s223:HeatingCoil ;
+bs:03 a s223:InletConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:000481,
+        bs:015,
+        bs:B59_HeatPump_water_1 ;
+    s223:connectsThrough bs:000481,
+        bs:015 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:B59_HeatPump_water_1 .
+
+bs:07 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:011,
+        bs:G-1 ;
+    s223:connectsAt bs:011,
+        bs:G-1 ;
+    s223:connectsFrom bs:B59_HeatPump_water_1 ;
+    s223:connectsTo bs:G-2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:08 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:hw_coil.hotWaterOutlet01,
+        bs:hw_valve.waterInlet01 ;
+    s223:connectsAt bs:hw_coil.hotWaterOutlet01,
+        bs:hw_valve.waterInlet01 ;
+    s223:connectsFrom bs:hw_coil01 ;
+    s223:connectsTo bs:hw_valve01 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:22 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:002,
+        bs:12 ;
+    s223:connectsThrough bs:002 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:12 .
+
+bs:31 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:8,
+        bs:iso_damper001 ;
+    s223:mapsTo bs:RTU_3 .
+
+bs:5 a s223:QuantifiableObservableProperty,
+        ns2:Flow ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:013 ;
+    s223:ofMedium rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
+
+bs:9 a s223:QuantifiableObservableProperty,
+        ns2:DifferentialStaticPressure ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:013 ;
+    s223:ofMedium rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource .
+
+bs:G-1 a s223:InletConnectionPoint,
+        ns2:WaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:07,
+        bs:G-2 ;
+    s223:connectsThrough bs:07 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:G-2 .
+
+bs:G-3 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:02,
+        bs:G-2 ;
+    s223:connectsThrough bs:02 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:G-2 .
+
+bs:G-4 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
     s223:cnx bs:012,
-        bs:016 ;
-    s223:connected bs:022,
-        bs:09 ;
-    s223:connectedFrom bs:09 ;
-    s223:connectedThrough bs:020,
-        bs:041 ;
-    s223:connectedTo bs:022 ;
-    s223:hasConnectionPoint bs:012,
-        bs:016 ;
-    s223:hasRole rdfs:Resource ;
-    ns3:airInlet bs:012 ;
-    ns3:airOutlet bs:012 ;
-    ns3:hotWaterInlet bs:016 ;
-    ns3:hotWaterOutlet bs:016 ;
+        bs:G-2 ;
+    s223:connectsThrough bs:012 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:G-2 .
+
+bs:G-5 a s223:OutletConnectionPoint,
+        ns2:WaterConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:015,
+        bs:G-2 ;
+    s223:connectsThrough bs:015 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:G-2 .
+
+bs:11 a s223:QuantifiableObservableProperty,
+        ns2:Temperature ;
+    rdfs:label rdfs:Resource ;
+    s223:hasExternalReference bs:05 ;
+    s223:ofMedium rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
     rdfs:comment rdfs:Resource .
 
-bs:048 a s223:Connection ;
+bs:13 a s223:QuantifiableObservableProperty,
+        ns2:Temperature ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:009651,
-        bs:023,
-        bs:038,
-        bs:043,
-        bs:051 ;
-    s223:connectsAt bs:009651,
-        bs:023,
-        bs:038,
-        bs:043,
-        bs:051 ;
-    s223:connectsFrom bs:009,
-        bs:028 ;
-    s223:connectsTo bs:028,
-        bs:08 ;
-    s223:hasMedium rdfs:Resource .
+    s223:hasExternalReference bs:09 ;
+    s223:ofMedium rdfs:Resource ;
+    qudt:hasQuantityKind rdfs:Resource ;
+    qudt:hasUnit rdfs:Resource ;
+    rdfs:comment rdfs:Resource .
 
-bs:00041 a s223:Connectable,
-        s223:Junction,
-        ns2:WaterJunction ;
+bs:18 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:024,
-        bs:039 ;
-    s223:connected bs:000171,
-        bs:028 ;
-    s223:connectedFrom bs:000171,
-        bs:028 ;
-    s223:connectedThrough bs:0004,
-        bs:018 ;
-    s223:connectedTo bs:000171,
-        bs:028 ;
-    s223:hasConnectionPoint bs:024,
-        bs:039 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:038 a s223:ConnectionPoint,
-        s223:InletConnectionPoint,
-        s223:OutletConnectionPoint,
-        ns3:AirConnectionPoint ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:028,
-        bs:030,
-        bs:032951,
-        bs:042901,
-        bs:048 ;
-    s223:connectsThrough bs:030,
-        bs:032951,
-        bs:042901,
-        bs:048 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:isConnectionPointOf bs:028 .
-
-bs:08 a s223:Connectable,
-        s223:Junction ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:017,
-        bs:043,
-        bs:051 ;
-    s223:connected bs:028,
-        bs:031 ;
-    s223:connectedFrom bs:028 ;
-    s223:connectedThrough bs:02,
-        bs:032951,
-        bs:042901,
-        bs:048 ;
-    s223:connectedTo bs:031 ;
-    s223:hasConnectionPoint bs:017,
-        bs:043,
-        bs:051 ;
-    s223:hasMedium rdfs:Resource .
-
-bs:0043 a s223:Connection ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:001,
-        bs:0025,
-        bs:0033,
-        bs:0034,
-        bs:0056 ;
-    s223:connectsAt bs:001,
-        bs:0025,
-        bs:0033,
-        bs:0034,
-        bs:0056 ;
-    s223:connectsFrom bs:0027,
-        bs:004,
-        bs:008 ;
-    s223:connectsTo bs:0027,
-        bs:004,
+    s223:cnx bs:007,
+        bs:008,
+        bs:8 ;
+    s223:connectsThrough bs:007,
         bs:008 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0011,
-        bs:015 .
+    s223:isConnectionPointOf bs:8 ;
+    s223:mapsTo bs:RTU_4 .
 
-bs:006 a s223:AirHandlingUnit,
-        s223:Connectable,
-        s223:Equipment ;
+bs:B59_HeatPump.hotWaterIn000201 a s223:InletConnectionPoint,
+        ns2:HotWaterConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0016,
-        bs:0029,
-        bs:0036,
-        bs:0047,
-        bs:0053 ;
-    s223:connected bs:005,
-        bs:009 ;
-    s223:connectedFrom bs:005 ;
-    s223:connectedThrough bs:0020,
-        bs:0039 ;
-    s223:connectedTo bs:009 ;
-    s223:contains bs:0010,
-        bs:0021,
-        bs:0023,
-        bs:0027,
-        bs:0035,
-        bs:004,
-        bs:008 ;
-    s223:hasConnectionPoint bs:0016,
-        bs:0029,
-        bs:0036,
-        bs:0047,
-        bs:0053 ;
-    s223:hasProperty bs:0019,
-        bs:002,
-        bs:0028,
-        bs:0037,
-        bs:0038,
-        bs:0040,
-        bs:0045,
-        bs:0046,
-        bs:007,
-        bs:010,
-        bs:040 ;
-    ns2:exhaustAirOutlet bs:0053 ;
-    ns2:outsideAirInlet bs:0016,
-        bs:0036 ;
-    ns2:returnAirInlet bs:0029 ;
-    ns2:supplyAirOutlet bs:0047 .
+    s223:cnx bs:000501,
+        bs:B59_HeatPump000171 ;
+    s223:connectsThrough bs:000501 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:13,
+        bs:5 ;
+    s223:isConnectionPointOf bs:B59_HeatPump000171 .
 
-bs:0027 a s223:Connectable,
-        s223:Equipment,
-        s223:Fan,
-        ns2:RTUFan ;
+bs:B59_HeatPump.hotWaterOut000211 a s223:OutletConnectionPoint,
+        ns2:HotWaterConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0016,
-        bs:0025,
-        bs:0034,
-        bs:0041,
-        bs:0054 ;
-    s223:connected bs:0035,
-        bs:004 ;
-    s223:connectedFrom bs:004 ;
-    s223:connectedThrough bs:0043,
-        bs:0049,
-        bs:0052 ;
-    s223:connectedTo bs:0035,
-        bs:004 ;
-    s223:hasConnectionPoint bs:0016,
-        bs:0025,
-        bs:0034,
-        bs:0041,
-        bs:0054 ;
-    s223:hasProperty bs:002 ;
-    s223:hasRole rdfs:Resource ;
-    ns3:airInlet bs:0025,
-        bs:0054 ;
-    ns3:airOutlet bs:0016,
-        bs:0025,
-        bs:0034 ;
-    rdfs:comment rdfs:Resource .
+    s223:cnx bs:000481,
+        bs:B59_HeatPump000171 ;
+    s223:connectsThrough bs:000481 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:13,
+        bs:aru_power_mbutph.HeatFlowRate000351 ;
+    s223:isConnectionPointOf bs:B59_HeatPump000171 .
 
-bs:0018 a s223:Connectable,
-        s223:DomainSpace,
-        ns2:CoreSpace ;
+bs:RTU_3 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0014,
-        bs:0032 ;
-    s223:connected bs:0018,
-        bs:005,
-        bs:009 ;
-    s223:connectedFrom bs:0018,
-        bs:009 ;
-    s223:connectedThrough bs:0013,
-        bs:0026,
-        bs:0042,
-        bs:030 ;
-    s223:connectedTo bs:0018,
-        bs:005 ;
-    s223:hasConnectionPoint bs:0014,
-        bs:0032 ;
-    s223:hasDomain rdfs:Resource ;
-    s223:hasProperty bs:041 .
+    s223:cnx bs:005,
+        bs:RTU_1 ;
+    s223:connectsThrough bs:005 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:RTU_1 .
 
-bs:004 a s223:Connectable,
-        s223:Damper,
-        s223:Equipment,
-        s223:Filter,
-        ns2:RTUDamper ;
+bs:domain_space_for_room_2 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:001,
-        bs:0033,
-        bs:0056,
-        bs:0057 ;
-    s223:connected bs:0027,
-        bs:004,
-        bs:008 ;
-    s223:connectedFrom bs:0027,
-        bs:004,
-        bs:008 ;
-    s223:connectedThrough bs:0043,
-        bs:0052 ;
-    s223:connectedTo bs:0027,
-        bs:004,
-        bs:008 ;
-    s223:hasConnectionPoint bs:001,
-        bs:0033,
-        bs:0056,
-        bs:0057 ;
-    s223:hasProperty bs:013 ;
-    s223:hasRole rdfs:Resource ;
-    ns3:airInlet bs:001,
-        bs:0033,
-        bs:0056 ;
-    ns3:airOutlet bs:001,
-        bs:0033,
-        bs:0056,
-        bs:0057 ;
-    rdfs:comment rdfs:Resource .
-
-bs:028 a s223:Connectable,
-        s223:Equipment,
-        s223:FanPoweredTerminal,
-        ns2:UFT ;
-    rdfs:label rdfs:Resource ;
-    s223:cnx bs:025,
-        bs:038,
-        bs:044 ;
-    s223:connected bs:00041,
-        bs:009,
-        bs:08 ;
-    s223:connectedFrom bs:00041,
-        bs:009 ;
-    s223:connectedThrough bs:018,
-        bs:030,
-        bs:032951,
-        bs:042901,
-        bs:048 ;
-    s223:connectedTo bs:00041,
-        bs:08 ;
-    s223:contains bs:014,
-        bs:022,
-        bs:07,
-        bs:09 ;
-    s223:hasConnectionPoint bs:025,
-        bs:038,
-        bs:044 ;
-    s223:hasProperty bs:027,
-        bs:029,
-        bs:035,
+    s223:cnx bs:020921,
+        bs:04,
+        bs:domain_space_for_room_1 ;
+    s223:connectsThrough bs:020921,
         bs:04 ;
-    ns2:airInlet bs:038 ;
-    ns2:airOutlet bs:038 ;
-    ns2:waterInlet bs:025,
-        bs:044 ;
-    ns2:waterOutlet bs:025,
-        bs:044 .
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:domain_space_for_room_1 .
 
-bs:005 a s223:Connectable,
-        s223:Junction,
-        ns2:CeilingSpace ;
+bs:fan01 a s223:Fan ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0015,
-        bs:037,
-        bs:047 ;
-    s223:connected bs:0018,
-        bs:005,
-        bs:006,
-        bs:031 ;
-    s223:connectedFrom bs:0018,
-        bs:005,
-        bs:031 ;
-    s223:connectedThrough bs:0013,
-        bs:0020,
-        bs:0048,
-        bs:0081,
-        bs:02 ;
-    s223:connectedTo bs:005,
+    s223:cnx bs:fan.airInlet01,
+        bs:fan.airOutlet01,
+        bs:fan.electricalInlet01 ;
+    s223:hasConnectionPoint bs:fan.airInlet01,
+        bs:fan.airOutlet01,
+        bs:fan.electricalInlet01 ;
+    ns2:airInlet bs:fan.airInlet01 ;
+    ns2:airOutlet bs:fan.airOutlet01 ;
+    rdfs:comment rdfs:Resource .
+
+bs:hw_valve01 a s223:TwoWayValve,
+        ns1:UFT_HWC_Valve ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:hw_valve.waterInlet01,
+        bs:hw_valve.waterOutlet01 ;
+    s223:connected bs:hw_coil01 ;
+    s223:connectedFrom bs:hw_coil01 ;
+    s223:connectedThrough bs:08 ;
+    s223:hasConnectionPoint bs:hw_valve.waterInlet01,
+        bs:hw_valve.waterOutlet01 ;
+    s223:hasProperty bs:15,
+        bs:2 ;
+    ns2:waterInlet bs:hw_valve.waterInlet01 ;
+    ns2:waterOutlet bs:hw_valve.waterOutlet01 ;
+    rdfs:comment rdfs:Resource .
+
+bs:iso_damper001 a s223:Damper ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:31,
+        bs:iso_damper.airInlet001 ;
+    s223:connected bs:14 ;
+    s223:connectedFrom bs:14 ;
+    s223:connectedThrough bs:0011 ;
+    s223:hasConnectionPoint bs:31,
+        bs:iso_damper.airInlet001 ;
+    ns2:airInlet bs:iso_damper.airInlet001 ;
+    ns2:airOutlet bs:31 ;
+    rdfs:comment rdfs:Resource .
+
+bs:002 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:22,
+        bs:23 ;
+    s223:connectsAt bs:22,
+        bs:23 ;
+    s223:connectsFrom bs:8,
+        bs:cwc001 ;
+    s223:connectsTo bs:12 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:11 .
+
+bs:007 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:18,
+        bs:21 ;
+    s223:connectsAt bs:18,
+        bs:21 ;
+    s223:connectsFrom bs:14 ;
+    s223:connectsTo bs:8 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:11,
+        bs:9 .
+
+bs:26 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0010,
+        bs:008,
+        bs:12 ;
+    s223:connectsThrough bs:0010,
+        bs:008 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:9 ;
+    s223:isConnectionPointOf bs:12 .
+
+bs:RTU_2 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:006,
+        bs:RTU_1 ;
+    s223:connectsThrough bs:006 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:RTU_1 .
+
+bs:008 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:18,
+        bs:26,
+        bs:cwc.airInlet001 ;
+    s223:connectsAt bs:18,
+        bs:26,
+        bs:cwc.airInlet001 ;
+    s223:connectsFrom bs:12 ;
+    s223:connectsTo bs:8,
+        bs:cwc001 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:012 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0012,
+        bs:010,
+        bs:G-4 ;
+    s223:connectsAt bs:0012,
+        bs:010,
+        bs:G-4 ;
+    s223:connectsFrom bs:Floor_4 ;
+    s223:connectsTo bs:Floor_2,
+        bs:G-2 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:21 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0011,
+        bs:007,
+        bs:14 ;
+    s223:connectsThrough bs:0011,
+        bs:007 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:11,
+        bs:9 ;
+    s223:isConnectionPointOf bs:14 .
+
+bs:7 a s223:InletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:020921,
+        bs:04,
+        bs:Floor_1,
+        bs:domain_space_for_room_1 ;
+    s223:connectsThrough bs:020921,
+        bs:04 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:isConnectionPointOf bs:Floor_1,
+        bs:domain_space_for_room_1 .
+
+bs:supply_fan01 a s223:Fan,
+        ns1:UFT_Fan ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:supply_fan.airInlet01,
+        bs:supply_fan.airOutlet01,
+        bs:supply_fan.electricalInlet01 ;
+    s223:connected bs:hw_coil01 ;
+    s223:connectedThrough bs:014 ;
+    s223:connectedTo bs:hw_coil01 ;
+    s223:hasConnectionPoint bs:supply_fan.airInlet01,
+        bs:supply_fan.airOutlet01,
+        bs:supply_fan.electricalInlet01 ;
+    s223:hasProperty bs:15,
+        bs:2 ;
+    s223:hasRole rdfs:Resource ;
+    ns1:speedCommand bs:15 ;
+    ns1:speedFeedback bs:2 ;
+    ns2:airInlet bs:supply_fan.airInlet01 ;
+    ns2:airOutlet bs:supply_fan.airOutlet01 ;
+    rdfs:comment rdfs:Resource .
+
+bs:23 a s223:OutletConnectionPoint,
+        ns2:AirConnectionPoint ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:002,
+        bs:8,
+        bs:cwc001 ;
+    s223:connectsThrough bs:002 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:5 ;
+    s223:isConnectionPointOf bs:8,
+        bs:cwc001 .
+
+bs:supply_junction_G-1 a s223:Junction ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:01,
+        bs:06 ;
+    s223:connected bs:G-2,
+        bs:domain_space_for_room_1 ;
+    s223:connectedFrom bs:G-2 ;
+    s223:connectedThrough bs:02,
+        bs:04 ;
+    s223:connectedTo bs:domain_space_for_room_1 ;
+    s223:hasConnectionPoint bs:01,
+        bs:06 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:04 a s223:Connection ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:003,
+        bs:06,
+        bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:connectsAt bs:003,
+        bs:06,
+        bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:connectsFrom bs:Floor_2,
+        bs:domain_space_for_room_1,
+        bs:supply_junction_G-1 ;
+    s223:connectsTo bs:Floor_1,
+        bs:domain_space_for_room_1 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:RTU_1 a s223:AirHandlingUnit ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:RTU_2,
+        bs:RTU_3,
+        bs:RTU_4 ;
+    s223:connected bs:Floor_1,
+        bs:Floor_4 ;
+    s223:connectedFrom bs:Floor_1 ;
+    s223:connectedThrough bs:005,
         bs:006 ;
-    s223:hasConnectionPoint bs:0015,
-        bs:037,
-        bs:047 ;
-    s223:hasMedium rdfs:Resource ;
-    ns2:returnOutlet bs:047 .
+    s223:connectedTo bs:Floor_4 ;
+    s223:contains bs:10,
+        bs:12,
+        bs:14,
+        bs:17,
+        bs:19,
+        bs:30,
+        bs:8,
+        bs:cwc001,
+        bs:iso_damper001,
+        bs:oa_flow_station001 ;
+    s223:hasConnectionPoint bs:RTU_2,
+        bs:RTU_3,
+        bs:RTU_4 ;
+    s223:hasProperty bs:1,
+        bs:11,
+        bs:13,
+        bs:24,
+        bs:25,
+        bs:27,
+        bs:28,
+        bs:5,
+        bs:economizer_setpoint001,
+        bs:rtu_zones_thermostat_offset_energy004141,
+        bs:static_pressure_setpoint001 ;
+    ns1:exhaustAirOutlet bs:RTU_3 ;
+    ns1:outsideAirInlet bs:RTU_4 ;
+    ns1:returnAirInlet bs:RTU_2 ;
+    ns1:supplyAirOutlet bs:RTU_3 .
 
-bs:009 a s223:Connectable,
-        s223:Junction,
-        ns2:Plenum ;
+bs:B59_HeatPump000171 a s223:Equipment,
+        s223:WatertoWaterHeatPump ;
     rdfs:label rdfs:Resource ;
-    s223:cnx bs:0014,
-        bs:009651,
-        bs:023 ;
-    s223:connected bs:0018,
+    s223:cnx bs:B59_HeatPump.chilledWaterIn000181,
+        bs:B59_HeatPump.chilledWaterOut000191,
+        bs:B59_HeatPump.hotWaterIn000201,
+        bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:connected bs:B59_HeatPump_water_1 ;
+    s223:connectedFrom bs:B59_HeatPump_water_1 ;
+    s223:connectedThrough bs:000481,
+        bs:000501 ;
+    s223:connectedTo bs:B59_HeatPump_water_1 ;
+    s223:contains bs:30,
+        bs:aru_1,
+        bs:aru_power_mbutph000341 ;
+    s223:hasConnectionPoint bs:B59_HeatPump.chilledWaterIn000181,
+        bs:B59_HeatPump.chilledWaterOut000191,
+        bs:B59_HeatPump.hotWaterIn000201,
+        bs:B59_HeatPump.hotWaterOut000211 ;
+    s223:hasProperty bs:25,
+        bs:28,
+        bs:hp-1status_2000361,
+        bs:hw1 ;
+    ns1:chilledWaterIn bs:B59_HeatPump.chilledWaterIn000181 ;
+    ns1:chilledWaterOut bs:B59_HeatPump.chilledWaterOut000191 ;
+    ns1:hotWaterIn bs:B59_HeatPump.hotWaterIn000201 ;
+    ns1:hotWaterOut bs:B59_HeatPump.hotWaterOut000211 .
+
+bs:domain_space_for_room_1 a s223:DomainSpace,
+        ns1:RoomDomainSpace ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:connected bs:Floor_1,
+        bs:supply_junction_G-1 ;
+    s223:connectedFrom bs:supply_junction_G-1 ;
+    s223:connectedThrough bs:020921,
+        bs:04 ;
+    s223:connectedTo bs:Floor_1 ;
+    s223:hasConnectionPoint bs:7,
+        bs:domain_space_for_room_2 ;
+    s223:hasDomain rdfs:Resource ;
+    ns1:returnOutlet bs:domain_space_for_room_2 ;
+    ns1:supplyInlet bs:7 .
+
+bs:hw_coil01 a s223:HeatingCoil ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:hw_coil.airInlet01,
+        bs:hw_coil.airOutlet01,
+        bs:hw_coil.hotWaterInlet01,
+        bs:hw_coil.hotWaterOutlet01 ;
+    s223:connected bs:hw_valve01,
+        bs:supply_fan01 ;
+    s223:connectedFrom bs:supply_fan01 ;
+    s223:connectedThrough bs:014,
+        bs:08 ;
+    s223:connectedTo bs:hw_valve01 ;
+    s223:hasConnectionPoint bs:hw_coil.airInlet01,
+        bs:hw_coil.airOutlet01,
+        bs:hw_coil.hotWaterInlet01,
+        bs:hw_coil.hotWaterOutlet01 ;
+    s223:hasRole rdfs:Resource ;
+    ns2:airInlet bs:hw_coil.airInlet01 ;
+    ns2:airOutlet bs:hw_coil.airOutlet01 ;
+    ns2:hotWaterInlet bs:hw_coil.hotWaterInlet01 ;
+    ns2:hotWaterOutlet bs:hw_coil.hotWaterOutlet01 ;
+    rdfs:comment rdfs:Resource .
+
+bs:B59_HeatPump_water_1 a s223:Junction,
+        ns1:WaterJunction ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:011,
+        bs:03 ;
+    s223:connected bs:B59_HeatPump000171,
+        bs:G-2 ;
+    s223:connectedFrom bs:B59_HeatPump000171,
+        bs:G-2 ;
+    s223:connectedThrough bs:000481,
+        bs:000501,
+        bs:015,
+        bs:07 ;
+    s223:connectedTo bs:B59_HeatPump000171,
+        bs:G-2 ;
+    s223:hasConnectionPoint bs:011,
+        bs:03 ;
+    s223:hasMedium rdfs:Resource .
+
+bs:cwc001 a s223:CoolingCoil,
+        ns1:DXCoil ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:23,
+        bs:cwc.airInlet001,
+        bs:cwc.refrigerantInlet001,
+        bs:cwc.refrigerantOutlet001 ;
+    s223:connected bs:12,
+        bs:8 ;
+    s223:connectedFrom bs:12 ;
+    s223:connectedThrough bs:002,
+        bs:008 ;
+    s223:connectedTo bs:12 ;
+    s223:hasConnectionPoint bs:23,
+        bs:cwc.airInlet001,
+        bs:cwc.refrigerantInlet001,
+        bs:cwc.refrigerantOutlet001 ;
+    s223:hasRole rdfs:Resource ;
+    ns1:refrigerantInlet bs:cwc.refrigerantInlet001 ;
+    ns1:refrigerantOutlet bs:cwc.refrigerantOutlet001 ;
+    ns2:airInlet bs:cwc.airInlet001 ;
+    ns2:airOutlet bs:23 ;
+    rdfs:comment rdfs:Resource .
+
+bs:12 a s223:Filter ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:22,
+        bs:26 ;
+    s223:connected bs:14,
+        bs:8,
+        bs:cwc001 ;
+    s223:connectedFrom bs:8,
+        bs:cwc001 ;
+    s223:connectedThrough bs:0010,
+        bs:002,
+        bs:008 ;
+    s223:connectedTo bs:14,
+        bs:8,
+        bs:cwc001 ;
+    s223:hasConnectionPoint bs:22,
+        bs:26 ;
+    ns2:airInlet bs:22 ;
+    ns2:airOutlet bs:26 ;
+    rdfs:comment rdfs:Resource .
+
+bs:8 a s223:Damper,
+        ns1:RTUDamper ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:18,
+        bs:23,
+        bs:31 ;
+    s223:connected bs:12,
+        bs:14,
+        bs:8,
+        bs:cwc001 ;
+    s223:connectedFrom bs:12,
+        bs:14 ;
+    s223:connectedThrough bs:002,
+        bs:007,
+        bs:008 ;
+    s223:connectedTo bs:12 ;
+    s223:hasConnectionPoint bs:18,
+        bs:23,
+        bs:31 ;
+    s223:hasProperty bs:15 ;
+    s223:hasRole rdfs:Resource ;
+    ns2:airInlet bs:18 ;
+    ns2:airOutlet bs:23,
+        bs:31 ;
+    rdfs:comment rdfs:Resource .
+
+bs:14 a s223:Fan,
+        ns1:RTUFan ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:20,
+        bs:21,
+        bs:29,
+        bs:return_fan.airInlet005001,
+        bs:return_fan.airInlet006591 ;
+    s223:connected bs:12,
+        bs:8,
+        bs:iso_damper001 ;
+    s223:connectedFrom bs:12 ;
+    s223:connectedThrough bs:0010,
+        bs:0011,
+        bs:007 ;
+    s223:connectedTo bs:8,
+        bs:iso_damper001 ;
+    s223:hasConnectionPoint bs:20,
+        bs:21,
+        bs:29,
+        bs:return_fan.airInlet005001,
+        bs:return_fan.airInlet006591 ;
+    s223:hasProperty bs:24 ;
+    s223:hasRole rdfs:Resource ;
+    ns2:airInlet bs:29,
+        bs:return_fan.airInlet005001,
+        bs:return_fan.airInlet006591 ;
+    ns2:airOutlet bs:21 ;
+    rdfs:comment rdfs:Resource .
+
+bs:Floor_2 a s223:DomainSpace,
+        ns1:CoreSpace ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:0012,
+        bs:003,
+        bs:004 ;
+    s223:connected bs:Floor_1,
+        bs:Floor_2,
+        bs:Floor_4 ;
+    s223:connectedFrom bs:Floor_2,
+        bs:Floor_4 ;
+    s223:connectedThrough bs:001,
+        bs:012,
+        bs:04 ;
+    s223:connectedTo bs:Floor_1,
+        bs:Floor_2 ;
+    s223:hasConnectionPoint bs:0012,
+        bs:003,
+        bs:004 ;
+    s223:hasDomain rdfs:Resource ;
+    s223:hasProperty bs:11 .
+
+bs:G-2 a s223:FanPoweredTerminal,
+        ns1:UFT ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:G-1,
+        bs:G-3,
+        bs:G-4,
+        bs:G-5 ;
+    s223:connected bs:B59_HeatPump_water_1,
+        bs:Floor_4,
+        bs:supply_junction_G-1 ;
+    s223:connectedFrom bs:B59_HeatPump_water_1,
+        bs:Floor_4 ;
+    s223:connectedThrough bs:012,
+        bs:015,
+        bs:02,
+        bs:07 ;
+    s223:connectedTo bs:B59_HeatPump_water_1,
+        bs:supply_junction_G-1 ;
+    s223:contains bs:fan01,
+        bs:hw_coil01,
+        bs:hw_valve01,
+        bs:supply_fan01 ;
+    s223:hasConnectionPoint bs:G-1,
+        bs:G-3,
+        bs:G-4,
+        bs:G-5 ;
+    s223:hasProperty bs:3,
+        bs:4,
+        bs:6,
+        bs:staticPressure01 ;
+    ns1:airInlet bs:G-4 ;
+    ns1:airOutlet bs:G-3 ;
+    ns1:waterInlet bs:G-1 ;
+    ns1:waterOutlet bs:G-5 .
+
+bs:Floor_1 a s223:Junction,
+        ns1:CeilingSpace ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:004,
+        bs:7,
+        bs:Floor_5 ;
+    s223:connected bs:Floor_1,
+        bs:Floor_2,
+        bs:RTU_1,
+        bs:domain_space_for_room_1 ;
+    s223:connectedFrom bs:Floor_1,
+        bs:Floor_2,
+        bs:domain_space_for_room_1 ;
+    s223:connectedThrough bs:001,
         bs:006,
-        bs:009,
-        bs:028 ;
-    s223:connectedFrom bs:006,
-        bs:009 ;
-    s223:connectedThrough bs:0013,
-        bs:0039,
-        bs:0042,
-        bs:030,
-        bs:048 ;
-    s223:connectedTo bs:0018,
-        bs:009,
-        bs:028 ;
-    s223:hasConnectionPoint bs:0014,
-        bs:009651,
-        bs:023 ;
+        bs:020921,
+        bs:04 ;
+    s223:connectedTo bs:Floor_1,
+        bs:RTU_1 ;
+    s223:hasConnectionPoint bs:004,
+        bs:7,
+        bs:Floor_5 ;
     s223:hasMedium rdfs:Resource ;
-    s223:hasProperty bs:0011 ;
-    ns2:supplyInlet bs:023 .
+    ns1:returnOutlet bs:Floor_5 .
+
+bs:Floor_4 a s223:Junction,
+        ns1:Plenum ;
+    rdfs:label rdfs:Resource ;
+    s223:cnx bs:009,
+        bs:010,
+        bs:Floor_3 ;
+    s223:connected bs:Floor_2,
+        bs:Floor_4,
+        bs:G-2,
+        bs:RTU_1 ;
+    s223:connectedFrom bs:Floor_4,
+        bs:RTU_1 ;
+    s223:connectedThrough bs:005,
+        bs:007791,
+        bs:0081,
+        bs:012 ;
+    s223:connectedTo bs:Floor_2,
+        bs:Floor_4,
+        bs:G-2 ;
+    s223:hasConnectionPoint bs:009,
+        bs:010,
+        bs:Floor_3 ;
+    s223:hasMedium rdfs:Resource ;
+    s223:hasProperty bs:9 ;
+    ns1:supplyInlet bs:Floor_3 .
 

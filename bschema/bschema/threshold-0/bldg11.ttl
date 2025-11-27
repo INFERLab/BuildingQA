@@ -1,7 +1,6 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
 @prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 bs:AHU1 a brick:Air_Handling_Unit ;
@@ -38,12 +37,12 @@ bs:damperVAVRM1 a brick:Damper ;
 bs:floor1 a brick:Floor ;
     brick:hasPart bs:RM_room1 .
 
-<urn:bschema#https://w3id.org/rec1> rdfs:label rdfs:Resource ;
-    owl:imports rdfs:Resource ;
-    owl:versionInfo rdfs:Resource .
-
 bs:RM1 a brick:HVAC_Zone ;
     brick:hasPart bs:RM_room1 .
+
+bs:Stop1 a brick:Start_Stop_Command ;
+    rdfs:label rdfs:Resource ;
+    ns1:hasExternalReference bs:bnode1 .
 
 bs:bldg11.AHU.AHU.Heating_Valve_Output1 a brick:Command,
         brick:Heating_Command ;
@@ -95,10 +94,6 @@ bs:bldg11.CHW.Enable1 a brick:Enable_Command ;
     ns1:hasExternalReference bs:bnode1 .
 
 bs:bldg11.CHW.Pump_SPEED1 a brick:Speed_Status ;
-    rdfs:label rdfs:Resource ;
-    ns1:hasExternalReference bs:bnode1 .
-
-<urn:bschema#bldg11.CHW.Pump_Start/Stop1> a brick:Start_Stop_Command ;
     rdfs:label rdfs:Resource ;
     ns1:hasExternalReference bs:bnode1 .
 
@@ -169,13 +164,13 @@ bs:bldg11.Zone_Air_Temp1 a brick:Zone_Air_Temperature_Sensor ;
     ns1:hasExternalReference bs:bnode1 .
 
 bs:chiller1 a brick:Chiller ;
-    brick:hasPoint bs:bldg11..Outside_Air_Temp1,
+    brick:hasPoint bs:Stop1,
+        bs:bldg11..Outside_Air_Temp1,
         bs:bldg11.CHW.1,
         bs:bldg11.CHW.Building_Chilled_Water_Delta_Temp1,
         bs:bldg11.CHW.ECONOMIZER1,
         bs:bldg11.CHW.Enable1,
         bs:bldg11.CHW.Pump_SPEED1,
-        <urn:bschema#bldg11.CHW.Pump_Start/Stop1>,
         bs:bldg11.CHW._Chilled_Water_Flow1,
         bs:bldg11.CHW._Chilled_Water_Return_Temp1,
         bs:bldg11.CHW._Chilled_Water_Return_Temp_Setpoint1,

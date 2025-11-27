@@ -1,170 +1,170 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
-@prefix ns2: <https://saref.etsi.org/core#> .
-@prefix ns3: <https://saref.etsi.org/saref4bldg#> .
-@prefix ns4: <https://saref.etsi.org/saref4ener#> .
+@prefix ns1: <https://saref.etsi.org/core#> .
+@prefix ns2: <https://brickschema.org/schema/Brick/ref#> .
+@prefix ns3: <https://saref.etsi.org/saref4ener#> .
+@prefix ns4: <https://saref.etsi.org/saref4bldg#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 bs:EnergyProperty1 a quantitykind:Energy,
-        ns2:Property .
+        ns1:Property .
 
 bs:HumProperty1 a quantitykind:Humidity,
-        ns2:Property .
+        ns1:Property .
 
 bs:PowerProperty1 a quantitykind:Power,
-        ns2:Property .
+        ns1:Property .
 
 bs:PresProperty1 a quantitykind:Pressure,
-        ns2:Property .
+        ns1:Property .
 
 bs:Site_2431 a brick:Site ;
     brick:hasPart bs:Building_1421 ;
-    ns1:hasExternalReference bs:bnode17 .
+    ns2:hasExternalReference bs:bnode16 .
 
 bs:Zone_61 a brick:Zone ;
     brick:hasPart bs:Space_1 ;
-    ns1:hasExternalReference bs:ZoneRef_61 .
+    ns2:hasExternalReference bs:ZoneRef_61 .
 
 bs:BuildingStorey_12 a brick:Storey ;
-    ns1:hasExternalReference bs:bnode8 .
+    ns2:hasExternalReference bs:bnode18 .
 
 bs:Building_1421 a brick:Building ;
     brick:hasPart bs:BuildingStorey_11,
         bs:BuildingStorey_12 ;
-    ns1:hasExternalReference bs:bnode16 .
+    ns2:hasExternalReference bs:bnode15 .
 
 bs:OccProperty1 a quantitykind:Occupancy,
-        ns2:Property .
+        ns1:Property .
 
 bs:RC04N00_Equipment2 a brick:Thermostat,
-        ns3:UnitaryControlElement ;
+        ns4:UnitaryControlElement ;
     brick:hasPoint bs:RC04N00_Mode_Command2 ;
-    ns2:consistOf bs:RC04N00_Mode_Command2 ;
-    ns4:serialNumber rdfs:Resource .
+    ns1:consistOf bs:RC04N00_Mode_Command2 ;
+    ns3:serialNumber rdfs:Resource .
 
-bs:ZoneRef_61 a ns1:IFCReference ;
-    ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:ZoneRef_61 a ns2:IFCReference ;
+    ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode1 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode1 ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode10 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode10 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode11 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode11 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode12 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode12 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode13 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode13 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode14 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode14 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode15 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode15 a ns2:IFCReference ;
+    ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode16 a ns1:IFCReference ;
-    ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode16 a ns2:IFCReference ;
+    ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode17 a ns1:IFCReference ;
-    ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode17 ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode18 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode18 ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode2 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode2 ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode3 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode3 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode4 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode4 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode5 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode5 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode6 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode6 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode7 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode7 ns2:hasTimeseriesId rdfs:Resource .
 
-bs:bnode8 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:bnode8 ns2:ifcGlobalID rdfs:Resource ;
+    ns2:ifcName rdfs:Resource .
 
-bs:bnode9 ns1:hasTimeseriesId rdfs:Resource .
+bs:bnode9 ns2:hasTimeseriesId rdfs:Resource .
 
 bs:BuildingStorey_11 a brick:Storey ;
     brick:hasPart bs:Space_1 ;
     brick:isLocationOf bs:null_Equipment1 ;
-    ns1:hasExternalReference bs:bnode15 ;
-    ns3:contains bs:null_Equipment1 .
+    ns2:hasExternalReference bs:bnode17 ;
+    ns4:contains bs:null_Equipment1 .
 
 bs:RC04N00_Delay_Parameter1 a brick:Delay_Parameter ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode9 .
+    ns2:hasExternalReference bs:bnode12 .
 
 bs:RC04N00_Lockout_Command1 a brick:Lockout_Command ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode2 .
+    ns2:hasExternalReference bs:bnode5 .
 
 bs:RC04N00_Mode_Command1 a brick:Mode_Command ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode6 .
+    ns2:hasExternalReference bs:bnode6 .
 
 bs:RC04N00_Mode_Command2 a brick:Mode_Command ;
     brick:isPointOf bs:RC04N00_Equipment2 ;
-    ns1:hasExternalReference bs:bnode18 .
+    ns2:hasExternalReference bs:bnode10 .
 
 bs:RC04N00_OccSensingPoint1 a brick:Occupancy_Sensor,
-        ns2:Sensor ;
+        ns1:Sensor ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode7 ;
-    ns2:observes bs:OccProperty1 .
+    ns2:hasExternalReference bs:bnode14 ;
+    ns1:observes bs:OccProperty1 .
 
 bs:RC04N00_OnOffCommand1 a brick:On_Off_Command ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode12 .
+    ns2:hasExternalReference bs:bnode13 .
 
 bs:RC04N00_Run_Request_Command1 a brick:Run_Request_Command ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode10 .
+    ns2:hasExternalReference bs:bnode11 .
 
 bs:RC04N00_TempSensingPoint1 a brick:Temperature_Sensor,
-        ns2:Sensor ;
+        ns1:Sensor ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode4 ;
-    ns2:observes bs:TempProperty1 .
+    ns2:hasExternalReference bs:bnode4 ;
+    ns1:observes bs:TempProperty1 .
 
 bs:RC04N00_TempSetpoint1 a brick:Temperature_Setpoint,
-        ns2:Actuator ;
+        ns1:Actuator ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode5 ;
-    ns2:controls bs:TempProperty1 .
+    ns2:hasExternalReference bs:bnode9 ;
+    ns1:controls bs:TempProperty1 .
 
 bs:RC04N00_TempSetpointMax1 a brick:Max_Air_Temperature_Setpoint ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode14 .
+    ns2:hasExternalReference bs:bnode3 .
 
 bs:RC04N00_TempSetpointMin1 a brick:Min_Air_Temperature_Setpoint ;
     brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+    ns2:hasExternalReference bs:bnode7 .
 
 bs:TempProperty1 a quantitykind:Temperature,
-        ns2:Property .
+        ns1:Property .
 
 bs:null_Equipment1 a brick:Terminal_Unit,
-        ns3:FlowTerminal ;
+        ns4:FlowTerminal ;
     brick:hasLocation bs:BuildingStorey_11 ;
-    ns1:hasExternalReference bs:bnode11 .
+    ns2:hasExternalReference bs:bnode2 .
 
 bs:Space_1 a brick:Space,
-        ns3:BuildingSpace ;
+        ns4:BuildingSpace ;
     brick:isLocationOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode3 ;
-    ns3:contains bs:RC04N00_Equipment1 .
+    ns2:hasExternalReference bs:bnode1 ;
+    ns4:contains bs:RC04N00_Equipment1 .
 
 bs:RC04N00_Equipment1 a brick:Thermostat,
-        ns3:UnitaryControlElement ;
+        ns4:UnitaryControlElement ;
     brick:hasLocation bs:Space_1 ;
     brick:hasPoint bs:RC04N00_Delay_Parameter1,
         bs:RC04N00_Lockout_Command1,
@@ -176,8 +176,8 @@ bs:RC04N00_Equipment1 a brick:Thermostat,
         bs:RC04N00_TempSetpoint1,
         bs:RC04N00_TempSetpointMax1,
         bs:RC04N00_TempSetpointMin1 ;
-    ns1:hasExternalReference bs:bnode13 ;
-    ns2:consistOf bs:RC04N00_Delay_Parameter1,
+    ns2:hasExternalReference bs:bnode8 ;
+    ns1:consistOf bs:RC04N00_Delay_Parameter1,
         bs:RC04N00_Lockout_Command1,
         bs:RC04N00_Mode_Command1,
         bs:RC04N00_OccSensingPoint1,
@@ -187,5 +187,5 @@ bs:RC04N00_Equipment1 a brick:Thermostat,
         bs:RC04N00_TempSetpoint1,
         bs:RC04N00_TempSetpointMax1,
         bs:RC04N00_TempSetpointMin1 ;
-    ns4:serialNumber rdfs:Resource .
+    ns3:serialNumber rdfs:Resource .
 
