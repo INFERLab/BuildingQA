@@ -3,42 +3,43 @@
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 
-bs:12 a s223:ElectricMeter ;
-    s223:hasProperty bs:1,
-        bs:19 .
+bs:11 a s223:ElectricMeter ;
+    s223:hasProperty bs:17,
+        bs:7 .
 
 bs:23 a s223:HeatExchanger ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:16 ;
-    s223:hasProperty bs:1 ;
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:contains bs:9 ;
+    s223:hasProperty bs:7 ;
     s223:hasRole rdfs:Resource .
 
 bs:3 a s223:Sensor ;
-    s223:hasObservationLocation bs:10,
-        bs:17,
+    s223:hasObservationLocation bs:12,
         bs:2,
-        bs:266_RECEIVING1 ;
-    s223:hasProperty bs:1,
-        bs:19,
+        bs:266_RECEIVING1,
+        bs:4 ;
+    s223:hasProperty bs:17,
+        bs:7,
         bs:8 ;
     s223:hasRole rdfs:Resource ;
     s223:observes bs:1,
-        bs:19,
-        bs:4 .
+        bs:17,
+        bs:7 .
 
-bs:7 a s223:Actuator ;
-    s223:actuatedByProperty bs:4 ;
-    s223:actuates bs:11,
+bs:6 a s223:Actuator ;
+    s223:actuatedByProperty bs:1 ;
+    s223:actuates bs:10,
+        bs:12,
+        bs:13,
         bs:14,
         bs:15,
         bs:16,
-        bs:17,
         bs:18,
-        bs:22,
+        bs:20,
         bs:266_RECEIVING1,
-        bs:6,
         bs:9,
         bs:CH1,
         bs:FCU-11,
@@ -46,240 +47,303 @@ bs:7 a s223:Actuator ;
         bs:_VFD1 .
 
 bs:A1 a s223:ElectricBreaker ;
-    s223:hasProperty bs:1 .
+    s223:hasProperty bs:7 .
 
 bs:AH2_Return_Fan-in-duct1 a s223:Duct .
 
 bs:CT1 a s223:CoolingTower ;
-    s223:contains bs:11 ;
-    s223:hasProperty bs:1 ;
+    s223:contains bs:13 ;
+    s223:hasProperty bs:7 ;
     s223:hasRole rdfs:Resource .
 
-bs:14 s223:hasProperty bs:1,
-        bs:19,
-        bs:4,
+bs:15 s223:hasProperty bs:1,
+        bs:17,
+        bs:7,
         bs:8 .
 
-bs:18 a s223:Equipment ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:16,
-        bs:22,
+bs:16 a s223:Equipment ;
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:contains bs:20,
+        bs:9,
         bs:_Coil1 ;
     s223:hasProperty bs:1,
-        bs:19,
-        bs:4,
+        bs:17,
+        bs:7,
         bs:8 ;
     s223:hasRole rdfs:Resource .
 
-bs:20 a ns1:BACnetDevice ;
+bs:22 a ns1:BACnetDevice ;
     ns1:device-instance rdfs:Resource ;
     ns1:hasPort bs:bnode2 .
 
 bs:AH_Filter1 a s223:Filter,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#Filter> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:hasProperty bs:1 .
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:hasProperty bs:7 .
 
 bs:CH1 a s223:Chiller ;
-    s223:cnx bs:10,
-        bs:2 ;
+    s223:cnx bs:2,
+        bs:4 ;
     s223:contains bs:CH2_Compressor1 ;
     s223:hasProperty bs:1,
-        bs:4,
+        bs:7,
         bs:8 ;
     s223:hasRole rdfs:Resource .
 
 bs:CH2_Compressor1 a s223:Compressor ;
-    s223:hasProperty bs:1 .
+    s223:hasProperty bs:7 .
 
 bs:FCU-11 a s223:FanCoilUnit ;
-    s223:contains bs:11,
+    s223:contains bs:13,
         bs:_Coil1 ;
     s223:hasProperty bs:1,
-        bs:4 .
+        bs:7 .
 
 bs:S_VAV1 a s223:SingleDuctTerminal,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#VAVWithReheat> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:16,
-        bs:6,
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:contains bs:10,
+        bs:14,
         bs:9 ;
     s223:hasProperty bs:1,
-        bs:19,
-        bs:4,
+        bs:17,
+        bs:7,
         bs:8 ;
     s223:hasRole rdfs:Resource .
 
 bs:bnode2 a ns1:Port ;
     ns1:storedAt rdfs:Resource .
 
-bs:13 a s223:Junction ;
-    s223:cnx bs:10,
-        bs:2 .
-
-bs:15 a s223:AirHandlingUnit,
+bs:18 a s223:AirHandlingUnit,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#MultipleZoneVAVAirHandlingUnit> ;
-    s223:cnx bs:10,
-        bs:2,
-        bs:21 ;
-    s223:contains bs:11,
-        bs:15,
-        bs:6,
-        bs:9,
+    s223:cnx bs:2,
+        bs:21,
+        bs:4 ;
+    s223:contains bs:10,
+        bs:13,
+        bs:14,
+        bs:18,
         bs:AH_Filter1,
         bs:_Coil1 ;
     s223:hasProperty bs:1,
-        bs:4,
+        bs:7,
         bs:8 .
 
-bs:22 a s223:Pump ;
+bs:19 a s223:Junction ;
+    s223:cnx bs:2,
+        bs:4 .
+
+bs:20 a s223:Pump ;
     s223:contains bs:_VFD1 ;
     s223:hasProperty bs:1,
-        bs:4 ;
+        bs:7 ;
     s223:hasRole rdfs:Resource .
 
 bs:266_RECEIVING1 a s223:OutdoorPhysicalSpace,
         s223:PhysicalSpace ;
     s223:encloses bs:_hvac_domain1 ;
     s223:hasProperty bs:1,
-        bs:4 .
+        bs:7 .
 
 bs:5 a s223:Connection,
         s223:Duct,
         s223:Pipe ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:hasMedium rdfs:Resource ;
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water,
+        s223:Water-Steam ;
     s223:hasRole rdfs:Resource .
 
 bs:_hvac_domain1 a s223:DomainSpace ;
-    s223:cnx bs:10,
-        bs:2 ;
+    s223:cnx bs:2,
+        bs:4 ;
     s223:hasDomain rdfs:Resource .
 
-bs:17 a s223:PhysicalSpace ;
-    s223:contains bs:17 ;
+bs:12 a s223:PhysicalSpace ;
+    s223:contains bs:12 ;
     s223:encloses bs:_hvac_domain1 ;
     s223:hasProperty bs:1,
-        bs:19,
-        bs:4 .
+        bs:17,
+        bs:7 .
 
-bs:21 s223:cnx bs:10 ;
+bs:21 s223:cnx bs:4 ;
     s223:hasProperty rdfs:Resource ;
     s223:hasRole rdfs:Resource .
 
 bs:_VFD1 a s223:VariableFrequencyDrive,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
     s223:hasProperty bs:1,
-        bs:19,
-        bs:4,
+        bs:17,
+        bs:7,
         bs:8 .
 
-bs:6 a s223:Damper,
+bs:14 a s223:Damper,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:hasProperty bs:1,
+    s223:cnx bs:2,
         bs:4 ;
+    s223:hasProperty bs:1,
+        bs:7 ;
     s223:hasRole rdfs:Resource .
 
 bs:bnode1 a s223:BACnetExternalReference ;
     ns1:description rdfs:Resource ;
-    ns1:device-identifier bs:20 ;
+    ns1:device-identifier bs:22 ;
     ns1:object-identifier rdfs:Resource ;
     ns1:object-name rdfs:Resource ;
     ns1:object-type rdfs:Resource .
 
-bs:11 a s223:Fan,
-        s223:VariableFrequencyDrive,
-        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:11,
-        bs:6,
-        bs:_VFD1 ;
+bs:10 a s223:HeatingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> ;
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:contains bs:9 ;
     s223:hasProperty bs:1,
-        bs:4,
-        bs:8 ;
+        bs:7 ;
     s223:hasRole rdfs:Resource .
 
-bs:9 a s223:HeatingCoil,
-        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:16 ;
-    s223:hasProperty bs:1,
+bs:13 a s223:Fan,
+        s223:VariableFrequencyDrive,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:cnx bs:2,
         bs:4 ;
+    s223:contains bs:13,
+        bs:14,
+        bs:_VFD1 ;
+    s223:hasProperty bs:1,
+        bs:7,
+        bs:8 ;
     s223:hasRole rdfs:Resource .
 
 bs:_Coil1 a s223:CoolingCoil,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;
-    s223:cnx bs:10,
-        bs:2 ;
-    s223:contains bs:16 ;
+    s223:cnx bs:2,
+        bs:4 ;
+    s223:contains bs:9 ;
     s223:hasRole rdfs:Resource .
 
-bs:16 a s223:Valve,
+bs:9 a s223:Valve,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;
-    s223:cnx bs:10,
-        bs:2 ;
+    s223:cnx bs:2,
+        bs:4 ;
     s223:hasProperty bs:1,
-        bs:4,
+        bs:7,
         bs:8 ;
     s223:hasRole rdfs:Resource .
 
-bs:19 a s223:Property,
+bs:17 a s223:Property,
         s223:QuantifiableObservableProperty ;
     s223:hasExternalReference bs:bnode1 ;
-    s223:hasProperty bs:19 ;
+    s223:hasProperty bs:17 ;
     qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
+    qudt:hasUnit unit:DEG_F,
+        unit:GAL_US,
+        unit:KiloW,
+        unit:PERCENT,
+        unit:SEC,
+        unit:UNITLESS,
+        unit:W .
 
 bs:8 a s223:QuantifiableProperty ;
     s223:hasExternalReference bs:bnode1 ;
     s223:hasRole rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
+    qudt:hasUnit unit:DEG,
+        unit:DEG_F,
+        unit:FT2,
+        unit:HR,
+        unit:LB_F-PER-IN2,
+        unit:MIN,
+        unit:PERCENT,
+        unit:SEC,
+        unit:UNITLESS .
 
 bs:2 a s223:OutletConnectionPoint ;
-    s223:cnx bs:13,
+    s223:cnx bs:10,
+        bs:19,
         bs:5,
-        bs:9,
         bs:_Coil1 ;
-    s223:hasMedium rdfs:Resource ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water ;
     s223:hasProperty rdfs:Resource,
         bs:1,
-        bs:4 ;
+        bs:7 ;
     s223:hasRole rdfs:Resource ;
     s223:mapsTo bs:2 .
 
-bs:10 a s223:InletConnectionPoint ;
-    s223:cnx bs:13,
-        bs:21,
-        bs:5,
-        bs:9,
-        bs:_Coil1 ;
-    s223:hasMedium rdfs:Resource ;
-    s223:hasProperty rdfs:Resource ;
-    s223:hasRole rdfs:Resource ;
-    s223:mapsTo bs:10,
-        bs:21 .
-
-bs:4 a s223:QuantifiableActuatableProperty,
+bs:1 a s223:QuantifiableActuatableProperty,
         s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:EnumerationKind-Position,
         s223:Role-Discharge ;
     s223:hasExternalReference bs:bnode1 ;
     s223:hasRole rdfs:Resource ;
     qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
+    qudt:hasUnit unit:A,
+        unit:DEG_C,
+        unit:DEG_F,
+        unit:FT3-PER-MIN,
+        unit:FT3-PER-SEC,
+        unit:GAL_US-PER-MIN,
+        unit:IN_H2O,
+        unit:LB_F-PER-IN2,
+        unit:PERCENT,
+        unit:UNITLESS .
 
-bs:1 a s223:QuantifiableObservableProperty ;
+bs:4 a s223:InletConnectionPoint ;
+    s223:cnx bs:10,
+        bs:19,
+        bs:21,
+        bs:5,
+        bs:_Coil1 ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water,
+        s223:Water-Steam ;
+    s223:hasProperty rdfs:Resource ;
+    s223:hasRole rdfs:Resource ;
+    s223:mapsTo bs:21,
+        bs:4 .
+
+bs:7 a s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:Role-Discharge ;
     s223:hasExternalReference bs:bnode1 ;
     s223:hasRole rdfs:Resource ;
     qudt:hasQuantityKind rdfs:Resource ;
-    qudt:hasUnit rdfs:Resource .
+    qudt:hasUnit unit:A,
+        unit:DEG_C,
+        unit:DEG_F,
+        unit:FT3-PER-MIN,
+        unit:FT3-PER-SEC,
+        unit:GAL_US,
+        unit:GAL_US-PER-HR,
+        unit:GAL_US-PER-MIN,
+        unit:HP,
+        unit:HR,
+        unit:HZ,
+        unit:IN_H2O,
+        unit:KiloV-A,
+        unit:KiloV-A-HR,
+        unit:KiloV-A_Reactive,
+        unit:KiloW,
+        unit:KiloW-HR,
+        unit:LB,
+        unit:LB-PER-HR,
+        unit:LB_F-PER-IN2,
+        unit:MegaW-HR,
+        unit:MicroS,
+        unit:Overridden_Status,
+        unit:PERCENT,
+        unit:PERCENT_RH,
+        unit:PPM,
+        unit:REV-PER-MIN,
+        unit:SEC,
+        unit:TON_FG,
+        unit:TON_FG-HR,
+        unit:UNITLESS,
+        unit:V,
+        unit:V-A,
+        unit:V-A_Reactive,
+        unit:W,
+        unit:W-HR .
 
