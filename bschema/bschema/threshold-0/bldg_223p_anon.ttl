@@ -1,5 +1,5 @@
+@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <http://data.ashrae.org/bacnet/2020#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -63,9 +63,8 @@ bs:Sensor_version_1 a s223:Sensor ;
         bs:QuantifiableActuatableProperty_version_1,
         bs:QuantifiableObservableProperty_version_1 .
 
-bs:BACnetDevice_version_1 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_1 .
+bs:BACnetDevice_version_1 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_1 .
 
 bs:Chiller_version_1 a s223:Chiller ;
     s223:cnx bs:InletConnectionPoint_version_1,
@@ -108,8 +107,8 @@ bs:Filter_version_1 a s223:Filter,
         bs:OutletConnectionPoint_version_1 ;
     s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
 
-bs:Port_version_1 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_1 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
 bs:Resource_version_1 s223:hasProperty bs:Property_version_1,
         bs:QuantifiableActuatableProperty_version_1,
@@ -184,7 +183,6 @@ bs:PhysicalSpace_version_1 a s223:PhysicalSpace ;
         bs:QuantifiableObservableProperty_version_1 .
 
 bs:Resource_version_2 s223:cnx bs:InletConnectionPoint_version_1 ;
-    s223:hasProperty rdfs:Resource ;
     s223:hasRole s223:Role-Exhaust,
         s223:Role-Return .
 
@@ -196,11 +194,11 @@ bs:VariableFrequencyDrive_version_1 a s223:VariableFrequencyDrive,
         bs:QuantifiableProperty_version_1 .
 
 bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:Damper_version_1 a s223:Damper,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
@@ -288,8 +286,7 @@ bs:OutletConnectionPoint_version_1 a s223:OutletConnectionPoint ;
         bs:Junction_version_1 ;
     s223:hasMedium s223:Fluid-Air,
         s223:Fluid-Water ;
-    s223:hasProperty rdfs:Resource,
-        bs:QuantifiableActuatableProperty_version_1,
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
         bs:QuantifiableObservableProperty_version_1 ;
     s223:hasRole s223:Role-Supply ;
     s223:mapsTo bs:OutletConnectionPoint_version_1 .
@@ -303,7 +300,6 @@ bs:InletConnectionPoint_version_1 a s223:InletConnectionPoint ;
     s223:hasMedium s223:Fluid-Air,
         s223:Fluid-Water,
         s223:Water-Steam ;
-    s223:hasProperty rdfs:Resource ;
     s223:hasRole s223:Role-OutdoorAirIntake,
         s223:Role-Return ;
     s223:mapsTo bs:InletConnectionPoint_version_1,

@@ -1,15 +1,15 @@
+@prefix bob: <http://data.ashrae.org/standard223/si-builder#> .
 @prefix bs: <urn:bschema#> .
 @prefix ns1: <http://data.ashrae.org/standard223/data/lbnl-example-2#> .
-@prefix ns2: <http://data.ashrae.org/standard223/si-builder#> .
-@prefix ns3: <https://brickschema.org/schema/Brick/> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 @prefix s223: <http://data.ashrae.org/standard223#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 
 bs:Zone_version_1 a s223:Zone,
-        ns2:HVACZone ;
+        bob:HVACZone ;
     rdfs:label rdfs:Literal ;
     s223:hasDomain s223:Domain-HVAC ;
     s223:hasDomainSpace bs:DomainSpace_version_1 ;
@@ -17,9 +17,9 @@ bs:Zone_version_1 a s223:Zone,
         bs:QuantifiableActuatableProperty_version_1,
         bs:QuantifiableObservableProperty_version_2,
         bs:QuantifiableObservableProperty_version_3 ;
-    ns2:airInlet bs:InletZoneConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletZoneConnectionPoint_version_1 ;
-    ns2:hasZoneConnectionPoint bs:InletZoneConnectionPoint_version_1,
+    bob:airInlet bs:InletZoneConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletZoneConnectionPoint_version_1 ;
+    bob:hasZoneConnectionPoint bs:InletZoneConnectionPoint_version_1,
         bs:OutletZoneConnectionPoint_version_1 .
 
 bs:DifferentialSensor_version_1 a s223:DifferentialSensor,
@@ -40,7 +40,7 @@ bs:ElectricalConnectionPoint_version_1 a s223:ElectricalConnectionPoint,
 bs:EnumeratedActuatableProperty_version_1 a s223:EnumeratedActuatableProperty ;
     rdfs:label rdfs:Literal ;
     s223:hasEnumerationKind s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference bs:ExternalReference_version_1 ;
+    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
     rdfs:comment rdfs:Literal .
 
 bs:EnumeratedObservableProperty_version_1 a s223:EnumeratedObservableProperty ;
@@ -49,17 +49,17 @@ bs:EnumeratedObservableProperty_version_1 a s223:EnumeratedObservableProperty ;
         s223:Aspect-Manufacturer,
         s223:EnumerationKind-Binary,
         s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference bs:ExternalReference_version_1 ;
+    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
     s223:hasValue rdfs:Literal ;
     rdfs:comment rdfs:Literal .
 
-bs:InletZoneConnectionPoint_version_1 a ns2:InletZoneConnectionPoint,
-        ns2:ZoneConnectionPoint ;
+bs:InletZoneConnectionPoint_version_1 a bob:InletZoneConnectionPoint,
+        bob:ZoneConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:hasMedium s223:Fluid-Air .
 
-bs:OutletZoneConnectionPoint_version_1 a ns2:OutletZoneConnectionPoint,
-        ns2:ZoneConnectionPoint ;
+bs:OutletZoneConnectionPoint_version_1 a bob:OutletZoneConnectionPoint,
+        bob:ZoneConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:hasMedium s223:Fluid-Air .
 
@@ -69,9 +69,8 @@ bs:PhysicalSpace_version_1 a s223:PhysicalSpace ;
     s223:encloses bs:DomainSpace_version_1 .
 
 bs:QuantifiableObservableProperty_version_4 a s223:QuantifiableObservableProperty,
-        ns2:DifferentialStaticPressure ;
+        bob:DifferentialStaticPressure ;
     rdfs:label rdfs:Literal ;
-    s223:ofMedium rdfs:Resource ;
     qudt:hasQuantityKind quantitykind:ForcePerArea ;
     qudt:hasUnit unit:PA .
 
@@ -87,8 +86,8 @@ bs:Sensor_version_1 a s223:Sensor,
     rdfs:comment rdfs:Literal .
 
 bs:TemperatureSensor_version_1 a s223:TemperatureSensor,
-        ns2:AirTemperatureSensor,
-        ns2:WaterTemperatureSensor ;
+        bob:AirTemperatureSensor,
+        bob:WaterTemperatureSensor ;
     rdfs:label rdfs:Literal ;
     s223:hasObservationLocation bs:Connection_version_1,
         bs:DomainSpace_version_1,
@@ -100,33 +99,24 @@ bs:TemperatureSensor_version_1 a s223:TemperatureSensor,
     rdfs:comment rdfs:Literal .
 
 bs:QuantifiableObservableProperty_version_1 a s223:QuantifiableObservableProperty,
-        ns2:Percent ;
+        bob:Percent ;
     rdfs:label rdfs:Literal ;
     qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservableProperty,
-        ns2:RPM,
-        ns2:Temperature ;
+        bob:RPM,
+        bob:Temperature ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference bs:ExternalReference_version_1 ;
-    s223:ofMedium rdfs:Resource ;
+    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
     qudt:hasQuantityKind quantitykind:AngularVelocity,
         quantitykind:Temperature ;
     qudt:hasUnit unit:DEG_F,
         unit:REV-PER-MIN ;
     rdfs:comment rdfs:Literal .
 
-bs:ExternalReference_version_1 a s223:ExternalReference,
-        ns3:APIReference ;
-    rdfs:label rdfs:Literal ;
-    ns3:endpoint rdfs:Literal ;
-    ns3:mpc_db_name rdfs:Literal ;
-    ns3:source rdfs:Literal ;
-    ns3:writable rdfs:Literal .
-
 bs:BidirectionalConnectionPoint_version_1 a s223:BidirectionalConnectionPoint,
-        ns2:AirConnectionPoint ;
+        bob:AirConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:cnx bs:Connection_version_1,
         bs:DomainSpace_version_1,
@@ -139,14 +129,14 @@ bs:BidirectionalConnectionPoint_version_1 a s223:BidirectionalConnectionPoint,
 bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatableProperty,
         s223:Sensor,
         ns1:FlowSetpoint,
-        ns2:PercentCommand,
-        ns2:TemperatureSetpoint ;
+        bob:PercentCommand,
+        bob:TemperatureSetpoint ;
     rdfs:label rdfs:Literal ;
     s223:hasAspect s223:Aspect-Setpoint,
         s223:Role-Cooling,
         s223:Role-Heating,
         s223:Role-Supply ;
-    s223:hasExternalReference bs:ExternalReference_version_1 ;
+    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
     qudt:hasQuantityKind quantitykind:DimensionlessRatio,
         quantitykind:ForcePerArea,
         quantitykind:Temperature,
@@ -173,8 +163,8 @@ bs:TwoWayValve_version_1 a s223:TwoWayValve,
         bs:OutletConnectionPoint_version_2 ;
     s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
         bs:QuantifiableObservableProperty_version_1 ;
-    ns2:waterInlet bs:InletConnectionPoint_version_1 ;
-    ns2:waterOutlet bs:OutletConnectionPoint_version_1,
+    bob:waterInlet bs:InletConnectionPoint_version_1 ;
+    bob:waterOutlet bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 ;
     rdfs:comment rdfs:Literal .
 
@@ -240,8 +230,8 @@ bs:CoolingCoil_version_1 a s223:CoolingCoil,
         s223:Role-HeatTransfer ;
     ns1:refrigerantInlet bs:InletConnectionPoint_version_1 ;
     ns1:refrigerantOutlet bs:OutletConnectionPoint_version_1 ;
-    ns2:airInlet bs:InletConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletConnectionPoint_version_1 ;
+    bob:airInlet bs:InletConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletConnectionPoint_version_1 ;
     rdfs:comment rdfs:Literal .
 
 bs:FanPoweredTerminal_version_1 a s223:FanPoweredTerminal,
@@ -272,18 +262,17 @@ bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservablePropert
         ns1:CO2Concentration,
         ns1:HeatFlowRate,
         ns1:Pressure,
-        ns2:DifferentialStaticPressure,
-        ns2:ElectricPower,
-        ns2:ElectricPowerkW,
-        ns2:Flow,
-        ns2:RPM,
-        ns2:Temperature ;
+        bob:DifferentialStaticPressure,
+        bob:ElectricPower,
+        bob:ElectricPowerkW,
+        bob:Flow,
+        bob:RPM,
+        bob:Temperature ;
     rdfs:label rdfs:Literal ;
     s223:hasAspect s223:Aspect-Minimum,
         s223:Aspect-Nominal ;
-    s223:hasExternalReference bs:ExternalReference_version_1 ;
+    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
     s223:hasValue rdfs:Literal ;
-    s223:ofMedium rdfs:Resource ;
     qudt:hasQuantityKind quantitykind:AngularVelocity,
         quantitykind:ElectricPower,
         quantitykind:ForcePerArea,
@@ -321,10 +310,10 @@ bs:HeatingCoil_version_1 a s223:HeatingCoil ;
         bs:OutletConnectionPoint_version_2 ;
     s223:hasRole s223:Role-HeatTransfer,
         s223:Role-Heating ;
-    ns2:airInlet bs:InletConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletConnectionPoint_version_1 ;
-    ns2:hotWaterInlet bs:InletConnectionPoint_version_1 ;
-    ns2:hotWaterOutlet bs:OutletConnectionPoint_version_1,
+    bob:airInlet bs:InletConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletConnectionPoint_version_1 ;
+    bob:hotWaterInlet bs:InletConnectionPoint_version_1 ;
+    bob:hotWaterOutlet bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 ;
     rdfs:comment rdfs:Literal .
 
@@ -345,13 +334,13 @@ bs:Damper_version_1 a s223:Damper,
         bs:OutletConnectionPoint_version_1 ;
     s223:hasProperty bs:QuantifiableActuatableProperty_version_1 ;
     s223:hasRole s223:Role-Exhaust ;
-    ns2:airInlet bs:InletConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletConnectionPoint_version_1 ;
+    bob:airInlet bs:InletConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletConnectionPoint_version_1 ;
     rdfs:comment rdfs:Literal .
 
 bs:OutletConnectionPoint_version_2 a s223:OutletConnectionPoint,
-        ns2:HotWaterConnectionPoint,
-        ns2:WaterConnectionPoint ;
+        bob:HotWaterConnectionPoint,
+        bob:WaterConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:cnx bs:Connection_version_1,
         bs:FanPoweredTerminal_version_1,
@@ -382,8 +371,8 @@ bs:Filter_version_1 a s223:Filter ;
         bs:Fan_version_1 ;
     s223:hasConnectionPoint bs:InletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_1 ;
-    ns2:airInlet bs:InletConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletConnectionPoint_version_1 ;
+    bob:airInlet bs:InletConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletConnectionPoint_version_1 ;
     rdfs:comment rdfs:Literal .
 
 bs:Fan_version_1 a s223:Fan,
@@ -409,8 +398,8 @@ bs:Fan_version_1 a s223:Fan,
         s223:Role-Supply ;
     ns1:speedCommand bs:QuantifiableActuatableProperty_version_1 ;
     ns1:speedFeedback bs:QuantifiableObservableProperty_version_1 ;
-    ns2:airInlet bs:InletConnectionPoint_version_1 ;
-    ns2:airOutlet bs:OutletConnectionPoint_version_1 ;
+    bob:airInlet bs:InletConnectionPoint_version_1 ;
+    bob:airOutlet bs:OutletConnectionPoint_version_1 ;
     rdfs:comment rdfs:Literal .
 
 bs:DomainSpace_version_1 a s223:DomainSpace,
@@ -510,10 +499,10 @@ bs:Junction_version_1 a s223:Junction,
 
 bs:InletConnectionPoint_version_1 a s223:InletConnectionPoint,
         ns1:RefrigerantConnectionPoint,
-        ns2:AirConnectionPoint,
-        ns2:ChilledWaterConnectionPoint,
-        ns2:HotWaterConnectionPoint,
-        ns2:WaterConnectionPoint ;
+        bob:AirConnectionPoint,
+        bob:ChilledWaterConnectionPoint,
+        bob:HotWaterConnectionPoint,
+        bob:WaterConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:cnx bs:AirHandlingUnit_version_1,
         bs:Connection_version_1,
@@ -549,10 +538,10 @@ bs:InletConnectionPoint_version_1 a s223:InletConnectionPoint,
 
 bs:OutletConnectionPoint_version_1 a s223:OutletConnectionPoint,
         ns1:RefrigerantConnectionPoint,
-        ns2:AirConnectionPoint,
-        ns2:ChilledWaterConnectionPoint,
-        ns2:HotWaterConnectionPoint,
-        ns2:WaterConnectionPoint ;
+        bob:AirConnectionPoint,
+        bob:ChilledWaterConnectionPoint,
+        bob:HotWaterConnectionPoint,
+        bob:WaterConnectionPoint ;
     rdfs:label rdfs:Literal ;
     s223:cnx bs:AirHandlingUnit_version_1,
         bs:Connection_version_1,
@@ -585,4 +574,12 @@ bs:OutletConnectionPoint_version_1 a s223:OutletConnectionPoint,
         bs:TwoWayValve_version_1 ;
     s223:mapsTo bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 .
+
+_:N0d7d7b1e00db4994b1fd6d734060d6dc a s223:ExternalReference,
+        ref:APIReference ;
+    rdfs:label rdfs:Literal ;
+    ref:endpoint rdfs:Literal ;
+    ref:mpc_db_name rdfs:Literal ;
+    ref:source rdfs:Literal ;
+    ref:writable rdfs:Literal .
 

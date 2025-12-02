@@ -1,7 +1,7 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 
 bs:AHU_version_1 a brick:AHU ;
     brick:feeds bs:Variable_Air_Volume_Box_With_Reheat_version_1 ;
@@ -20,13 +20,13 @@ bs:Building_version_1 a brick:Building ;
     brick:hasPart bs:HVAC_Zone_version_1 .
 
 bs:CO2_Sensor_version_1 a brick:CO2_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Chilled_Water_Return_Temperature_Sensor_version_1 a brick:Chilled_Water_Return_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Chiller_version_1 a brick:Chiller ;
     brick:feeds bs:Pump_version_1 ;
@@ -39,63 +39,62 @@ bs:Cooling_Coil_version_1 a brick:Cooling_Coil ;
     brick:isFedBy bs:Chiller_version_1 .
 
 bs:Damper_Position_Setpoint_version_1 a brick:Damper_Position_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Discharge_Air_Flow_Sensor_version_1 a brick:Discharge_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Discharge_Air_Static_Pressure_Sensor_version_1 a brick:Discharge_Air_Static_Pressure_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Discharge_Air_Temperature_Sensor_version_1 a brick:Discharge_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Heating_Coil_version_1 a brick:Heating_Coil ;
-    brick:hasPoint rdfs:Resource,
-        bs:Electric_Power_Sensor_version_1 ;
+    brick:hasPoint bs:Electric_Power_Sensor_version_1 ;
     brick:isFedBy bs:Pump_version_1 .
 
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Mixed_Air_Temperature_Sensor_version_1 a brick:Mixed_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Resource_version_2 brick:value rdfs:Literal .
 
 bs:Return_Air_Flow_Sensor_version_1 a brick:Return_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Supply_Air_Flow_Sensor_version_1 a brick:Supply_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Supply_Air_Temperature_Sensor_version_1 a brick:Supply_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Supply_Air_Temperature_Setpoint_version_1 a brick:Supply_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Supply_Fan_version_1 a brick:Supply_Fan ;
     brick:hasPoint bs:Discharge_Air_Static_Pressure_Sensor_version_1,
         bs:Electric_Power_Sensor_version_1 .
 
 bs:Valve_Command_version_1 a brick:Valve_Command ;
-    ns1:hasExternalReference bs:Resource_version_1 .
+    ref:hasExternalReference _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box_With_Reheat ;
     brick:feeds bs:HVAC_Zone_version_1 ;
@@ -104,16 +103,16 @@ bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box
         bs:Valve_Command_version_1 .
 
 bs:Zone_Air_Cooling_Temperature_Setpoint_version_1 a brick:Zone_Air_Cooling_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Zone_Air_Heating_Temperature_Setpoint_version_1 a brick:Zone_Air_Heating_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
 bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
     rdfs:label rdfs:Literal ;
@@ -131,13 +130,13 @@ bs:Pump_version_1 a brick:Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
 bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference _:N615681e7c80340d899d5c7d131e19101,
+        _:Na2c718deddd84b769326c40b244518a8 .
 
-bs:TimeseriesReference_version_1 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
+_:N615681e7c80340d899d5c7d131e19101 a ref:TimeseriesReference ;
+    ref:hasTimeseriesId rdfs:Literal ;
+    ref:onTable rdfs:Literal ;
+    ref:storedAt rdfs:Literal .
 
-bs:Resource_version_1 ns1:hasTimeseriesId rdfs:Literal .
+_:Na2c718deddd84b769326c40b244518a8 ref:hasTimeseriesId rdfs:Literal .
 

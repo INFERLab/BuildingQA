@@ -1,5 +1,5 @@
+@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <http://data.ashrae.org/bacnet/2020#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -822,359 +822,6 @@ bs:AirHandlingUnit_version_7 a s223:AirHandlingUnit ;
         bs:QuantifiableObservableProperty_version_4,
         bs:QuantifiableObservableProperty_version_82 .
 
-bs:BACnetExternalReference_version_19 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_21 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_22 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_23 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_29 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_30 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_33 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_2 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_35 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_38 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_4 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_39 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_43 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_45 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_46 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_48 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_49 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_50 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_51 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_53 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_55 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_57 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_60 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_4 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_62 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_67 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_69 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_7 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_70 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_72 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_73 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_76 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_77 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_78 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_79 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_80 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_82 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_83 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_84 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_85 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_86 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_87 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_88 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_89 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_90 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_2 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_91 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_2 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_92 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_93 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_94 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_95 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_96 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_97 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_98 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
 bs:Chiller_version_1 a s223:Chiller ;
     s223:cnx bs:InletConnectionPoint_version_20,
         bs:InletConnectionPoint_version_8,
@@ -1658,17 +1305,17 @@ bs:PhysicalSpace_version_5 a s223:PhysicalSpace ;
         bs:QuantifiableObservableProperty_version_62,
         bs:QuantifiableObservableProperty_version_76 .
 
-bs:Port_version_2 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_2 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
-bs:Port_version_3 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_3 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
-bs:Port_version_4 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_4 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
-bs:Port_version_5 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_5 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
 bs:Property_version_2 a s223:Property ;
     s223:hasExternalReference bs:BACnetExternalReference_version_26 ;
@@ -1679,12 +1326,22 @@ bs:Property_version_3 a s223:Property ;
     qudt:hasUnit unit:GAL_US .
 
 bs:Property_version_4 a s223:Property ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_95 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasProperty bs:Property_version_9 ;
     qudt:hasUnit unit:KiloW .
 
 bs:Property_version_5 a s223:Property ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_53 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:Property_version_6 a s223:Property ;
@@ -1695,7 +1352,7 @@ bs:Property_version_7 a s223:Property ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:Property_version_8 a s223:Property ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_12 ;
+    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
     qudt:hasUnit unit:GAL_US .
 
 bs:Pump_version_1 a s223:Pump ;
@@ -1706,7 +1363,7 @@ bs:QuantifiableProperty_version_1 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_10 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_34 ;
+    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
     qudt:hasUnit unit:SEC .
 
 bs:QuantifiableProperty_version_11 a s223:QuantifiableProperty ;
@@ -1722,7 +1379,7 @@ bs:QuantifiableProperty_version_12 a s223:QuantifiableProperty ;
         unit:UNITLESS .
 
 bs:QuantifiableProperty_version_13 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4 ;
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_14 a s223:QuantifiableProperty ;
@@ -1744,7 +1401,12 @@ bs:QuantifiableProperty_version_18 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_20 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_79 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_6 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_21 a s223:QuantifiableProperty ;
@@ -1752,11 +1414,11 @@ bs:QuantifiableProperty_version_21 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_22 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_32 ;
+    s223:hasExternalReference _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_23 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_25 ;
+    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_24 a s223:QuantifiableProperty ;
@@ -1765,11 +1427,16 @@ bs:QuantifiableProperty_version_24 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_25 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_86 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableProperty_version_6 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_12 ;
+    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_7 a s223:QuantifiableProperty ;
@@ -1778,7 +1445,7 @@ bs:QuantifiableProperty_version_7 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_8 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_10 ;
+    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
     qudt:hasUnit unit:LB_F-PER-IN2,
         unit:SEC .
 
@@ -1855,163 +1522,163 @@ bs:AirHandlingUnit_version_3 a s223:AirHandlingUnit,
         bs:QuantifiableProperty_version_4 .
 
 bs:BACnetExternalReference_version_17 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_24 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_27 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_6 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_28 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_3 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_36 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_37 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_41 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_42 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_44 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_3 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_52 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_56 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_6 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_63 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_64 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_65 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_66 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_68 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_71 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_6 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_74 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_75 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_81 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_2 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_2 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:Connection_version_12 a s223:Connection,
         s223:Duct ;
@@ -2367,8 +2034,7 @@ bs:OutletConnectionPoint_version_25 a s223:OutletConnectionPoint ;
 
 bs:OutletConnectionPoint_version_26 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_19 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:OutletConnectionPoint_version_28 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_73,
@@ -2406,8 +2072,7 @@ bs:OutletConnectionPoint_version_39 a s223:OutletConnectionPoint ;
 
 bs:OutletConnectionPoint_version_41 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_64 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:OutletConnectionPoint_version_42 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_28,
@@ -2438,13 +2103,11 @@ bs:OutletConnectionPoint_version_49 a s223:OutletConnectionPoint ;
 
 bs:OutletConnectionPoint_version_50 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_19 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:OutletConnectionPoint_version_51 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_27 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:OutletConnectionPoint_version_53 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_82 ;
@@ -2488,8 +2151,8 @@ bs:PhysicalSpace_version_9 a s223:PhysicalSpace ;
         bs:QuantifiableActuatableProperty_version_3,
         bs:QuantifiableObservableProperty_version_90 .
 
-bs:Port_version_1 a ns1:Port ;
-    ns1:storedAt rdfs:Literal .
+bs:Port_version_1 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
 
 bs:QuantifiableActuatableProperty_version_10 a s223:QuantifiableActuatableProperty ;
     s223:hasExternalReference bs:BACnetExternalReference_version_40 ;
@@ -2497,7 +2160,12 @@ bs:QuantifiableActuatableProperty_version_10 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_14 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_19 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:EnumerationKind-Speed,
         s223:OnOff-Unknown ;
@@ -2505,7 +2173,12 @@ bs:QuantifiableActuatableProperty_version_14 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_16 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_50 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2515,7 +2188,12 @@ bs:QuantifiableActuatableProperty_version_17 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_18 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_51 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Role-Condenser,
@@ -2533,21 +2211,26 @@ bs:QuantifiableActuatableProperty_version_19 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_20 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_8 ;
+    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_21 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_10 ;
+    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown ;
     qudt:hasUnit unit:PERCENT,
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_23 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_67 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:LB_F-PER-IN2 .
 
 bs:QuantifiableActuatableProperty_version_26 a s223:QuantifiableActuatableProperty ;
@@ -2562,11 +2245,16 @@ bs:QuantifiableActuatableProperty_version_27 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_30 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_34 ;
+    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
     qudt:hasUnit unit:LB_F-PER-IN2 .
 
 bs:QuantifiableActuatableProperty_version_31 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_73 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Role-Condenser,
@@ -2575,7 +2263,12 @@ bs:QuantifiableActuatableProperty_version_31 a s223:QuantifiableActuatableProper
         unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_32 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_78 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2585,12 +2278,22 @@ bs:QuantifiableActuatableProperty_version_33 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_34 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_22 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_35 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_83 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2606,19 +2309,29 @@ bs:QuantifiableActuatableProperty_version_38 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_39 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_31 ;
+    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_42 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_80 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_43 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_48 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasQuantityKind quantitykind:DewPointTemperature ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2628,7 +2341,12 @@ bs:QuantifiableActuatableProperty_version_44 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_45 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_85 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
@@ -2639,7 +2357,12 @@ bs:QuantifiableActuatableProperty_version_46 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:A .
 
 bs:QuantifiableActuatableProperty_version_47 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_70 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:IN_H2O .
 
 bs:QuantifiableActuatableProperty_version_48 a s223:QuantifiableActuatableProperty ;
@@ -2648,7 +2371,12 @@ bs:QuantifiableActuatableProperty_version_48 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_49 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_35 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:LB_F-PER-IN2 .
 
 bs:QuantifiableActuatableProperty_version_50 a s223:QuantifiableActuatableProperty ;
@@ -2656,7 +2384,7 @@ bs:QuantifiableActuatableProperty_version_50 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_51 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_54 ;
+    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2668,7 +2396,7 @@ bs:QuantifiableActuatableProperty_version_6 a s223:QuantifiableActuatablePropert
         unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_8 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_5 ;
+    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
     s223:hasRole s223:Aspect-Command ;
     qudt:hasUnit unit:PERCENT .
 
@@ -2678,7 +2406,12 @@ bs:QuantifiableObservableProperty_version_100 a s223:QuantifiableObservablePrope
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_101 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_88 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2688,15 +2421,30 @@ bs:QuantifiableObservableProperty_version_102 a s223:QuantifiableObservablePrope
     qudt:hasUnit unit:GAL_US-PER-HR .
 
 bs:QuantifiableObservableProperty_version_103 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_89 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:HZ .
 
 bs:QuantifiableObservableProperty_version_105 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_92 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:IN_H2O .
 
 bs:QuantifiableObservableProperty_version_106 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_82 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:LB_F-PER-IN2 .
 
 bs:QuantifiableObservableProperty_version_107 a s223:QuantifiableObservableProperty ;
@@ -2707,7 +2455,7 @@ bs:QuantifiableObservableProperty_version_108 a s223:QuantifiableObservablePrope
     qudt:hasUnit unit:MegaW-HR .
 
 bs:QuantifiableObservableProperty_version_14 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_18 ;
+    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:Power ;
@@ -2722,8 +2470,13 @@ bs:QuantifiableObservableProperty_version_17 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_19 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_38,
-        bs:BACnetExternalReference_version_47 ;
+    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746,
+        [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_4 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
@@ -2738,14 +2491,19 @@ bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservablePropert
         unit:V-A_Reactive .
 
 bs:QuantifiableObservableProperty_version_22 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_43 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent ;
     qudt:hasUnit unit:A,
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_25 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_15 ;
+    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -2758,7 +2516,7 @@ bs:QuantifiableObservableProperty_version_34 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:DEG_C .
 
 bs:QuantifiableObservableProperty_version_38 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_47 ;
+    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746 ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:GAL_US-PER-MIN .
 
@@ -2770,7 +2528,7 @@ bs:QuantifiableObservableProperty_version_4 a s223:QuantifiableObservablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_40 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_9 ;
+    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
@@ -2781,30 +2539,45 @@ bs:QuantifiableObservableProperty_version_42 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_43 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_14 ;
+    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableObservableProperty_version_44 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_46 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_46 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_62 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_47 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_25 ;
+    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
     qudt:hasQuantityKind quantitykind:ElectricPower ;
     qudt:hasUnit unit:KiloW .
 
 bs:QuantifiableObservableProperty_version_48 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_45 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasQuantityKind quantitykind:Time ;
     qudt:hasUnit unit:HR,
@@ -2822,7 +2595,12 @@ bs:QuantifiableObservableProperty_version_5 a s223:QuantifiableObservablePropert
     qudt:hasUnit unit:DEG_C .
 
 bs:QuantifiableObservableProperty_version_51 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_84 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2838,8 +2616,13 @@ bs:QuantifiableObservableProperty_version_54 a s223:QuantifiableObservableProper
         unit:TON_FG-HR .
 
 bs:QuantifiableObservableProperty_version_55 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_32,
-        bs:BACnetExternalReference_version_33 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_2 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
+        _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
     qudt:hasUnit unit:IN_H2O,
         unit:UNITLESS .
 
@@ -2850,7 +2633,7 @@ bs:QuantifiableObservableProperty_version_61 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_64 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_54 ;
+    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373 ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2860,7 +2643,12 @@ bs:QuantifiableObservableProperty_version_67 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_68 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_93 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_3 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Return ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2871,7 +2659,12 @@ bs:QuantifiableObservableProperty_version_70 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableObservableProperty_version_71 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_87 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasQuantityKind quantitykind:Conductivity ;
     qudt:hasUnit unit:MicroS .
@@ -2894,7 +2687,7 @@ bs:QuantifiableObservableProperty_version_74 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_75 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_34 ;
+    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
     qudt:hasUnit unit:LB_F-PER-IN2,
         unit:UNITLESS .
 
@@ -2909,7 +2702,7 @@ bs:QuantifiableObservableProperty_version_78 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:KiloW-HR .
 
 bs:QuantifiableObservableProperty_version_79 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_14 ;
+    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -2921,18 +2714,33 @@ bs:QuantifiableObservableProperty_version_8 a s223:QuantifiableObservablePropert
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_80 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_96 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasQuantityKind quantitykind:Volume ;
     qudt:hasUnit unit:LB .
 
 bs:QuantifiableObservableProperty_version_82 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_49 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_83 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_98 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2950,12 +2758,17 @@ bs:QuantifiableObservableProperty_version_85 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_86 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_59 ;
+    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:W-HR .
 
 bs:QuantifiableObservableProperty_version_87 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_94 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_89 a s223:QuantifiableObservableProperty ;
@@ -2977,11 +2790,11 @@ bs:QuantifiableObservableProperty_version_92 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:TON_FG-HR .
 
 bs:QuantifiableObservableProperty_version_93 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_25 ;
+    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_94 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_15 ;
+    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -3006,7 +2819,12 @@ bs:QuantifiableObservableProperty_version_98 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableObservableProperty_version_99 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_60 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_4 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:GAL_US-PER-MIN .
 
@@ -3016,7 +2834,7 @@ bs:QuantifiableProperty_version_16 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_2 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4,
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555,
         bs:BACnetExternalReference_version_41 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG,
@@ -3048,8 +2866,7 @@ bs:QuantifiableProperty_version_9 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:DEG_F,
         unit:UNITLESS .
 
-bs:Resource_version_6 s223:hasProperty rdfs:Resource ;
-    s223:hasRole s223:Role-Exhaust,
+bs:Resource_version_6 s223:hasRole s223:Role-Exhaust,
         s223:Role-Return .
 
 bs:Valve_version_10 a s223:Valve ;
@@ -3100,92 +2917,8 @@ bs:AirHandlingUnit_version_2 a s223:AirHandlingUnit ;
         bs:QuantifiableProperty_version_19,
         bs:QuantifiableProperty_version_7 .
 
-bs:BACnetDevice_version_4 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_3 .
-
-bs:BACnetExternalReference_version_12 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_14 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_15 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_18 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_25 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_31 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_32 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_34 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_47 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_54 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_2 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_59 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+bs:BACnetDevice_version_4 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_3 .
 
 bs:Connection_version_13 a s223:Connection,
         s223:Duct ;
@@ -3354,7 +3087,7 @@ bs:Property_version_1 a s223:Property ;
 
 bs:Property_version_9 a s223:Property,
         s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_59 ;
+    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
     qudt:hasQuantityKind quantitykind:ActivePower ;
     qudt:hasUnit unit:KiloW,
         unit:W .
@@ -3372,8 +3105,13 @@ bs:Pump_version_2 a s223:Pump ;
     s223:hasRole s223:Role-Cooling .
 
 bs:QuantifiableActuatableProperty_version_11 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_26,
-        bs:BACnetExternalReference_version_72 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_6 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
+        bs:BACnetExternalReference_version_26 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG_F .
 
@@ -3387,7 +3125,12 @@ bs:QuantifiableActuatableProperty_version_22 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_24 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_21 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:FT3-PER-SEC,
         unit:IN_H2O,
@@ -3399,7 +3142,7 @@ bs:QuantifiableActuatableProperty_version_29 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_37 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_10 ;
+    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:DEG_F,
         unit:LB_F-PER-IN2,
@@ -3414,14 +3157,19 @@ bs:QuantifiableActuatableProperty_version_40 a s223:QuantifiableActuatableProper
         unit:IN_H2O .
 
 bs:QuantifiableActuatableProperty_version_41 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_30 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:DewPointTemperature ;
     qudt:hasUnit unit:DEG_F,
         unit:IN_H2O .
 
 bs:QuantifiableObservableProperty_version_104 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_10 ;
+    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Position-Unknown ;
     qudt:hasUnit unit:PERCENT,
@@ -3437,28 +3185,39 @@ bs:QuantifiableObservableProperty_version_18 a s223:QuantifiableObservableProper
         unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_20 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_69,
-        bs:BACnetExternalReference_version_9 ;
+    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d,
+        [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_6 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown,
         <urn:bldg#OnOff-Unknown> ;
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableObservableProperty_version_21 a s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:Role-Discharge ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_12 ;
+    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:FT3-PER-MIN .
 
 bs:QuantifiableObservableProperty_version_24 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_29 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1,
+                bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Role-Supply,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:DEG_F,
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_30 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_15 ;
+    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
     qudt:hasQuantityKind quantitykind:Power,
         quantitykind:Voltage,
         quantitykind:VolumeFlowRate ;
@@ -3480,7 +3239,7 @@ bs:QuantifiableObservableProperty_version_56 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:GAL_US-PER-MIN .
 
 bs:QuantifiableObservableProperty_version_57 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_47 ;
+    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
@@ -3491,7 +3250,7 @@ bs:QuantifiableObservableProperty_version_60 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_62 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_31 ;
+    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b ;
     qudt:hasQuantityKind quantitykind:ElectricPower ;
     qudt:hasUnit unit:DEG_F,
         unit:KiloW,
@@ -3509,7 +3268,7 @@ bs:QuantifiableObservableProperty_version_65 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_76 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_18 ;
+    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_81 a s223:QuantifiableObservableProperty ;
@@ -3527,14 +3286,20 @@ bs:QuantifiableObservableProperty_version_88 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_90 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_77 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1,
+                bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricPower ;
     qudt:hasUnit unit:DEG_F,
         unit:KiloV-A .
 
 bs:QuantifiableProperty_version_19 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_8 ;
+    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG,
         unit:FT2,
@@ -3611,51 +3376,51 @@ bs:AirHandlingUnit_version_1 a s223:AirHandlingUnit ;
         bs:QuantifiableProperty_version_3 .
 
 bs:BACnetExternalReference_version_11 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_3,
         bs:BACnetDevice_version_4 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_13 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_20 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_40 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_58 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_3 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_61 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:Connection_version_11 a s223:Connection ;
     s223:cnx bs:InletConnectionPoint_version_17 ;
@@ -3716,8 +3481,7 @@ bs:InletConnectionPoint_version_18 a s223:InletConnectionPoint ;
 
 bs:InletConnectionPoint_version_34 a s223:InletConnectionPoint ;
     s223:cnx bs:Connection_version_29 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:OutletConnectionPoint_version_12 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_5 ;
@@ -3762,7 +3526,7 @@ bs:OutletConnectionPoint_version_8 a s223:OutletConnectionPoint ;
     s223:hasMedium s223:Fluid-Air .
 
 bs:QuantifiableActuatableProperty_version_13 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_8 ;
+    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -3772,7 +3536,12 @@ bs:QuantifiableActuatableProperty_version_13 a s223:QuantifiableActuatableProper
         unit:LB_F-PER-IN2 .
 
 bs:QuantifiableActuatableProperty_version_25 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_57 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:Role-Supply ;
     qudt:hasUnit unit:UNITLESS .
@@ -3792,8 +3561,13 @@ bs:QuantifiableObservableProperty_version_16 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_26 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4,
-        bs:BACnetExternalReference_version_91 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_2 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
+        _:N69e01b32fba14609847340488bc33555 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -3802,15 +3576,20 @@ bs:QuantifiableObservableProperty_version_26 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_28 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_5 ;
+    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:HP,
         unit:TON_FG,
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_29 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4,
-        bs:BACnetExternalReference_version_7 ;
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555,
+        [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:Power,
         quantitykind:Voltage,
@@ -3824,7 +3603,7 @@ bs:QuantifiableObservableProperty_version_29 a s223:QuantifiableObservableProper
         unit:W-HR .
 
 bs:QuantifiableObservableProperty_version_35 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_18 ;
+    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -3834,7 +3613,7 @@ bs:QuantifiableObservableProperty_version_35 a s223:QuantifiableObservableProper
         unit:HR .
 
 bs:QuantifiableObservableProperty_version_45 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_2 ;
+    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:Power,
         quantitykind:Voltage ;
@@ -3862,7 +3641,7 @@ bs:QuantifiableObservableProperty_version_58 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_59 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4 ;
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:DewPointTemperature,
@@ -3875,7 +3654,12 @@ bs:QuantifiableObservableProperty_version_59 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_66 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_39 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
@@ -3889,8 +3673,8 @@ bs:QuantifiableObservableProperty_version_69 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_7 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_31,
-        bs:BACnetExternalReference_version_5 ;
+    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b,
+        _:Nf46c279b29d74cccbc8303c7f95489d3 ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:ElectricCurrent,
         quantitykind:Voltage ;
@@ -3901,7 +3685,7 @@ bs:QuantifiableObservableProperty_version_7 a s223:QuantifiableObservablePropert
         unit:W .
 
 bs:QuantifiableProperty_version_4 a s223:QuantifiableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_32 ;
+    s223:hasExternalReference _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG_F,
         unit:PERCENT,
@@ -3922,48 +3706,8 @@ bs:Valve_version_4 a s223:Valve ;
     s223:hasRole s223:Role-Recirculating,
         s223:Role-Supply .
 
-bs:BACnetDevice_version_2 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_4 .
-
-bs:BACnetExternalReference_version_10 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_2 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_5 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_8 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
-
-bs:BACnetExternalReference_version_9 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+bs:BACnetDevice_version_2 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_4 .
 
 bs:CoolingCoil_version_3 a s223:CoolingCoil,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;
@@ -4052,9 +3796,9 @@ bs:QuantifiableActuatableProperty_version_15 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_27,
-        bs:BACnetExternalReference_version_3,
-        bs:BACnetExternalReference_version_54 ;
+    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373,
+        bs:BACnetExternalReference_version_27,
+        bs:BACnetExternalReference_version_3 ;
     s223:hasRole s223:Aspect-Command,
         s223:EnumerationKind-Speed,
         s223:OnOff-Unknown,
@@ -4066,14 +3810,19 @@ bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_3 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_8 ;
+    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
     s223:hasRole s223:OnOff-Unknown,
         <urn:bldg#OnOff-Unknown> ;
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_4 a s223:QuantifiableActuatableProperty ;
     s223:hasAspect s223:EnumerationKind-Position ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_23 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
@@ -4082,7 +3831,7 @@ bs:QuantifiableActuatableProperty_version_4 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_11 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_10 ;
+    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:ElectricPower,
         quantitykind:PressureRatio,
@@ -4098,7 +3847,7 @@ bs:QuantifiableObservableProperty_version_11 a s223:QuantifiableObservableProper
         unit:V-A_Reactive .
 
 bs:QuantifiableObservableProperty_version_15 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_59 ;
+    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
     s223:hasRole s223:Role-Return,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:Power,
@@ -4109,7 +3858,7 @@ bs:QuantifiableObservableProperty_version_15 a s223:QuantifiableObservableProper
         unit:W-HR .
 
 bs:QuantifiableObservableProperty_version_23 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_9 ;
+    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
@@ -4126,7 +3875,7 @@ bs:QuantifiableObservableProperty_version_27 a s223:QuantifiableObservableProper
         unit:TON_FG .
 
 bs:QuantifiableObservableProperty_version_37 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_2 ;
+    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
         quantitykind:ElectricPower ;
@@ -4136,14 +3885,20 @@ bs:QuantifiableObservableProperty_version_37 a s223:QuantifiableObservableProper
         unit:REV-PER-MIN .
 
 bs:QuantifiableObservableProperty_version_39 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_76 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_1,
+                bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasUnit unit:HZ,
         unit:PERCENT,
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_6 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_2 ;
+    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:ElectricCurrent,
@@ -4162,25 +3917,25 @@ bs:QuantifiableObservableProperty_version_6 a s223:QuantifiableObservablePropert
         unit:W-HR .
 
 bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_16 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:BACnetExternalReference_version_26 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 
 bs:Connection_version_1 a s223:Connection,
         s223:Duct ;
@@ -4270,7 +4025,7 @@ bs:OutletConnectionPoint_version_5 a s223:OutletConnectionPoint ;
     s223:hasMedium s223:Fluid-Water .
 
 bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_14 ;
+    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Return,
         s223:Role-Supply,
@@ -4285,7 +4040,7 @@ bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProper
         unit:W .
 
 bs:QuantifiableObservableProperty_version_13 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_2 ;
+    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ReactivePower ;
     qudt:hasUnit unit:KiloV-A-HR,
@@ -4295,7 +4050,7 @@ bs:QuantifiableObservableProperty_version_13 a s223:QuantifiableObservableProper
         unit:V-A_Reactive .
 
 bs:QuantifiableObservableProperty_version_32 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_9 ;
+    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
         quantitykind:ElectricPower ;
@@ -4313,8 +4068,13 @@ bs:QuantifiableObservableProperty_version_33 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_41 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_16,
-        bs:BACnetExternalReference_version_97 ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_5 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
+        bs:BACnetExternalReference_version_16 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ReactivePower ;
@@ -4324,7 +4084,7 @@ bs:QuantifiableObservableProperty_version_41 a s223:QuantifiableObservableProper
 
 bs:QuantifiableObservableProperty_version_9 a s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:Role-Discharge ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4 ;
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -4365,20 +4125,11 @@ bs:VariableFrequencyDrive_version_2 a s223:VariableFrequencyDrive,
         bs:QuantifiableObservableProperty_version_7,
         bs:QuantifiableObservableProperty_version_84 .
 
-bs:BACnetDevice_version_3 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_2 .
+bs:BACnetDevice_version_3 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_2 .
 
-bs:BACnetDevice_version_6 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_1 .
-
-bs:BACnetExternalReference_version_4 a s223:BACnetExternalReference ;
-    ns1:description rdfs:Literal ;
-    ns1:device-identifier bs:BACnetDevice_version_1 ;
-    ns1:object-identifier rdfs:Literal ;
-    ns1:object-name rdfs:Literal ;
-    ns1:object-type rdfs:Literal .
+bs:BACnetDevice_version_6 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_1 .
 
 bs:QuantifiableActuatableProperty_version_5 a s223:QuantifiableActuatableProperty,
         s223:QuantifiableObservableProperty ;
@@ -4396,7 +4147,7 @@ bs:QuantifiableActuatableProperty_version_5 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_7 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_5 ;
+    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Role-Supply,
@@ -4407,9 +4158,19 @@ bs:QuantifiableActuatableProperty_version_7 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_9 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_55,
-        bs:BACnetExternalReference_version_8,
-        bs:BACnetExternalReference_version_90 ;
+    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88,
+        [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_2 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
+        [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_6 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ] ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
@@ -4417,7 +4178,7 @@ bs:QuantifiableActuatableProperty_version_9 a s223:QuantifiableActuatablePropert
         unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_2,
+    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f,
         bs:BACnetExternalReference_version_27,
         bs:BACnetExternalReference_version_3 ;
     s223:hasRole s223:EnumerationKind-Speed,
@@ -4432,13 +4193,11 @@ bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservablePropert
 bs:InletConnectionPoint_version_2 a s223:InletConnectionPoint ;
     s223:cnx bs:Connection_version_8 ;
     s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource ;
     s223:hasRole s223:Role-Return .
 
 bs:OutletConnectionPoint_version_6 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_19 ;
-    s223:hasMedium s223:Fluid-Air ;
-    s223:hasProperty rdfs:Resource .
+    s223:hasMedium s223:Fluid-Air .
 
 bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatableProperty ;
     s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
@@ -4454,7 +4213,7 @@ bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_12 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_5 ;
+    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:Power ;
@@ -4462,7 +4221,7 @@ bs:QuantifiableObservableProperty_version_12 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_36 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_4 ;
+    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:DEG_F,
@@ -4500,7 +4259,7 @@ bs:QuantifiableObservableProperty_version_1 a s223:QuantifiableObservablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_31 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference bs:BACnetExternalReference_version_9 ;
+    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -4548,11 +4307,138 @@ bs:HeatingCoil_version_3 a s223:HeatingCoil,
     s223:contains bs:Valve_version_7 ;
     s223:hasRole s223:Role-Heating .
 
-bs:BACnetDevice_version_5 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_5 .
+bs:BACnetDevice_version_5 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_5 .
 
-bs:BACnetDevice_version_1 a ns1:BACnetDevice ;
-    ns1:device-instance rdfs:Resource ;
-    ns1:hasPort bs:Port_version_1 .
+bs:BACnetDevice_version_1 a bacnet:BACnetDevice ;
+    bacnet:hasPort bs:Port_version_1 .
+
+_:N02a178bc918e46c9a2ca539504dad746 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N127c11997a0444ec8eda179844b6f373 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_2 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N3916e492fff14940934e9ae444a6ccc8 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N3f27481423534878a6a7360dadaf3df6 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N59373f5cd3b243839b342308df26cd58 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N59ecef2dcf9a45e096b25f796449698f a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_3 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N7be7ec7e478046c889089260ec35a10a a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N8f80e25d36e64266990adfe91d3fe83b a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nadddbda8f0524d8abe4ac9d8009572f8 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nec9e2e0a08ca4d1f993d93936aebce24 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nf9a46c39175e48d6860b5ffe713a632c a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N328bc226c0a747078a16ac17c586ea88 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N9f82267cbf214a61bbca8ee140cba84f a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nd6dd7a349a4242caa2827d5ae146e15b a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Need41c3c8adb433da02259673308cc2d a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nf46c279b29d74cccbc8303c7f95489d3 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N69e01b32fba14609847340488bc33555 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
 

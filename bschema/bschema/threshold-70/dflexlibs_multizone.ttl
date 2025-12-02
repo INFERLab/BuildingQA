@@ -1,7 +1,7 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 
 bs:AHU_version_1 a brick:AHU ;
     brick:feeds bs:Variable_Air_Volume_Box_With_Reheat_version_1 ;
@@ -20,13 +20,13 @@ bs:Building_version_1 a brick:Building ;
     brick:hasPart bs:HVAC_Zone_version_1 .
 
 bs:CO2_Sensor_version_1 a brick:CO2_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_2 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Chilled_Water_Return_Temperature_Sensor_version_1 a brick:Chilled_Water_Return_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_20 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_28 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Chiller_version_1 a brick:Chiller ;
     brick:feeds bs:Pump_version_1 ;
@@ -39,67 +39,96 @@ bs:Cooling_Coil_version_1 a brick:Cooling_Coil ;
     brick:isFedBy bs:Chiller_version_1 .
 
 bs:Damper_Position_Setpoint_version_1 a brick:Damper_Position_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_6 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Discharge_Air_Flow_Sensor_version_1 a brick:Discharge_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_4 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Discharge_Air_Static_Pressure_Sensor_version_1 a brick:Discharge_Air_Static_Pressure_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_24 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Discharge_Air_Temperature_Sensor_version_1 a brick:Discharge_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_11 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_22,
-        bs:TimeseriesReference_version_12 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_2 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_9,
-        bs:TimeseriesReference_version_4 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_3 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_26,
-        bs:TimeseriesReference_version_3 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_4 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_16,
-        bs:TimeseriesReference_version_11 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_5 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_23,
-        bs:TimeseriesReference_version_2 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_6 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_18,
-        bs:TimeseriesReference_version_6 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_7 a brick:Electric_Power_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_5,
-        bs:TimeseriesReference_version_13 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Heating_Coil_version_1 a brick:Heating_Coil ;
-    brick:hasPoint rdfs:Resource,
-        bs:Electric_Power_Sensor_version_7 ;
+    brick:hasPoint bs:Electric_Power_Sensor_version_7 ;
     brick:isFedBy bs:Pump_version_2 .
 
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_14,
-        bs:TimeseriesReference_version_9 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Mixed_Air_Temperature_Sensor_version_1 a brick:Mixed_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_10 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_7,
-        bs:TimeseriesReference_version_7 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Pump_version_1 a brick:Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_6 .
@@ -108,148 +137,29 @@ bs:Pump_version_2 a brick:Pump ;
     brick:feeds bs:Hot_Water_Pump_version_1 ;
     brick:hasPoint bs:Electric_Power_Sensor_version_2 .
 
-bs:Resource_version_1 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_10 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_11 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_12 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_13 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_14 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_15 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_16 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_17 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_18 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_19 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_2 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_20 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_21 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_22 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_23 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_24 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_25 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_26 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_27 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_28 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_3 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_4 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_5 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_6 ns1:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_7 ns1:hasTimeseriesId rdfs:Literal .
-
 bs:Resource_version_8 brick:value rdfs:Literal .
 
-bs:Resource_version_9 ns1:hasTimeseriesId rdfs:Literal .
-
 bs:Return_Air_Flow_Sensor_version_1 a brick:Return_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_21 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_15 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Supply_Air_Flow_Sensor_version_1 a brick:Supply_Air_Flow_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_27 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Supply_Air_Temperature_Sensor_version_1 a brick:Supply_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_19 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Supply_Air_Temperature_Setpoint_version_1 a brick:Supply_Air_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_25 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Supply_Fan_version_1 a brick:Supply_Fan ;
     brick:hasPoint bs:Discharge_Air_Static_Pressure_Sensor_version_1,
         bs:Electric_Power_Sensor_version_3 .
 
-bs:TimeseriesReference_version_1 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_10 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_11 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_12 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_13 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_2 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_3 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_4 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_5 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_6 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_7 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_8 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
-bs:TimeseriesReference_version_9 a ns1:TimeseriesReference ;
-    ns1:hasTimeseriesId rdfs:Literal ;
-    ns1:onTable rdfs:Literal ;
-    ns1:storedAt rdfs:Literal .
-
 bs:Valve_Command_version_1 a brick:Valve_Command ;
-    ns1:hasExternalReference bs:Resource_version_12 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box_With_Reheat ;
     brick:feeds bs:HVAC_Zone_version_1 ;
@@ -258,16 +168,25 @@ bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box
         bs:Valve_Command_version_1 .
 
 bs:Zone_Air_Cooling_Temperature_Setpoint_version_1 a brick:Zone_Air_Cooling_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_17,
-        bs:TimeseriesReference_version_8 .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ] .
 
 bs:Zone_Air_Heating_Temperature_Setpoint_version_1 a brick:Zone_Air_Heating_Temperature_Setpoint ;
-    ns1:hasExternalReference bs:Resource_version_13,
-        bs:TimeseriesReference_version_5 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
-    ns1:hasExternalReference bs:Resource_version_3,
-        bs:TimeseriesReference_version_10 .
+    ref:hasExternalReference [ a ref:TimeseriesReference ;
+            ref:hasTimeseriesId rdfs:Literal ;
+            ref:onTable rdfs:Literal ;
+            ref:storedAt rdfs:Literal ],
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
     rdfs:label rdfs:Literal ;
