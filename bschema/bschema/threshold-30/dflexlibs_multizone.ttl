@@ -58,19 +58,19 @@ bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_2 .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
-    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
-        _:Ncff18b1d6e834d57bd33b3d5c64a8ec4 .
+    ref:hasExternalReference _:N1a894420394a408b8d5f9d642af36412,
+        [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
     ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
-        _:Ncff18b1d6e834d57bd33b3d5c64a8ec4 .
+        _:N1a894420394a408b8d5f9d642af36412 .
 
 bs:Mixed_Air_Temperature_Sensor_version_1 a brick:Mixed_Air_Temperature_Sensor ;
     ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor ;
-    ref:hasExternalReference _:N144d7764bdd0416fb573b3816809ac14,
-        [ ref:hasTimeseriesId rdfs:Literal ] .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        _:Nfcd6554b5e3d4a56a8fc33b7d514d64a .
 
 bs:Resource_version_23 brick:value rdfs:Literal .
 
@@ -103,15 +103,15 @@ bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box
         bs:Valve_Command_version_1 .
 
 bs:Zone_Air_Cooling_Temperature_Setpoint_version_1 a brick:Zone_Air_Cooling_Temperature_Setpoint ;
-    ref:hasExternalReference _:N144d7764bdd0416fb573b3816809ac14,
-        [ ref:hasTimeseriesId rdfs:Literal ] .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        _:Nfcd6554b5e3d4a56a8fc33b7d514d64a .
 
 bs:Zone_Air_Heating_Temperature_Setpoint_version_1 a brick:Zone_Air_Heating_Temperature_Setpoint ;
-    ref:hasExternalReference _:N144d7764bdd0416fb573b3816809ac14,
-        [ ref:hasTimeseriesId rdfs:Literal ] .
+    ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
+        _:Nfcd6554b5e3d4a56a8fc33b7d514d64a .
 
 bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
-    ref:hasExternalReference _:Ncff18b1d6e834d57bd33b3d5c64a8ec4,
+    ref:hasExternalReference _:N1a894420394a408b8d5f9d642af36412,
         [ ref:hasTimeseriesId rdfs:Literal ] .
 
 bs:Electric_Power_Sensor_version_2 a brick:Electric_Power_Sensor ;
@@ -142,12 +142,12 @@ bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
     ref:hasExternalReference [ ref:hasTimeseriesId rdfs:Literal ],
         bs:TimeseriesReference_version_3 .
 
-_:N144d7764bdd0416fb573b3816809ac14 a ref:TimeseriesReference ;
+_:N1a894420394a408b8d5f9d642af36412 a ref:TimeseriesReference ;
     ref:hasTimeseriesId rdfs:Literal ;
     ref:onTable rdfs:Literal ;
     ref:storedAt rdfs:Literal .
 
-_:Ncff18b1d6e834d57bd33b3d5c64a8ec4 a ref:TimeseriesReference ;
+_:Nfcd6554b5e3d4a56a8fc33b7d514d64a a ref:TimeseriesReference ;
     ref:hasTimeseriesId rdfs:Literal ;
     ref:onTable rdfs:Literal ;
     ref:storedAt rdfs:Literal .

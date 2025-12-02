@@ -1352,7 +1352,7 @@ bs:Property_version_7 a s223:Property ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:Property_version_8 a s223:Property ;
-    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
+    s223:hasExternalReference _:Nc788ede62d294d2b857f939ef74ff634 ;
     qudt:hasUnit unit:GAL_US .
 
 bs:Pump_version_1 a s223:Pump ;
@@ -1363,7 +1363,7 @@ bs:QuantifiableProperty_version_1 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_10 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
+    s223:hasExternalReference _:Nf33adbde69bb4273ba04cd7b6db6a675 ;
     qudt:hasUnit unit:SEC .
 
 bs:QuantifiableProperty_version_11 a s223:QuantifiableProperty ;
@@ -1379,7 +1379,7 @@ bs:QuantifiableProperty_version_12 a s223:QuantifiableProperty ;
         unit:UNITLESS .
 
 bs:QuantifiableProperty_version_13 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
+    s223:hasExternalReference _:N9d5105c9c9bd4074ae333d502a493184 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_14 a s223:QuantifiableProperty ;
@@ -1414,11 +1414,11 @@ bs:QuantifiableProperty_version_21 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_22 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
+    s223:hasExternalReference _:Ncf6e63168b844be890875f50013d7aa9 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_23 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
+    s223:hasExternalReference _:N421add657da44be287b7fe1f4e153b16 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_24 a s223:QuantifiableProperty ;
@@ -1436,7 +1436,7 @@ bs:QuantifiableProperty_version_25 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableProperty_version_6 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
+    s223:hasExternalReference _:Nc788ede62d294d2b857f939ef74ff634 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_7 a s223:QuantifiableProperty ;
@@ -1445,7 +1445,7 @@ bs:QuantifiableProperty_version_7 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_8 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
+    s223:hasExternalReference _:N4fc7f1e8c82b4d08a515780aa6bf73a2 ;
     qudt:hasUnit unit:LB_F-PER-IN2,
         unit:SEC .
 
@@ -2211,14 +2211,14 @@ bs:QuantifiableActuatableProperty_version_19 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_20 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
+    s223:hasExternalReference _:N509e042aac474396ad0b64ecbbb5d430 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_21 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
+    s223:hasExternalReference _:N4fc7f1e8c82b4d08a515780aa6bf73a2 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown ;
     qudt:hasUnit unit:PERCENT,
@@ -2245,7 +2245,7 @@ bs:QuantifiableActuatableProperty_version_27 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_30 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
+    s223:hasExternalReference _:Nf33adbde69bb4273ba04cd7b6db6a675 ;
     qudt:hasUnit unit:LB_F-PER-IN2 .
 
 bs:QuantifiableActuatableProperty_version_31 a s223:QuantifiableActuatableProperty ;
@@ -2309,7 +2309,7 @@ bs:QuantifiableActuatableProperty_version_38 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_39 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b ;
+    s223:hasExternalReference _:N04636faf062f4cd999a65e0fba5f0096 ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2384,7 +2384,7 @@ bs:QuantifiableActuatableProperty_version_50 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_51 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373 ;
+    s223:hasExternalReference _:N7b929bcbe8d8445686d5fbfed9d13503 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG_F .
 
@@ -2396,7 +2396,7 @@ bs:QuantifiableActuatableProperty_version_6 a s223:QuantifiableActuatablePropert
         unit:PERCENT .
 
 bs:QuantifiableActuatableProperty_version_8 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
+    s223:hasExternalReference _:N6dc56f6e2faf4240b412041772285df6 ;
     s223:hasRole s223:Aspect-Command ;
     qudt:hasUnit unit:PERCENT .
 
@@ -2455,7 +2455,7 @@ bs:QuantifiableObservableProperty_version_108 a s223:QuantifiableObservablePrope
     qudt:hasUnit unit:MegaW-HR .
 
 bs:QuantifiableObservableProperty_version_14 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
+    s223:hasExternalReference _:Ndc3a38008d36462d83398ae042e556bb ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:Power ;
@@ -2470,7 +2470,7 @@ bs:QuantifiableObservableProperty_version_17 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_19 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746,
+    s223:hasExternalReference _:N14e10565214d4885be1df6cc1f4fda52,
         [ a s223:BACnetExternalReference ;
             bacnet:description rdfs:Literal ;
             bacnet:device-identifier bs:BACnetDevice_version_4 ;
@@ -2503,7 +2503,7 @@ bs:QuantifiableObservableProperty_version_22 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_25 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
+    s223:hasExternalReference _:N7be54bbd6ecc43f8a6dfa04cb44cbb85 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -2516,7 +2516,7 @@ bs:QuantifiableObservableProperty_version_34 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:DEG_C .
 
 bs:QuantifiableObservableProperty_version_38 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746 ;
+    s223:hasExternalReference _:N14e10565214d4885be1df6cc1f4fda52 ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:GAL_US-PER-MIN .
 
@@ -2528,7 +2528,7 @@ bs:QuantifiableObservableProperty_version_4 a s223:QuantifiableObservablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_40 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
+    s223:hasExternalReference _:Nc2aca494cbfa472d8d70fbb02f2717d0 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
@@ -2539,7 +2539,7 @@ bs:QuantifiableObservableProperty_version_42 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_43 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
+    s223:hasExternalReference _:Na21540012f534623b7c743683d9fa9b0 ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply ;
     qudt:hasUnit unit:DEG_F .
@@ -2567,7 +2567,7 @@ bs:QuantifiableObservableProperty_version_46 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_47 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
+    s223:hasExternalReference _:N421add657da44be287b7fe1f4e153b16 ;
     qudt:hasQuantityKind quantitykind:ElectricPower ;
     qudt:hasUnit unit:KiloW .
 
@@ -2616,13 +2616,13 @@ bs:QuantifiableObservableProperty_version_54 a s223:QuantifiableObservableProper
         unit:TON_FG-HR .
 
 bs:QuantifiableObservableProperty_version_55 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+    s223:hasExternalReference _:Ncf6e63168b844be890875f50013d7aa9,
+        [ a s223:BACnetExternalReference ;
             bacnet:description rdfs:Literal ;
             bacnet:device-identifier bs:BACnetDevice_version_2 ;
             bacnet:object-identifier rdfs:Literal ;
             bacnet:object-name rdfs:Literal ;
-            bacnet:object-type rdfs:Literal ],
-        _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
+            bacnet:object-type rdfs:Literal ] ;
     qudt:hasUnit unit:IN_H2O,
         unit:UNITLESS .
 
@@ -2633,7 +2633,7 @@ bs:QuantifiableObservableProperty_version_61 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_64 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373 ;
+    s223:hasExternalReference _:N7b929bcbe8d8445686d5fbfed9d13503 ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2687,7 +2687,7 @@ bs:QuantifiableObservableProperty_version_74 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_75 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N7be7ec7e478046c889089260ec35a10a ;
+    s223:hasExternalReference _:Nf33adbde69bb4273ba04cd7b6db6a675 ;
     qudt:hasUnit unit:LB_F-PER-IN2,
         unit:UNITLESS .
 
@@ -2702,7 +2702,7 @@ bs:QuantifiableObservableProperty_version_78 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:KiloW-HR .
 
 bs:QuantifiableObservableProperty_version_79 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
+    s223:hasExternalReference _:Na21540012f534623b7c743683d9fa9b0 ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -2758,7 +2758,7 @@ bs:QuantifiableObservableProperty_version_85 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_86 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
+    s223:hasExternalReference _:Nbaa38bf838834c7a85016485b0e87114 ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:W-HR .
 
@@ -2790,11 +2790,11 @@ bs:QuantifiableObservableProperty_version_92 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:TON_FG-HR .
 
 bs:QuantifiableObservableProperty_version_93 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N3916e492fff14940934e9ae444a6ccc8 ;
+    s223:hasExternalReference _:N421add657da44be287b7fe1f4e153b16 ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_94 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
+    s223:hasExternalReference _:N7be54bbd6ecc43f8a6dfa04cb44cbb85 ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
 
@@ -2834,7 +2834,7 @@ bs:QuantifiableProperty_version_16 a s223:QuantifiableProperty ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableProperty_version_2 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555,
+    s223:hasExternalReference _:N9d5105c9c9bd4074ae333d502a493184,
         bs:BACnetExternalReference_version_41 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG,
@@ -3087,7 +3087,7 @@ bs:Property_version_1 a s223:Property ;
 
 bs:Property_version_9 a s223:Property,
         s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
+    s223:hasExternalReference _:Nbaa38bf838834c7a85016485b0e87114 ;
     qudt:hasQuantityKind quantitykind:ActivePower ;
     qudt:hasUnit unit:KiloW,
         unit:W .
@@ -3142,7 +3142,7 @@ bs:QuantifiableActuatableProperty_version_29 a s223:QuantifiableActuatableProper
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableActuatableProperty_version_37 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
+    s223:hasExternalReference _:N4fc7f1e8c82b4d08a515780aa6bf73a2 ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:DEG_F,
         unit:LB_F-PER-IN2,
@@ -3169,7 +3169,7 @@ bs:QuantifiableActuatableProperty_version_41 a s223:QuantifiableActuatableProper
         unit:IN_H2O .
 
 bs:QuantifiableObservableProperty_version_104 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
+    s223:hasExternalReference _:N4fc7f1e8c82b4d08a515780aa6bf73a2 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Position-Unknown ;
     qudt:hasUnit unit:PERCENT,
@@ -3185,20 +3185,20 @@ bs:QuantifiableObservableProperty_version_18 a s223:QuantifiableObservableProper
         unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_20 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d,
-        [ a s223:BACnetExternalReference ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
             bacnet:description rdfs:Literal ;
             bacnet:device-identifier bs:BACnetDevice_version_6 ;
             bacnet:object-identifier rdfs:Literal ;
             bacnet:object-name rdfs:Literal ;
-            bacnet:object-type rdfs:Literal ] ;
+            bacnet:object-type rdfs:Literal ],
+        _:Nc2aca494cbfa472d8d70fbb02f2717d0 ;
     s223:hasRole s223:OnOff-Unknown,
         <urn:bldg#OnOff-Unknown> ;
     qudt:hasUnit unit:DEG_F .
 
 bs:QuantifiableObservableProperty_version_21 a s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:Role-Discharge ;
-    s223:hasExternalReference _:N59ecef2dcf9a45e096b25f796449698f ;
+    s223:hasExternalReference _:Nc788ede62d294d2b857f939ef74ff634 ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:FT3-PER-MIN .
@@ -3217,7 +3217,7 @@ bs:QuantifiableObservableProperty_version_24 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_30 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N59373f5cd3b243839b342308df26cd58 ;
+    s223:hasExternalReference _:N7be54bbd6ecc43f8a6dfa04cb44cbb85 ;
     qudt:hasQuantityKind quantitykind:Power,
         quantitykind:Voltage,
         quantitykind:VolumeFlowRate ;
@@ -3239,7 +3239,7 @@ bs:QuantifiableObservableProperty_version_56 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:GAL_US-PER-MIN .
 
 bs:QuantifiableObservableProperty_version_57 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N02a178bc918e46c9a2ca539504dad746 ;
+    s223:hasExternalReference _:N14e10565214d4885be1df6cc1f4fda52 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:UNITLESS .
@@ -3250,7 +3250,7 @@ bs:QuantifiableObservableProperty_version_60 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_62 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b ;
+    s223:hasExternalReference _:N04636faf062f4cd999a65e0fba5f0096 ;
     qudt:hasQuantityKind quantitykind:ElectricPower ;
     qudt:hasUnit unit:DEG_F,
         unit:KiloW,
@@ -3268,7 +3268,7 @@ bs:QuantifiableObservableProperty_version_65 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_76 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
+    s223:hasExternalReference _:Ndc3a38008d36462d83398ae042e556bb ;
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_81 a s223:QuantifiableObservableProperty ;
@@ -3299,7 +3299,7 @@ bs:QuantifiableObservableProperty_version_90 a s223:QuantifiableObservableProper
         unit:KiloV-A .
 
 bs:QuantifiableProperty_version_19 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
+    s223:hasExternalReference _:N509e042aac474396ad0b64ecbbb5d430 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG,
         unit:FT2,
@@ -3526,7 +3526,7 @@ bs:OutletConnectionPoint_version_8 a s223:OutletConnectionPoint ;
     s223:hasMedium s223:Fluid-Air .
 
 bs:QuantifiableActuatableProperty_version_13 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
+    s223:hasExternalReference _:N509e042aac474396ad0b64ecbbb5d430 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -3567,7 +3567,7 @@ bs:QuantifiableObservableProperty_version_26 a s223:QuantifiableObservableProper
             bacnet:object-identifier rdfs:Literal ;
             bacnet:object-name rdfs:Literal ;
             bacnet:object-type rdfs:Literal ],
-        _:N69e01b32fba14609847340488bc33555 ;
+        _:N9d5105c9c9bd4074ae333d502a493184 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -3576,20 +3576,20 @@ bs:QuantifiableObservableProperty_version_26 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_28 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
+    s223:hasExternalReference _:N6dc56f6e2faf4240b412041772285df6 ;
     qudt:hasQuantityKind quantitykind:Power ;
     qudt:hasUnit unit:HP,
         unit:TON_FG,
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_29 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555,
-        [ a s223:BACnetExternalReference ;
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
             bacnet:description rdfs:Literal ;
             bacnet:device-identifier bs:BACnetDevice_version_5 ;
             bacnet:object-identifier rdfs:Literal ;
             bacnet:object-name rdfs:Literal ;
-            bacnet:object-type rdfs:Literal ] ;
+            bacnet:object-type rdfs:Literal ],
+        _:N9d5105c9c9bd4074ae333d502a493184 ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:Power,
         quantitykind:Voltage,
@@ -3603,7 +3603,7 @@ bs:QuantifiableObservableProperty_version_29 a s223:QuantifiableObservableProper
         unit:W-HR .
 
 bs:QuantifiableObservableProperty_version_35 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N3f27481423534878a6a7360dadaf3df6 ;
+    s223:hasExternalReference _:Ndc3a38008d36462d83398ae042e556bb ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -3613,7 +3613,7 @@ bs:QuantifiableObservableProperty_version_35 a s223:QuantifiableObservableProper
         unit:HR .
 
 bs:QuantifiableObservableProperty_version_45 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
+    s223:hasExternalReference _:N012fcadfd4c8496793eab7b7d25f338c ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:Power,
         quantitykind:Voltage ;
@@ -3641,7 +3641,7 @@ bs:QuantifiableObservableProperty_version_58 a s223:QuantifiableObservableProper
     qudt:hasUnit unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_59 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
+    s223:hasExternalReference _:N9d5105c9c9bd4074ae333d502a493184 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:DewPointTemperature,
@@ -3673,8 +3673,8 @@ bs:QuantifiableObservableProperty_version_69 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_7 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N8f80e25d36e64266990adfe91d3fe83b,
-        _:Nf46c279b29d74cccbc8303c7f95489d3 ;
+    s223:hasExternalReference _:N04636faf062f4cd999a65e0fba5f0096,
+        _:N6dc56f6e2faf4240b412041772285df6 ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:ElectricCurrent,
         quantitykind:Voltage ;
@@ -3685,7 +3685,7 @@ bs:QuantifiableObservableProperty_version_7 a s223:QuantifiableObservablePropert
         unit:W .
 
 bs:QuantifiableProperty_version_4 a s223:QuantifiableProperty ;
-    s223:hasExternalReference _:Nec9e2e0a08ca4d1f993d93936aebce24 ;
+    s223:hasExternalReference _:Ncf6e63168b844be890875f50013d7aa9 ;
     s223:hasRole s223:OnOff-Unknown ;
     qudt:hasUnit unit:DEG_F,
         unit:PERCENT,
@@ -3796,7 +3796,7 @@ bs:QuantifiableActuatableProperty_version_15 a s223:QuantifiableActuatableProper
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N127c11997a0444ec8eda179844b6f373,
+    s223:hasExternalReference _:N7b929bcbe8d8445686d5fbfed9d13503,
         bs:BACnetExternalReference_version_27,
         bs:BACnetExternalReference_version_3 ;
     s223:hasRole s223:Aspect-Command,
@@ -3810,7 +3810,7 @@ bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_3 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88 ;
+    s223:hasExternalReference _:N509e042aac474396ad0b64ecbbb5d430 ;
     s223:hasRole s223:OnOff-Unknown,
         <urn:bldg#OnOff-Unknown> ;
     qudt:hasUnit unit:DEG_F .
@@ -3831,7 +3831,7 @@ bs:QuantifiableActuatableProperty_version_4 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_11 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nd6dd7a349a4242caa2827d5ae146e15b ;
+    s223:hasExternalReference _:N4fc7f1e8c82b4d08a515780aa6bf73a2 ;
     s223:hasRole s223:Role-Supply ;
     qudt:hasQuantityKind quantitykind:ElectricPower,
         quantitykind:PressureRatio,
@@ -3847,7 +3847,7 @@ bs:QuantifiableObservableProperty_version_11 a s223:QuantifiableObservableProper
         unit:V-A_Reactive .
 
 bs:QuantifiableObservableProperty_version_15 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nadddbda8f0524d8abe4ac9d8009572f8 ;
+    s223:hasExternalReference _:Nbaa38bf838834c7a85016485b0e87114 ;
     s223:hasRole s223:Role-Return,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:Power,
@@ -3858,7 +3858,7 @@ bs:QuantifiableObservableProperty_version_15 a s223:QuantifiableObservableProper
         unit:W-HR .
 
 bs:QuantifiableObservableProperty_version_23 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
+    s223:hasExternalReference _:Nc2aca494cbfa472d8d70fbb02f2717d0 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
@@ -3875,7 +3875,7 @@ bs:QuantifiableObservableProperty_version_27 a s223:QuantifiableObservableProper
         unit:TON_FG .
 
 bs:QuantifiableObservableProperty_version_37 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
+    s223:hasExternalReference _:N012fcadfd4c8496793eab7b7d25f338c ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
         quantitykind:ElectricPower ;
@@ -3898,7 +3898,7 @@ bs:QuantifiableObservableProperty_version_39 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_6 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
+    s223:hasExternalReference _:N012fcadfd4c8496793eab7b7d25f338c ;
     s223:hasRole s223:EnumerationKind-Speed ;
     qudt:hasQuantityKind quantitykind:ActivePower,
         quantitykind:ElectricCurrent,
@@ -4025,7 +4025,7 @@ bs:OutletConnectionPoint_version_5 a s223:OutletConnectionPoint ;
     s223:hasMedium s223:Fluid-Water .
 
 bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nf9a46c39175e48d6860b5ffe713a632c ;
+    s223:hasExternalReference _:Na21540012f534623b7c743683d9fa9b0 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Return,
         s223:Role-Supply,
@@ -4040,7 +4040,7 @@ bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProper
         unit:W .
 
 bs:QuantifiableObservableProperty_version_13 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f ;
+    s223:hasExternalReference _:N012fcadfd4c8496793eab7b7d25f338c ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ReactivePower ;
     qudt:hasUnit unit:KiloV-A-HR,
@@ -4050,7 +4050,7 @@ bs:QuantifiableObservableProperty_version_13 a s223:QuantifiableObservableProper
         unit:V-A_Reactive .
 
 bs:QuantifiableObservableProperty_version_32 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
+    s223:hasExternalReference _:Nc2aca494cbfa472d8d70fbb02f2717d0 ;
     s223:hasRole s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:ElectricCurrent,
         quantitykind:ElectricPower ;
@@ -4084,7 +4084,7 @@ bs:QuantifiableObservableProperty_version_41 a s223:QuantifiableObservableProper
 
 bs:QuantifiableObservableProperty_version_9 a s223:QuantifiableObservableProperty ;
     s223:hasAspect s223:Role-Discharge ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
+    s223:hasExternalReference _:N9d5105c9c9bd4074ae333d502a493184 ;
     s223:hasRole s223:Role-Return,
         s223:Role-Supply,
         s223:RunStatus-Unknown ;
@@ -4147,7 +4147,7 @@ bs:QuantifiableActuatableProperty_version_5 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_7 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
+    s223:hasExternalReference _:N6dc56f6e2faf4240b412041772285df6 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Role-Supply,
@@ -4158,19 +4158,19 @@ bs:QuantifiableActuatableProperty_version_7 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableActuatableProperty_version_9 a s223:QuantifiableActuatableProperty ;
-    s223:hasExternalReference _:N328bc226c0a747078a16ac17c586ea88,
+    s223:hasExternalReference [ a s223:BACnetExternalReference ;
+            bacnet:description rdfs:Literal ;
+            bacnet:device-identifier bs:BACnetDevice_version_6 ;
+            bacnet:object-identifier rdfs:Literal ;
+            bacnet:object-name rdfs:Literal ;
+            bacnet:object-type rdfs:Literal ],
         [ a s223:BACnetExternalReference ;
             bacnet:description rdfs:Literal ;
             bacnet:device-identifier bs:BACnetDevice_version_2 ;
             bacnet:object-identifier rdfs:Literal ;
             bacnet:object-name rdfs:Literal ;
             bacnet:object-type rdfs:Literal ],
-        [ a s223:BACnetExternalReference ;
-            bacnet:description rdfs:Literal ;
-            bacnet:device-identifier bs:BACnetDevice_version_6 ;
-            bacnet:object-identifier rdfs:Literal ;
-            bacnet:object-name rdfs:Literal ;
-            bacnet:object-type rdfs:Literal ] ;
+        _:N509e042aac474396ad0b64ecbbb5d430 ;
     s223:hasRole s223:Aspect-Command,
         s223:OnOff-Unknown,
         s223:Position-Unknown ;
@@ -4178,7 +4178,7 @@ bs:QuantifiableActuatableProperty_version_9 a s223:QuantifiableActuatablePropert
         unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N9f82267cbf214a61bbca8ee140cba84f,
+    s223:hasExternalReference _:N012fcadfd4c8496793eab7b7d25f338c,
         bs:BACnetExternalReference_version_27,
         bs:BACnetExternalReference_version_3 ;
     s223:hasRole s223:EnumerationKind-Speed,
@@ -4213,7 +4213,7 @@ bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_12 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Nf46c279b29d74cccbc8303c7f95489d3 ;
+    s223:hasExternalReference _:N6dc56f6e2faf4240b412041772285df6 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasQuantityKind quantitykind:Power ;
@@ -4221,7 +4221,7 @@ bs:QuantifiableObservableProperty_version_12 a s223:QuantifiableObservableProper
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_36 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:N69e01b32fba14609847340488bc33555 ;
+    s223:hasExternalReference _:N9d5105c9c9bd4074ae333d502a493184 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:RunStatus-Unknown ;
     qudt:hasUnit unit:DEG_F,
@@ -4259,7 +4259,7 @@ bs:QuantifiableObservableProperty_version_1 a s223:QuantifiableObservablePropert
         unit:UNITLESS .
 
 bs:QuantifiableObservableProperty_version_31 a s223:QuantifiableObservableProperty ;
-    s223:hasExternalReference _:Need41c3c8adb433da02259673308cc2d ;
+    s223:hasExternalReference _:Nc2aca494cbfa472d8d70fbb02f2717d0 ;
     s223:hasRole s223:OnOff-Unknown,
         s223:Role-Condenser,
         s223:Role-Return,
@@ -4313,7 +4313,7 @@ bs:BACnetDevice_version_5 a bacnet:BACnetDevice ;
 bs:BACnetDevice_version_1 a bacnet:BACnetDevice ;
     bacnet:hasPort bs:Port_version_1 .
 
-_:N02a178bc918e46c9a2ca539504dad746 a s223:BACnetExternalReference ;
+_:N04636faf062f4cd999a65e0fba5f0096 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4321,28 +4321,29 @@ _:N02a178bc918e46c9a2ca539504dad746 a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N127c11997a0444ec8eda179844b6f373 a s223:BACnetExternalReference ;
+_:N14e10565214d4885be1df6cc1f4fda52 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N421add657da44be287b7fe1f4e153b16 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N7b929bcbe8d8445686d5fbfed9d13503 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_2 ;
     bacnet:object-identifier rdfs:Literal ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N3916e492fff14940934e9ae444a6ccc8 a s223:BACnetExternalReference ;
-    bacnet:description rdfs:Literal ;
-    bacnet:device-identifier bs:BACnetDevice_version_1 ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal .
-
-_:N3f27481423534878a6a7360dadaf3df6 a s223:BACnetExternalReference ;
-    bacnet:description rdfs:Literal ;
-    bacnet:device-identifier bs:BACnetDevice_version_1 ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal .
-
-_:N59373f5cd3b243839b342308df26cd58 a s223:BACnetExternalReference ;
+_:N7be54bbd6ecc43f8a6dfa04cb44cbb85 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4350,7 +4351,23 @@ _:N59373f5cd3b243839b342308df26cd58 a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N59ecef2dcf9a45e096b25f796449698f a s223:BACnetExternalReference ;
+_:Na21540012f534623b7c743683d9fa9b0 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nbaa38bf838834c7a85016485b0e87114 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1,
+        bs:BACnetDevice_version_5 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:Nc788ede62d294d2b857f939ef74ff634 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_3 ;
@@ -4358,52 +4375,28 @@ _:N59ecef2dcf9a45e096b25f796449698f a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N7be7ec7e478046c889089260ec35a10a a s223:BACnetExternalReference ;
+_:Ncf6e63168b844be890875f50013d7aa9 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
     bacnet:object-identifier rdfs:Literal ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N8f80e25d36e64266990adfe91d3fe83b a s223:BACnetExternalReference ;
-    bacnet:description rdfs:Literal ;
-    bacnet:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal .
-
-_:Nadddbda8f0524d8abe4ac9d8009572f8 a s223:BACnetExternalReference ;
-    bacnet:description rdfs:Literal ;
-    bacnet:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal .
-
-_:Nec9e2e0a08ca4d1f993d93936aebce24 a s223:BACnetExternalReference ;
+_:Ndc3a38008d36462d83398ae042e556bb a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
     bacnet:object-identifier rdfs:Literal ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:Nf9a46c39175e48d6860b5ffe713a632c a s223:BACnetExternalReference ;
-    bacnet:description rdfs:Literal ;
-    bacnet:device-identifier bs:BACnetDevice_version_1,
-        bs:BACnetDevice_version_5 ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal .
-
-_:N328bc226c0a747078a16ac17c586ea88 a s223:BACnetExternalReference ;
+_:Nf33adbde69bb4273ba04cd7b6db6a675 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
     bacnet:object-identifier rdfs:Literal ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N9f82267cbf214a61bbca8ee140cba84f a s223:BACnetExternalReference ;
+_:N012fcadfd4c8496793eab7b7d25f338c a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4411,7 +4404,7 @@ _:N9f82267cbf214a61bbca8ee140cba84f a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:Nd6dd7a349a4242caa2827d5ae146e15b a s223:BACnetExternalReference ;
+_:N4fc7f1e8c82b4d08a515780aa6bf73a2 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4419,7 +4412,14 @@ _:Nd6dd7a349a4242caa2827d5ae146e15b a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:Need41c3c8adb433da02259673308cc2d a s223:BACnetExternalReference ;
+_:N509e042aac474396ad0b64ecbbb5d430 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+_:N6dc56f6e2faf4240b412041772285df6 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4427,7 +4427,7 @@ _:Need41c3c8adb433da02259673308cc2d a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:Nf46c279b29d74cccbc8303c7f95489d3 a s223:BACnetExternalReference ;
+_:Nc2aca494cbfa472d8d70fbb02f2717d0 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1,
         bs:BACnetDevice_version_5 ;
@@ -4435,7 +4435,7 @@ _:Nf46c279b29d74cccbc8303c7f95489d3 a s223:BACnetExternalReference ;
     bacnet:object-name rdfs:Literal ;
     bacnet:object-type rdfs:Literal .
 
-_:N69e01b32fba14609847340488bc33555 a s223:BACnetExternalReference ;
+_:N9d5105c9c9bd4074ae333d502a493184 a s223:BACnetExternalReference ;
     bacnet:description rdfs:Literal ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
     bacnet:object-identifier rdfs:Literal ;

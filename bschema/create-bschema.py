@@ -31,6 +31,7 @@ if __name__ == "__main__":
     gs = []
     cgs = []
     g_lens = []
+    threshold_lst = []
     cg_lens = []
     file_names = []
     # NOTE: code is not optimized at all, run time could easily be 20 times faster... 
@@ -57,6 +58,7 @@ if __name__ == "__main__":
             iteration_lst.append(i)
             runtimes.append(end_time - start_time)
             file_names.append(file_name)
+            threshold_lst.append(threshold)
         
         csv_name = 'bschema/'+ threshold_path + 'stats.csv'
         with open(csv_name, 'w', newline='') as csvfile:
@@ -65,8 +67,8 @@ if __name__ == "__main__":
 
             # Optionally, write a header row
             writer.writerow(["file_name","threshold","graph_length", "bschema_length", "iterations", "runtime"])
-            for i0, i1, i2, i3, i4 in zip(file_names, g_lens, cg_lens, iteration_lst, runtimes):
-                writer.writerow([i0, threshold, i1, i2, i3, i4])
+            for i0, i1, i2, i3, i4, i5 in zip(file_names,threshold_lst, g_lens, cg_lens, iteration_lst, runtimes):
+                writer.writerow([i0, i1, i2, i3, i4, i5])
             write_csv('bschema/'+ threshold_path + 'stats.csv', g_lens, cg_lens)
         # just plotting the ones added in last iteration
         plt.plot(g_lens[-6:], cg_lens[-6:], 'o')

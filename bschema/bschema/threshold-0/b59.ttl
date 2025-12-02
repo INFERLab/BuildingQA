@@ -40,7 +40,7 @@ bs:ElectricalConnectionPoint_version_1 a s223:ElectricalConnectionPoint,
 bs:EnumeratedActuatableProperty_version_1 a s223:EnumeratedActuatableProperty ;
     rdfs:label rdfs:Literal ;
     s223:hasEnumerationKind s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
+    s223:hasExternalReference _:N6f6ab8fb586c48e4b8d254149777dd0c ;
     rdfs:comment rdfs:Literal .
 
 bs:EnumeratedObservableProperty_version_1 a s223:EnumeratedObservableProperty ;
@@ -49,7 +49,7 @@ bs:EnumeratedObservableProperty_version_1 a s223:EnumeratedObservableProperty ;
         s223:Aspect-Manufacturer,
         s223:EnumerationKind-Binary,
         s223:EnumerationKind-OnOff ;
-    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
+    s223:hasExternalReference _:N6f6ab8fb586c48e4b8d254149777dd0c ;
     s223:hasValue rdfs:Literal ;
     rdfs:comment rdfs:Literal .
 
@@ -108,7 +108,7 @@ bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservablePropert
         bob:RPM,
         bob:Temperature ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
+    s223:hasExternalReference _:N6f6ab8fb586c48e4b8d254149777dd0c ;
     qudt:hasQuantityKind quantitykind:AngularVelocity,
         quantitykind:Temperature ;
     qudt:hasUnit unit:DEG_F,
@@ -136,7 +136,7 @@ bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatablePropert
         s223:Role-Cooling,
         s223:Role-Heating,
         s223:Role-Supply ;
-    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
+    s223:hasExternalReference _:N6f6ab8fb586c48e4b8d254149777dd0c ;
     qudt:hasQuantityKind quantitykind:DimensionlessRatio,
         quantitykind:ForcePerArea,
         quantitykind:Temperature,
@@ -271,7 +271,7 @@ bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservablePropert
     rdfs:label rdfs:Literal ;
     s223:hasAspect s223:Aspect-Minimum,
         s223:Aspect-Nominal ;
-    s223:hasExternalReference _:N0d7d7b1e00db4994b1fd6d734060d6dc ;
+    s223:hasExternalReference _:N6f6ab8fb586c48e4b8d254149777dd0c ;
     s223:hasValue rdfs:Literal ;
     qudt:hasQuantityKind quantitykind:AngularVelocity,
         quantitykind:ElectricPower,
@@ -575,7 +575,7 @@ bs:OutletConnectionPoint_version_1 a s223:OutletConnectionPoint,
     s223:mapsTo bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 .
 
-_:N0d7d7b1e00db4994b1fd6d734060d6dc a s223:ExternalReference,
+_:N6f6ab8fb586c48e4b8d254149777dd0c a s223:ExternalReference,
         ref:APIReference ;
     rdfs:label rdfs:Literal ;
     ref:endpoint rdfs:Literal ;

@@ -92,7 +92,7 @@ bs:QuantifiableObservableProperty_version_12 a s223:QuantifiableObservableProper
 bs:QuantifiableObservableProperty_version_13 a s223:QuantifiableObservableProperty,
         bob:Flow ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N381dbfc5582842e98e0ed7724cd7940e ;
+    s223:hasExternalReference _:N1138a5571af647768bb7c90548b99ff1 ;
     qudt:hasQuantityKind quantitykind:VolumeFlowRate ;
     qudt:hasUnit unit:FT3-PER-MIN ;
     rdfs:comment rdfs:Literal .
@@ -261,7 +261,7 @@ bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatablePropert
 bs:QuantifiableActuatableProperty_version_4 a s223:QuantifiableActuatableProperty ;
     rdfs:label rdfs:Literal ;
     s223:hasAspect s223:Aspect-Setpoint ;
-    s223:hasExternalReference _:N1a189acc7e3144588b45ed9bbe92e323 ;
+    s223:hasExternalReference _:N5b0121d0b1344aab95d82785ef54bd94 ;
     qudt:hasUnit unit:HZ,
         unit:PERCENT,
         unit:UNITLESS ;
@@ -295,7 +295,7 @@ bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservablePropert
 
 bs:QuantifiableObservableProperty_version_8 a s223:QuantifiableObservableProperty ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N1a189acc7e3144588b45ed9bbe92e323 ;
+    s223:hasExternalReference _:N5b0121d0b1344aab95d82785ef54bd94 ;
     qudt:hasUnit unit:PERCENT,
         unit:UNITLESS ;
     rdfs:comment rdfs:Literal .
@@ -468,14 +468,14 @@ bs:OutletConnectionPoint_version_24 a s223:OutletConnectionPoint,
 bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatableProperty,
         bob:PercentCommand ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N1a189acc7e3144588b45ed9bbe92e323 ;
+    s223:hasExternalReference _:N5b0121d0b1344aab95d82785ef54bd94 ;
     qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
     qudt:hasUnit unit:PERCENT .
 
 bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProperty,
         bob:DifferentialStaticPressure ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N381dbfc5582842e98e0ed7724cd7940e ;
+    s223:hasExternalReference _:N1138a5571af647768bb7c90548b99ff1 ;
     qudt:hasQuantityKind quantitykind:ForcePerArea ;
     qudt:hasUnit unit:PA,
         unit:PSI .
@@ -483,7 +483,7 @@ bs:QuantifiableObservableProperty_version_10 a s223:QuantifiableObservableProper
 bs:QuantifiableObservableProperty_version_17 a s223:QuantifiableObservableProperty,
         bob:DifferentialStaticPressure ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N381dbfc5582842e98e0ed7724cd7940e ;
+    s223:hasExternalReference _:N1138a5571af647768bb7c90548b99ff1 ;
     qudt:hasQuantityKind quantitykind:ForcePerArea ;
     qudt:hasUnit unit:PA,
         unit:PSI .
@@ -633,7 +633,7 @@ bs:OutletConnectionPoint_version_9 a s223:OutletConnectionPoint,
 bs:QuantifiableObservableProperty_version_14 a s223:QuantifiableObservableProperty,
         bob:Temperature ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N1a189acc7e3144588b45ed9bbe92e323 ;
+    s223:hasExternalReference _:N5b0121d0b1344aab95d82785ef54bd94 ;
     qudt:hasQuantityKind quantitykind:Temperature ;
     qudt:hasUnit unit:DEG_F .
 
@@ -876,7 +876,7 @@ bs:OutletConnectionPoint_version_22 a s223:OutletConnectionPoint,
 bs:QuantifiableObservableProperty_version_5 a s223:QuantifiableObservableProperty,
         bob:Temperature ;
     rdfs:label rdfs:Literal ;
-    s223:hasExternalReference _:N1a189acc7e3144588b45ed9bbe92e323 ;
+    s223:hasExternalReference _:N5b0121d0b1344aab95d82785ef54bd94 ;
     qudt:hasQuantityKind quantitykind:Temperature ;
     qudt:hasUnit unit:DEG_F ;
     rdfs:comment rdfs:Literal .
@@ -1437,7 +1437,7 @@ bs:Junction_version_2 a s223:Junction,
         bs:QuantifiableObservableProperty_version_17 ;
     ns1:supplyInlet bs:InletConnectionPoint_version_18 .
 
-_:N381dbfc5582842e98e0ed7724cd7940e a s223:ExternalReference,
+_:N1138a5571af647768bb7c90548b99ff1 a s223:ExternalReference,
         ref:APIReference ;
     rdfs:label rdfs:Literal ;
     ref:endpoint rdfs:Literal ;
@@ -1445,7 +1445,7 @@ _:N381dbfc5582842e98e0ed7724cd7940e a s223:ExternalReference,
     ref:source rdfs:Literal ;
     ref:writable rdfs:Literal .
 
-_:N1a189acc7e3144588b45ed9bbe92e323 a s223:ExternalReference,
+_:N5b0121d0b1344aab95d82785ef54bd94 a s223:ExternalReference,
         ref:APIReference ;
     rdfs:label rdfs:Literal ;
     ref:endpoint rdfs:Literal ;

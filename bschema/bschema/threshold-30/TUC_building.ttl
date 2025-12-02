@@ -21,18 +21,18 @@
 
 bs:Site_version_1 a brick:Site ;
     brick:hasPart bs:Building_version_1 ;
-    ref:hasExternalReference _:N4473bba2d557422785d4e96a03223bc3 .
+    ref:hasExternalReference _:N624363502e8a4a719974ca53e4f55ed3 .
 
 bs:Zone_version_1 a brick:Zone ;
     brick:hasPart bs:Space_version_1 ;
-    ref:hasExternalReference _:N4473bba2d557422785d4e96a03223bc3 .
+    ref:hasExternalReference _:N624363502e8a4a719974ca53e4f55ed3 .
 
 <Occupancy_version_1> a quantitykind:Occupancy,
         saref:Property .
 
 bs:Building_version_1 a brick:Building ;
     brick:hasPart bs:Storey_version_1 ;
-    ref:hasExternalReference _:N4473bba2d557422785d4e96a03223bc3 .
+    ref:hasExternalReference _:N624363502e8a4a719974ca53e4f55ed3 .
 
 bs:Thermostat_version_2 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
@@ -140,7 +140,7 @@ bs:Thermostat_version_1 a brick:Thermostat,
         bs:Temperature_Setpoint_version_1 ;
     s4ener:serialNumber rdfs:Literal .
 
-_:N4473bba2d557422785d4e96a03223bc3 a ref:IFCReference ;
+_:N624363502e8a4a719974ca53e4f55ed3 a ref:IFCReference ;
     ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
 

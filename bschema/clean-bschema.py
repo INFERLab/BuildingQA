@@ -73,6 +73,7 @@ def bind_preset_prefixes(g: Graph):
 def process(file_path) -> None:
     g = Graph()
     g.parse(file_path, format="turtle")
+    print("Length is :", len(g))
 
     new_g = Graph()
     for s, p, o in g:

@@ -58,21 +58,21 @@ ax3.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('threshold_comparison.png', dpi=300, bbox_inches='tight')
 
-for metric, ylabel, title in [
-    ('bschema_length', 'BSchema Length', 'BSchema Length by Threshold'),
-    ('iterations', 'Iterations', 'Iterations by Threshold'),
-    ('runtime', 'Runtime (seconds)', 'Runtime by Threshold')
-]:
-    plt.figure(figsize=(10, 6))
-    for file in files:
-        file_data = df[df['file_name'] == file]
-        plt.plot(file_data['threshold'], file_data[metric], 
-                marker='o', label=file, linewidth=2, markersize=8)
+# for metric, ylabel, title in [
+#     ('bschema_length', 'BSchema Length', 'BSchema Length by Threshold'),
+#     ('iterations', 'Iterations', 'Iterations by Threshold'),
+#     ('runtime', 'Runtime (seconds)', 'Runtime by Threshold')
+# ]:
+#     plt.figure(figsize=(10, 6))
+#     for file in files:
+#         file_data = df[df['file_name'] == file]
+#         plt.plot(file_data['threshold'], file_data[metric], 
+#                 marker='o', label=file, linewidth=2, markersize=8)
     
-    plt.xlabel('Threshold', fontsize=12)
-    plt.ylabel(ylabel, fontsize=12)
-    plt.title(title, fontsize=14, fontweight='bold')
-    plt.legend(fontsize=9)
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(f'{metric}_by_threshold.png', dpi=300, bbox_inches='tight')
+#     plt.xlabel('Threshold', fontsize=12)
+#     plt.ylabel(ylabel, fontsize=12)
+#     plt.title(title, fontsize=14, fontweight='bold')
+#     plt.legend(fontsize=9)
+#     plt.grid(True, alpha=0.3)
+#     plt.tight_layout()
+#     plt.savefig(f'{metric}_by_threshold.png', dpi=300, bbox_inches='tight')
