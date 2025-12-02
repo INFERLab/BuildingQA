@@ -41,7 +41,7 @@ if __name__ == "__main__":
         for file_name, g in get_graphs(directory_path):
             g_lens.append(len(g))
             start_time = time() 
-            cg, mg, i = create_bschema(g, iterations=20, similarity_threshold=threshold, use_jaccard = False)
+            cg, mg, i = create_bschema(g, iterations=20, similarity_threshold=threshold, use_jaccard = False, use_original_names = False)
             print('Confirming iterations: ', i)
             end_time = time()
             if threshold != None:
