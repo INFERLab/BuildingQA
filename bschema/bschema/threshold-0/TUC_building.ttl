@@ -1,137 +1,137 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
-@prefix ns1: <https://brickschema.org/schema/Brick/ref#> .
-@prefix ns2: <https://saref.etsi.org/saref4bldg#> .
-@prefix ns3: <https://saref.etsi.org/core#> .
-@prefix ns4: <https://saref.etsi.org/saref4ener#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+@prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
+@prefix s4ener: <https://saref.etsi.org/saref4ener#> .
+@prefix saref: <https://saref.etsi.org/core#> .
 
-bs:EnergyProperty1 a quantitykind:Energy,
-        ns3:Property .
+<Energy_version_1> a quantitykind:Energy,
+        saref:Property .
 
-bs:HumProperty1 a quantitykind:Humidity,
-        ns3:Property .
+<Humidity_version_1> a quantitykind:Humidity,
+        saref:Property .
 
-bs:PowerProperty1 a quantitykind:Power,
-        ns3:Property .
+<Power_version_1> a quantitykind:Power,
+        saref:Property .
 
-bs:PresProperty1 a quantitykind:Pressure,
-        ns3:Property .
+<Pressure_version_1> a quantitykind:Pressure,
+        saref:Property .
 
-bs:Site_2431 a brick:Site ;
-    brick:hasPart bs:Building_1421 ;
-    ns1:hasExternalReference bs:http1 .
+bs:Site_version_1 a brick:Site ;
+    brick:hasPart bs:Building_version_1 ;
+    ref:hasExternalReference _:Ndf30270866a2439c97d05333a3ce1553 .
 
-bs:Zone_61 a brick:Zone ;
-    brick:hasPart bs:Space_1 ;
-    ns1:hasExternalReference bs:http1 .
+bs:Zone_version_1 a brick:Zone ;
+    brick:hasPart bs:Space_version_1 ;
+    ref:hasExternalReference _:Ndf30270866a2439c97d05333a3ce1553 .
 
-bs:Building_1421 a brick:Building ;
-    brick:hasPart bs:BuildingStorey_11 ;
-    ns1:hasExternalReference bs:http1 .
+<Occupancy_version_1> a quantitykind:Occupancy,
+        saref:Property .
 
-bs:OccProperty1 a quantitykind:Occupancy,
-        ns3:Property .
+bs:Building_version_1 a brick:Building ;
+    brick:hasPart bs:Storey_version_1 ;
+    ref:hasExternalReference _:Ndf30270866a2439c97d05333a3ce1553 .
 
-bs:BuildingStorey_11 a brick:Storey ;
-    brick:hasPart bs:Space_1 ;
-    brick:isLocationOf bs:null_Equipment1 ;
-    ns1:hasExternalReference bs:bnode2 ;
-    ns2:contains bs:null_Equipment1 .
+<Temperature_version_1> a quantitykind:Temperature,
+        saref:Property .
 
-bs:RC04N00_Delay_Parameter1 a brick:Delay_Parameter ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Delay_Parameter_version_1 a brick:Delay_Parameter ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_Lockout_Command1 a brick:Lockout_Command ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Lockout_Command_version_1 a brick:Lockout_Command ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_Mode_Command1 a brick:Mode_Command ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_OccSensingPoint1 a brick:Occupancy_Sensor,
-        ns3:Sensor ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 ;
-    ns3:observes bs:OccProperty1 .
+bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_OnOffCommand1 a brick:On_Off_Command ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Mode_Command_version_1 a brick:Mode_Command ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_Run_Request_Command1 a brick:Run_Request_Command ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor,
+        saref:Sensor ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 ;
+    saref:observes <Occupancy_version_1> .
 
-bs:RC04N00_TempSensingPoint1 a brick:Temperature_Sensor,
-        ns3:Sensor ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 ;
-    ns3:observes bs:TempProperty1 .
+bs:On_Off_Command_version_1 a brick:On_Off_Command ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_TempSetpoint1 a brick:Temperature_Setpoint,
-        ns3:Actuator ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 ;
-    ns3:controls bs:TempProperty1 .
+bs:Run_Request_Command_version_1 a brick:Run_Request_Command ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
-bs:RC04N00_TempSetpointMax1 a brick:Max_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Storey_version_1 a brick:Storey ;
+    brick:hasPart bs:Space_version_1 ;
+    brick:isLocationOf bs:Terminal_Unit_version_1 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
+    s4bldg:contains bs:Terminal_Unit_version_1 .
 
-bs:RC04N00_TempSetpointMin1 a brick:Min_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode1 .
+bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor,
+        saref:Sensor ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 ;
+    saref:observes <Temperature_version_1> .
 
-bs:TempProperty1 a quantitykind:Temperature,
-        ns3:Property .
+bs:Temperature_Setpoint_version_1 a brick:Temperature_Setpoint,
+        saref:Actuator ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_2 ;
+    saref:controls <Temperature_version_1> .
 
-bs:null_Equipment1 a brick:Terminal_Unit,
-        ns2:FlowTerminal ;
-    brick:hasLocation bs:BuildingStorey_11 ;
-    ns1:hasExternalReference bs:bnode2 .
+bs:Terminal_Unit_version_1 a brick:Terminal_Unit,
+        s4bldg:FlowTerminal ;
+    brick:hasLocation bs:Storey_version_1 ;
+    ref:hasExternalReference bs:Resource_version_1 .
 
-bs:Space_1 a brick:Space,
-        ns2:BuildingSpace ;
-    brick:isLocationOf bs:RC04N00_Equipment1 ;
-    ns1:hasExternalReference bs:bnode2 ;
-    ns2:contains bs:RC04N00_Equipment1 .
+bs:Space_version_1 a brick:Space,
+        s4bldg:BuildingSpace ;
+    brick:isLocationOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
+    s4bldg:contains bs:Thermostat_version_1 .
 
-bs:http1 a ns1:IFCReference ;
-    ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:Resource_version_1 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
-bs:bnode2 ns1:ifcGlobalID rdfs:Resource ;
-    ns1:ifcName rdfs:Resource .
+bs:Resource_version_2 ref:hasTimeseriesId rdfs:Literal .
 
-bs:bnode1 ns1:hasTimeseriesId rdfs:Resource .
+bs:Thermostat_version_1 a brick:Thermostat,
+        s4bldg:UnitaryControlElement ;
+    brick:hasLocation bs:Space_version_1 ;
+    brick:hasPoint bs:Delay_Parameter_version_1,
+        bs:Lockout_Command_version_1,
+        bs:Max_Air_Temperature_Setpoint_version_1,
+        bs:Min_Air_Temperature_Setpoint_version_1,
+        bs:Mode_Command_version_1,
+        bs:Occupancy_Sensor_version_1,
+        bs:On_Off_Command_version_1,
+        bs:Run_Request_Command_version_1,
+        bs:Temperature_Sensor_version_1,
+        bs:Temperature_Setpoint_version_1 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
+    saref:consistOf bs:Delay_Parameter_version_1,
+        bs:Lockout_Command_version_1,
+        bs:Max_Air_Temperature_Setpoint_version_1,
+        bs:Min_Air_Temperature_Setpoint_version_1,
+        bs:Mode_Command_version_1,
+        bs:Occupancy_Sensor_version_1,
+        bs:On_Off_Command_version_1,
+        bs:Run_Request_Command_version_1,
+        bs:Temperature_Sensor_version_1,
+        bs:Temperature_Setpoint_version_1 ;
+    s4ener:serialNumber rdfs:Literal .
 
-bs:RC04N00_Equipment1 a brick:Thermostat,
-        ns2:UnitaryControlElement ;
-    brick:hasLocation bs:Space_1 ;
-    brick:hasPoint bs:RC04N00_Delay_Parameter1,
-        bs:RC04N00_Lockout_Command1,
-        bs:RC04N00_Mode_Command1,
-        bs:RC04N00_OccSensingPoint1,
-        bs:RC04N00_OnOffCommand1,
-        bs:RC04N00_Run_Request_Command1,
-        bs:RC04N00_TempSensingPoint1,
-        bs:RC04N00_TempSetpoint1,
-        bs:RC04N00_TempSetpointMax1,
-        bs:RC04N00_TempSetpointMin1 ;
-    ns1:hasExternalReference bs:bnode2 ;
-    ns3:consistOf bs:RC04N00_Delay_Parameter1,
-        bs:RC04N00_Lockout_Command1,
-        bs:RC04N00_Mode_Command1,
-        bs:RC04N00_OccSensingPoint1,
-        bs:RC04N00_OnOffCommand1,
-        bs:RC04N00_Run_Request_Command1,
-        bs:RC04N00_TempSensingPoint1,
-        bs:RC04N00_TempSetpoint1,
-        bs:RC04N00_TempSetpointMax1,
-        bs:RC04N00_TempSetpointMin1 ;
-    ns4:serialNumber rdfs:Resource .
+_:Ndf30270866a2439c97d05333a3ce1553 a ref:IFCReference ;
+    ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
